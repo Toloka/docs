@@ -6,11 +6,11 @@ Quality control rules allow you to get more accurate responses and restrict acce
 
 - To keep track of how often Tolokers make mistakes:
 
-    - [Control tasks](goldenset.md): Use them to assign a [skill](../../glossary.md#skill) to Tolokers based on their responses to [control tasks](../../glossary.md#control-task) and [ban](ban.md) Tolokers who submit incorrect responses.
+    - [Control tasks](goldenset.md): Use them to assign a [skill](../../glossary.md#skill) to Tolokers based on their [control task](../../glossary.md#control-task) responses and [ban](ban.md) Tolokers who submit incorrect responses.
 
-    - [Majority vote](mvote.md): Quality is based on matching the response from the majority of Tolokers who complete the same [task](../../glossary.md#task).
+    - [Majority vote](mvote.md): Quality is based on matching the task response from the majority of Tolokers who complete the same [task](../../glossary.md#task).
 
-    - [Results of checking](reviewing-assignments.md): Evaluate Tolokers based on the number of accepted and rejected responses.
+    - [Results of checking](reviewing-assignments.md): Evaluate Tolokers based on the number of accepted and rejected task suite responses.
 
 - To protect your project from robots and cheaters:
 

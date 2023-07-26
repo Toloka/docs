@@ -5,7 +5,7 @@
 Dynamic overlap lets you change overlap depending on:
 
 - How well the Tolokers do on the task.
-- How well Tolokers' responses match each other.
+- How well Tolokers' [task responses](../../glossary.md#task-response) match each other.
 
 First the task is distributed with minimal overlap. As Tolokers complete the task, their responses are assigned confidence. If it is less than specified in the **confidence in aggregated response** field, overlap will be increased until confidence reaches the set value, or overlap reaches the maximum.
 
@@ -17,7 +17,7 @@ Dynamic overlap uses 5 main parameters:
 
 1. **Confidence in aggregated response** is the percentage of confidence required to stop showing the task to Tolokers.
 
-    When **confidence** reaches the required level, the system considers the response correct and stops collecting other Tolokers' responses.
+    When **confidence** reaches the required level, the system considers the task response correct and stops collecting other Tolokers' responses.
 
 1. **Skill** reflects how much you trust the Toloker's responses.
 
@@ -29,7 +29,7 @@ Terms
 
 - $q[i]$ is a Toloker's accuracy.
 - $K$ is a smoothing constant.
-- $z[j]$ is the most popular response.
+- $z[j]$ is the most popular task response.
 - $z[x]$ — the probability that the estimate is correct
 - $EPS,$ — confidence in the aggregate response
 
@@ -41,7 +41,7 @@ Where:
 
 $K$ is a smoothing constant (starting from 0.5) if there are not enough responses to control tasks.
 
-If there are several estimates, the most popular response is determined by adding together $q[i]$ of the Tolokers who selected each response option. The response with the largest total is considered more correct. Let's call this estimate $z[j]$.
+If there are several estimates, the most popular task response is determined by adding together $q[i]$ of the Tolokers who selected each task response option. The task response with the largest total is considered more correct. Let's call this estimate $z[j]$.
 
 [Using Bayes' theorem]({{ baies }}), we calculate the posterior probability that the estimate $z[j]$ is correct.
 
@@ -49,7 +49,7 @@ A uniform distribution of estimates is assumed a priori. For the $z[x]$ the a pr
 
 where:
 
-$Y$ is the number of response options.
+$Y$ is the number of task response options.
 
 Next, we calculate the probability that the estimate $z[j]$ is correct.
 
@@ -61,11 +61,11 @@ Where:
 
 $(1-q[i])$ is the remaining probability;
 
-$(Y-1)$ is the number of remaining responses.
+$(Y-1)$ is the number of remaining task responses.
 
 It ensures that the probability of an error is distributed evenly among the remaining estimates.
 
-We take all Tolokers' responses and, for example, option $z[x]$ and calculate the probability that Tolokers will select this response, provided that the correct response is $z[x] estimate,$:
+We take all Tolokers' responses and, for example, option $z[x]$ and calculate the probability that Tolokers will select this task response, provided that the correct task response is $z[x] estimate,$:
 
 ```javascript
 func z_prob(x int) : float {
@@ -79,7 +79,7 @@ func z_prob(x int) : float {
 }
 ```
 
-Next, using Bayes' theorem, we calculate the probability that the response $z[j]$ is correct:
+Next, using Bayes' theorem, we calculate the probability that the task response $z[j]$ is correct:
 
 ```javascript
 r = 0
@@ -107,7 +107,7 @@ Before setting up dynamic overlap, you need to prepare the output data fields.
 
 - Integers with minimum and maximum values. The maximum difference between them is 32.
 
-    If there are too many possible responses in the output field, the dynamic overlap mechanism won't be able to aggregate the data.
+    If there are too many possible task responses in the output field, the dynamic overlap mechanism won't be able to aggregate the data.
 
 {% endcut %}
 

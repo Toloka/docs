@@ -8,7 +8,7 @@ We recommend that you break down your object selection project into three projec
 
     1. Sort the images containing the object you are looking for.
 
-    1. Show the image to the Toloker and ask if the object is in the image. Response options: Yes/No.
+    1. Show the image to the Toloker and ask if the object is in the image. Task response options: Yes/No.
 
 1. Selecting objects in images.
 

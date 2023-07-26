@@ -18,7 +18,7 @@ Check how Tolokers see the interface parts:
 
 - The correct work of the interactive elements: buttons, text boxes, links, and options all work the way they're supposed to.
 
-- Response validation works as expected (if applicable to your project): if the task involves entering a phone number or email address, it's important to validate the format.
+- Task response validation works as expected (if applicable to your project): if the task involves entering a phone number or email address, it's important to validate the format.
 
 {% endcut %}
 

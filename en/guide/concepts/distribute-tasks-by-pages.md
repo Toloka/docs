@@ -106,7 +106,7 @@ In a large pool with few control tasks, there might be a situation when a Toloke
 
 {% note info %}
 
-To filter out Tolokers, use the [Control tasks](control.md) quality control rule. To rank Tolokers by the quality of responses in control tasks, use a [skill](nav.md).
+To filter out Tolokers, use the [Control tasks](control.md) quality control rule. To rank Tolokers by the quality of control task responses, use a [skill](nav.md).
 
 {% endnote %}
 

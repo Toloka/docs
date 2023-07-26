@@ -28,7 +28,7 @@ To set up quality control:
 
 - **To keep track of how often Tolokers make mistakes:**
 
-    - [Control tasks](goldenset.md): Use them to assign a [skill](../../glossary.md#skill) to Tolokers based on their responses to control tasks and ban Tolokers who submit incorrect responses.
+    - [Control tasks](goldenset.md): Use them to assign a [skill](../../glossary.md#skill) to Tolokers based on their control task responses and ban Tolokers who submit incorrect responses.
 
     - [Majority vote](mvote.md): Quality is based on matching the response from the majority of Tolokers who complete the same task.
 

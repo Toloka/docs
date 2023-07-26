@@ -24,27 +24,27 @@ The **If** and **then** fields in this rule are required. If you don't fill in a
 ||**Field** | **Overview**||
 ||**Recent tasks to use** | How many recent responses from the Toloker to use.
 
-If this field is not filled in, the calculation includes only task responses from the pool to which the rule is applied.
+If this field is not filled in, the calculation includes only responses from the pool to which the rule is applied.
 
 If the field is filled in, the corresponding number of responses is used. The rule takes into account responses from both the current pool and other pools where this field is filled in.
 
 [Learn more](remember-values.md) about how this field works.||
 ||**If** | A condition for performing the action in the **then** field:
 
-- **total reviewed responses** — The number of the Toloker's assignments that were reviewed.
+- **total reviewed task suite responses** — The number of the Toloker's assignments that were reviewed.
 
-- **accepted responses (%)** — The percentage of the Toloker's assignments that were accepted (from 0 to 100).
+- **accepted task suite responses (%)** — The percentage of the Toloker's assignments that were accepted (from 0 to 100).
 
-- **rejected responses (%)** — The percentage of the Toloker's assignments that were rejected (from 0 to 100).
+- **rejected task suite responses (%)** — The percentage of the Toloker's assignments that were rejected (from 0 to 100).
 
 To add multiple conditions, click ![](../_images/add.svg).||
 ||**then** | Action to perform for the **If** condition:
 
 - **accept all assignments from this Toloker in the pool** — Requires the [manual review](offline-accept.md) option to be set.
 
-    Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you are satisfied with this result. The rule will work automatically and accept all responses from this Toloker in the pool.
+    Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you are satisfied with this result. The rule will work automatically and accept all task suite responses from this Toloker in the pool.
 
-- **assign skill from the field** — Save the percentage of Toloker's accepted responses as the [skill](nav.md) value.
+- **assign skill from the field** — Save the percentage of Toloker's accepted task suite responses as the [skill](nav.md) value.
 
 - **ban** — Block access to the project or all of the requester's projects for the specified number of days. Only the requester can view the reason.
 
@@ -52,7 +52,7 @@ To add multiple conditions, click ![](../_images/add.svg).||
 
 - **suspend** — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.
 
-    If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's responses is not saved after the ban is lifted. The skill value is based on new responses.||
+    If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's task suite responses is not saved after the ban is lifted. The skill value is based on new task suite responses.||
 |#
 
 ## Examples {#examples}
