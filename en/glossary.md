@@ -367,10 +367,6 @@ A [quality control](#quality-control) rule that limits the number of [task suite
 
 A request or question that elicits a response from an annotator in [Toloka]({{ toloka }}). A task is created for a single data unit that requires labeling, like a photo to classify, or a comment to review. It is a part of a web page (a [task suite](#task-suite)) that can contain various objects: images, text, input fields, and others. Tolokers read the instructions for the task, complete it and enter [responses](#response). In [Template Builder](template-builder/index.md), you can create an interface for such tasks.
 
-#### Task response {#task-response}
-
-The result of completing a single task by a Toloker. The task responses can be either correct or incorrect. You can [block Tolokers](#banning-tolokers) who give too many incorrect task responses.
-
 #### Task interface {#task-interface}
 
 The appearance of a task for Tolokers and the logic for processing responses.
@@ -378,6 +374,10 @@ The appearance of a task for Tolokers and the logic for processing responses.
 #### Task markup {#task-markup}
 
 Adding correct responses and hints to the tasks and changing task types. You can transform a [general task](#general-task) into a [control task](#control-task) by adding the correct task response, or into a [training task](#training-task) by adding the correct response and a hint. Task markup is available only for training pools and pools uploaded with “[smart mixing](#smart-mixing)”. [Learn more](guide/concepts/task_markup.md)
+
+#### Task response {#task-response}
+
+The result of completing a single task by a Toloker. The task responses can be either correct or incorrect. You can [block Tolokers](#banning-tolokers) who give too many incorrect task responses.
 
 #### Task suite {#task-suite}
 
