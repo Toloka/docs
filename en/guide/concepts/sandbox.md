@@ -70,7 +70,15 @@ To complete your tasks in the sandbox:
 
 1. Open the [Users](https://platform.sandbox.toloka.ai/requester/workers) page and click **Add trusted Tolokers**.
 
-1. Click **Add Toloker** and enter the phone number of the created Toloker or the email address of the social account that the Toloker used when registering.
+1. Click **Add Toloker** and enter the phone number of the created Toloker or the Toloker ID.
+
+    {% cut "Where to get the Toloker ID" %}
+
+    You can get the Toloker ID together with the phone number on the Toloker **sandbox** [Profile](https://we.sandbox.toloka.ai/profile) page:
+
+    ![Getting Toloker ID](../_images/register/add-trusted-toloker.png =370x)
+
+    {% endcut %}
 
     Only trusted Tolokers can access your tasks. The number of trusted Tolokers required for testing depends on the [overlap settings](dynamic-overlap.md).
 
@@ -127,3 +135,5 @@ To move projects from the sandbox to the production version:
 {% include [troubleshooting-cant-add-trusted-user](../_includes/troubleshooting/sandbox/cant-add-trusted-user.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}
