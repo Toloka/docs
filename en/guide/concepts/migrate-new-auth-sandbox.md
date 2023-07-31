@@ -46,7 +46,7 @@ Log in to the sandbox using the [legacy login page](https://sandbox.toloka.yande
 
 {% endcut %}
 
-Next time you log in, use the connected social account to do that.
+Next time you [log in](https://we.sandbox.toloka.ai/auth?role=TOLOKER), use the connected social account to do that.
 
 {% include [register-social-account-issues](../_includes/register/social-account-issues.md) %}
 

@@ -46,7 +46,7 @@ Log in using the **[Use Toloka legacy account](https://passport.toloka.ai/auth?o
 
 {% endcut %}
 
-Next time you log in, use the connected social account to do that.
+Next time you [log in](https://platform.sandbox.toloka.ai/auth?role=REQUESTER), use the connected social account to do that.
 
 {% include [register-social-account-issues](../_includes/register/social-account-issues.md) %}
 
