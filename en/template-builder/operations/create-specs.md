@@ -21,9 +21,11 @@ You can configure the specification automatically or manually. You can change th
 - Option enabled
 
   You can configure the specification manually. In this case, automatic detection of input and output data doesn't work.
+
   You may need to enable this option if:
-  * You don't want the specification version to be affected by changes in the instructions or other project fields.
-  * You have fields that you need but they become optional or are deleted after automatic generation.
+
+  - You don't want the specification version to be affected by changes in the instructions or other project fields.
+  - You have fields that you need but they become optional or are deleted after automatic generation.
 
 {% endlist %}
 
@@ -45,7 +47,7 @@ If automatic generation of specifications is enabled, the input data fields are 
   }
   ```
 
-- true/false
+- Boolean
 
   In this example, the `verdict` field with the **boolean** type will be created in the specification.
 
@@ -110,7 +112,7 @@ If automatic generation of specifications is enabled, the output data fields are
 
 {% list tabs %}
 
-- true/false
+- Boolean
 
   In this example, the specification will contain the `verdict` field with the **boolean** type.
 
@@ -276,6 +278,7 @@ There are two ways to edit the specification in project settings: using either r
       ```
 
   - Only Latin letters and numbers
+
       ```json
       "my_en_string": {
           "type": "string",
@@ -287,6 +290,7 @@ There are two ways to edit the specification in project settings: using either r
       ```
 
   - Only Cyrillic letters and numbers
+
       ```json
       "my_ru_string": {
           "type": "string",
@@ -298,6 +302,7 @@ There are two ways to edit the specification in project settings: using either r
       ```
 
   - Letters and characters without numbers
+
       ```json
       "my_number_string": {
           "type": "string",
@@ -309,6 +314,7 @@ There are two ways to edit the specification in project settings: using either r
       ```
 
   - Link from a specific site
+
       ```json
       "my_url": {
           "type": "string",
@@ -318,6 +324,7 @@ There are two ways to edit the specification in project settings: using either r
       ```
 
   - Phone number with the `+`, `-` and space characters
+
       ```json
       "my_phone_string": {
           "type": "string",
@@ -327,6 +334,7 @@ There are two ways to edit the specification in project settings: using either r
       ```
 
   - Email with the `@`, `-` and `.` characters
+
       ```json
       "my_mail_string": {
           "type": "string",
@@ -372,6 +380,7 @@ There are two ways to edit the specification in project settings: using either r
   {% cut "Numbers" %}
 
   - Integer from the specified range:
+
       ```json
       "my_integer": {
           "type": "integer",
@@ -382,6 +391,7 @@ There are two ways to edit the specification in project settings: using either r
       ```
 
   - Integer with a list of allowed values:
+
       ```json
       "my_integer": {
           "type": "integer",
@@ -391,6 +401,7 @@ There are two ways to edit the specification in project settings: using either r
       ```
 
   - Fractional number:
+
       ```json
       "my_float": {
           "type": "float",
@@ -403,6 +414,7 @@ There are two ways to edit the specification in project settings: using either r
   - A number with 0, 1, or 2 decimal places.
 
     To do this, choose the **string** type and use regular expression for validation. Note that the decimal separator is a comma:
+
       ```json
       "my_mail_string": {
           "type": "string",
@@ -461,12 +473,14 @@ There are two ways to edit the specification in project settings: using either r
   {% cut "Hidden field" %}
 
   The string a Toloker can't access:
+
   ```json
   "my_string": {
       "type": "string",
       "hidden": true
   }
   ```
+
   {% endcut %}
 
 {% endlist %}

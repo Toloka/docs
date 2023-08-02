@@ -87,6 +87,7 @@ View corrected example in the sandbox.
 To display a shortcut in the interface, set the shortcut to the same [action](../reference/actions.md) that is performed when the button is clicked.
 
 Assign an action to the component if you haven't yet:
+
 - [action.set](../reference/action.set.md) for radio buttons.
 - [action.toggle](../reference/action.toggle.md) for checkboxes.
 - [action.play-pause](../reference/action.play-pause.md) for playback control.

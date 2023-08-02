@@ -17,7 +17,9 @@ Unlike other components, [layout.side-by-side](../reference/layout.side-by-side.
 [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/pu9bV4003ttCMs)
 
 Instead of [layout.side-by-side](../reference/layout.side-by-side.md), you can use other components, for example:
+
 - [view.list](../reference/view.list.md): A list of any elements, vertical or horizontal.
+
 - [layout.columns](../reference/layout.columns.md): A set of horizontal columns that you can put the videos in. As opposed to [view.list](../reference/view.list.md), this component provides more options for column width setup.
 
 ## Parallel playback of two videos {#same-time-video}

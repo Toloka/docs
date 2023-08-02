@@ -13,6 +13,7 @@ Any [action component](../reference/actions.md). Components with the name `actio
 #### any
 
 Any value. Those might be:
+
 - Standard JSON elements: string, number, `true`, `false`, object, or array.
 - [Helpers](../reference/helpers.md) that return a value.
 - Other components, if allowed in the configuration.
@@ -52,6 +53,7 @@ A number without quotation marks. The separator of the fractional and integer pa
 #### object
 
 A list of `"key":value` pairs separated by commas. Enclosed in curly brackets `{}`.
+
 ```json
 {
   "name": "John",

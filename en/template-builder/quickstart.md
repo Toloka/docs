@@ -11,8 +11,11 @@ Open Template Builder.
 - In Toloka
 
   1. You must be registered in Toloka as a requester.
+
   1. Log in to [Toloka]({{ toloka }}).
+
   1. Start creating a new project in Toloka. Template Builder is integrated into Toloka and can be used for creating or editing projects.
+
   1. Select **Template Builder** in the **Task interface** section.
 
      {% cut "Where do I find it in the interface?" %}
@@ -92,6 +95,7 @@ JSON is insensitive to spaces and line breaks between JSON elements. You may omi
 Values may contain different data types:
 
 - `string`: A string enclosed in double quotes, such as `"Hello world"`.
+
     To add a quotation mark `"` or a backslash `\` to a string, add another backslash `\` to it. Don't escape quotation marks `” “` and `/`.
 
     {% cut "Examples" %}
