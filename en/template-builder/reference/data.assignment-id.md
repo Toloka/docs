@@ -1,4 +1,4 @@
-# @toloka/data.assignment-id
+# data.assignment-id
 
 This component returns the assignment ID.
 
