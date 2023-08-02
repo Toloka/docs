@@ -8,7 +8,7 @@ In [Toloka](../../index.md), shortcuts are particularly helpful because Tolokers
 
 Shortcuts are digits or letters shown next to buttons. Shortcuts help Tolokers do an action by pressing a key.
 
-![image](../_images/hotkeys-example.png)
+![image](../_images/hotkeys-example.png =106x)
 
 A shortcut is always added to a button if they do the same thing.
 

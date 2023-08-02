@@ -29,6 +29,7 @@ The list of properties is the same for all core components.
 
 To specify the path to the array element, specify its sequence number starting from zero, for example: `items.0`||
 ||`default`|[any](*any)|The value to use as the default data.
+
 This value will be shown in the interface, so it might hide some placeholders, for example, in the [field.text](../reference/field.text.md) component.||
 |#
 
