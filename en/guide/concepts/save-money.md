@@ -18,7 +18,7 @@ Use [decomposition](solution-architecture.md) to simplify the tasks:
 
 With this overlap setting, you can save on the number of Tolokers who complete your tasks, which means the total cost of pool labeling will be lower.
 
-## Review assignments {#post}
+## Use manual review {#post}
 
 [Manual review](offline-accept.md) allows you to check responses so you don't have to pay for poorly completed tasks.
 
@@ -28,13 +28,13 @@ Use manual review if:
 
 - You are sure that you have enough time to review the Tolokers' responses. Otherwise, when the period ends, responses that haven't been reviewed are accepted and paid for automatically.
 
-## Set up a random majority vote check {#mvote}
+## Set up a selective majority vote check {#mvote}
 
-You can set up a [random majority vote check](selective-mvote.md) for the general tasks. This helps you save money and speed up pool completion. You can set the period during which tasks with increased overlap will be displayed to the Toloker, depending on the number of completed tasks.
+You can set up a [selective majority vote check](selective-mvote.md) for the [general](../../glossary.md#general-task) tasks. This helps you save money and speed up pool completion. You can set the period during which tasks with increased overlap will be displayed to the Toloker, depending on the number of completed tasks.
 
 {% cut "Example" %}
 
-Let's say your pool's overlap is set to 3. You don't trust the responses of new Tolokers and want to check them further. In this case, you set up a random majority vote check. If the Toloker completed 10 tasks in the last 14 days, set overlap to 5 for every third task, and if the Toloker completed 20 tasks, set overlap to 5 for every fifth task.
+Let's say your pool's overlap is set to 3. You don't trust the responses of new Tolokers and want to check them further. In this case, you set up a selective majority vote check. If the Toloker completed 10 tasks in the last 14 days, set overlap to 5 for every third task, and if the Toloker completed 20 tasks, set overlap to 5 for every fifth task.
 
 Without this setting, you would be forced to set overlap to 5 for each task in the pool. And it would be more expensive to label all tasks with overlap = 5, as opposed to just some of the tasks.
 
@@ -42,7 +42,7 @@ Without this setting, you would be forced to set overlap to 5 for each task in t
 
 ## Set up dynamic pricing {#price-set}
 
-[Dynamic pricing](dynamic-pricing.md) lets you increase the price per task suite for Tolokers with a higher skill level. This way you can encourage Tolokers to do a better job.
+[Dynamic pricing](dynamic-pricing.md#section_ucl_3hl_vlb) lets you increase the price per task suite for Tolokers with a higher [skill](../../glossary.md#skill) level. This way you can encourage Tolokers to do a better job.
 
 In some cases, this setting makes labeling more expensive, like for tasks that don't require Tolokers to have high skills. In this case, there is no need to use dynamic pricing.
 
@@ -50,7 +50,7 @@ In some cases, this setting makes labeling more expensive, like for tasks that d
 
 Use the [Smart mixing](distribute-tasks-by-pages.md#smart-mixing) method and the **Allow partial task suites** option. This way you can save money on paying for incomplete task suites.
 
-## Conditionally free exams {#exams}
+## Use conditionally free exams {#exams}
 
 In Toloka, requesters pay for [exams](../../glossary.md#exam), including those that Tolokers didn't pass. This is a fee that a requester doesn't get any benefit from, because a Toloker failed the exam and won't be able to complete any of the general tasks.
 
@@ -71,7 +71,7 @@ In this case, you can set up automatic acceptance of tasks and automatic rejecti
 
 1. Select the **accept all assignments from this Toloker in the pool** value in the **then** field.
 
-1. Add a description of the new rule to the instructions.
+1. Add a description of the new rule to the [instructions](../../glossary.md#instructions).
 
 {% cut "Sample settings" %}
 
@@ -123,3 +123,13 @@ In addition to dynamic overlap, use `baseline_solutions` to speed up the overlap
 {% include [contact-support](../_includes/contact-support.md) %}
 
 {% include [image-styles](../../../_includes/image-styles-internal.md) %}
+
+## Troubleshooting {#troubleshooting}
+
+{% include [faq-set-task-price](../_includes/faq/finance/set-task-price.md) %}
+
+{% include [faq-set-up-budget](../_includes/faq/finance/set-up-budget.md) %}
+
+{% include [faq-view-my-expenses](../_includes/faq/finance/view-my-expenses.md) %}
+
+{% include [faq-tasks-with-different-prices](../_includes/faq/finance/tasks-with-different-prices.md) %}
