@@ -7,6 +7,7 @@ In this section, we'll show how you can [embed an audio player](#insert-to-inter
 ## Add an audio player to the interface {#insert-to-interface}
 
 To insert an audio file into the task interface, add the [view.audio](../reference/view.audio.md) component to the template. In the `url` property, specify a direct link to the file (we recommend that you use the MP3 format):
+
 ```json
 {
   "type": "view.audio",
@@ -27,6 +28,7 @@ To loop audio playback automatically, put `true` in the `loop` property.
 - Started listening
 
   To make sure that the Toloker played back the audio and at least started listening to it, use the `condition.played` component in the `validation` property.
+
   ```json
   {
     "type": "view.audio",
@@ -42,6 +44,7 @@ To loop audio playback automatically, put `true` in the `loop` property.
 - Listened completely
 
   To make sure that the Toloker listened to the entire recording, use the `condition.played-fully` component in the `validation` property.
+
   ```json
   {
     "type": "view.audio",

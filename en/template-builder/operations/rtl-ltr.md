@@ -5,7 +5,7 @@ To set the writing direction for content in blocks, use the `rtl` setting.
 ```json
 {
   "type": "view.text",
-  "content": "котики",
+  "content": "cats",
   "rtl": {
     "mode": "ltr"
   }

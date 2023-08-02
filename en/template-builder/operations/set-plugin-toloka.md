@@ -1,6 +1,7 @@
 # Configuring task display
 
 Use the `plugin.toloka` plugin to manage the settings for displaying tasks on the suite:
+
 ```json
 {
   "type": "plugin.toloka",

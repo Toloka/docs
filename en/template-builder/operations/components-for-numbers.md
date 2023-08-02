@@ -6,7 +6,7 @@ To add a number input field, use the [field.number](../reference/field.number.md
 
 By default, this field can contain decimal numbers. To enter integers, use validation:
 
-```
+```json
 "validation": {
   "type": "condition.schema",
   "schema": {
@@ -22,7 +22,7 @@ By default, this field can contain decimal numbers. To enter integers, use valid
 
 By default, you can enter both positive and negative numbers in this field. To prohibit negative numbers, use the `minimum` property:
 
-```
+```json
 "minimum": 0
 ```
 
