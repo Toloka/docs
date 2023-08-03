@@ -120,10 +120,6 @@ In addition to dynamic overlap, use `baseline_solutions` to speed up the overlap
 - [Crowdsourcing concepts: Decomposition](https://toloka.ai/knowledgebase/decomposition/)
 - [Template Builder: Configure keyboard shortcuts](../../template-builder/best-practices/hotkeys.md)
 
-{% include [contact-support](../_includes/contact-support.md) %}
-
-{% include [image-styles](../../../_includes/image-styles-internal.md) %}
-
 ## Troubleshooting {#troubleshooting}
 
 {% include [faq-set-up-budget](../_includes/faq/finance/set-up-budget.md) %}
@@ -131,3 +127,7 @@ In addition to dynamic overlap, use `baseline_solutions` to speed up the overlap
 {% include [faq-view-my-expenses](../_includes/faq/finance/view-my-expenses.md) %}
 
 {% include [faq-tasks-with-different-prices](../_includes/faq/finance/tasks-with-different-prices.md) %}
+
+{% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}
