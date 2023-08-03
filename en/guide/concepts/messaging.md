@@ -57,34 +57,40 @@ If the issue is related to how the platform works in general (such as money with
 
 ## How to write a message
 
-#### In the interface
+{% list tabs %}
 
-1. (Optional, required if you want to send a message to a group of Tolokers with a certain skill) [Assign a skill](nav-assign.md) to everyone who completed your tasks. The skill should be hidden.
+- In the interface
 
-1. Go to the [Messages]({{ messages }}) page and send notifications to Tolokers with the skill. To do this, click **Contact** → **Group of Tolokers** → **+ Add filter**.
+  1. (Optional, required if you want to send a message to a group of Tolokers with a certain skill) [Assign a skill](nav-assign.md) to everyone who completed your tasks. The skill should be hidden.
 
-1. Specify the subject of your message in the **Subject** field.
+  1. Go to the [Messages]({{ messages }}) page and send notifications to Tolokers with the skill. To do this, click **Contact** → **Group of Tolokers** → **+ Add filter**.
 
-1. Fill in the **Message text** field.
+  1. Specify the subject of your message in the **Subject** field.
 
-1. Select **Allows replies**.
+  1. Fill in the **Message text** field.
 
-1. Click **Submit**.
+  1. Select **Allows replies**.
 
-{% note tip "How to work via Toloka API" %}
+  1. Click **Submit**.
 
-To send a message using Toloka API, send a `POST` request with the information about the message and the recipients:
+- Via Toloka API
 
-```bash
-curl -X POST 'https://toloka.dev/api/v1/message-threads/compose' \
-     -H 'Authorization: ApiKey PlaceYourRealApiKey_Here' \
-     -H 'Content-Type: application/json' \
-     -d '{"topic":{"EN":"Thank you!"},"text":{"EN":"Amazing job! We have just trained our first model."},"recipients_select_type":"ALL","answerable":false}'
-```
+  To send a message using Toloka API, send a `POST` request with the information about the message and the recipients:
 
-Refer to the [Send message](https://toloka.ai/docs/api/api-reference/#post-/message-threads/compose) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests for [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
+  ```bash
+  curl -X POST 'https://toloka.dev/api/v1/message-threads/compose' \
+       -H 'Authorization: ApiKey PlaceYourRealApiKey_Here' \
+       -H 'Content-Type: application/json' \
+       -d '{"topic":{"EN":"Thank you!"},"text":{"EN":"Amazing job! We have just trained our first model."},"recipients_select_type":"ALL","answerable":false}'
+  ```
 
-{% endnote %}
+  {% note tip "Visit Toloka API reference" %}
+
+  Refer to the [Send message](https://toloka.ai/docs/api/api-reference/#post-/message-threads/compose) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests for [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
+
+  {% endnote %}
+
+{% endlist %}
 
 ## Recommendations
 
@@ -120,7 +126,7 @@ Open the **Notifications** tab in the [requester profile]({{ profile }}) and ena
 
 To mark a message as read, click ![](../_images/other/read.svg) to the left of its subject.
 
-To mark multiple messages at once, click {% if locale == "ru-ru" %}**Mark all as read**{% elsif locale == "en-com" %}**Mark all as read**{% endif %} above the message list.
+To mark multiple messages at once, click **Mark all as read** above the message list.
 
 ## See also {#see-also}
 

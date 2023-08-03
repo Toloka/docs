@@ -39,7 +39,7 @@ $q[i] = \frac{K+correct.golden.sets[i]}{2×K+total.golden.sets[i]}$
 
 Where:
 
-$K$ is a smoothing constant (starting from 0.5) if there are not enough responses to control tasks.
+- $K$ is a smoothing constant (starting from 0.5) if there are not enough responses to control tasks.
 
 If there are several estimates, the most popular task response is determined by adding together $q[i]$ of the Tolokers who selected each task response option. The task response with the largest total is considered more correct. Let's call this estimate $z[j]$.
 
@@ -49,7 +49,7 @@ A uniform distribution of estimates is assumed a priori. For the $z[x]$ the a pr
 
 where:
 
-$Y$ is the number of task response options.
+- $Y$ is the number of task response options.
 
 Next, we calculate the probability that the estimate $z[j]$ is correct.
 
@@ -59,9 +59,9 @@ $\frac{1-q[i]}{Y-1}$
 
 Where:
 
-$(1-q[i])$ is the remaining probability;
+- $(1-q[i])$ is the remaining probability;
 
-$(Y-1)$ is the number of remaining task responses.
+- $(Y-1)$ is the number of remaining task responses.
 
 It ensures that the probability of an error is distributed evenly among the remaining estimates.
 

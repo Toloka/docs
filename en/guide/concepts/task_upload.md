@@ -1,55 +1,78 @@
 # How to upload tasks
 
-To upload [file with tasks](../../glossary.md#tsv) to a [pool](pool-main.md):
+{% list tabs %}
 
-1. Go to the **Prepare and upload data** step if you're creating a pool or click the **Upload** button on the pool page.
+- In the interface
 
-1. Attach a prepared dataset or media files.
+  To upload [file with tasks](../../glossary.md#tsv) to a [pool](pool-main.md):
 
-    {% list tabs %}
+  1. Go to the **Prepare and upload data** step if you're creating a pool or click the **Upload** button on the pool page.
 
-    - A prepared dataset
+  1. Attach a prepared dataset or media files.
 
-      1. Download the template and replace the sample data in it with [your own data](pool_csv.md).
+      {% list tabs %}
 
-      1. Click **Select prepared dataset** and choose your [file with tasks](../../glossary.md#tsv).
+      - A prepared dataset
 
-      {% cut "Use sample data" %}
+        1. Download the template and replace the sample data in it with [your own data](pool_csv.md).
 
-      If you want to see what your project will look like after the launch, but you don't have any labeling tasks yet, you can upload ready-made sample data to the pool. Sample data is available for the templates:
+        1. Click **Select prepared dataset** and choose your [file with tasks](../../glossary.md#tsv).
 
-      - **Image classification**
-      - **Product search relevance**
-      - **Object recognition & detection**
-      - **Clickbait or not?**
+        {% cut "Use sample data" %}
 
-      Click **Use sample data** next to **Attach the prepared file with data**. This lets you avoid any additional actions with files.
+        If you want to see what your project will look like after the launch, but you don't have any labeling tasks yet, you can upload ready-made sample data to the pool. Sample data is available for the templates:
 
-      Once you've finished working with the sample data and everything looks good, prepare your data and upload it to the pool.
+        - **Image classification**
+        - **Product search relevance**
+        - **Object recognition & detection**
+        - **Clickbait or not?**
 
-      {% endcut %}
+        Click **Use sample data** next to **Attach the prepared file with data**. This lets you avoid any additional actions with files.
 
-    - Media files
+        Once you've finished working with the sample data and everything looks good, prepare your data and upload it to the pool.
 
-      {% include [media-files](../_includes/toloka-requester-source/id-toloka-requester-source/media-files.md) %}
+        {% endcut %}
 
-    {% endlist %}
+      - Media files
 
-1. Click **Continue**.
+        {% include [media-files](../_includes/toloka-requester-source/id-toloka-requester-source/media-files.md) %}
 
-1. Choose a way to put tasks into suites and specify the number of tasks per suite. For more information, see [Ways to group tasks in suites](distribute-tasks-by-pages.md).
+      {% endlist %}
 
-1. Click **Combine tasks into suites**.
+  1. Click **Continue**.
 
-1. Wait for the result.
+  1. Choose a way to put tasks into suites and specify the number of tasks per suite. For more information, see [Ways to group tasks in suites](distribute-tasks-by-pages.md).
 
-To delete all the tasks in the pool, click **Delete**.
+  1. Click **Combine tasks into suites**.
 
-{% note alert "Restriction" %}
+  1. Wait for the result.
 
-You can add up to one million tasks to the pool. To upload more tasks, create another pool.
+  To delete all the tasks in the pool, click **Delete**.
 
-{% endnote %}
+  {% note alert "Restriction" %}
+
+  You can add up to one million tasks to the pool. To upload more tasks, create another pool.
+
+  {% endnote %}
+
+- Via Toloka API
+
+  To upload tasks using Toloka API, send a `POST` request with the information about the tasks:
+
+  ```bash
+  curl -X POST 'https://toloka.dev/api/v1/tasks' \
+       -H 'Authorization: ApiKey PlaceYourRealApiKey_Here' \
+       -H 'Content-Type: application/json' \
+       -d '{"input_values":{"image":"https://example.com/image_example.png"},"known_solutions":[{"output_values":{"result":"pink"}}],"infinite_overlap":true,"pool_id":"1238218"}'
+  ```
+
+  {% note tip "Visit Toloka API reference" %}
+
+  Refer to the [Create single/multiple tasks](https://toloka.ai/docs/api/api-reference/#post-/tasks) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests for [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
+
+  {% endnote %}
+
+{% endlist %}
 
 ## Tips and recommendations {#tips}
 

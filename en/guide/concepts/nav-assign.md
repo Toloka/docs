@@ -30,17 +30,40 @@ You don't need to create this skill, it is created when you add the first traini
 
 ## Manually {#manual}
 
-1. Go to the [Tolokers]({{ users }}) page.
+{% list tabs %}
 
-1. Select the Tolokers to assign the skill to.
+- In the interface
 
-   {% include [select-tolokers](../_includes/select-tolokers.md) %}
+  1. Go to the [Tolokers]({{ users }}) page.
 
-1. Click **+Skill**.
+  1. Select the Tolokers to assign the skill to.
 
-1. Choose a skill and specify the skill value. If there is no skill, create it.
+    {% include [select-tolokers](../_includes/select-tolokers.md) %}
 
-1. Click **Save**.
+  1. Click **+Skill**.
+
+  1. Choose a skill and specify the skill value. If there is no skill, create it.
+
+  1. Click **Save**.
+
+- Via Toloka API
+
+  To assign a skill to a Toloker using Toloka API, send a `PUT` request with the specified skill values and the ID of the Toloker's skill, assigned to the "skill-Toloker" pair:
+
+  ```bash
+  curl -X PUT 'https://toloka.dev/api/v1/user-skills' \
+       -H 'Authorization: ApiKey PlaceYourRealApiKey_Here' \
+       -H 'Content-Type: application/json' \
+       -d '{"skill_id":"11051","user_id":"1ad097faba0eff85a04fe30bc04d53db","value":50}'
+  ```
+
+  {% note tip "Visit Toloka API reference" %}
+
+  Refer to the [Set skill](https://toloka.ai/docs/api/api-reference/#put-/user-skills) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests for [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
+
+  {% endnote %}
+
+{% endlist %}
 
 ## What's next {#what-next}
 

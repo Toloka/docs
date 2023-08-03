@@ -20,6 +20,21 @@ To create a pool:
 
 Tasks in pools will automatically be available in the web version of Toloka and the mobile app. If you want to change the default settings and limit the visibility of the task for any of the versions, add the **Client** filter and select the desired value: **Toloka web version** or **Toloka for mobile**.
 
+{% note tip "How to work via Toloka API" %}
+
+To create a pool using Toloka API, send a `POST` request with the information about the pool:
+
+```bash
+curl -X POST 'https://toloka.dev/api/v1/pools' \
+     -H 'Content-Type: application/json' \
+     -H 'Authorization: ApiKey PlaceYourRealApiKey_Here' \
+     -d '{"project_id":"83859","private_name":"First pool","will_expire":"2030-01-01T00:00:00.000Z","reward_per_assignment":0.05,"assignment_max_duration_seconds":300,"auto_accept_solutions":false,"defaults":{"default_overlap_for_new_task_suites":1}}'
+```
+
+Refer to the [Create pool](https://toloka.ai/docs/api/api-reference/#post-/pools) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests for [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
+
+{% endnote %}
+
 ### Pool parameters {#pool-params}
 
 #|
@@ -80,18 +95,14 @@ For example, you can use this parameter if you need an open pool where you regul
 ||**Min control tasks** | The minimum number of control tasks per suite when using smart mixing. | **Prepare and upload data**||
 ||**Min training tasks** | The minimum number of training tasks per suite when using smart mixing. | **Prepare and upload data**||
 ||**Number of tasks per suite** | The number of tasks per suite when using the **Set manually** method. | **Prepare and upload data**||
-||**Allow partial task suites** |
-{% include [smart-mixing-selected](../_includes/toloka-requester-source/id-toloka-requester-source/smart-mixing-selected.md) %}
+||**Allow partial task suites** |{% include [smart-mixing-selected](../_includes/toloka-requester-source/id-toloka-requester-source/smart-mixing-selected.md) %}
 
 The setting determines the output in the last task suite if it has less than the required number of general tasks.
 
-By default, the option is enabled.
-| **Prepare and upload data**||
-||**Keep task order from uploaded data** |
-{% include [smart-mixing-selected](../_includes/toloka-requester-source/id-toloka-requester-source/smart-mixing-selected.md) %}
+By default, the option is enabled.| **Prepare and upload data**||
+||**Keep task order from uploaded data** |{% include [smart-mixing-selected](../_includes/toloka-requester-source/id-toloka-requester-source/smart-mixing-selected.md) %}
 
-{% include [keep-task-order](../_includes/toloka-requester-source/id-toloka-requester-source/keep-task-order.md) %}
-|**Prepare and upload data**||
+{% include [keep-task-order](../_includes/toloka-requester-source/id-toloka-requester-source/keep-task-order.md) %}|**Prepare and upload data**||
 |#
 
 {% include [project-moderation](../_includes/toloka-requester-source/id-toloka-requester-source/project-moderation.md) %}
@@ -106,7 +117,9 @@ A single project card is displayed if the pools in it differ only by name, quali
 
 {% cut "Tolokers see one project card" %}
 
-For example, you create "Pool 1" and "Pool 2" with the same settings in the "Are there traffic signs in the photo?" project. If the Toloker has access to both pools, they are displayed as a single card on the main page. ![](../_images/other/toloka-1pool.png)
+For example, you create "Pool 1" and "Pool 2" with the same settings in the "Are there traffic signs in the photo?" project. If the Toloker has access to both pools, they are displayed as a single card on the main page.
+
+![](../_images/other/toloka-1pool.png)
 
 {% endcut %}
 
@@ -120,7 +133,9 @@ This is useful if you want to combine tasks in pools by subject, duration of aud
 
 {% cut "Tolokers see several project cards" %}
 
-In this example, the Toloker has access to two pools with different prices and descriptions, so there are two project cards on the main page. The Toloker can choose any of them — for example, the one with the higher price. ![](../_images/other/toloka-2pools.png)
+In this example, the Toloker has access to two pools with different prices and descriptions, so there are two project cards on the main page. The Toloker can choose any of them — for example, the one with the higher price.
+
+![](../_images/other/toloka-2pools.png)
 
 {% endcut %}
 
