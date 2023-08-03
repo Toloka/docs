@@ -240,6 +240,21 @@ If the price per task suite is zero, you must select the pool type.
 
 {% endnote %}
 
+{% note tip "How to work via Toloka API" %}
+
+To edit a pool using Toloka API, send a `PUT` request with all the pool parameters including the ones you want to modify:
+
+```bash
+curl -X PUT 'https://toloka.dev/api/v1/pools/32267581' \
+     -H 'Content-Type: application/json' \
+     -H 'Authorization: ApiKey PlaceYourRealApiKey_Here' \
+     -d '{"id":"32267581","project_id":"81776","private_name":"Transcript of audio recordings","may_contain_adult_content":true,"will_expire":"2023-03-09T00:00:00","auto_close_after_complete_delay_seconds":0,"reward_per_assignment":0.070,"metadata":{},"assignment_max_duration_seconds":600,"auto_accept_solutions":true,"auto_accept_period_day":21,"assignments_issuing_config":{"issue_task_suites_in_creation_order":false},"filter":{"and":[{"or":[{"category":"profile","key":"languages","operator":"IN","value":"EN"}]}]},"quality_control":{"configs":[{"collector_config":{"type":"ASSIGNMENT_SUBMIT_TIME","uuid":"38830d4b-930b-43ab-a98f-f52e992fd11a","parameters":{"fast_submit_threshold_seconds":15}},"rules":[{"conditions":[{"key":"fast_submitted_count","operator":"GTE","value":2}],"action":{"type":"RESTRICTION_V2","parameters":{"scope":"PROJECT","duration_unit":"PERMANENT"}}}]}]},"defaults":{"default_overlap_for_new_task_suites":3},"priority":0,"owner":{"id":"6c6e20dc86cca2ae787afcb2629de162","myself":true},"type":"REGULAR","status":"OPEN","created":"2022-03-10T07:41:53.626","speed_quality_balance":{"percent":100,"type":"TOP_PERCENTAGE_BY_QUALITY"}}'
+```
+
+Refer to the [Edit pool](https://toloka.ai/docs/api/api-reference/#put-/pools/-id-) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests for [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
+
+{% endnote %}
+
 ## What's next {#what_next}
 
 - [Add tasks to the pool](pool.md)

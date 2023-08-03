@@ -4,17 +4,40 @@ You can both edit the skill itself and change the skill values for a specific To
 
 ## Changing the skill value for a Toloker {#value-edit}
 
-1. Go to the [Tolokers]({{ users }}) page.
+{% list tabs %}
 
-1. Select the Tolokers to change the skill value for.
+- In the interface
 
-   {% include [select-tolokers](../_includes/select-tolokers.md) %}
+  1. Go to the [Tolokers]({{ users }}) page.
 
-1. Hover over the skill line and click ![](../_images/edit.svg).
+  1. Select the Tolokers to change the skill value for.
 
-1. Enter the new skill value.
+      {% include [select-tolokers](../_includes/select-tolokers.md) %}
 
-1. Click **Save**.
+  1. Hover over the skill line and click ![](../_images/edit.svg).
+
+  1. Enter the new skill value.
+
+  1. Click **Save**.
+
+- Via Toloka API
+
+  To edit a skill using Toloka API, send a `PUT` request with all the skill parameters including the ones you want to modify:
+
+  ```bash
+  curl -X PUT 'https://toloka.dev/api/v1/skills/11294' \
+       -H 'Authorization: ApiKey PlaceYourRealApiKey_Here' \
+       -H 'Content-Type: application/json' \
+       -d '{"name":"Programmer","public_name":{"EN":"Programmer"},"public_requester_description":{"EN":"You are an expert in programming languages"},"private_comment":"Got at least 5 right responses on control tasks with C++ or Python","hidden":true,"deprecated":false}'
+  ```
+
+  {% note tip "Visit Toloka API reference" %}
+
+  Refer to the [Edit skill](https://toloka.ai/docs/api/api-reference/#put-/skills/-id-) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests for [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
+
+  {% endnote %}
+
+{% endlist %}
 
 ## Editing the skill parameters {#reward-edit}
 

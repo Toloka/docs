@@ -74,6 +74,21 @@ If your project assumes the collection of any personal data, provide the informa
 
 If you want labeling to be done by Tolokers from different countries, you can [translate your project into their native languages](project-languages.md).
 
+{% note tip "How to work via Toloka API" %}
+
+To edit a project using Toloka API, send a `PUT` request with all the project parameters including the ones you want to modify:
+
+```bash
+curl -X PUT 'https://toloka.dev/api/v1/projects/118252' \
+     -H 'Content-Type: application/json' \
+     -H 'Authorization: ApiKey PlaceYourRealApiKey_Here' \
+     -d '{"id":"118252","public_name":"Elephant color (advanced)","public_description":"What color is the elephant in the picture?","public_instructions":"<p>Look at the picture and decide what color the elephant is.</p> You can zoom in or out using the buttons:</p> <img src=\"disc/img1.png>\"","private_comment":"My first project","task_spec":{"input_spec":{"image":{"type":"URL","required":true,"hidden":false}},"output_spec":{"result":{"type":"string","required":true,"hidden":false}},"view_spec":{"assets":{"script_urls":["library1.js","library2.js"]},"markup":"<task interface code>","script":"<JavaScript code>","styles":"<CSS code>","settings":{"showSkip":true,"showTimer":true,"showTitle":true,"showSubmit":true,"showFullscreen":true,"showInstructions":true,"showFinish":true,"showMessage":true,"showReward":true}}},"assignments_issuing_type":"AUTOMATED","assignments_automerge_enabled":false,"max_active_assignments_count":15,"quality_control":{"configs":[{"collector_config":{"type":"SKIPPED_IN_ROW_ASSIGNMENTS"},"rules":[{"conditions":[{"key":"skipped_in_row_count","operator":"GTE","value":10}],"action":{"type":"REJECT_ALL_ASSIGNMENTS","parameters":{"public_comment":"Skipped more than 10 task suites in a row"}}}]}]},"localization_config":{"default_language":"EN"}}'
+```
+
+Refer to the [Edit project](https://toloka.ai/docs/api/api-reference/#put-/projects/-id-) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests for [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
+
+{% endnote %}
+
 ## What's next {#what-next}
 
 - [Create a task pool](pool-main.md) in the project.

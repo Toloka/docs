@@ -1,22 +1,50 @@
 # Starting and stopping a task pool
 
-You can start a [pool](../../glossary.md#pool) if:
+{% list tabs %}
 
-1. You uploaded tasks into it.
+- In the interface
 
-1. You have enough money in [your account](budget.md) to pay for the pool tasks, including the [overlap](../../glossary.md#overlap).
+  You can start a [pool](../../glossary.md#pool) if:
 
-To start the pool, click ![](../_images/other/b-start-pool.svg) on the pool page or ![](../_images/tutorials/content-moderation/pool-action-play.svg) in the list of pools on the [project](../../glossary.md#project) page.
+  1. You uploaded tasks into it.
 
-A started pool has the **Labeling** status. When all pool tasks are completed, the pool automatically switches to the **Labeled** status.
+  1. You have enough money in [your account](budget.md) to pay for the pool tasks, including the [overlap](../../glossary.md#overlap).
 
-To stop assigning the pool tasks before all of them are completed, click ![](../_images/other/b-pause-pool.svg) on the pool page or ![](../_images/tutorials/content-moderation/pool-action-pause.svg) in the list of pools on the project page.
+  To start the pool, click ![](../_images/other/b-start-pool.svg) on the pool page or ![](../_images/tutorials/content-moderation/pool-action-play.svg) in the list of pools on the [project](../../glossary.md#project) page.
 
-{% note tip %}
+  A started pool has the **Labeling** status. When all pool tasks are completed, the pool automatically switches to the **Labeled** status.
 
-New tasks can be uploaded to an open or closed pool.
+  To stop assigning the pool tasks before all of them are completed, click ![](../_images/other/b-pause-pool.svg) on the pool page or ![](../_images/tutorials/content-moderation/pool-action-pause.svg) in the list of pools on the project page.
 
-{% endnote %}
+  {% note tip %}
+
+  New tasks can be uploaded to an open or closed pool.
+
+  {% endnote %}
+
+- Via Toloka API
+
+  To start a pool using Toloka API, send a `POST` request with the ID of the pool specified:
+
+  ```bash
+  curl -X POST 'https://toloka.dev/api/v1/pools/32267581/open' \
+       -H 'Authorization: ApiKey PlaceYourRealApiKey_Here'
+  ```
+
+  To stop a pool using Toloka API, send a `POST` request with the ID of the pool specified:
+
+  ```bash
+  curl -X POST 'https://toloka.dev/api/v1/pools/32267581/close' \
+       -H 'Authorization: ApiKey PlaceYourRealApiKey_Here'
+  ```
+
+  {% note tip "Visit Toloka API reference" %}
+
+  Refer to the [Open pool](https://toloka.ai/docs/api/api-reference/#post-/pools/-id-/open) and [Close pool](https://toloka.ai/docs/api/api-reference/#post-/pools/-id-/close) sections of the Toloka API documentation for more details about the requests, their parameters, and possible responses. You will find examples of the requests for [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
+
+  {% endnote %}
+
+{% endlist %}
 
 ## What's next {#what_next}
 

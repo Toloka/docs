@@ -1,18 +1,39 @@
 # Remove a skill
 
-You can remove a skill only manually. It can't be done using quality control rules.
+{% list tabs %}
 
-1. Go to the [Tolokers]({{ users }}) page.
+- In the interface
 
-1. Select the Tolokers to remove the skill from.
+  You can remove a skill only manually. It can't be done using quality control rules.
 
-    {% include [select-tolokers](../_includes/select-tolokers.md) %}
+  1. Go to the [Tolokers]({{ users }}) page.
 
-1. Click **-Skill**.
+  1. Select the Tolokers to remove the skill from.
 
-1. Select a skill.
+      {% include [select-tolokers](../_includes/select-tolokers.md) %}
 
-1. Click **Delete**.
+  1. Click **-Skill**.
+
+  1. Select a skill.
+
+  1. Click **Delete**.
+
+- Via Toloka API
+
+  To remove a skill from a Toloker using Toloka API, send a `DELETE` request with the specified ID of the skill you want to remove that is assigned to the "skill-Toloker" pair:
+
+  ```bash
+  curl -X DELETE 'https://toloka.dev/api/v1/user-skills/54116339' \
+       -H 'Authorization: ApiKey PlaceYourRealApiKey_Here'
+  ```
+
+  {% note tip "Visit Toloka API reference" %}
+
+  Refer to the [Remove skill from Toloker](https://toloka.ai/docs/api/api-reference/#delete-/user-skills/-id-) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests for [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
+
+  {% endnote %}
+
+{% endlist %}
 
 ## See also {#see-also}
 

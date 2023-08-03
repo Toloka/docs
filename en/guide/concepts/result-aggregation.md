@@ -8,47 +8,53 @@ If you run the [pool](../../glossary.md#pool) with the manual review, make sure 
 
 {% endnote %}
 
-#### In the interface
+{% list tabs %}
 
-1. Open the [pool](pool-main.md).
+- In the interface
 
-1. Click ![Drop-down button](../_images/other/drop-down.svg) next to the **Download results** button.
+  1. Open the [pool](pool-main.md).
 
-1. Choose the aggregation method:
+  1. Click ![Drop-down button](../_images/other/drop-down.svg) next to the **Download results** button.
 
-    - [Dawid-Skene aggregation model](#dawid-skene)
-    - [Aggregation by skill](#aggr-by-skill)
+  1. Choose the aggregation method:
 
-Aggregation takes from several minutes to several hours. Track the progress on the [Operations]({{ operations }}) page. When aggregation is complete, download the file with the results.
+      - [Dawid-Skene aggregation model](#dawid-skene)
+      - [Aggregation by skill](#aggr-by-skill)
 
-To receive notifications and emails when results aggregation is completed, set up notifications:
+  Aggregation takes from several minutes to several hours. Track the progress on the [Operations]({{ operations }}) page. When aggregation is complete, download the file with the results.
 
-1. Log in to your account.
+  To receive notifications and emails when results aggregation is completed, set up notifications:
 
-1. Go to **Profile → Notifications → Pool or aggregation completed**
+  1. Log in to your account.
 
-1. Choose the notification method:
+  1. Go to **Profile → Notifications → Pool or aggregation completed**
 
-    - Email: Messages will be sent to your email address.
+  1. Choose the notification method:
 
-    - Messages: Notifications will be displayed under **Messages** in your account. Apart from you, those who set up [shared access](multiple-access.md) to your account can see them.
+      - Email: Messages will be sent to your email address.
 
-    - Browser: Notifications will be sent to the devices that you logged in to your account from.
+      - Messages: Notifications will be displayed under **Messages** in your account. Apart from you, those who set up [shared access](multiple-access.md) to your account can see them.
 
-{% note tip "How to work via Toloka API" %}
+      - Browser: Notifications will be sent to the devices that you logged in to your account from.
 
-To aggregate responses to all completed tasks in the pool using Toloka API, send a `POST` request with the parameters of aggregation:
+- Via Toloka API
 
-```bash
-curl -X POST 'https://toloka.dev/api/v1/aggregated-solutions/aggregate-by-pool' \
-     -H 'Authorization: ApiKey PlaceYourRealApiKey_Here' \
-     -H 'Content-Type: application/json' \
-     -d '{"pool_id":"1238218", "type":"WEIGHTED_DYNAMIC_OVERLAP", "answer_weight_skill_id":"91dbfd8f1bc3310fbbbd09f64b8ab6e5", "fields":[{"name":"result"}]}'
-```
+  To aggregate responses to all completed tasks in the pool using Toloka API, send a `POST` request with the parameters of aggregation:
 
-Refer to the [Aggregate responses in pool](https://toloka.ai/docs/api/api-reference/#post-/aggregated-solutions/aggregate-by-pool) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests for [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
+  ```bash
+  curl -X POST 'https://toloka.dev/api/v1/aggregated-solutions/aggregate-by-pool' \
+       -H 'Authorization: ApiKey PlaceYourRealApiKey_Here' \
+       -H 'Content-Type: application/json' \
+       -d '{"pool_id":"1238218", "type":"WEIGHTED_DYNAMIC_OVERLAP", "answer_weight_skill_id":"91dbfd8f1bc3310fbbbd09f64b8ab6e5", "fields":[{"name":"result"}]}'
+  ```
 
-{% endnote %}
+  {% note tip "Visit Toloka API reference" %}
+
+  Refer to the [Aggregate responses in pool](https://toloka.ai/docs/api/api-reference/#post-/aggregated-solutions/aggregate-by-pool) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests for [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
+
+  {% endnote %}
+
+{% endlist %}
 
 ## Dawid-Skene aggregation model {#dawid-skene}
 

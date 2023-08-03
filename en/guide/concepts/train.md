@@ -42,15 +42,40 @@ If the training pool functionality doesn't meet your needs, create a main pool a
 
 ## How do I create a training pool? {#create-train}
 
-1. Open the [project](../../glossary.md#project) page.
+{% list tabs %}
 
-1. Go to the **Training** tab.
+- In the interface
 
-1. Click the **Add training** button.
+  1. Open the [project](../../glossary.md#project) page.
 
-1. Fill in the [training settings](train.md) fields.
-    You can use the **Retry after** field to set up [repeated training](train.md).
-1. Click **Save training**.
+  1. Go to the **Training** tab.
+
+  1. Click the **Add training** button.
+
+  1. Fill in the [training settings](train.md) fields.
+
+      You can use the **Retry after** field to set up [repeated training](train.md).
+
+  1. Click **Save training**.
+
+- Via Toloka API
+
+  To create a training pool using Toloka API, send a `POST` request with the information about the training:
+
+  ```bash
+  curl -X POST 'https://toloka.dev/api/v1/trainings/' \
+       -H 'Authorization: ApiKey PlaceYourRealApiKey_Here' \
+       -H 'Content-Type: application/json' \
+       -d '{"project_id":"118252", "private_name":"Simple training pool", "may_contain_adult_content":false, "assignment_max_duration_seconds":600, "mix_tasks_in_creation_order":true, "shuffle_tasks_in_task_suite":true, "training_tasks_in_task_suite_count":3, "task_suites_required_to_pass":1, "retry_training_after_days":7, "inherited_instructions":true, "public_instructions":""}'
+  ```
+
+  {% note tip "Visit Toloka API reference" %}
+
+  Refer to the [Create training pool](https://toloka.ai/docs/api/api-reference/#post-/trainings) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests for [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
+
+  {% endnote %}
+
+{% endlist %}
 
 ## After you created a training pool {#after-creating}
 
@@ -173,9 +198,32 @@ By default, archived training pools are not visible in the list of project train
 
 The training pool is automatically archived if no action is performed in it for 30 days.
 
-To archive a training pool manually, click **![Drop-down button](../_images/drop-down.svg) → Archive** at the top of the pool page or ![](../_images/other/pool-action-archive.svg) in the list of training options on the project page.
+To archive a training pool manually:
 
-If these buttons don't work, make sure that all the main pools that the training pool is linked to are [sent to the archive](pool-archive.md).
+{% list tabs %}
+
+- In the interface
+
+  Click **![Drop-down button](../_images/drop-down.svg) → Archive** at the top of the pool page or ![](../_images/other/pool-action-archive.svg) in the list of training options on the project page.
+
+  If these buttons don't work, make sure that all the main pools that the training pool is linked to are [sent to the archive](pool-archive.md).
+
+- Via Toloka API
+
+  To archive a training pool using Toloka API, send a `POST` request with the specified ID of the training pool you want to archive:
+
+  ```bash
+  curl -X POST 'https://toloka.dev/api/v1/trainings/1245598/archive' \
+       -H 'Authorization: ApiKey PlaceYourRealApiKey_Here'
+  ```
+
+  {% note tip "Visit Toloka API reference" %}
+
+  Refer to the [Archive training pool](https://toloka.ai/docs/api/api-reference/#post-/trainings/-id-/archive) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests for [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
+
+  {% endnote %}
+
+{% endlist %}
 
 ## What's next {#what_next}
 
@@ -225,8 +273,6 @@ If these buttons don't work, make sure that all the main pools that the training
 {% include [faq-training-without-correct-responses](../_includes/faq/adding-tasks-to-the-pool/training-without-correct-responses.md) %}
 
 {% include [faq-manual-review-training](../_includes/faq/adding-tasks-to-the-pool/manual-review-training.md) %}
-
-{% endcut %}
 
 {% endcut %}
 
