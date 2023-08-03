@@ -96,7 +96,7 @@ If you think that this number is too large or small, you may have incorrectly co
 
 - [Dynamic overlap](dynamic-overlap.md) (incremental relabeling, IRL).
 
-- [Random majority vote check](selective-mvote.md).
+- [Selective majority vote check](selective-mvote.md).
 
 {% endcut %}
 ||
