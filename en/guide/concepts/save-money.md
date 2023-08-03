@@ -9,7 +9,7 @@ Use [decomposition](solution-architecture.md) to simplify the tasks:
 - Simpler [tasks](../../glossary.md#task) cost less.
 - If a task is complex, you won't get good results immediately. Instead, you'll have to resend tasks to the [pool](../../glossary.md#pool) so that other Tolokers can redo them.
 
-## Use dynamic overlap {#din-price}
+## Use dynamic overlap {#dynamic-overlap}
 
 [Dynamic overlap](dynamic-overlap.md) lets you change [overlap](../../glossary.md#overlap) depending on:
 
@@ -30,7 +30,7 @@ Use manual review if:
 
 ## Set up a selective majority vote check {#mvote}
 
-You can set up a [selective majority vote check](selective-mvote.md) for the [general](../../glossary.md#general-task) tasks. This helps you save money and speed up pool completion. You can set the period during which tasks with increased overlap will be displayed to the Toloker, depending on the number of completed tasks.
+You can set up a [selective majority vote check](selective-mvote.md) for the [general tasks](../../glossary.md#general-task). This helps you save money and speed up pool completion. You can set the period during which tasks with increased overlap will be displayed to the Toloker, depending on the number of completed tasks.
 
 {% cut "Example" %}
 
@@ -125,8 +125,6 @@ In addition to dynamic overlap, use `baseline_solutions` to speed up the overlap
 {% include [image-styles](../../../_includes/image-styles-internal.md) %}
 
 ## Troubleshooting {#troubleshooting}
-
-{% include [faq-set-task-price](../_includes/faq/finance/set-task-price.md) %}
 
 {% include [faq-set-up-budget](../_includes/faq/finance/set-up-budget.md) %}
 
