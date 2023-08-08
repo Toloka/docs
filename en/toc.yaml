@@ -612,9 +612,9 @@ items:
                         href: https://toloka.ai/docs/api/api-reference/#tag--assignment
                       - name: Get list of responses
                         href: https://toloka.ai/docs/api/api-reference/#get-/assignments
-                      - name: Get response by ID
+                      - name: Get task suite response by ID
                         href: https://toloka.ai/docs/api/api-reference/#get-/assignments/-id-
-                      - name: Update response
+                      - name: Update task suite response
                         href: https://toloka.ai/docs/api/api-reference/#patch-/assignments/-id-
                   - name: Attachment
                     items:

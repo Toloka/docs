@@ -6022,13 +6022,17 @@ components:
             The type of action:
 
             - `RESTRICTION` — Ban access to projects or pools.
+
             - `SET_SKILL_FROM_OUTPUT_FIELD` — Set the “percentage of correct task responses” as the skill value (used in control tasks and majority vote rules).
 
-            You can use the skill value for filtering Tolokers.
+                You can use the skill value for filtering Tolokers.
 
             - `APPROVE_ALL_ASSIGNMENTS` — Accept all Toloker responses. For example, if the Toloker completes most tasks well and you are satisfied with this result.
+
             - `CHANGE_OVERLAP` — Change the overlap. For example, to re-assign a task suite to other Tolokers or cancel the recompletion of already accepted assignments.
+
             - `REJECT_ALL_ASSIGNMENTS` — Reject all Toloker responses. For example, after a certain number of Toloker responses, it became clear that the Toloker completed tasks poorly.
+
             - `SET_SKILL` — Assign the specified constant value to the skill.
           enum:
             - APPROVE_ALL_ASSIGNMENTS

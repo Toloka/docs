@@ -109,8 +109,7 @@ Array of quality control settings. ||
 Parameters for collecting statistics (for example, the number of tasks skipped in the pool). ||
 || `configs[].collector_config.type` | _string_ \| **required**
 
-{% include [quality-control-criteria](../_includes/quality-control-list.md) %}
-||
+{% include [quality-control-criteria](../_includes/quality-control-list.md) %}||
 || `configs[].collector_config.parameters` | _object_ \| **required if**
 
 Required if `configs[].collector_config.type` is equal to one of the values:
@@ -154,7 +153,7 @@ Type of action:
 - `RESTRICTION` — Ban access to projects or pools.
 - `SET_SKILL_FROM_OUTPUT_FIELD` — Set the "percentage of correct responses" as the skill value (used in [control tasks](goldenset.md) and [majority vote](mv.md) rules).
 
-  You can use the skill value for filtering Tolokers.
+    You can use the skill value for filtering Tolokers.
 
 - `CHANGE_OVERLAP` — Change the overlap. For example, to re-assign a task suite to other Tolokers or cancel the recompletion of already accepted assignments.
 - `REJECT_ALL_ASSIGNMENTS` — Reject all Toloker responses. For example, after a certain number of Toloker responses, it became clear that the Toloker completed tasks poorly.
