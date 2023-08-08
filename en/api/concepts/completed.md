@@ -115,17 +115,8 @@ Array of quality control settings. ||
 Parameters for collecting statistics (for example, the number of tasks skipped in the pool). ||
 || `configs[].collector_config.type` | _string_ \| **required**
 
-Criteria for the quality control rule:
-
-- `GOLDEN_SET` — The number of correct and incorrect responses in the control tasks.
-- `MAJORITY_VOTE` — The percentage of responses that matched the majority vote.
-- `INCOME` — Payment for tasks completed by the Toloker over the past 24 hours.
-- `SKIPPED_IN_ROW_ASSIGNMENTS` — The number of task suites skipped in a row.
-- `ANSWER_COUNT` — The number of task suites completed by the Toloker in the pool.
-- `ASSIGNMENT_SUBMIT_TIME` — The number of "fast" responses (the minimum response speed is set in the parameters).
-- `ACCEPTANCE_RATE` — The percentage of Toloker responses that were rejected during manual review.
-- `ASSIGNMENTS_ASSESSMENT` — The number of assignments accepted or rejected with manual review enabled.
-- `USERS_ASSESSMENT` — The Toloker's skill value and their bans. ||
+{% include [quality-control-criteria](../_includes/quality-control-list.md) %}
+||
 || `configs[].collector_config.parameters` | _object_ \| **required if**
 
 Required if `configs[].collector_config.type` is equal to one of the values:

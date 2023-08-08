@@ -14,7 +14,7 @@ This example was created in the sandbox. Therefore, you need to complete tasks a
 
 If at least one task from the pool is completed, you can get responses.
 
-In the example given, Tolokers were not required to upload any files as a response to tasks. Therefore, you can get the responses themselves.
+In the example given, Tolokers were not required to upload any files as a task responses. Therefore, you can get the responses themselves.
 
 ## Get responses {#get-responses}
 
@@ -55,7 +55,7 @@ Next, use the `GET` [method](https://toloka.ai/docs/api/api-reference/#get-/assi
 
 ### Response {#get-responses}
 
-Toloker responses are returned in the `items` array in the following format:
+Toloker task suite responses are returned in the `items` array in the following format:
 
 ```json
 {
