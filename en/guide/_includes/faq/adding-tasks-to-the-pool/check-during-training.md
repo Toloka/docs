@@ -8,6 +8,6 @@ However, the mere fact that a Toloker completes your training pool successfully 
 
 Besides the training, be sure to add quality control rules and [control tasks](../../../../guide/concepts/control.md) to your main pools. This way you can ensure the quality throughout the task performance process.
 
-If the task requires that the Tolokers send free-format responses or data files, use manual review to pay for tasks after they are reviewed.
+If the task requires that the Tolokers send free-format task responses or data files, use manual review to pay for tasks after they are reviewed.
 
 {% endcut %}

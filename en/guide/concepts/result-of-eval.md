@@ -6,72 +6,101 @@ If tasks were distributed with an [overlap](../../glossary.md#overlap) of more t
 
 ## Getting the file with responses {#tsv}
 
-#### In the interface
+{% list tabs %}
 
-To get a file with Tolokers' responses, click the **Download results** button on the [pool](../../glossary.md#pool) page.
+- In the interface
 
-{% note alert %}
+  To get a file with Tolokers' responses, click the **Download results** button on the [pool](../../glossary.md#pool) page.
 
-The responses submitted by the banned Toloker before the ban will be taken into account and paid for. To exclude their responses from the results and aggregations, select the option **Exclude assignments from banned users**. It will delete the responses from users who were banned at the moment of downloading the results, not when the pool was labeled.
+  {% note alert %}
 
-{% endnote %}
+  The responses submitted by the banned Toloker before the ban will be taken into account and paid for. To exclude their responses from the results and aggregations, select the option **Exclude assignments from banned users**. It will delete the responses from users who were banned at the moment of downloading the results, not when the pool was labeled.
 
-The fields in the file with responses:
+  {% endnote %}
 
-- `INPUT:<name of the input data field>` — Input data for tasks.
+  The fields in the file with responses:
 
-- `OUTPUT:<name of the output data field>` — The Tolokers' responses. For [training tasks](../../glossary.md#training-task), the field includes first attempted answers.
+  - `INPUT:<name of the input data field>` — Input data for tasks.
 
-- `GOLDEN:<name of the output data field>` — Responses for [control tasks](../../glossary.md#control-task).
+  - `OUTPUT:<name of the output data field>` — The Tolokers' responses. For [training tasks](../../glossary.md#training-task), the field includes first attempted answers.
 
-- `HINT:text` — Hints for training tasks.
+  - `GOLDEN:<name of the output data field>` — Responses for [control tasks](../../glossary.md#control-task).
 
-- Information about the task completion (the same for all tasks on the page):
+  - `HINT:text` — Hints for training tasks.
 
-    - `ASSIGNMENT:link` — Link for viewing the [task suite](../../glossary.md#task-suite).
+  - Information about the task completion (the same for all tasks on the page):
 
-    - `ASSIGNMENT:assignment_id` — ID of the assigned task suite.
+      - `ASSIGNMENT:link` — Link for viewing the [task suite](../../glossary.md#task-suite).
 
-    - `ASSIGNMENT:worker_id` — ID of the Toloker who completed the task.
+      - `ASSIGNMENT:assignment_id` — ID of the assigned task suite.
 
-    - `ASSIGNMENT:started` — Date and time the task suite was assigned.
+      - `ASSIGNMENT:worker_id` — ID of the Toloker who completed the task.
 
-    - `ASSIGNMENT:status` — Task status: `SUBMITTED` — completed, `APPROVED` — accepted, `REJECTED` — declined.
+      - `ASSIGNMENT:started` — Date and time the task suite was assigned.
 
-A sample file:
+      - `ASSIGNMENT:status` — Task status: `SUBMITTED` — completed, `APPROVED` — accepted, `REJECTED` — declined.
 
-![](../_images/results/tsv-result.png)
+  A sample file:
 
-{% note tip "How to work via Toloka API" %}
+  ![](../_images/results/tsv-result.png)
 
-To get the list of the responses using Toloka API, send a `GET` request with either `pool_id`, `task_suite_id`, or `task_id` specified:
+- Via Toloka API
 
-```bash
-curl -X GET 'https://toloka.dev/api/v1/assignments?pool_id=1085757' \
-     -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here'
-```
+  To get the list of the responses using Toloka API, send a `GET` request with either `pool_id`, `task_suite_id`, or `task_id` specified:
 
-Refer to the [Get list of responses](https://toloka.ai/docs/api/api-reference/#get-/assignments) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests for [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
+  ```bash
+  curl -X GET 'https://toloka.dev/api/v1/assignments?pool_id=1085757' \
+       -H 'Authorization: ApiKey PlaceYourRealApiKey_Here'
+  ```
 
-{% endnote %}
+  {% note tip "Visit Toloka API reference" %}
+
+  Refer to the [Get list of responses](https://toloka.ai/docs/api/api-reference/#get-/assignments) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests for [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
+
+  {% endnote %}
+
+{% endlist %}
 
 ## Getting files {#file-download}
 
-If the Tolokers were asked to upload files, the file with responses will contain IDs of the files received from Tolokers. To download files on your computer, click the  button on the pool page.
+If the Tolokers were asked to upload files, the file with responses will contain IDs of the files received from Tolokers.
 
-You can download all files in the pool in one archive up to 4 GB in size. If the archive is too large (more than 4 GB), use the following tips:
+{% list tabs %}
 
-- Select a single status or pick a smaller time range.
+- In the interface
 
-    For example, if you need to review assignments, only download the submitted assignments rather than the accepted or rejected ones.
+  To download files on your computer, click the  button on the pool page.
 
-    If the file still exceeds the permitted size, pick a smaller time range and download the archives in several batches. The time range can be reduced to 1 day.
+  You can download all files in the pool in one archive up to 4 GB in size. If the archive is too large (more than 4 GB), use the following tips:
 
-- On the pool page, click **Review assignments** (or **View assignments** if they have already been accepted) to go to the page with the Tolokers' responses. Each string contains the Toloker's response to one task suite.
+  - Select a single status or pick a smaller time range.
 
-    Select the responses you need and click . Download the archives in several batches. You can select and download no more than 100 responses at a time.
+      For example, if you need to review assignments, only download the submitted assignments rather than the accepted or rejected ones.
 
-- Use the [Toloka API](https://toloka.ai/docs/api/api-reference/#tag--attachment) to download files with responses.
+      If the file still exceeds the permitted size, pick a smaller time range and download the archives in several batches. The time range can be reduced to 1 day.
+
+  - On the pool page, click **Review assignments** (or **View assignments** if they have already been accepted) to go to the page with the Tolokers' responses. Each string contains the Toloker's response to one task suite.
+
+      Select the responses you need and click . Download the archives in several batches. You can select and download no more than 100 responses at a time.
+
+  - Use the [Toloka API](https://toloka.ai/docs/api/api-reference/#tag--attachment) to download files with responses.
+
+- Via Toloka API
+
+  To get the list of the responses using Toloka API, send a `GET` request with either the `pool_id` or `assignment_id` specified:
+
+  ```bash
+  curl -X GET 'https://toloka.dev/api/v1/attachments?pool_id=1085757' \
+       -H 'Authorization: ApiKey PlaceYourRealApiKey_Here'
+  ```
+
+  {% note tip "Visit Toloka API reference" %}
+
+  Refer to the [Get list of files](https://toloka.ai/docs/api/api-reference/#get-/attachments) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests for [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
+
+  {% endnote %}
+
+{% endlist %}
 
 ## See also {#see-also}
 

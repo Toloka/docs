@@ -2,14 +2,14 @@
   label: 'cURL'
   source: |
     curl -X GET 'https://toloka.dev/api/v1/user-skills?user_id=fac97860c7929add8048ed2ef63b66fd' \
-         -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here'
+         -H 'Authorization: ApiKey PlaceYourRealApiKey_Here'
 - lang: py
   label: 'Python: Toloka-Kit'
   source: |
     import toloka.client
 
     toloka_client = toloka.client.TolokaClient(
-      'PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+      'PlaceYourRealApiKey_Here', 'PRODUCTION')
 
     for user_skill in toloka_client.get_user_skills(
                         user_id='fac97860c7929add8048ed2ef63b66fd'):
@@ -26,7 +26,7 @@
       'user_id': 'fac97860c7929add8048ed2ef63b66fd'
     }
     headers = {
-      'Authorization': 'OAuth PlaceYourRealOAuthToken_Here'
+      'Authorization': 'ApiKey PlaceYourRealApiKey_Here'
     }
     response = requests.get(url, params=params, headers=headers)
 
@@ -40,7 +40,7 @@
       'url': 'https://toloka.dev/api/v1/user-skills',
       'qs': {'user_id': 'fac97860c7929add8048ed2ef63b66fd'},
       'headers': {
-        'Authorization': 'OAuth PlaceYourRealOAuthToken_Here'
+        'Authorization': 'ApiKey PlaceYourRealApiKey_Here'
       }
     };
     request(options, function (error, response) {
@@ -53,5 +53,5 @@
     Unirest.setTimeouts(0, 0);
     HttpResponse<String> response = Unirest.get("https://toloka.dev/api/v1/user-skills")
       .queryString("user_id", "fac97860c7929add8048ed2ef63b66fd")
-      .header("Authorization", "OAuth PlaceYourRealOAuthToken_Here")
+      .header("Authorization", "ApiKey PlaceYourRealApiKey_Here")
       .asString();

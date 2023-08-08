@@ -206,7 +206,7 @@ Add a global level filter, enter a value from 0 to 100, and use a set of operato
 
 ## See also {#see-also}
 
-- [Efficiency indicators: Project availability](./efficiency-metrics/available-performers.md)
+- [Efficiency indicators: Project availability](efficiency-metrics/available-performers.md)
 
 ## For developers {#for-developers}
 
@@ -214,6 +214,7 @@ Add a global level filter, enter a value from 0 to 100, and use a set of operato
 - [Toloka API: Filtering by computed data](../../api/concepts/filter-computed.md)
 - [Toloka API: Filtering by skills](../../api/concepts/filter-skill.md)
 - [Toloka-Kit recipe: Filter Tolokers](../../toloka-kit/recipes/filter-tolokers.md)
+- [Toloka-Kit recipe: Filter Tolokers with confirmed language knowledge](../../toloka-kit/recipes/filter-tolokers-languages.md)
 
 ## Troubleshooting {#troubleshooting}
 

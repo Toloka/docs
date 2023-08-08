@@ -54,7 +54,7 @@ When you use [smart mixing](../../guide/concepts/distribute-tasks-by-pages.md#sm
   ```bash
   curl -X POST 'https://toloka.dev/api/v1/pools' \
        -H 'Content-Type: application/json' \
-       -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
+       -H 'Authorization: ApiKey PlaceYourRealApiKey_Here' \
        -d '{
             "project_id": "120798",
             "private_name": "Cat or Dog?",
@@ -109,7 +109,7 @@ When you use [smart mixing](../../guide/concepts/distribute-tasks-by-pages.md#sm
   ```bash
   curl -X POST 'https://toloka.dev/api/v1/pools' \
        -H 'Content-Type: application/json' \
-       -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
+       -H 'Authorization: ApiKey PlaceYourRealApiKey_Here' \
        -d '{
             "project_id": "120798",
             "private_name": "Cat or Dog?",
@@ -166,7 +166,7 @@ The sample requests below contain the intervals for the general, control, and tr
   ```bash
   curl -X POST 'https://toloka.dev/api/v1/pools' \
        -H 'Content-Type: application/json' \
-       -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
+       -H 'Authorization: ApiKey PlaceYourRealApiKey_Here' \
        -d '{
             "project_id": "120798",
             "private_name": "Cat or Dog?",
@@ -219,7 +219,7 @@ The sample requests below contain the intervals for the general, control, and tr
   ```bash
   curl -X POST 'https://toloka.dev/api/v1/pools' \
        -H 'Content-Type: application/json' \
-       -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
+       -H 'Authorization: ApiKey PlaceYourRealApiKey_Here' \
        -d '{
             "project_id": "120798",
             "private_name": "Cat or Dog?",
@@ -272,7 +272,7 @@ The sample requests below contain the intervals for the general, control, and tr
   ```bash
   curl -X POST 'https://toloka.dev/api/v1/pools' \
        -H 'Content-Type: application/json' \
-       -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
+       -H 'Authorization: ApiKey PlaceYourRealApiKey_Here' \
        -d '{
             "project_id": "120798",
             "private_name": "Cat or Dog?",

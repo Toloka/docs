@@ -10,7 +10,7 @@ First, get the list of the available solutions to find the ID of the **Text Clas
 
 ```bash
 curl -X GET 'https://toloka.dev/api/app/v0/apps' \
-     -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here'
+     -H 'Authorization: ApiKey PlaceYourRealApiKey_Here'
 ```
 
 {% cut "Response" %}
@@ -65,7 +65,7 @@ For example, to view the **Text Classification** solution specs, specify its `id
 
 ```bash
 curl -X GET 'https://toloka.dev/api/app/v0/apps/2eN4l59qL2xHB5b8Jqp6' \
-     -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here'
+     -H 'Authorization: ApiKey PlaceYourRealApiKey_Here'
 ```
 
 {% cut "Response" %}
@@ -199,7 +199,7 @@ Create an object named `parameters`. It should match the JSON schema in the solu
 
 ```bash
 curl -X POST 'https://toloka.dev/api/app/v0/app-projects' \
-     -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
+     -H 'Authorization: ApiKey PlaceYourRealApiKey_Here' \
      -H 'Content-Type: application/json' \
      -d '{
            "app_id": "2eN4l59qL2xHB5b8Jqp6",
@@ -299,7 +299,7 @@ Let's create a batch and upload task items to it. We'll use the schema from the 
 
 ```bash
 curl -X POST 'https://toloka.dev/api/app/v0/app-projects/6Vv8kdlrjLYu7ZgPdezj/batches' \
-     -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
+     -H 'Authorization: ApiKey PlaceYourRealApiKey_Here' \
      -H 'Content-Type: application/json' \
      -d '{
            "items": [
@@ -343,14 +343,14 @@ To find out the status of the project, use the request:
 
 ```bash
 curl -X GET 'https://toloka.dev/api/app/v0/app-projects/6Vv8kdlrjLYu7ZgPdezj' \
-     -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here'
+     -H 'Authorization: ApiKey PlaceYourRealApiKey_Here'
 ```
 
 ## Start processing the batch
 
 ```bash
 curl -X POST 'https://toloka.dev/api/app/v0/app-projects/6Vv8kdlrjLYu7ZgPdezj/batches/z1Qy7aryrj9har9yKdY0/start' \
-     -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here'
+     -H 'Authorization: ApiKey PlaceYourRealApiKey_Here'
 ```
 
 ## Check the status of the project's task items
@@ -365,7 +365,7 @@ The expected status is `COMPLETED`.
 
 ```bash
 curl -X GET 'https://toloka.dev/api/app/v0/app-projects/6Vv8kdlrjLYu7ZgPdezj/items?batch_id=z1Qy7aryrj9har9yKdY0' \
-     -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here'
+     -H 'Authorization: ApiKey PlaceYourRealApiKey_Here'
 ```
 
 {% cut "Response" %}

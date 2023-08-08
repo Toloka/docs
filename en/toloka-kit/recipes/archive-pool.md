@@ -10,7 +10,7 @@ _Move the pool which you no longer use into archive._
 
 ### 3. Archive pool {#step-three}
 
-[Find out](./get-pools.md) the ID of the pool you want to archive. Then call the `archive_pool()` method.
+[Find out](get-pools.md) the ID of the pool you want to archive. Then call the `archive_pool()` method.
 
 ```python
 archived_pool = toloka_client.[archive_pool](*archive_pool)('1443992')
@@ -35,7 +35,7 @@ You should get an output with the pool ID and the updated status which looks lik
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealApiKey_Here', 'PRODUCTION')
 
 archived_pool = toloka_client.archive_pool('1443992')
 print(archived_pool.id, archived_pool.status)
@@ -51,10 +51,10 @@ print(archived_pool.id, archived_pool.status)
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/overview.md)
-- [{#T}](./learn-basics.md)
-- [{#T}](./use-cases.md)
+- [{#T}](learn-basics.md)
+- [{#T}](use-cases.md)
 - [{#T}](../../guide/concepts/pool-archive.md)
-- [{#T}](./get-pools.md)
+- [{#T}](get-pools.md)
 - [Toloka-Kit: Pool class](../reference/toloka.client.pool.Pool.md)
 - [Toloka API: Archive pool](https://toloka.ai/docs/api/api-reference/#post-/pools/-id-/archive)
 

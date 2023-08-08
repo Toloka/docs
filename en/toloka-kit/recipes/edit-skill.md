@@ -10,7 +10,7 @@ _Modify an existing skill._
 
 ### 3. Get skill {#step-three}
 
-[Find out](./get-skills.md) the ID of the skill which you want to modify. Then create a local copy of the project object calling the `get_skill()` method.
+[Find out](get-skills.md) the ID of the skill which you want to modify. Then create a local copy of the project object calling the `get_skill()` method.
 
 ```python
 skill = toloka_client.[get_skill](*get_skill)('11294')
@@ -57,7 +57,7 @@ You should get an output with the updated skill private comment which looks like
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealApiKey_Here', 'PRODUCTION')
 
 skill = toloka_client.get_skill('11294')
 skill.private_comment = 'Got at least 5 right responses on control tasks with C++ or Python'
@@ -77,9 +77,9 @@ print(updated_skill.id, updated_skill.private_comment)
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/overview.md)
-- [{#T}](./learn-basics.md)
-- [{#T}](./use-cases.md)
-- [{#T}](./get-skills.md)
+- [{#T}](learn-basics.md)
+- [{#T}](use-cases.md)
+- [{#T}](get-skills.md)
 - [Toloka-Kit: Skill class](../reference/toloka.client.skill.Skill.md)
 - [Toloka API: Update skill](https://toloka.ai/docs/api/api-reference/#put-/skills/-id-)
 

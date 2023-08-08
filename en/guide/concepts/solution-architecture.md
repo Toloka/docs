@@ -8,9 +8,9 @@ For example, in the [Business information (example with decomposition)](../tutor
 
 - [Project 2. Find a similar item in the online store](../tutorials/find_an_item_in_store.md) — This is the original task.
 
-- [Project 3. Does the item found look similar to the original?](../tutorials/item_look_similar.md) — Checking the responses.
+- [Project 3. Does the item found look similar to the original?](../tutorials/item_look_similar.md) — Checking the [task responses](../../glossary.md#task-response).
 
-- [Project 4. Which of the found items is most similar to the original?](../tutorials/item_more_similar.md) — Choosing the best response.
+- [Project 4. Which of the found items is most similar to the original?](../tutorials/item_more_similar.md) — Choosing the best task response.
 
 ![](../_images/other/main-1.svg)
 
@@ -46,7 +46,7 @@ Usually, you can make a separate project with tasks to prepare data and check To
 
 Before creating a project, answer the questions:
 
-- Do I have data to be used as the basis for completing your task?
+- Do I have data to be used as the basis for completing my task?
 
     You can entrust the collection of data for analysis to Tolokers as part of a separate project.
 

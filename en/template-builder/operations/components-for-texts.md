@@ -35,18 +35,19 @@ To add a text entry field, use the [field.text](../reference/field.text.md) comp
 To change the text, such as all uppercase letters or insert a variable value, use the following components:
 
 - [helper.text-transform](../reference/helper.text-transform.md): Changes the text case. To transform the text, use the `transformation` property with the appropriate value:
+
     - `uppercase`: Convert all letters to uppercase.
     - `lowercase`: Convert all letters to lowercase.
     - `capitalize`: Convert the first letter of the text to uppercase and all the subsequent letters to lowercase.
 
-  [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/JVwFEJc13ttBEk)
+    [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/JVwFEJc13ttBEk)
 
 - [helper.replace](../reference/helper.replace.md): Lets you replace some parts of the string with other strings. To do this, use the `find` property for the replaced text and the `replace` property for the replacing text.
 
-  [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/qcfsK8i_3x5ZwU)
+    [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/qcfsK8i_3x5ZwU)
 
 - [helper.join](../reference/helper.join.md): Joins multiple strings into one string, separating them with spaces or commas.
 
-  [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/_h--eV2Y3ttBMm)
+    [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/_h--eV2Y3ttBMm)
 
 {% include [contact-support](../_includes/contact-support.md) %}

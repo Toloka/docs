@@ -12,14 +12,14 @@
 
     ```bash
     DELETE https://toloka.dev/api/v1/webhook-subscriptions/<subscription_id>
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     ```
 
 - Песочница
 
     ```bash
     DELETE https://sandbox.toloka.dev/api/v1/webhook-subscriptions/<subscription_id>
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     ```
 
 {% endlist %}

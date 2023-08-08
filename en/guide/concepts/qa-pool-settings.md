@@ -38,7 +38,7 @@ If you already have a pool with the quality control settings you need, you can c
 
 - **To keep track of how often Tolokers make mistakes:**
 
-    - [Control tasks](goldenset.md): Use them to assign a [skill](../../glossary.md#skill) to Tolokers based on their responses to control tasks and ban Tolokers who submit incorrect responses.
+    - [Control tasks](goldenset.md): Use them to assign a [skill](../../glossary.md#skill) to Tolokers based on their control task responses and ban Tolokers who submit incorrect responses.
 
     - [Majority vote](mvote.md): Quality is based on matching the response from the majority of Tolokers who complete the same task.
 
@@ -76,7 +76,7 @@ If you already have a pool with the quality control settings you need, you can c
 
 ## See also {#see-also}
 
-- [Efficiency indicators: Bans](./efficiency-metrics/ban-rate.md)
+- [Efficiency indicators: Bans](efficiency-metrics/ban-rate.md)
 - [Crowdsourcing concepts: Quality control](https://toloka.ai/knowledgebase/quality-control/)
 
 ## Troubleshooting {#troubleshooting}

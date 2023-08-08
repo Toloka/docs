@@ -18,14 +18,14 @@
 
     ```bash
     POST https://toloka.dev/api/v1/trainings/<training_id>/archive
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     ```
 
 - Песочница
 
     ```bash
     POST https://sandbox.toloka.dev/api/v1/trainings/<training_id>/archive
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     ```
 
 {% endlist %}

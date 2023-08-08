@@ -11,15 +11,18 @@ Open Template Builder.
 - In Toloka
 
   1. You must be registered in Toloka as a requester.
+
   1. Log in to [Toloka]({{ toloka }}).
+
   1. Start creating a new project in Toloka. Template Builder is integrated into Toloka and can be used for creating or editing projects.
+
   1. Select **Template Builder** in the **Task interface** section.
 
-     {% cut "Where do I find it in the interface?" %}
+      {% cut "Where do I find it in the interface?" %}
 
-      ![image](_images/where-is-it.png)
+      ![image](_images/where-is-it.png =600x)
 
-     {% endcut %}
+      {% endcut %}
 
 - In the Template Builder sandbox
 
@@ -92,6 +95,7 @@ JSON is insensitive to spaces and line breaks between JSON elements. You may omi
 Values may contain different data types:
 
 - `string`: A string enclosed in double quotes, such as `"Hello world"`.
+
     To add a quotation mark `"` or a backslash `\` to a string, add another backslash `\` to it. Don't escape quotation marks `” “` and `/`.
 
     {% cut "Examples" %}
@@ -195,9 +199,9 @@ If something goes wrong during the creation process, you can [view the correct c
 
     If you're working in Template Builder, not in the Toloka interface, use the [empty template](https://ya.cc/t/9qSDag9u3ttEdB).
 
-    The `view` block has the[view.list](reference/view.list.md) component to display data in a list. We'll use it to create the interface we need.
+    The `view` block has the [view.list](reference/view.list.md) component to display data in a list. We'll use it to create the interface we need.
 
-    ![](_images/practice-empty-conf.png)
+    ![](_images/practice-empty-conf.png =375x)
 
     {% note tip %}
 
@@ -217,11 +221,11 @@ If something goes wrong during the creation process, you can [view the correct c
 
 1. Go back to the **Configuration** panel. Add the array of elements of the future interface to the `items` property of the `view.list` component. To do this, place the cursor inside the square brackets and click **Tab**. A list will appear where you need to select the [view.text](reference/view.text.md) component. Change the value of the `content` property to `"Look at the picture and answer the question."`. This text will appear above the image as the task title.
 
-    ![](_images/practice-view-text.png)
+    ![](_images/practice-view-text.png =333x)
 
 1. Add the next element. To do this, place the cursor behind the curly bracket that closes the `view.text` component, type a comma, and click **Tab**. A list will appear where you need to select the [view.image](reference/view.image.md) component. It is used to display the image. Its `url` property contains a link to the image. Delete the link and the quotation marks and click **Tab**. A list will appear where you need to select the [data.input](operations/work-with-data.md) component. It is used to get values from the sample input data.
 
-    ![](_images/practice-data-input.png)
+    ![](_images/practice-data-input.png =290x)
 
 1. Change the value of the `path` property in the `data.input` component to `"image"`. The image from the sample input data will appear on the **Preview** panel.
 
@@ -298,7 +302,7 @@ If something goes wrong during the creation process, you can [view the correct c
 
 {% note tip %}
 
-Use code snippets to see what property values you can use. In autocomplete, snippets are labeled with the icon ![](_images/suggest-preset.png).
+Use code snippets to see what property values you can use. In autocomplete, snippets are labeled with the ![](_images/suggest-preset.png) icon.
 
 To view the list of snippets for a property, delete the property value, position the cursor after the colon, and press **Tab**.
 
@@ -314,15 +318,17 @@ Shortcuts are not part of visual components. They are added via a separate plugi
 
 1. Shortcuts are added to the `plugins` section. Place the cursor after the square bracket that opens the`plugins` section and press **Tab**. In the list that appears, select `plugin.hotkeys`.
 
-    ![](_images/practice-plugin-hotkeys.png)
+    ![](_images/practice-plugin-hotkeys.png =389x)
 
 1. The `plugins.hotkeys` component is now empty. Fill it with the desired values. To do this, place the cursor after the opening curly bracket and click **Tab**. Two lists will appear in the following order: the first for selecting a shortcut, and the second for setting an action. In the first list, select the `"1"` shortcut; in the second, the [action.set](reference/action.set.md) action.
 
-    ![](_images/practice-hotkey-1.png)![](_images/practice-action-set.png)
+    ![](_images/practice-hotkey-1.png =172x)
+
+    ![](_images/practice-action-set.png =260x)
 
 1. Add two more shortcuts. To do this, place the cursor at the end of the `"1"` shortcut block (after the closing curly bracket and comma) and press **Tab**. Add the `"2"` shortcut with the same `action.set` action. Then add the `"3"` shortcut in the same way.
 
-    ![](_images/practice-hotkey-2.png)
+    ![](_images/practice-hotkey-2.png =246x)
 
 1. Each shortcut block has a `data` property that specifies the output data format. Change the value of its `path` property to `"result"` for each shortcut. The output data path should be the same for shortcuts as for the buttons that you assign them to.
 

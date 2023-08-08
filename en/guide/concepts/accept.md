@@ -16,141 +16,147 @@ Note that you can't change the task status if the task pool was [archived](pool-
 
 ## How do I review the tasks? {#acception}
 
-#### In the interface
+{% list tabs %}
 
-{% cut "Online review of one task." %}
+- In the interface
 
-To accept or reject one task:
+  {% cut "Online review of one task." %}
 
-1. Click the **Review assignments** button on the pool page.
+  To accept or reject one task:
 
-1. Choose an assignment.
+  1. Click the **Review assignments** button on the pool page.
 
-    If responses include files uploaded by the Tolokers, click the **Actions → Download attachments** button to download them. To download all files from submitted responses in a ZIP archive, click **Download results → Download attachments** on the assignments review page.
+  1. Choose an assignment.
 
-1. Check the responses, click **Accept** or **Decline**. For rejected responses, enter a comment (specify the reason).
+      If responses include files uploaded by the Tolokers, click the **Actions → Download attachments** button to download them. To download all files from submitted responses in a ZIP archive, click **Download results → Download attachments** on the assignments review page.
 
-{% cut "Online review statistics" %}
+  1. Check the responses, click **Accept** or **Decline**. For rejected responses, enter a comment (specify the reason).
 
-You can view the number of task suites by type on the online review page:
+  {% cut "Online review statistics" %}
 
-- **Total**
+  You can view the number of task suites by type on the online review page:
 
-- **Unreviewed**
+  - **Total**
 
-- **Accepted**
+  - **Unreviewed**
 
-- **Rejected**
+  - **Accepted**
 
-{% endcut %}
+  - **Rejected**
 
-{% endcut %}
+  {% endcut %}
 
-{% cut "In the TSV file with the results. You will need the file to filter the results and process them programmatically." %}
+  {% endcut %}
 
-{% note info %}
+  {% cut "In the TSV file with the results. You will need the file to filter the results and process them programmatically." %}
 
-This review method is also suitable when the result is not displayed in the interface.
+  {% note info %}
 
-Example 1: The task uses JS code, and the response contains initially hidden fields.
+  This review method is also suitable when the result is not displayed in the interface.
 
-Example 2: The task where you need to download files attached by the Toloker (for example, video or audio recordings) to check the responses.
+  Example 1: The task uses JS code, and the response contains initially hidden fields.
 
-{% endnote %}
+  Example 2: The task where you need to download files attached by the Toloker (for example, video or audio recordings) to check the responses.
 
-To accept or reject responses:
+  {% endnote %}
 
-1. Click the **Review assignments** button on the pool page.
+  To accept or reject responses:
 
-1. To download responses that you didn't review yet: on the pool page, click **Download results**. In the window that opens:
+  1. Click the **Review assignments** button on the pool page.
 
-    1. In **Status** leave only the **Submitted** option enabled.
+  1. To download responses that you didn't review yet: on the pool page, click **Download results**. In the window that opens:
 
-    1. In **Columns** leave only the **assignment ID** option enabled.
+      1. In **Status** leave only the **Submitted** option enabled.
 
-    1. Disable the **Separate assignments with empty row** option.
+      1. In **Columns** leave only the **assignment ID** option enabled.
 
-        ![](../_images/tutorials/image-segmentation/wsdm-tutorial-part3-2.png)
+      1. Disable the **Separate assignments with empty row** option.
 
-    1. Click **Download results**.
+          ![](../_images/tutorials/image-segmentation/wsdm-tutorial-part3-2.png)
 
-1. If your task requires Tolokers to submit photos, videos or audio files, download them for review in an archive.
+      1. Click **Download results**.
 
-    Click **Download results → Download attachments**.
+  1. If your task requires Tolokers to submit photos, videos or audio files, download them for review in an archive.
 
-    {% note info %}
+      Click **Download results → Download attachments**.
 
-    **What does the response archive contain?**
+      {% note info %}
 
-    The system automatically assigns names to files when they are uploaded by the Toloker. You can rename the files manually or with a script if necessary.
+      **What does the response archive contain?**
 
-    - `Response archive`
+      The system automatically assigns names to files when they are uploaded by the Toloker. You can rename the files manually or with a script if necessary.
 
-        - `Folder1_ID_ responses`
+      - `Response archive`
 
-            - `File1_ID_attachments`
+          - `Folder1_ID_ responses`
 
-            - `File2_ID_attachments`
+              - `File1_ID_attachments`
 
-        - `Folder2_ID_ responses`
+              - `File2_ID_attachments`
 
-    You can match responses and attachments by their IDs. Attachment ID is included in the TSV file, in the column with the output field where the file was uploaded.
+          - `Folder2_ID_ responses`
 
-    - `TSV file`
+      You can match responses and attachments by their IDs. Attachment ID is included in the TSV file, in the column with the output field where the file was uploaded.
 
-        - `Column1_with_output_field`
+      - `TSV file`
 
-            - `ID_attachments`
+          - `Column1_with_output_field`
 
-        - `Column2_with_output_field`
+              - `ID_attachments`
 
-            - `ID_attachments`
+          - `Column2_with_output_field`
 
-    {% endnote %}
+              - `ID_attachments`
 
-1. Open the [file with responses](result-of-eval.md).
+      {% endnote %}
 
-    For a single response ID, you need to fill in the verdict and comment only once. The rest should be left empty or deleted.
+  1. Open the [file with responses](result-of-eval.md).
 
-    - If there is one task on the page, add a verdict and a comment to each response ID (if there is a deviation).
-    - If there is more than one task on the page, then different tasks on the page will have the same response ID.
+      For a single response ID, you need to fill in the verdict and comment only once. The rest should be left empty or deleted.
 
-    **Explanation**
+      - If there is one task on the page, add a verdict and a comment to each response ID (if there is a deviation).
+      - If there is more than one task on the page, then different tasks on the page will have the same response ID.
 
-    - `ASSIGNMENT:assignment_id` — ID of the assigned task suite.
+      **Explanation**
 
-    - `ACCEPT:verdict` — Review result:
+      - `ASSIGNMENT:assignment_id` — ID of the assigned task suite.
 
-    - “+” if you accept the responses.
+      - `ACCEPT:verdict` — Review result:
 
-    - “-” if you reject the responses.
+      - “+” if you accept the responses.
 
-    - `ACCEPT:comment` — Comments for Tolokers if responses were rejected (for example, specify which part of the [instructions](../../glossary.md#instructions) wasn't followed).
+      - “-” if you reject the responses.
 
-1. Upload the edited TSV file to Toloka (**Import/ Export → Upload results**).
+      - `ACCEPT:comment` — Comments for Tolokers if responses were rejected (for example, specify which part of the [instructions](../../glossary.md#instructions) wasn't followed).
 
-{% endcut %}
+  1. Upload the edited TSV file to Toloka (**Import/ Export → Upload results**).
 
-{% cut "Delegate manual review to other Tolokers." %}
+  {% endcut %}
 
-Place a separate task for Tolokers to review the responses. To learn how to do it, see the [last project](../tutorials/image-segmentation-project3.md) in the [Selecting an image area](../tutorials/image-segmentation-overview.md). It implements manual review with the help of Tolokers.
+  {% cut "Delegate manual review to other Tolokers." %}
 
-{% endcut %}
+  Place a separate task for Tolokers to review the responses. To learn how to do it, see the [last project](../tutorials/image-segmentation-project3.md) in the [Selecting an image area](../tutorials/image-segmentation-overview.md). It implements manual review with the help of Tolokers.
 
-{% note tip "How to work via Toloka API" %}
+  {% endcut %}
 
-To change the status of the received responses using Toloka API, send a `PATCH` request to the resource `/assignments/{id}`. Use the `id` path parameter to specify the assignment that you want to accept or reject:
+- Via Toloka API
 
-```bash
-curl -X PATCH 'https://toloka.dev/api/v1/assignments/0001d38f5b--61c8be211c3a7842a596ac0a' \
-     -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
-     -H 'Content-Type: application/json' \
-     -d '{"status":"ACCEPTED", "public_comment":"OK"}'
-```
+  To change the status of the received responses using Toloka API, send a `PATCH` request to the resource `/assignments/{id}`. Use the `id` path parameter to specify the assignment that you want to accept or reject:
 
-Refer to the [Update response](https://toloka.ai/docs/api/api-reference/#patch-/assignments/-id-) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests for [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
+  ```bash
+  curl -X PATCH 'https://toloka.dev/api/v1/assignments/0001d38f5b--61c8be211c3a7842a596ac0a' \
+       -H 'Authorization: ApiKey PlaceYourRealApiKey_Here' \
+       -H 'Content-Type: application/json' \
+       -d '{"status":"ACCEPTED", "public_comment":"OK"}'
+  ```
 
-{% endnote %}
+  {% note tip "Visit Toloka API reference" %}
+
+  Refer to the [Update response](https://toloka.ai/docs/api/api-reference/#patch-/assignments/-id-) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests for [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
+
+  {% endnote %}
+
+{% endlist %}
 
 ## Appeal {#appeal}
 

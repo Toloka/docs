@@ -2,7 +2,7 @@
 
 Create the first pool based on the [training pool](../../../../glossary.md#training-pool) and the second pool based on the main pool with the pool type set to **Exam**. If a pool contains only control and/or training tasks, the price can be set to zero.
 
-In the exam pool, you can create a skill reflecting the exam result and granting admission to the main pool. For example, `If the number of responses is ≥ 10, set the skill value in the <exam skill> as % of correct responses.`
+In the exam pool, you can create a skill reflecting the exam result and granting admission to the main pool. For example, `If the number of task responses is ≥ 10, set the skill value in the <exam skill> as % of correct task responses.`
 
 In your exam pool requirements, specify: `<exam skill> <80 or = is missing>`.
 

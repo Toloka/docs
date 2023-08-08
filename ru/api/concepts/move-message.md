@@ -20,7 +20,7 @@
 
     ```bash
     POST https://toloka.dev/api/v1/message-threads/<thread_id>/add-to-folders
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     Content-Type: application/json
     ```
 
@@ -28,7 +28,7 @@
 
     ```bash
     POST https://sandbox.toloka.dev/api/v1/message-threads/<thread_id>/add-to-folders
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     Content-Type: application/json
     ```
 
@@ -44,7 +44,7 @@
 
     ```bash
     POST https://toloka.dev/api/v1/message-threads/<thread_id>/remove-from-folders
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     Content-Type: application/json
     ```
 
@@ -52,7 +52,7 @@
 
     ```bash
     POST https://sandbox.toloka.dev/api/v1/message-threads/<thread_id>/remove-from-folders
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     Content-Type: application/json
     ```
 

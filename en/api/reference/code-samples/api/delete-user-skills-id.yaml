@@ -2,14 +2,14 @@
   label: 'cURL'
   source: |
     curl -X DELETE 'https://toloka.dev/api/v1/user-skills/54116339' \
-         -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here'
+         -H 'Authorization: ApiKey PlaceYourRealApiKey_Here'
 - lang: py
   label: 'Python: Toloka-Kit'
   source: |
     import toloka.client
 
     toloka_client = toloka.client.TolokaClient(
-      'PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+      'PlaceYourRealApiKey_Here', 'PRODUCTION')
 
     toloka_client.delete_user_skill(user_skill_id='54116339')
   description: More details on this in the [Remove skill from Toloker](https://toloka.ai/docs/toloka-kit/recipes/delete-user-skill/) Toloka-Kit recipe
@@ -20,7 +20,7 @@
 
     url = "https://toloka.dev/api/v1/user-skills/54116339"
     headers = {
-      'Authorization': 'OAuth PlaceYourRealOAuthToken_Here'
+      'Authorization': 'ApiKey PlaceYourRealApiKey_Here'
     }
     response = requests.delete(url, headers=headers)
 
@@ -34,7 +34,7 @@
       'url': 'https://toloka.dev/api/v1/user-skills/54116339',
       'qs': {},
       'headers': {
-        'Authorization': 'OAuth PlaceYourRealOAuthToken_Here'
+        'Authorization': 'ApiKey PlaceYourRealApiKey_Here'
       }
     };
     request(options, function (error, response) {
@@ -46,5 +46,5 @@
   source: |
     Unirest.setTimeouts(0, 0);
     HttpResponse<String> response = Unirest.delete("https://toloka.dev/api/v1/user-skills/54116339")
-      .header("Authorization", "OAuth PlaceYourRealOAuthToken_Here")
+      .header("Authorization", "ApiKey PlaceYourRealApiKey_Here")
       .asString();

@@ -13,6 +13,8 @@ _Get all the projects with a certain status created after a specified date._
 Iterate through all the projects with the `ACTIVE` status created after October 1, 2022, calling the `get_projects()` method.
 
 ```python
+from datetime import datetime
+
 for project in toloka_client.[get_projects](*get_projects)(
                   status='ACTIVE',
                     created_gte=datetime(2022, 10, 1)):
@@ -35,7 +37,7 @@ You should get an output with the project IDs, titles, and creation dates which 
 from datetime import datetime
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealApiKey_Here', 'PRODUCTION')
 
 for project in toloka_client.get_projects(
                   status='ACTIVE',
@@ -53,9 +55,9 @@ for project in toloka_client.get_projects(
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/overview.md)
-- [{#T}](./learn-basics.md)
-- [{#T}](./use-cases.md)
-- [{#T}](./get-project-by-id.md)
+- [{#T}](learn-basics.md)
+- [{#T}](use-cases.md)
+- [{#T}](get-project-by-id.md)
 - [Toloka API: Get list of projects](https://toloka.ai/docs/api/api-reference/#get-/projects)
 
 [*TolokaClient]: [TolokaClient](../reference/toloka.client.TolokaClient.md) class

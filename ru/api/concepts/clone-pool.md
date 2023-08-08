@@ -14,14 +14,14 @@
 
     ```bash
     POST https://sandbox.toloka.dev/api/v1/pools/<pool_id>/clone
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     ```
 
 - Боевая версия
 
     ```bash
     POST https://toloka.dev/api/v1/pools/<pool_id>/clone
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     ```
 
 {% endlist %}

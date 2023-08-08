@@ -36,7 +36,7 @@ The "skill-Toloker" pair ID allows you to get or remove the skill assigned to a 
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealApiKey_Here', 'PRODUCTION')
 
 for user_skill in toloka_client.get_user_skills(user_id='fac97860c7929add8048ed2ef63b66fd'):
     skill = toloka_client.get_skill(user_skill.skill_id)
@@ -54,8 +54,8 @@ for user_skill in toloka_client.get_user_skills(user_id='fac97860c7929add8048ed2
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/overview.md)
-- [{#T}](./learn-basics.md)
-- [{#T}](./use-cases.md)
+- [{#T}](learn-basics.md)
+- [{#T}](use-cases.md)
 - [Toloka API: Get list of Toloker skills](https://toloka.ai/docs/api/api-reference/#get-/user-skills)
 
 [*TolokaClient]: [TolokaClient](../reference/toloka.client.TolokaClient.md) class

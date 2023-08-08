@@ -6,7 +6,7 @@ The task interface configuration guide describes the features of the HTML/JS/CSS
 
 {% endnote %}
 
-The task interface defines the visual appearance of the [task](../../glossary.md#task) for the Toloker and the logic for processing responses.
+The task interface defines the visual appearance of the [task](../../glossary.md#task) for the Toloker and the logic for processing [task responses](../../glossary.md#task-response).
 
 A user-friendly interface improves the quality of results, helps Tolokers complete tasks faster, and lets you set a lower price per task.
 
@@ -143,7 +143,7 @@ Add input data to check if files or text hints are displayed on the task suite. 
 
   1. Change the input data fields.
 
-      To change the task type to [control](../../glossary.md#control-task) or [training](../../glossary.md#training-task), add correct responses and a hint (the **Add correct answers** button).
+      To change the task type to [control](../../glossary.md#control-task) or [training](../../glossary.md#training-task), add correct task responses and a hint (the **Add correct answers** button).
 
       To go to the next task, click the task number at the bottom of the table. To delete a task, click ![](../_images/bin.svg).
 

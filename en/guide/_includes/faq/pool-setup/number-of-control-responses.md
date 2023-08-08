@@ -1,5 +1,5 @@
-{% cut "In the section about control questions, does "Number of control responses" mean the total number of responses to control questions (including incorrect responses) or the number of correct responses to my control questions?" %}
+{% cut "In the section about control questions, does "Number of control task responses" mean the total number of control task responses (including incorrect responses) or the number of correct responses to my control questions?" %}
 
-This is the total number of responses to the control questions.
+This is the total number of control task responses.
 
 {% endcut %}

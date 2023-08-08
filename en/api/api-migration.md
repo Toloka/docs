@@ -1,10 +1,10 @@
 # API migration
 
-The Toloka API is migrating to the `toloka.dev` domain. Access to the Toloka API is about to change. The current API domain (`toloka.yandex.com`) works in deprecated mode and will be disabled **since August 1, 2023**. You need to update your applications to use the new domain.
+The Toloka API is migrating to the `toloka.dev` domain. Access to the Toloka API is about to change. The current API domain (`toloka.yandex.com`) works in deprecated mode and will be disabled **since September 1, 2023**. You need to update your applications to use the new domain.
 
 {% note alert %}
 
-If you do not change the domain, your requests to the Toloka API will end up with errors starting August 1, 2023.
+If you do not change the domain, your requests to the Toloka API will end up with errors starting September 1, 2023.
 
 {% endnote %}
 
@@ -16,7 +16,7 @@ For example, a cURL request to the Toloka API which gets the requester informati
 
 ```bash
 curl -X GET 'https://toloka.dev/api/v1/requester' \
-     -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here'
+     -H 'Authorization: ApiKey PlaceYourRealApiKey_Here'
 ```
 
 {% endcut %}

@@ -2,7 +2,7 @@
   label: 'cURL'
   source: |
     curl -X POST 'https://toloka.dev/api/v1/message-threads/compose' \
-         -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
+         -H 'Authorization: ApiKey PlaceYourRealApiKey_Here' \
          -H 'Content-Type: application/json' \
          -d '{"topic":{"EN":"Thank you!"},"text":{"EN":"Amazing job! We have just trained our first model."},"recipients_select_type":"ALL","answerable":false}'
 - lang: py
@@ -11,7 +11,7 @@
     import toloka.client
 
     toloka_client = toloka.client.TolokaClient(
-      'PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+      'PlaceYourRealApiKey_Here', 'PRODUCTION')
 
     message_text = "Amazing job! We have just trained our first model."
     toloka_client.compose_message_thread(
@@ -28,7 +28,7 @@
 
     url = "https://toloka.dev/api/v1/message-threads/compose"
     headers = {
-      'Authorization': 'OAuth PlaceYourRealOAuthToken_Here',
+      'Authorization': 'ApiKey PlaceYourRealApiKey_Here',
       'Content-Type': 'application/json'
     }
     payload = {
@@ -53,7 +53,7 @@
       'url': 'https://toloka.dev/api/v1/message-threads/compose',
       'qs': {},
       'headers': {
-        'Authorization': 'OAuth PlaceYourRealOAuthToken_Here',
+        'Authorization': 'ApiKey PlaceYourRealApiKey_Here',
         'Content-Type': 'application/json'
       },
       'body': JSON.stringify({
@@ -76,7 +76,7 @@
   source: |
     Unirest.setTimeouts(0, 0);
     HttpResponse<String> response = Unirest.post("https://toloka.dev/api/v1/message-threads/compose")
-      .header("Authorization", "OAuth PlaceYourRealOAuthToken_Here")
+      .header("Authorization", "ApiKey PlaceYourRealApiKey_Here")
       .header("Content-Type", "application/json")
       .body("{\"topic\":{\"EN\":\"Thank you!\"},\"text\":{\"EN\":\"Amazing job! We have just trained our first model.\"},\"recipients_select_type\":\"ALL\",\"answerable\":false}")
       .asString();

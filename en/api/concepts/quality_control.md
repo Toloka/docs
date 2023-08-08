@@ -8,15 +8,15 @@ To define quality control rules, add an array of `quality_control.configs` JSON 
 
 ## Quality control rules {#quality-control-blocks}
 
-- [Control tasks](./goldenset.md)
-- [Majority vote](./mv.md)
-- [Compensation amount](./earn_limit.md)
-- [Skipped assignments](./skipped.md)
-- [Submitted assignments](./completed.md)
-- [Fast responses](./fast.md)
-- [Rejected tasks](./accept_ban.md)
-- [Processing rejected and accepted assignments](./reassessment.md)
-- [Recompletion of assignments](./restore-task-overlap.md)
+- [Control tasks](goldenset.md)
+- [Majority vote](mv.md)
+- [Compensation amount](earn_limit.md)
+- [Skipped assignments](skipped.md)
+- [Submitted assignments](completed.md)
+- [Fast responses](fast.md)
+- [Rejected tasks](accept_ban.md)
+- [Processing rejected and accepted assignments](reassessment.md)
+- [Recompletion of assignments](restore-task-overlap.md)
 
 ## See also {#see-also}
 

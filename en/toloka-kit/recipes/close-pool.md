@@ -10,7 +10,7 @@ _Close an opened pool in Toloka._
 
 ### 3. Close pool {#step-three}
 
-[Find out](./get-pools.md) the ID of the pool you want to close. Then call the `close_pool()` method.
+[Find out](get-pools.md) the ID of the pool you want to close. Then call the `close_pool()` method.
 
 ```python
 closed_pool = toloka_client.[close_pool](*close_pool)('1443858')
@@ -35,7 +35,7 @@ You should get an output with the pool ID and the updated status which looks lik
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealApiKey_Here', 'PRODUCTION')
 
 closed_pool = toloka_client.close_pool('1443858')
 print(closed_pool.id, closed_pool.status)
@@ -51,9 +51,9 @@ print(closed_pool.id, closed_pool.status)
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/overview.md)
-- [{#T}](./learn-basics.md)
-- [{#T}](./use-cases.md)
-- [{#T}](./get-pools.md)
+- [{#T}](learn-basics.md)
+- [{#T}](use-cases.md)
+- [{#T}](get-pools.md)
 - [Toloka-Kit: Pool class](../reference/toloka.client.pool.Pool.md)
 - [Toloka API: Close pool](https://toloka.ai/docs/api/api-reference/#post-/pools/-id-/close)
 

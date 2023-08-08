@@ -2,7 +2,7 @@
   label: 'cURL'
   source: |
     curl -X PUT 'https://toloka.dev/api/v1/trainings/1239110' \
-         -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
+         -H 'Authorization: ApiKey PlaceYourRealApiKey_Here' \
          -H 'Content-Type: application/json' \
          -d '{"project_id":"118252", "private_name":"Simple training pool", "may_contain_adult_content":false, "assignment_max_duration_seconds":600, "mix_tasks_in_creation_order":true, "shuffle_tasks_in_task_suite":true, "training_tasks_in_task_suite_count":3, "task_suites_required_to_pass":1, "retry_training_after_days":1, "inherited_instructions":true, "public_instructions":""}'
 - lang: py
@@ -11,7 +11,7 @@
     import toloka.client
 
     toloka_client = toloka.client.TolokaClient(
-      'PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+      'PlaceYourRealApiKey_Here', 'PRODUCTION')
 
     training = toloka_client.get_training('1239110')
     training.retry_training_after_days = 1
@@ -23,7 +23,7 @@
 
     url = "https://toloka.dev/api/v1/trainings/1239110"
     headers = {
-      'Authorization': 'OAuth PlaceYourRealOAuthToken_Here',
+      'Authorization': 'ApiKey PlaceYourRealApiKey_Here',
       'Content-Type': 'application/json'
     }
     payload = {
@@ -51,7 +51,7 @@
       'url': 'https://toloka.dev/api/v1/trainings/1239110',
       'qs': {},
       'headers': {
-        'Authorization': 'OAuth PlaceYourRealOAuthToken_Here',
+        'Authorization': 'ApiKey PlaceYourRealApiKey_Here',
         'Content-Type': 'application/json'
       },
       'body': JSON.stringify({
@@ -77,7 +77,7 @@
   source: |
     Unirest.setTimeouts(0, 0);
     HttpResponse<String> response = Unirest.put("https://toloka.dev/api/v1/trainings/1239110")
-      .header("Authorization", "OAuth PlaceYourRealOAuthToken_Here")
+      .header("Authorization", "ApiKey PlaceYourRealApiKey_Here")
       .header("Content-Type", "application/json")
       .body("{\"project_id\":\"118252\", \"private_name\":\"Simple training pool\", \"may_contain_adult_content\":false, \"assignment_max_duration_seconds\":600, \"mix_tasks_in_creation_order\":true, \"shuffle_tasks_in_task_suite\":true, \"training_tasks_in_task_suite_count\":3, \"task_suites_required_to_pass\":1, \"retry_training_after_days\":1, \"inherited_instructions\":true, \"public_instructions\":\"\"}")
       .asString();

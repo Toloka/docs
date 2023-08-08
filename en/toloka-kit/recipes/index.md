@@ -1,6 +1,6 @@
 # Recipes for Toloka-Kit common tasks
 
-Before you can start using Toloka-Kit, you need to [register with Toloka](../../guide/concepts/access.md), [get an OAuth token](../registration.md), and [install the Toloka-Kit](../quick-start.md) Python library. After that, you can create projects, pools, upload tasks, and get results.
+Before you can start using Toloka-Kit, you need to [register with Toloka](../../guide/concepts/access.md), [get an API key](../registration.md), and [install the Toloka-Kit](../quick-start.md) Python library. After that, you can create projects, pools, upload tasks, and get results.
 
 Use the list of recipes below to find out how to start working with Toloka-Kit.
 
@@ -106,6 +106,12 @@ Use the list of recipes below to find out how to start working with Toloka-Kit.
         <p class="recipe_block_description">Use pool filters to specify the Toloker groups you want to pick your tasks</p>
         <p class="recipe_steps">5 steps</p>
         <a class="recipe_button" href="./filter-tolokers">Go to recipe</a>
+    </div>
+    <div class="recipe_block">
+        <p class="recipe_block_heading">Filter Tolokers with confirmed language knowledge</p>
+        <p class="recipe_block_description">Use pool filters to filter the Tolokers with various languages for which they passed the language test</p>
+        <p class="recipe_steps">4 steps</p>
+        <a class="recipe_button" href="./filter-tolokers-languages">Go to recipe</a>
     </div>
     <div class="recipe_block">
         <p class="recipe_block_heading">Use quality control rules</p>
@@ -255,6 +261,29 @@ Use the list of recipes below to find out how to start working with Toloka-Kit.
     </div>
 </div>
 
+## Banning Tolokers
+
+<div class="recipe_blocks">
+    <div class="recipe_block">
+        <p class="recipe_block_heading">Ban Tolokers</p>
+        <p class="recipe_block_description">Restrict the access to tasks for Tolokers</p>
+        <p class="recipe_steps">4 steps</p>
+        <a class="recipe_button" href="./ban-tolokers">Go to recipe</a>
+    </div>
+    <div class="recipe_block">
+        <p class="recipe_block_heading">Get list of bans</p>
+        <p class="recipe_block_description">Get the list of all the Toloker bans</p>
+        <p class="recipe_steps">3 steps</p>
+        <a class="recipe_button" href="./get-restrictions">Go to recipe</a>
+    </div>
+    <div class="recipe_block">
+        <p class="recipe_block_heading">Remove ban from Toloker</p>
+        <p class="recipe_block_description">Remove restriction from Tolokers and restore their access to tasks</p>
+        <p class="recipe_steps">3 steps</p>
+        <a class="recipe_button" href="./delete-restriction">Go to recipe</a>
+    </div>
+</div>
+
 ## Messages
 
 <div class="recipe_blocks">
@@ -282,8 +311,8 @@ Use the list of recipes below to find out how to start working with Toloka-Kit.
 
 If you feel rather confident as a Toloka-Kit user and want to try a more complex scenario, refer to the following pages:
 
-- [your first complete project](./learn-basics.md)
-- [more usage examples](./use-cases.md)
+- [your first complete project](learn-basics.md)
+- [more usage examples](use-cases.md)
 
 <style scoped>
 .recipe_blocks {

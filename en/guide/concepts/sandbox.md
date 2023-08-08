@@ -24,7 +24,7 @@ Once you have [access to the sandbox](#sandbox-access) approved, follow the step
 
     {% note tip %}
 
-    To avoid confusion, use the same Yandex ID that you used in the Toloka production version to register as a requester.
+    To avoid confusion, use the same social account that you used in the Toloka production version to register as a requester.
 
     {% endnote %}
 
@@ -60,7 +60,7 @@ To complete your tasks in the sandbox:
 
     When exporting a project to the production version of [Toloka](#export), you can specify the necessary overlap in accordance with your project goals.
 
-1. Log in to the sandbox using the Toloker account and test your tasks. Make sure that the buttons and response validation are set up correctly, and assess how long it takes to complete the tasks. Make sure that the [Toloker selection](filters.md) and [quality control](control.md) work.
+1. Log in to the sandbox using the Toloker account and test your tasks. Make sure that the buttons and task response validation are set up correctly, and assess how long it takes to complete the tasks. Make sure that the [Toloker selection](filters.md) and [quality control](control.md) work.
 
 ## How to move a task to the production version of Toloka {#export}
 

@@ -10,7 +10,7 @@ _Change the project public description using Toloka-Kit._
 
 ### 3. Get project {#step-three}
 
-[Find out](./get-projects.md) the ID of the project which you want to modify. Then create a local copy of the project object calling the `get_project()` method.
+[Find out](get-projects.md) the ID of the project which you want to modify. Then create a local copy of the project object calling the `get_project()` method.
 
 ```python
 project = toloka_client.[get_project](*get_project)('118252')
@@ -57,7 +57,7 @@ Elephant color (advanced)
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealApiKey_Here', 'PRODUCTION')
 
 project = toloka_client.get_project('118252')
 project.public_name = "Elephant color (advanced)"
@@ -76,9 +76,9 @@ print(updated_project.public_name)
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/overview.md)
-- [{#T}](./learn-basics.md)
-- [{#T}](./use-cases.md)
-- [{#T}](./get-projects.md)
+- [{#T}](learn-basics.md)
+- [{#T}](use-cases.md)
+- [{#T}](get-projects.md)
 - [Toloka-Kit: Project class](../reference/toloka.client.project.Project.md)
 - [Toloka API: Update project](https://toloka.ai/docs/api/api-reference/#put-/projects/-id-)
 

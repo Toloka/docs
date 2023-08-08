@@ -2,7 +2,7 @@
 
 In the file with the general tasks, the columns with the `INPUT` headers must be filled out. You can see those headers if you download a sample file from the pool.
 
-If you are creating control tasks, fill out the `GOLDEN` columns with the correct responses.
+If you are creating control tasks, fill out the `GOLDEN` columns with the correct task responses.
 
 If you are creating a training task, you also need to fill in the `HINT:text` column. For the general tasks you don't need any columns other than `INPUT`, so feel free to delete them.
 

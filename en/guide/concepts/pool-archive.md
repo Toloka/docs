@@ -10,13 +10,34 @@ By default, archived pools are not visible in the list of [project](../../glossa
 
 ## Manual archiving {#manual-archiving}
 
-To archive a pool, click **![Drop-down button](../_images/drop-down.svg) → Archive** at the top of the pool page, or ![](../_images/other/pool-action-archive.svg) in the list of pools on the project page.
+{% list tabs %}
 
-{% note info %}
+- In the interface
 
-To [archive the training pool](train.md), first archive all the main pools to which it is linked.
+  To archive a pool, click **![Drop-down button](../_images/drop-down.svg) → Archive** at the top of the pool page, or ![](../_images/other/pool-action-archive.svg) in the list of pools on the project page.
 
-{% endnote %}
+  {% note info %}
+
+  To [archive the training pool](train.md), first archive all the main pools to which it is linked.
+
+  {% endnote %}
+
+- Via Toloka API
+
+  To archive a pool using Toloka API, send a `POST` request with the specified ID of the pool you want to archive:
+
+  ```bash
+  curl -X POST 'https://toloka.dev/api/v1/pools/32267581/archive' \
+       -H 'Authorization: ApiKey PlaceYourRealApiKey_Here'
+  ```
+
+  {% note tip "Visit Toloka API reference" %}
+
+  Refer to the [Archive pool](https://toloka.ai/docs/api/api-reference/#post-/pools/-id-/archive) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests for [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
+
+  {% endnote %}
+
+{% endlist %}
 
 ## Automatic archiving {#automatic-archiving}
 

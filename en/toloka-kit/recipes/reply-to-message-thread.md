@@ -10,7 +10,7 @@ _Send a reply to a message thread in Toloka._
 
 ### 3. Send reply to thread {#step-three}
 
-[Find out](./get-message-threads.md) the ID of the message thread you want to reply to. Then compose a reply using the [MessageThreadReply](../reference/toloka.client.message_thread.MessageThreadReply.md) class object for that.
+[Find out](get-message-threads.md) the ID of the message thread you want to reply to. Then compose a reply using the [MessageThreadReply](../reference/toloka.client.message_thread.MessageThreadReply.md) class object for that.
 
 ```python
 message_reply = toloka.message_thread.[MessageThreadReply](*MessageThreadReply)(text={'EN': 'Thank you!'})
@@ -39,7 +39,7 @@ You should get an output with the message ID and creation time which looks like 
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealApiKey_Here', 'PRODUCTION')
 
 message_reply = toloka.message_thread.MessageThreadReply(text={'EN': 'Thank you!'})
 response_to_thread = toloka_client.reply_message_thread(
@@ -60,8 +60,9 @@ print(response_to_thread.id, response_to_thread.created)
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/overview.md)
-- [{#T}](./learn-basics.md)
-- [{#T}](./use-cases.md)
+- [{#T}](learn-basics.md)
+- [{#T}](use-cases.md)
+- [{#T}](get-message-threads.md)
 - [Toloka-Kit: MessageThread class](../reference/toloka.client.message_thread.MessageThread.md)
 - [Toloka API: Reply to message thread](https://toloka.ai/docs/api/api-reference/#post-/message-threads/-id-/reply)
 

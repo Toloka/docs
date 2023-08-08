@@ -12,7 +12,7 @@
 
     ```bash
     PUT https://toloka.dev/api/v1/skills/<id>
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     Content-Type: application/json
 
     {<skill parameters, including updated ones>}
@@ -22,7 +22,7 @@
 
     ```bash
     PUT https://sandbox.toloka.dev/api/v1/skills/<id>
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     Content-Type: application/json
 
     {<skill parameters, including updated ones>}

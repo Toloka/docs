@@ -8,7 +8,7 @@ In [Toloka](../../index.md), shortcuts are particularly helpful because Tolokers
 
 Shortcuts are digits or letters shown next to buttons. Shortcuts help Tolokers do an action by pressing a key.
 
-![image](../_images/hotkeys-example.png)
+![image](../_images/hotkeys-example.png =106x)
 
 A shortcut is always added to a button if they do the same thing.
 
@@ -87,6 +87,7 @@ View corrected example in the sandbox.
 To display a shortcut in the interface, set the shortcut to the same [action](../reference/actions.md) that is performed when the button is clicked.
 
 Assign an action to the component if you haven't yet:
+
 - [action.set](../reference/action.set.md) for radio buttons.
 - [action.toggle](../reference/action.toggle.md) for checkboxes.
 - [action.play-pause](../reference/action.play-pause.md) for playback control.

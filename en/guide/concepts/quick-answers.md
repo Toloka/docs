@@ -6,7 +6,7 @@ This rule is necessary to filter out cheating Tolokers who complete tasks too qu
 
 Restrict the pool access for Tolokers who respond too quickly to:
 
-- Restrict access for Tolokers who cheat in their responses. In this case, set the time required to complete a [task suite](../../glossary.md#task-suite) when giving random responses.
+- Restrict access for Tolokers who cheat in their responses. In this case, set the time required to complete a [task suite](../../glossary.md#task-suite) when giving random [task responses](../../glossary.md#task-response).
 
 - Provide anti-robot protection. In this case, set twice as little time for task suite completion.
 
@@ -27,12 +27,12 @@ If this field is not filled in, the calculation includes only recent task suites
 If the field is filled in, the corresponding number of task suites is used. The rule takes into account the task suites from both this pool and other pools where this field is filled in.
 
 To learn more about how this field works, go to [Parameter "Remember values"](remember-values.md).||
-||**Minimum time per task suite** | The task suite completion time (in seconds). Everything that is completed faster is considered a fast response.||
+||**Minimum time per task suite** | The task suite completion time (in seconds). Everything that is completed faster is considered a fast [task suite response](../../glossary.md#response).||
 ||**If** | A condition for performing the action in the **then** field:
 
-- **number of responses** — The number of the Toloker's recent responses (less than or equal to the number in the **Recent task suites to use** field).
+- **number of task suite responses** — The number of the Toloker's recent task suite responses (less than or equal to the number in the **Recent task suites to use** field).
 
-- **number of fast responses** — Allowed number of fast responses (out of the recent ones).
+- **number of fast task suite responses** — Allowed number of fast task suite responses (out of the recent ones).
 
 To add multiple conditions, click ![](../_images/add.svg).||
 ||**then** | Action to perform for the **If** condition:
@@ -41,7 +41,7 @@ To add multiple conditions, click ![](../_images/add.svg).||
 
 - **accept all assignments from this Toloker in the pool** — Requires the [manual review](offline-accept.md) option to be set.
 
-    Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you're satisfied with this result. The rule will work automatically and accept all responses in the pool.
+    Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you're satisfied with this result. The rule will work automatically and accept all task suite responses in the pool.
 
 - **suspend** — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.
 
@@ -76,7 +76,7 @@ The assignments submitted by banned Tolokers will be taken into account if you d
 
   ![](../_images/control-rules/quick-answers/qcr-quick_answers_example1_1.png =700x)
 
-  This rule will never take effect because the number of responses counted (**Recent task suites to use**) is less than the number of recent responses in the rule (**number of responses**).
+  This rule will never take effect because the number of task suite responses counted (**Recent task suites to use**) is less than the number of recent task suite responses in the rule (**number of task suite responses**).
 
 {% endlist %}
 

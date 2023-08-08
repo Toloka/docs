@@ -40,8 +40,8 @@ logging.basicConfig(
 Now, create a [Toloka client](../reference/toloka.client.TolokaClient.md) instance. All API calls will go through it:
 
 ```python
-toloka_client = toloka.TolokaClient(getpass.getpass('Enter your OAuth token: '), 'PRODUCTION') # Or switch to 'SANDBOX'
-# Lines below check that the OAuth token is correct and print your account name
+toloka_client = toloka.TolokaClient(getpass.getpass('Enter your API key: '), 'PRODUCTION') # Or switch to 'SANDBOX'
+# Lines below check that the API key is correct and print your account name
 print(toloka_client.get_requester())
 ```
 
@@ -528,8 +528,8 @@ logging.basicConfig(
     stream=sys.stdout,
 )
 
-toloka_client = toloka.TolokaClient(getpass.getpass('Enter your OAuth token: '), 'PRODUCTION') # Or switch to 'SANDBOX'
-# Lines below check that the OAuth token is correct and print your account name
+toloka_client = toloka.TolokaClient(getpass.getpass('Enter your API key: '), 'PRODUCTION') # Or switch to 'SANDBOX'
+# Lines below check that the API key is correct and print your account name
 # print(toloka_client.get_requester())
 
 new_project = toloka.Project(
@@ -751,7 +751,7 @@ import getpass
 
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient(getpass.getpass('Enter your OAuth token: '), 'PRODUCTION') # Or switch to 'SANDBOX'
+toloka_client = toloka.TolokaClient(getpass.getpass('Enter your API key: '), 'PRODUCTION') # Or switch to 'SANDBOX'
 
 # Get the ID of the pool with the tasks (pool_id) from the web version of the Toloka platform or from the previous script results
 answers_df = toloka_client.get_assignments_df(pool_id)
@@ -774,7 +774,7 @@ print(predicted_answers)
 
 ## Useful links
 
-- [Toloka-Kit recipe list](./use-cases.md)
+- [Toloka-Kit recipe list](use-cases.md)
 - [Toloka documentation](../../index.md)
 - [Toloka API documentation](https://toloka.ai/docs/api/api-reference/)
 - [Toloka homepage](https://toloka.ai/)

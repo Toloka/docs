@@ -42,7 +42,7 @@
 
         Add [control tasks](../../../../glossary.md#control-task) to monitor the quality of task completion:
 
-        1. Enter correct responses.
+        1. Enter correct task responses.
 
         2. Select the fields to use.
 

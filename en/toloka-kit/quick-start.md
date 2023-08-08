@@ -24,7 +24,7 @@ To start with Toloka-Kit:
     The script:
 
     - Imports the package.
-    - Asks to enter the [OAuth token](./registration.md#oauth-token).
+    - Asks to enter the [API key](registration.md#oauth-token).
     - Requests general information about your account.
 
     The response to the above request should look like this:
@@ -37,9 +37,9 @@ To start with Toloka-Kit:
 
 - Complete one of the [tutorials](../guide/tutorials/usecases.md) to get acquainted with Toloka web interface.
 
-- Create your [first project](./recipes/learn-basics.md) using Toloka-Kit.
+- Create your [first project](recipes/learn-basics.md) using Toloka-Kit.
 
-- Try [Toloka-Kit usage examples](./recipes/use-cases.md).
+- Try [Toloka-Kit usage examples](recipes/use-cases.md).
 
 - Read the package reference starting with [TolokaClient](reference/toloka.client.TolokaClient.md).
 

@@ -6,7 +6,7 @@ Task markup is available only for [training pools](train.md) and pools uploaded 
 
 {% endnote %}
 
-Using markup, you can add correct responses and hints to tasks, as well as change task types. You can turn a general task into a [control task](../../glossary.md#control-task) by adding the correct answer, or into a [training task](../../glossary.md#training-task) by adding the correct answer and a hint.
+Using markup, you can add correct [task responses](../../glossary.md#task-response) and hints, as well as change task types. You can turn a general task into a [control task](../../glossary.md#control-task) by adding the correct answer, or into a [training task](../../glossary.md#training-task) by adding the correct answer and a hint.
 
 {% cut "Why this is important" %}
 
@@ -91,8 +91,8 @@ If the markup process failed for some reason, contact support. Go to the tab for
 ## See also {#see-also}
 
 - [{#T}](distribute-tasks-by-pages.md)
-- [Efficiency indicators: Control tasks](./efficiency-metrics/control-tasks-share.md)
-- [Efficiency indicators: Control task balance](./efficiency-metrics/control-tasks-balance.md)
+- [Efficiency indicators: Control tasks](efficiency-metrics/control-tasks-share.md)
+- [Efficiency indicators: Control task balance](efficiency-metrics/control-tasks-balance.md)
 
 ## Troubleshooting {#troubleshooting}
 

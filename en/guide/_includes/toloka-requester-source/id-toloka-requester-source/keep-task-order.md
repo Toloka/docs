@@ -40,7 +40,7 @@ If the pool has an overlap, the next task is distributed only when the previous 
 
 Use this parameter to:
 
-- Speed up collection of responses for [majority vote](../../../../guide/concepts/mvote.md) check.
+- Speed up collection of task responses for [majority vote](../../../../guide/concepts/mvote.md) check.
 
 - Assign tasks by priority.
 

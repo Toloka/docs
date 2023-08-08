@@ -12,14 +12,14 @@
 
     ```bash
     GET https://toloka.dev/api/v1/operations
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     ```
 
 - Песочница
 
     ```bash
     GET https://sandbox.toloka.dev/api/v1/operations
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     ```
 
 {% endlist %}

@@ -7,10 +7,12 @@ In [Toloka](../../index.md), you can use conditions to automate the manual revie
 ## Review features {#features}
 
 - What can be reviewed:
+
     - Output data in [fields.*](../reference/fields.md);
     - Input data in [views.*](../reference/views.md) and [layouts.*](../reference/layouts.md).
 
 - Where to specify conditions:
+
     - In the `validation` property of the parent component.
     - In the `condition` property of [plugin.trigger](../reference/plugin.trigger.md).
 

@@ -43,7 +43,7 @@ If you have a lot of skipped or expired tasks, we recommend that you read our [T
 If you think that this number is too large or small, you may have incorrectly configured [Recompletion of assignments from banned Tolokers](restore-task-overlap.md) or [Processing rejected and accepted tasks](reassessment-after-accepting.md). You may also want to check:
 
 - [Dynamic overlap](dynamic-overlap.md) (incremental relabeling, IRL).
-- [Random majority vote check](selective-mvote.md).
+- [Selective majority vote check](selective-mvote.md).
 
 {% endcut %}
 ||

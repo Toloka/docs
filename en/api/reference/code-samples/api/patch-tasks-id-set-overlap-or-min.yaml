@@ -2,7 +2,7 @@
   label: 'cURL'
   source: |
     curl -X PATCH 'https://toloka.dev/api/v1/tasks/000012bb84--62d80429f20bf20e50f36a27/set-overlap-or-min' \
-         -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
+         -H 'Authorization: ApiKey PlaceYourRealApiKey_Here' \
          -H 'Content-Type: application/json' \
          -d '{"overlap":0,"infinite_overlap":false}'
 - lang: py
@@ -11,7 +11,7 @@
     import toloka.client
 
     toloka_client = toloka.client.TolokaClient(
-      'PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+      'PlaceYourRealApiKey_Here', 'PRODUCTION')
 
     toloka_client.patch_task_overlap_or_min(
       '000012bb84--62d80429f20bf20e50f36a27', overlap=0, infinite_overlap=False)
@@ -22,7 +22,7 @@
 
     url = "https://toloka.dev/api/v1/tasks/000012bb84--62d80429f20bf20e50f36a27/set-overlap-or-min"
     headers = {
-      'Authorization': 'OAuth PlaceYourRealOAuthToken_Here',
+      'Authorization': 'ApiKey PlaceYourRealApiKey_Here',
       'Content-Type': 'application/json'
     }
     payload = {
@@ -41,7 +41,7 @@
       'url': 'https://toloka.dev/api/v1/tasks/000012bb84--62d80429f20bf20e50f36a27/set-overlap-or-min',
       'qs': {},
       'headers': {
-        'Authorization': 'OAuth PlaceYourRealOAuthToken_Here',
+        'Authorization': 'ApiKey PlaceYourRealApiKey_Here',
         'Content-Type': 'application/json'
       },
       'body': JSON.stringify({
@@ -58,7 +58,7 @@
   source: |
     Unirest.setTimeouts(0, 0);
     HttpResponse<String> response = Unirest.patch("https://toloka.dev/api/v1/tasks/000012bb84--62d80429f20bf20e50f36a27/set-overlap-or-min")
-      .header("Authorization", "OAuth PlaceYourRealOAuthToken_Here")
+      .header("Authorization", "ApiKey PlaceYourRealApiKey_Here")
       .header("Content-Type", "application/json")
       .body("{\"overlap\":0,\"infinite_overlap\":false}")
       .asString();

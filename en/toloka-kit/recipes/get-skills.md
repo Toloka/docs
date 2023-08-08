@@ -30,7 +30,7 @@ You should get an output with the skill IDs, names, and private comments which l
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealApiKey_Here', 'PRODUCTION')
 
 for skill in toloka_client.get_skills():
     print(skill.id, skill.name, skill.private_comment)
@@ -46,8 +46,8 @@ for skill in toloka_client.get_skills():
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/overview.md)
-- [{#T}](./learn-basics.md)
-- [{#T}](./use-cases.md)
+- [{#T}](learn-basics.md)
+- [{#T}](use-cases.md)
 - [Toloka API: Get list of skills](https://toloka.ai/docs/api/api-reference/#get-/skills)
 
 [*TolokaClient]: [TolokaClient](../reference/toloka.client.TolokaClient.md) class

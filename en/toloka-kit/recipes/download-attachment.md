@@ -10,7 +10,7 @@ _Download the files attached to the Toloker responses._
 
 ### 3. Download attachment {#step-three}
 
-[Find out](./get-attachments.md) the ID and the extension of the file attached to the Toloker response which you want to download. Then download this file calling the `download_attachment()` method.
+[Find out](get-attachments.md) the ID and the extension of the file attached to the Toloker response which you want to download. Then download this file calling the `download_attachment()` method.
 
 ```python
 # Use the standard 'with open()' Python method with the 'wb' (write + binary) parameters specified
@@ -25,7 +25,7 @@ The attachment will be saved to the specified `out` destination.
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealApiKey_Here', 'PRODUCTION')
 
 with open(attachment_id + '.jpg', 'wb') as attachment_file:
     toloka_client.download_attachment('fr.5867be74-249b-4264-9ed0-aa5d4c201846', out=attachment_file)
@@ -41,9 +41,9 @@ with open(attachment_id + '.jpg', 'wb') as attachment_file:
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/overview.md)
-- [{#T}](./learn-basics.md)
-- [{#T}](./use-cases.md)
-- [{#T}](./get-attachments.md)
+- [{#T}](learn-basics.md)
+- [{#T}](use-cases.md)
+- [{#T}](get-attachments.md)
 - [Toloka API: Download file](https://toloka.ai/docs/api/api-reference/#get-/attachments/-id-/download)
 
 [*TolokaClient]: [TolokaClient](../reference/toloka.client.TolokaClient.md) class

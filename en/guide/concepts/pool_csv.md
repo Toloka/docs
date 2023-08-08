@@ -31,7 +31,7 @@ If you need to add different task types to the pool, upload multiple files, one 
 
   - `INPUT:<name of the input data field>` — input data for tasks.
 
-  - `GOLDEN:<name of the output data field>` — responses for [control tasks](../../glossary.md#control-task).
+  - `GOLDEN:<name of the output data field>` — control task responses.
 
   - `HINT:text` — hints for [training tasks](../../glossary.md#training-task). The Toloker will see the hint text at the top of the task (on a red background) if their response to the control task is different from the correct one.
 

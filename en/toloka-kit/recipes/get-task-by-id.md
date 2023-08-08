@@ -10,7 +10,7 @@ _Get the detailed information about the task with the ID specified in the reques
 
 ### 3. Get task information {#step-three}
 
-[Find out](./get-tasks.md) the ID of the task for which you want to get the detailed information. Then get this info calling the `get_task()` method.
+[Find out](get-tasks.md) the ID of the task for which you want to get the detailed information. Then get this info calling the `get_task()` method.
 
 ```python
 task = toloka_client.[get_task](*get_task)('000012bb84--62d80429f20bf20e50f36a27')
@@ -35,7 +35,7 @@ You should get an output with the task ID, overlap, and creation date which look
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealApiKey_Here', 'PRODUCTION')
 
 task = toloka_client.get_task('000012bb84--62d80429f20bf20e50f36a27')
 print(task.id, task.overlap, task.created.date())
@@ -51,8 +51,9 @@ print(task.id, task.overlap, task.created.date())
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/overview.md)
-- [{#T}](./learn-basics.md)
-- [{#T}](./use-cases.md)
+- [{#T}](learn-basics.md)
+- [{#T}](use-cases.md)
+- [{#T}](get-tasks.md)
 - [Toloka-Kit: Task class](../reference/toloka.client.task.Task.md)
 - [Toloka API: Get task by ID](https://toloka.ai/docs/api/api-reference/#get-/tasks/-id-)
 

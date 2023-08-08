@@ -54,9 +54,9 @@ price per 1 item ![](../_images/other/icons/equal.svg) price per task suite ![](
 
 The price suggested for the items in your pool depends on several factors:
 
-- The type of the project and the preset you chose while [creating the project](./project.md).
+- The type of the project and the preset you chose while [creating the project](project.md).
 
-- The Tolokers who match the [filters](./filters.md) you set for the pool.
+- The Tolokers who match the [filters](filters.md) you set for the pool.
 
 - The minimal wage in the countries where the filtered Tolokers come from (some filters can affect it indirectly, like the Tolokers' language filter).
 

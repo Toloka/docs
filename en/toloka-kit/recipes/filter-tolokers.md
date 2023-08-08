@@ -49,7 +49,7 @@ For this recipe, we use the following filters:
 - **Device type** ([DeviceCategory](../reference/toloka.client.filter.DeviceCategory.md) filter class): The pool tasks will be available to the Tolokers with the specified devices.
 - **Education** ([Education](../reference/toloka.client.filter.Education.md) filter class): The pool tasks will be available to the Tolokers with the specified education level.
 - **Gender** ([Gender](../reference/toloka.client.filter.Gender.md) filter class): The pool tasks will be available to the Tolokers with the specified gender.
-- **Languages** ([Languages](../reference/toloka.client.filter.Languages.md) filter class): The pool tasks will be available to the Tolokers with the specified languages.
+- **Languages** ([Languages](../reference/toloka.client.filter.Languages.md) filter class): The pool tasks will be available to the Tolokers with the specified languages. Read the [Filter Tolokers with confirmed language knowledge](filter-tolokers-languages.md) recipe to learn how to filter Tolokers with various languages for which they passed the language test.
 - **Operating system** ([OSFamily](../reference/toloka.client.filter.OSFamily.md) filter class): The pool tasks will be available to the Tolokers who use devices with the specified operating systems.
 - **Skill** ([Skill](../reference/toloka.client.filter.Skill.md) filter class): The pool tasks will be available to the Tolokers with the specified skill having the selected value.
 
@@ -94,7 +94,7 @@ You should get an output with the created pool ID which looks like this.
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealApiKey_Here', 'PRODUCTION')
 
 new_pool = toloka.pool.Pool(
     project_id='133047',
@@ -138,9 +138,10 @@ print(new_pool.id)
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/overview.md)
-- [{#T}](./learn-basics.md)
-- [{#T}](./use-cases.md)
+- [{#T}](learn-basics.md)
+- [{#T}](use-cases.md)
 - [{#T}](../../guide/concepts/filters.md)
+- [{#T}](filter-tolokers-languages.md)
 - [Toloka API: Create pool](https://toloka.ai/docs/api/api-reference/#post-/pools)
 
 [*TolokaClient]: [TolokaClient](../reference/toloka.client.TolokaClient.md) class

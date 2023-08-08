@@ -46,7 +46,7 @@ You should get an output with the message ID and topic which looks like this.
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealApiKey_Here', 'PRODUCTION')
 
 message_thread = toloka_client.compose_message_thread(
     recipients_select_type='DIRECT',
@@ -68,8 +68,8 @@ print(message_thread.id, message_thread.topic.get('EN') or list(message_thread.t
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/overview.md)
-- [{#T}](./learn-basics.md)
-- [{#T}](./use-cases.md)
+- [{#T}](learn-basics.md)
+- [{#T}](use-cases.md)
 - [Toloka-Kit: MessageThread class](../reference/toloka.client.message_thread.MessageThread.md)
 - [Toloka API: Send message](https://toloka.ai/docs/api/api-reference/#post-/message-threads/compose)
 

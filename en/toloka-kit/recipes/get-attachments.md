@@ -10,7 +10,7 @@ _List all the files attached to the Toloker responses in a pool._
 
 ### 3. List attachments {#step-three}
 
-[Find out](./get-pools.md) the ID of the pools for which you want to get all the files attached to the Toloker responses. Then iterate through all the attachments calling the `get_attachments()` method.
+[Find out](get-pools.md) the ID of the pools for which you want to get all the files attached to the Toloker responses. Then iterate through all the attachments calling the `get_attachments()` method.
 
 ```python
 for attachment in toloka_client.[get_attachments](*get_attachments)(pool_id='1085757'):
@@ -30,7 +30,7 @@ fr.cd9cdda5-4af6-4be9-b351-678b2b4e189f 37540601-sneaker-search.jpg
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealApiKey_Here', 'PRODUCTION')
 
 for attachment in toloka_client.get_attachments(pool_id='1085757'):
     print(attachment.id, attachment.name)
@@ -46,9 +46,9 @@ for attachment in toloka_client.get_attachments(pool_id='1085757'):
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/overview.md)
-- [{#T}](./learn-basics.md)
-- [{#T}](./use-cases.md)
-- [{#T}](./get-pools.md)
+- [{#T}](learn-basics.md)
+- [{#T}](use-cases.md)
+- [{#T}](get-pools.md)
 - [Toloka API: Get list of files](https://toloka.ai/docs/api/api-reference/#get-/attachments)
 
 [*TolokaClient]: [TolokaClient](../reference/toloka.client.TolokaClient.md) class

@@ -13,7 +13,7 @@
 ```http
 POST /app-projects/{app_project_id}/items/bulk
 Host: https://toloka.dev
-Authorization: OAuth PlaceYourRealOAuthToken_Here
+Authorization: ApiKey PlaceYourRealApiKey_Here
 ```
 
 ### Path-параметры {#create-item-path-params}
@@ -68,7 +68,7 @@ ID проекта.||
 ```http
 GET /app-projects/{app_project_id}/items?sort=finished&after_id={last_saved_item_id}
 Host: https://toloka.dev
-Authorization: OAuth PlaceYourRealOAuthToken_Here
+Authorization: ApiKey PlaceYourRealApiKey_Here
 ```
 
 ### Path-параметры {#get-result-path-params}

@@ -16,7 +16,7 @@
 
     ```bash
     PATCH https://toloka.dev/api/v1/pools/<pool_id>
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     Content-Type: application/json
     ```
 
@@ -24,7 +24,7 @@
 
     ```bash
     PATCH https://sandbox.toloka.dev/api/v1/pools/<pool_id>
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     Content-Type: application/json
     ```
 

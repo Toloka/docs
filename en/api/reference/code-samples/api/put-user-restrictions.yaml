@@ -2,7 +2,7 @@
   label: 'cURL'
   source: |
     curl -X PUT 'https://toloka.dev/api/v1/user-restrictions' \
-         -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
+         -H 'Authorization: ApiKey PlaceYourRealApiKey_Here' \
          -H 'Content-Type: application/json' \
          -d '{"scope":"ALL_PROJECTS","user_id":"1ad097faba0eff85a04fe30bc04d53db","will_expire":"2030-01-01T00:00:00.000Z"}'
 - lang: py
@@ -13,12 +13,13 @@
     from toloka.client.user_restriction import AllProjectsUserRestriction
 
     toloka_client = toloka.client.TolokaClient(
-      'PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+      'PlaceYourRealApiKey_Here', 'PRODUCTION')
 
     restriction = toloka_client.set_user_restriction(AllProjectsUserRestriction(
       user_id='1ad097faba0eff85a04fe30bc04d53db',
       will_expire=datetime(2030, 1, 1)
     ) )
+  description: More details on this in the [Ban Tolokers](https://toloka.ai/docs/toloka-kit/recipes/ban-tolokers/) Toloka-Kit recipe
 - lang: python
   label: 'Python: Requests'
   source: |
@@ -26,7 +27,7 @@
 
     url = "https://toloka.dev/api/v1/user-restrictions"
     headers = {
-      'Authorization': 'OAuth PlaceYourRealOAuthToken_Here',
+      'Authorization': 'ApiKey PlaceYourRealApiKey_Here',
       'Content-Type': 'application/json'
     }
     payload = {
@@ -46,7 +47,7 @@
       'url': 'https://toloka.dev/api/v1/user-restrictions',
       'qs': {},
       'headers': {
-        'Authorization': 'OAuth PlaceYourRealOAuthToken_Here',
+        'Authorization': 'ApiKey PlaceYourRealApiKey_Here',
         'Content-Type': 'application/json'
       },
       'body': JSON.stringify({
@@ -64,7 +65,7 @@
   source: |
     Unirest.setTimeouts(0, 0);
     HttpResponse<String> response = Unirest.put("https://toloka.dev/api/v1/user-restrictions")
-      .header("Authorization", "OAuth PlaceYourRealOAuthToken_Here")
+      .header("Authorization", "ApiKey PlaceYourRealApiKey_Here")
       .header("Content-Type", "application/json")
       .body("{\"scope\":\"ALL_PROJECTS\",\"user_id\":\"1ad097faba0eff85a04fe30bc04d53db\",\"will_expire\":\"2030-01-01T00:00:00.000Z\"}")
       .asString();

@@ -1,4 +1,4 @@
-{% cut "How do I use different numbers of response options for different questions?" %}
+{% cut "How do I use different numbers of task response options for different questions?" %}
 
 Use [concatenation](../../../../guide/concepts/t-components/helpers.md#concat), for example:
 

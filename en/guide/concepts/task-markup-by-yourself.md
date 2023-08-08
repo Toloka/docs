@@ -6,7 +6,7 @@ You can turn a [general task](../../glossary.md#general-task) into a [control ta
 
 Avoid wordings like: “You answered incorrectly, please provide the correct response”. The Toloker learns when the hint explains the essence of their mistake.
 
-Make the hints clear. Explain which response should be chosen and why.
+Make the hints clear. Explain which [task responses](../../glossary.md#task-response) should be chosen and why.
 
 {% endcut %}
 
@@ -52,7 +52,7 @@ When creating control tasks, enter only correct responses that answer the questi
 
 ## How to improve the reliability of control tasks {#answer_distribution}
 
-After you have created the control tasks, make sure that different variations of correct responses occur with the same frequency. This will help avoid random guessing in responses.
+After you have created the control tasks, make sure that different variations of correct task responses occur with the same frequency. This will help avoid random guessing in responses.
 
 1. Go to the pool page and click the **Control tasks** indicator in the **Tasks** block.
 
@@ -126,8 +126,8 @@ If you set the overlap to 0 [via the API](https://toloka.ai/docs/api/api-referen
 
 ## See also {#see-also}
 
-- [Efficiency indicators: Control tasks](./efficiency-metrics/control-tasks-share.md)
-- [Efficiency indicators: Control task balance](./efficiency-metrics/control-tasks-balance.md)
+- [Efficiency indicators: Control tasks](efficiency-metrics/control-tasks-share.md)
+- [Efficiency indicators: Control task balance](efficiency-metrics/control-tasks-balance.md)
 
 ## Troubleshooting {#troubleshooting}
 

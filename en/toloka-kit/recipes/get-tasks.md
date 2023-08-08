@@ -10,7 +10,7 @@ _Get all the tasks in the pool with the ID specified in the request._
 
 ### 3. Print task IDs, creation date, and overlap {#step-three}
 
-[Find out](./get-pools.md) the ID of the pool you want to view the tasks in. Then, iterate through all the tasks in the pool calling the `get_tasks()` method.
+[Find out](get-pools.md) the ID of the pool you want to view the tasks in. Then, iterate through all the tasks in the pool calling the `get_tasks()` method.
 
 ```python
 for task in toloka_client.[get_tasks](*get_tasks)(pool_id='1227652'):
@@ -33,7 +33,7 @@ You should get an output with the skill IDs, names, and private comments which l
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealApiKey_Here', 'PRODUCTION')
 
 for task in toloka_client.get_tasks(pool_id='1227652'):
     print(task.id, task.created.date(), task.overlap)
@@ -49,8 +49,9 @@ for task in toloka_client.get_tasks(pool_id='1227652'):
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/overview.md)
-- [{#T}](./learn-basics.md)
-- [{#T}](./use-cases.md)
+- [{#T}](learn-basics.md)
+- [{#T}](use-cases.md)
+- [{#T}](get-pools.md)
 - [Toloka API: Get list of tasks](https://toloka.ai/docs/api/api-reference/#get-/tasks)
 
 [*TolokaClient]: [TolokaClient](../reference/toloka.client.TolokaClient.md) class

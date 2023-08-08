@@ -2,7 +2,7 @@
   label: 'cURL'
   source: |
     curl -X PATCH 'https://toloka.dev/api/app/v0/app-projects/Q2d15QBjpwWuDz8Z321g/batches/4Va2BBWKL88S4QyAgVje' \
-         -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here'
+         -H 'Authorization: ApiKey PlaceYourRealApiKey_Here'
          -H 'Content-Type: application/json' \
          -d '{"name":"Test batch","priority_order":"THREE"}'
 - lang: py
@@ -11,7 +11,7 @@
     import toloka.client
 
     toloka_client = toloka.client.TolokaClient(
-      'PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+      'PlaceYourRealApiKey_Here', 'PRODUCTION')
 
     toloka_client.patch_app_batch(
       app_project_id='Q2d15QBjpwWuDz8Z321g',
@@ -31,7 +31,7 @@
     })
     headers = {
       'Content-Type': 'application/json',
-      'Authorization': 'OAuth PlaceYourRealOAuthToken_Here'
+      'Authorization': 'ApiKey PlaceYourRealApiKey_Here'
     }
 
     response = requests.request("PATCH", url, headers=headers, data=payload)
@@ -46,7 +46,7 @@
       'url': 'https://toloka.dev/api/app/v0/app-projects/Q2d15QBjpwWuDz8Z321g/batches/4Va2BBWKL88S4QyAgVje',
       'headers': {
         'Content-Type': 'application/json',
-        'Authorization': 'OAuth PlaceYourRealOAuthToken_Here'
+        'Authorization': 'ApiKey PlaceYourRealApiKey_Here'
       },
       body: JSON.stringify({
         "name": "Test batch",
@@ -64,6 +64,6 @@
     Unirest.setTimeouts(0, 0);
     HttpResponse<String> response = Unirest.patch("https://toloka.dev/api/app/v0/app-projects/Q2d15QBjpwWuDz8Z321g/batches/4Va2BBWKL88S4QyAgVje")
       .header("Content-Type", "application/json")
-      .header("Authorization", "OAuth PlaceYourRealOAuthToken_Here")
+      .header("Authorization", "ApiKey PlaceYourRealApiKey_Here")
       .body("{\"name\":\"Test batch\",\"priority_order\":\"THREE\"}")
       .asString();

@@ -15,55 +15,61 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 
 {% endnote %}
 
-#### In the interface
+{% list tabs %}
 
-To block access to tasks for a single Toloker:
+- In the interface
 
-1. Select a Toloker on the [Tolokers]({{ users }}) page.
+  To block access to tasks for a single Toloker:
 
-1. Click **Actions → Ban**, then fill in the fields:
+  1. Select a Toloker on the [Tolokers]({{ users }}) page.
 
-    #|
-    || Field | Overview ||
-    || **Ban type** | Where to apply the ban:
+  1. Click **Actions → Ban**, then fill in the fields:
 
-    - **In all my projects** — All projects.
-    - **In the project** — A single project (choose one from the list).||
-    || **Ban expires** | Set when to lift the ban.
+      #|
+      || Field | Overview ||
+      || **Ban type** | Where to apply the ban:
 
-    We recommend blocking access temporarily in order to maintain the desired number of Tolokers for completing tasks.||
-    || **Reason** | The reason for banning (only seen by the requester).||
-    |#
+      - **In all my projects** — All projects.
+      - **In the project** — A single project (choose one from the list).||
+      || **Ban expires** | Set when to lift the ban.
 
-To block access to tasks for multiple Tolokers:
+      We recommend blocking access temporarily in order to maintain the desired number of Tolokers for completing tasks.||
+      || **Reason** | The reason for banning (only seen by the requester).||
+      |#
 
-1. Select Tolokers by using the [filters](../../glossary.md#filters) on the [Tolokers]({{ users }}) page or upload a TSV file:
+  To block access to tasks for multiple Tolokers:
 
-    ```plaintext
-    <annotator id 1>
-    <annotator id 2>
-    ...
-    <annotator id n>
-    ```
+  1. Select Tolokers by using the [filters](../../glossary.md#filters) on the [Tolokers]({{ users }}) page or upload a TSV file:
 
-1. Click **Ban**, then fill in the fields (see the table above).
+      ```plaintext
+      <annotator id 1>
+      <annotator id 2>
+      ...
+      <annotator id n>
+      ```
 
-You can view information about access to tasks on the Toloker's page (on the [Tolokers]({{ users }}) page, go to the **Bans** tab). To unblock access to tasks, hover over the ban line and click ![](../_images/location-job/task-edit/task-action-delete.svg).
+  1. Click **Ban**, then fill in the fields (see the table above).
 
-{% note tip "How to work via Toloka API" %}
+  You can view information about access to tasks on the Toloker's page (on the [Tolokers]({{ users }}) page, go to the **Bans** tab). To unblock access to tasks, hover over the ban line and click ![](../_images/location-job/task-edit/task-action-delete.svg).
 
-To block a Toloker's access using Toloka API, send a `PUT` request with the information about the ban:
+- Via Toloka API
 
-```bash
-curl -X PUT 'https://toloka.dev/api/v1/user-restrictions' \
-     -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
-     -H 'Content-Type: application/json' \
-     -d '{"scope":"ALL_PROJECTS","user_id":"1ad097faba0eff85a04fe30bc04d53db","will_expire":"2030-01-01T00:00:00.000Z"}'
-```
+  To block a Toloker's access using Toloka API, send a `PUT` request with the information about the ban:
 
-Refer to the [Block access to tasks](https://toloka.ai/docs/api/api-reference/#put-/user-restrictions) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests for [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
+  ```bash
+  curl -X PUT 'https://toloka.dev/api/v1/user-restrictions' \
+       -H 'Authorization: ApiKey PlaceYourRealApiKey_Here' \
+       -H 'Content-Type: application/json' \
+       -d '{"scope":"ALL_PROJECTS","user_id":"1ad097faba0eff85a04fe30bc04d53db","will_expire":"2030-01-01T00:00:00.000Z"}'
+  ```
 
-{% endnote %}
+  {% note tip "Visit Toloka API reference" %}
+
+  Refer to the [Block access to tasks](https://toloka.ai/docs/api/api-reference/#put-/user-restrictions) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests for [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
+
+  {% endnote %}
+
+{% endlist %}
 
 ## Banning on the platform {#ban-platform}
 
@@ -91,6 +97,9 @@ You can also [ban](#ban) this Toloker from your project.
 
 - [Toloka API: Blocking access to tasks](https://toloka.ai/docs/api/api-reference/#put-/user-restrictions)
 - [Toloka-Kit: Banning Tolokers](../../toloka-kit/reference/toloka.client.TolokaClient.set_user_restriction.md)
+- [Toloka-Kit recipe: Ban Tolokers](../../toloka-kit/recipes/ban-tolokers.md)
+- [Toloka-Kit recipe: Remove ban from Toloker](../../toloka-kit/recipes/delete-restriction.md)
+- [Toloka-Kit recipe: Get list of bans](../../toloka-kit/recipes/get-restrictions.md)
 
 ## Troubleshooting {#troubleshooting}
 

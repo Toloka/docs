@@ -6,13 +6,13 @@ You can track task completion on the [pool](../../glossary.md#pool) page or by c
 || **Field** | **Overview**||
 ||**Approximate completion time** | The anticipated time for finishing tasks, in days and hours. Calculated using the average time per task suite.
 
-Formula:$T_{left}={Assign_{left}}\times{T_{assign}}$,
+Formula: $T_{left}={Assign_{left}}\times{T_{assign}}$,
 
 where:
 
-$Assign_{left}$ is the number of task suite remaining uncompleted or those completed with insufficient [overlap](../../glossary.md#overlap).
+- $Assign_{left}$ is the number of task suite remaining uncompleted or those completed with insufficient [overlap](../../glossary.md#overlap).
 
-$T_{assign}$ is the average time per task suite. Calculated based on the amount of time since the pool opened and the number of task suites completed.
+- $T_{assign}$ is the average time per task suite. Calculated based on the amount of time since the pool opened and the number of task suites completed.
 
 The time is updated as task suites are completed by Tolokers.
 
@@ -96,7 +96,7 @@ If you think that this number is too large or small, you may have incorrectly co
 
 - [Dynamic overlap](dynamic-overlap.md) (incremental relabeling, IRL).
 
-- [Random majority vote check](selective-mvote.md).
+- [Selective majority vote check](selective-mvote.md).
 
 {% endcut %}
 ||

@@ -10,7 +10,7 @@ _Create a copy of an existing pool preserving the main parameters._
 
 ### 3. Clone pool {#step-three}
 
-[Find out](./get-pools.md) the ID of the pool which you want to clone. Then clone this pool calling the `clone_pool()` method.
+[Find out](get-pools.md) the ID of the pool which you want to clone. Then clone this pool calling the `clone_pool()` method.
 
 ```python
 cloned_pool = toloka_client.[clone_pool](*clone_pool)('32267581')
@@ -35,7 +35,7 @@ You should get an output with the created pool ID which looks like this.
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealApiKey_Here', 'PRODUCTION')
 
 cloned_pool = toloka_client.clone_pool('32267581')
 print(cloned_pool.id)
@@ -51,9 +51,9 @@ print(cloned_pool.id)
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/overview.md)
-- [{#T}](./learn-basics.md)
-- [{#T}](./use-cases.md)
-- [{#T}](./get-pools.md)
+- [{#T}](learn-basics.md)
+- [{#T}](use-cases.md)
+- [{#T}](get-pools.md)
 - [Toloka-Kit: Pool class](../reference/toloka.client.pool.Pool.md)
 - [Toloka API: Clone pool](https://toloka.ai/docs/api/api-reference/#post-/pools/-id-/clone)
 
