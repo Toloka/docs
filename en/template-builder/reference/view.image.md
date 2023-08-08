@@ -2,6 +2,8 @@
 
 Displays an image.
 
+[![View example](../_images/buttons/view-example.svg)](https://ya.cc/t/cEZQkn5r4Nq6UJ)
+
 [Learn more about inserting images](../operations/insert-images.md).
 
 ## Component properties {#properties}

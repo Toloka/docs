@@ -2,6 +2,8 @@
 
 Displays the web page at the URL in an iframe window.
 
+[![View example](../_images/buttons/view-example.svg)](https://ya.cc/t/MQwwYlAL4Nq7n7)
+
 ## Component properties {#properties}
 
 #|
