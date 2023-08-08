@@ -647,6 +647,12 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ItemsBulkCreateResponse'
+              examples:
+                success:
+                  description: The array of the uploaded task items.
+                  value:
+                    - "1eW0kvg27xquzqwneDk4"
+                    - "ABAR4wQ7n1WI3qxWAkQy"
           description: OK
         '400':
           description: Error in the request data.
@@ -654,6 +660,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/RequestError'
+              examples:
+                $ref: './responses/apps/error-batch.yaml'
         '403':
           description: No authorization to perform this operation.
           content:
@@ -888,7 +896,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Batch'
               examples:
-                $ref: './responses/apps/batch-id.yaml'
+                $ref: './responses/apps/post-batch.yaml'
           description: OK
         '400':
           description: Error in the request data.
@@ -896,6 +904,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/RequestError'
+              examples:
+                $ref: './responses/apps/error-batch.yaml'
         '403':
           description: No authorization to perform this operation.
           content:
@@ -938,7 +948,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/BatchCreateForm'
+              $ref: '#/components/schemas/BatchCreateSyncForm'
             examples:
               $ref: './requests/apps/batch-body.yaml'
       x-code-samples:
@@ -1682,9 +1692,6 @@ components:
       items:
         type: string
         description: The array of the uploaded task items.
-      example:
-        - "1eW0kvg27xquzqwneDk4"
-        - "ABAR4wQ7n1WI3qxWAkQy"
     ItemCreateForm:
       type: object
       description: A task item with data.
@@ -1735,6 +1742,17 @@ components:
           default: false
           example: true
           description: Whether to enable or disable the deduplication for all the items in the request. When set to `true`, all the items will be re-labeled regardless of whether pre-labeled duplicates exist.
+        ignore_errors:
+          type: boolean
+          default: false
+          example: true
+          description: |
+            Whether the data with incorrect items can be uploaded.
+
+            - `true` — If incorrect task items are present, they will be skipped and the response will contain the information about errors.
+            - `false` — If incorrect task items are present, the data will not be uploaded and the response will contain the information about the errors.
+
+            You can only use this parameter if `batch_id` is specified in the request.
     BatchListResult:
       type: object
       description: The list of batches and their properties in the `content` array.
@@ -1915,6 +1933,14 @@ components:
           default: false
           example: true
           description: Whether to enable or disable the deduplication for all the items in the request. When set to `true`, all the items will be re-labeled regardless of whether pre-labeled duplicates exist.
+        ignore_errors:
+          type: boolean
+          default: false
+          description: |
+            Whether the data with incorrect items can be uploaded.
+
+            - `true` — If incorrect task items are present, they will be skipped and the response will contain the information about errors.
+            - `false` — If incorrect task items are present, the data will not be uploaded and the response will contain the information about the errors.
     BatchCreateSyncForm:
       type: object
       description: The batch to be created with the list of the task items.
@@ -1958,16 +1984,20 @@ components:
           example: THREE
     ItemImport:
       type: object
-      description: The meta information on asynchronous loading operation (possible via UI).
+      description: The information on task item uploading operation.
       properties:
         id:
           type: string
         records_count:
           type: integer
-          description: The number of items in the loading operation.
+          description: The total number of items sent by a client.
         records_processed:
           type: integer
-          description: The number of successfully loaded items in the loading operation.
+          description: The number of items processed during the operation.
+        records_skipped:
+          type: integer
+          description: |
+            The number of items which had incorrect parameters and were not uploaded during the operation. The detailed information about the error is returned in the `errors` field.
         errors:
           type: object
           description: Errors during the loading operation.
