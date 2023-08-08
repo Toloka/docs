@@ -1,6 +1,6 @@
 # Overview
 
-Quality control rules help regulate access to a project or pool: you can filter out Tolokers who give incorrect responses in control tasks, skip too many tasks in a row, respond too fast, and so on.
+Quality control rules help regulate access to a project or pool: you can filter out Tolokers who give incorrect control task responses, skip too many tasks in a row, respond too fast, and so on.
 
 A rule consists of two parts: the condition ("If"), and the action to perform when the condition is met ("then"). If there are multiple conditions, they are combined using AND.
 

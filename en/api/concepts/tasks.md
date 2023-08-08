@@ -12,12 +12,11 @@ Merging saves you money if the same task was uploaded to different pools.
 
 {% endnote %}
 
-The response to the task received will be automatically assigned to another task if:
+The task response will be automatically assigned to another task if:
 
 - Both tasks have the same input data.
 - The tasks are located in different pools of the same project.
-- An identical task is available to the Toloker responding.
-- It has fewer responses than the overlap.
+- An identical task is available to the Tolokers and has fewer task responses than the overlap.
 
 The response will be recorded with a zero price, and the overlap will be reduced by one.
 

@@ -18,9 +18,9 @@ tags:
 
       - Input data parameters. Describe the objects to display in the task, such as images or text.
 
-      - Output data parameters. These parameters describe Tolokers' responses. They are used for validating the responses entered: the data type (integer, string, etc.), range of values, string length, and so on.
+      - Output data parameters. These parameters describe Tolokers' responses. They are used for validating the task responses entered: the data type (integer, string, etc.), range of values, string length, and so on.
 
-      - Task interface. Defines the appearance of the task for Tolokers and the logic for processing responses.
+      - Task interface. Defines the appearance of the task for Tolokers and the logic for processing task responses.
 
       ### See also
 
@@ -46,7 +46,7 @@ tags:
       linked to the main pool.
 
       After completing the training pool, the annotator is assigned a skill
-      equal to the percentage of correct responses. If the percentage is higher
+      equal to the percentage of correct task responses. If the percentage is higher
       than or equal to the **Level required** value in the linked pool, the
       annotator gets access to the main pool.
 
@@ -358,7 +358,7 @@ paths:
     get:
       tags:
         - assignment
-      summary: Get response by ID
+      summary: Get task suite response by ID
       description: |
         Gets the properties of the response with the ID specified in the
         request.
@@ -367,7 +367,7 @@ paths:
       operationId: getAssignment
       parameters:
         - name: id
-          description: The ID of the response for which you want to get the detailed information.
+          description: The ID of the task suite response for which you want to get the detailed information.
           in: path
           required: true
           example: 00022cfa46--637cf4098ccdeb4a260737de
@@ -387,12 +387,12 @@ paths:
     patch:
       tags:
         - assignment
-      summary: Update response
+      summary: Update task suite response
       description: |
-        Updates the properties of the response with the ID specified in the
+        Updates the properties of the task suite response with the ID specified in the
         request.
 
-        You can manually check tasks and reject responses of poor quality. To accept or reject the received responses, change the status of the task suite using a `PATCH` request to the `/assignments/{id}` resource:
+        You can manually check tasks and reject responses of poor quality. To accept or reject the received task suite responses, change the status of the task suite using a `PATCH` request to the `/assignments/{id}` resource:
 
         - Accept responses: change `SUBMITTED` to `ACCEPTED`.
         - Reject responses: change `SUBMITTED` to `REJECTED`.
@@ -408,7 +408,7 @@ paths:
       operationId: patchAssignment
       parameters:
         - name: id
-          description: The ID of the response you want to modify.
+          description: The ID of the task suite response you want to modify.
           in: path
           required: true
           example: 00022cfa46--637cf4098ccdeb4a260737de
@@ -3036,13 +3036,12 @@ paths:
         overlap (the `infinite_overlap` parameter) to assign a task to all Tolokers (for example, for
         training tasks).
 
-        - Add preliminary responses or change their values (the `baseline_solutions` parameter) if
+        - Add preliminary task responses or change their values (the `baseline_solutions` parameter) if
         they were set.
 
-          Preliminary responses are used to calculate response confidence when dynamic overlap (incremental relabeling, IRL) is enabled.
+          Preliminary task responses are used to calculate response confidence when dynamic overlap (incremental relabeling, IRL) is enabled.
 
-        - Make [control](https://toloka.ai/docs/glossary/#control-task) and [training](https://toloka.ai/docs/glossary/#training-task) tasks from regular ones or edit
-        responses (the `known_solutions` parameter) and hints (the `message_on_unknown_solution` parameter) for existing tasks.
+        - Make [control](https://toloka.ai/docs/glossary/#control-task) and [training](https://toloka.ai/docs/glossary/#training-task) tasks from regular ones or edit responses (the `known_solutions` parameter) and hints (the `message_on_unknown_solution` parameter) for existing tasks.
 
         ### See also
 
@@ -4730,7 +4729,7 @@ components:
                 $ref: '#/components/schemas/Field'
             answer_weight_skill_id:
               type: string
-              description: A skill that determines the weight of the Toloker's response.
+              description: A skill that determines the weight of the Toloker's task response.
               example: "12648"
     AggregatedSolutionViewV1:
       type: object
@@ -5038,7 +5037,7 @@ components:
           $ref: '#/components/schemas/LocalizedValue'
     AssignmentViewV1:
       type: object
-      description: The detailed information about the response.
+      description: The detailed information about the task suite response.
       properties:
         id:
           type: string
@@ -5101,7 +5100,7 @@ components:
         solutions:
           type: array
           description: |
-            Toloker responses. Arranged in the same order as the data for tasks in the tasks array.
+            Toloker task responses. Arranged in the same order as the data for tasks in the tasks array.
 
             ```json
             {
@@ -5424,11 +5423,11 @@ components:
         output_values:
           type: object
           description: |
-            Output data values for preliminary responses.
+            Output data values for preliminary task responses.
 
               ```json
-              "<ID of field 1>": "<preliminary response>",
-              "<ID of field 2>": "<preliminary response>",
+              "<ID of field 1>": "<preliminary task response>",
+              "<ID of field 2>": "<preliminary task response>",
               ...
               ```
 
@@ -5436,7 +5435,7 @@ components:
         confidence_weight:
           type: number
           default: 1
-          description: The confidence in a response, from `0` to `1`.
+          description: The confidence in a task response, from `0` to `1`.
           format: double
     RawKnownSolution:
       type: object
@@ -5459,9 +5458,9 @@ components:
           type: number
           default: 1
           description: |
-            The weight of a correct response in the range from `0` to `1`.
+            The weight of a correct task response in the range from `0` to `1`.
 
-            Lets you count a response as partially correct. This is convenient when there is no single right response to the task.
+            Lets you count a task response as partially correct. This is convenient when there is no single right response to the task.
 
             This works like awarding points: if you need to complete one control task correctly to get a skill (receive 1 point), you may complete one task with a weight of 1 or two tasks with a weight of 0.5 or higher.
           format: double
@@ -5479,7 +5478,7 @@ components:
           description: The assignment ID.
         output_values:
           type: object
-          description: Output data values for preliminary responses.
+          description: Output data values for preliminary task responses.
     RawTask:
       type: object
       properties:
@@ -5526,7 +5525,7 @@ components:
           $ref: './parts/api/additional.yaml#/components/schemas/HasMore'
     AssignmentPatchV1:
       type: object
-      description: The response properties that you want to change.
+      description: The task suite response properties that you want to change.
       properties:
         status:
           type: string
@@ -5977,8 +5976,8 @@ components:
 
                 The value to assign to the skill:
 
-                - `correct_answers_rate` — The percentage of correct responses.
-                - `wrong_answers_rate` — The percentage of incorrect responses.
+                - `correct_answers_rate` — The percentage of correct task responses.
+                - `wrong_answers_rate` — The percentage of incorrect task responses.
             open_pool:
               type: boolean
               description: |
@@ -6023,7 +6022,7 @@ components:
             The type of action:
 
             - `RESTRICTION` — Ban access to projects or pools.
-            - `SET_SKILL_FROM_OUTPUT_FIELD` — Set the “percentage of correct responses” as the skill value (used in control tasks and majority vote rules).
+            - `SET_SKILL_FROM_OUTPUT_FIELD` — Set the “percentage of correct task responses” as the skill value (used in control tasks and majority vote rules).
 
             You can use the skill value for filtering Tolokers.
 
@@ -6094,13 +6093,13 @@ components:
               description: |
                 **Required** if dynamic overlap is used.
 
-                A skill that determines the weight of the Toloker's response. For best results, use a skill calculated as the percentage of correct responses in control tasks.
+                A skill that determines the weight of the Toloker's task response. For best results, use a skill calculated as the percentage of correct responses in control tasks.
             fields:
               type: array
               description: |
                 **Required** if dynamic overlap is used.
 
-                Output data fields to use for aggregating responses. For best results, each of these fields must have a limited number of response options.
+                Output data fields to use for aggregating responses. For best results, each of these fields must have a limited number of task response options.
 
                 Don't specify several fields if their values depend on each other.
               items:
@@ -6112,7 +6111,7 @@ components:
 
         You can reduce the frequency of checking tasks over time.
 
-        Example of settings: in the first 100 tasks completed by the Toloker in the pool, assign every 5th task with an overlap of “5” to check matching responses. In the following tasks, every 25th task is issued with an overlap of “5”.
+        Example of settings: in the first 100 tasks completed by the Toloker in the pool, assign every 5th task with an overlap of “5” to check matching task responses. In the following tasks, every 25th task is issued with an overlap of “5”.
       properties:
         golden_settings:
           $ref: './parts/api/additional.yaml#/components/schemas/GoldenSettings'
@@ -6135,11 +6134,11 @@ components:
 
             - `ACCEPTANCE_RATE` — The percentage of Toloker responses that were rejected during non-automatic acceptance.
             - `ANSWER_COUNT` — The number of task suites completed by the Toloker in the pool.
-            - `ASSIGNMENT_SUBMIT_TIME` — The number of “fast” responses (the minimum response speed is set in the parameters).
+            - `ASSIGNMENT_SUBMIT_TIME` — The number of “fast” task suite responses (the minimum response speed is set in the parameters).
             - `ASSIGNMENTS_ASSESSMENT` — The number of assignments accepted or rejected with non-automatic acceptance enabled.
             - `GOLDEN_SET` — The number of correct and incorrect responses in the control tasks.
             - `INCOME` — Payment for tasks completed by the Toloker over the past 24 hours.
-            - `MAJORITY_VOTE` — The percentage of responses that matched the majority vote.
+            - `MAJORITY_VOTE` — The percentage of task responses that matched the majority vote.
             - `SKIPPED_IN_ROW_ASSIGNMENTS` — The number of task suites skipped in a row.
             - `USERS_ASSESSMENT` — The Toloker's skill value and their bans.
           enum:
@@ -6388,13 +6387,13 @@ components:
             - `accepted_assignments_count` — The number of task suites accepted after the review.
             - `accepted_assignments_rate` — The percentage of pool tasks performed by the Toloker and accepted with manual review.
             - `assignments_accepted_count` — The number of task suites completed by the Toloker.
-            - `correct_answers_rate` — The percentage of correct responses in training and control tasks, or the responses that matched the majority vote (from 0 to 100).
-            - `fast_submitted_count` — The number of fast responses (out of the recent ones).
+            - `correct_answers_rate` — The percentage of correct responses in training and control tasks, or the task responses that matched the majority vote (from 0 to 100).
+            - `fast_submitted_count` — The number of fast task suite responses (out of the recent ones).
             - `golden_set_answers_count` — The number of completed control tasks.
             - `golden_set_correct_answers_rate` — The percentage of correct responses in training and control tasks (from `0` to `100`).
             - `golden_set_incorrect_answers_rate` — The percentage of incorrect responses in training and control tasks (from `0` to `100`).
             - `income_sum_for_last_24_hours` — The Toloker's total earnings for tasks in the pool over the past 24 hours (in dollars).
-            - `incorrect_answers_rate` — The percentage of incorrect responses in training and control tasks, or the responses that didn't match the majority vote (from 0 to 100).
+            - `incorrect_answers_rate` — The percentage of incorrect responses in training and control tasks, or the task responses that didn't match the majority vote (from 0 to 100).
             - `pending_assignments_count` — The number of task suites that are completed and awaiting review.
             - `pool_access_revoked_reason` — The reason the Toloker lost access to the pool.
             - `rejected_assignments_count` — The number of task suites rejected after the review.
@@ -7451,7 +7450,7 @@ components:
 
             You can specify several options for a correct task response.
 
-            If one option is more correct than another, you can assign different weights to the response options. To do this, use the `correctness_weight key`.
+            If one option is more correct than another, you can assign different weights to the task response options. To do this, use the `correctness_weight key`.
           items:
             $ref: '#/components/schemas/RawKnownSolution'
         message_on_unknown_solution:
@@ -7460,13 +7459,13 @@ components:
         baseline_solutions:
           type: array
           description: |
-            The preliminary responses. This data simulates Toloker responses when calculating `confidence` in a response. It is used in dynamic overlap (also known as incremental relabeling or IRL) and aggregation of results by skill.
+            The preliminary task responses. This data simulates Toloker responses when calculating `confidence` in a response. It is used in dynamic overlap (also known as incremental relabeling or IRL) and aggregation of results by skill.
 
-            Define `output_values` and `confidence_weight` for each preliminary response.
+            Define `output_values` and `confidence_weight` for each preliminary task response.
 
             For example, you ask Tolokers to label whether an image shows a cat or a dog. Suppose your neural network already determined that the image might show a dog with a probability of 80% and a cat with a probability of 40%. Let's say you set dynamic overlap from 1 to 3 and the minimum response confidence at 85%.
 
-            If the Toloker answers "Dog" and the confidence in their response is high, the overlap most likely won't increase because one response is enough. If the Toloker answers "Cat", the confidence is most likely not high enough and the overlap will increase further.
+            If the Toloker answers "Dog" and the confidence in their task response is high, the overlap most likely won't increase because one task response is enough. If the Toloker answers "Cat", the confidence is most likely not high enough and the overlap will increase further.
 
             <aside class="warning">Can't be used when <a href="#post-/task-suites">creating a task suite</a>: an error with code <code>400</code> saying <code>VALUE_NOT_ALLOWED</code> will be returned to your request.</aside>
           items:
@@ -7565,13 +7564,13 @@ components:
         baseline_solutions:
           type: array
           description: |
-            The preliminary responses. This data simulates Toloker responses when calculating `confidence` in a response. It is used in dynamic overlap (also known as incremental relabeling or IRL) and aggregation of results by skill.
+            The preliminary task responses. This data simulates Toloker responses when calculating `confidence` in a response. It is used in dynamic overlap (also known as incremental relabeling or IRL) and aggregation of results by skill.
 
-            Define `output_values` and `confidence_weight` for each preliminary response.
+            Define `output_values` and `confidence_weight` for each preliminary task response.
 
             For example, you ask Tolokers to label whether an image shows a cat or a dog. Suppose your neural network already determined that the image might show a dog with a probability of 80% and a cat with a probability of 40%. Let's say you set dynamic overlap from 1 to 3 and the minimum response confidence at 85%.
 
-            If the Toloker answers "Dog" and the confidence in their response is high, the overlap most likely won't increase because one response is enough. If the Toloker answers "Cat", the confidence is most likely not high enough and the overlap will increase further.
+            If the Toloker answers "Dog" and the confidence in their task response is high, the overlap most likely won't increase because one task response is enough. If the Toloker answers "Cat", the confidence is most likely not high enough and the overlap will increase further.
 
             <aside class="warning">Can't be used when <a href="#post-/task-suites">creating a task suite</a>: an error with code <code>400</code> saying <code>VALUE_NOT_ALLOWED</code> will be returned to your request.</aside>
           items:
@@ -7586,7 +7585,7 @@ components:
 
             You can specify several options for a correct task response.
 
-            If one option is more correct than another, you can assign different weights to the response options. To do this, use the `correctness_weight` key.
+            If one option is more correct than another, you can assign different weights to the task response options. To do this, use the `correctness_weight` key.
           items:
             $ref: '#/components/schemas/RawKnownSolution'
     TaskOverlapPatchV1:
