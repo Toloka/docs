@@ -6,6 +6,8 @@ For short lists (2–4 items), it's better to use [field.radio-group](field.radi
 
 To allow selecting multiple options, use the [field.checkbox-group](field.checkbox-group.md) component.
 
+[![View example](../_images/buttons/view-example.svg)](https://ya.cc/t/aWKINQxh4NnvMe)
+
 ## Component properties {#properties}
 
 #|

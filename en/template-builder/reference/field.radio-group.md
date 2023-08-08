@@ -6,6 +6,8 @@ If you want it to look like normal buttons, use [field.button-radio-group](field
 
 The minimum number of buttons is one. Any type of data can be returned.
 
+[![View example](../_images/buttons/view-example.svg)](https://ya.cc/t/hXSSefB64NoHqm)
+
 ## Component properties {#properties}
 
 #|

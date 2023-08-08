@@ -4,6 +4,8 @@ A component for entering the date and time in the desired format and range.
 
 You can set a list of dates that a Toloker can't select.
 
+[![View example](../_images/buttons/view-example.svg)](https://ya.cc/t/4swO2AbA4NoGJp)
+
 ## Component properties {#properties}
 
 #|

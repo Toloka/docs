@@ -8,6 +8,8 @@ When a Toloker enters a number, the separator automatically changes to the one s
 
 You can also set up validation, for example, disable negative or fractional numbers. [Learn more](../operations/components-for-numbers.md).
 
+[![View example](../_images/buttons/view-example.svg)](https://ya.cc/t/rzI_TiK64NoGVQ)
+
 ## Component properties {#properties}
 
 #|
