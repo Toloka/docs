@@ -115,8 +115,7 @@ Array of quality control settings. ||
 Parameters for collecting statistics (for example, the number of tasks skipped in the pool). ||
 || `configs[].collector_config.type` | _string_ \| **required**
 
-{% include [quality-control-criteria](../_includes/quality-control-list.md) %}
-||
+{% include [quality-control-criteria](../_includes/quality-control-list.md) %}||
 || `configs[].collector_config.parameters` | _object_ \| **required if**
 
 Required if `configs[].collector_config.type` is equal to one of the values:
