@@ -11,3 +11,4 @@ batch_body:
       website_url: https://toloka.ai/docs/crowd-kit
     priority_order: ONE
     force_new_original: true
+    ignore_errors: true

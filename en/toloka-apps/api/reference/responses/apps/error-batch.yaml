@@ -1,0 +1,13 @@
+fail:
+  description: Request contains items with errors.
+  value:
+    request_id: 1690548725906623-1729968035745959496
+    payload:
+      input_data.0.image_url:
+        code: VALUE_REQUIRED
+        message: Value must be present and not equal to null
+      input_data.2.image_url:
+        code: INVALID_URL_SYNTAX
+        message: Value must be in valid url format
+    message: Validation failed
+    code: VALIDATION_ERROR
