@@ -8,7 +8,14 @@ When a Toloker enters a number, the separator automatically changes to the one s
 
 You can also set up validation, for example, disable negative or fractional numbers. [Learn more](../operations/components-for-numbers.md).
 
-[![View example](../_images/buttons/view-example.svg)](https://ya.cc/t/rzI_TiK64NoGVQ)
+[![View example](../_images/buttons/view-example.svg)](https://ya.cc/t/MAT9QmHy4P2WYN)
+
+{% cut "Components used in the example" %}
+
+- [data.output](../operations/work-with-data.md): The output data. This is what you get when a Toloker clicks the **Submit** button.
+- [condition.required](condition.required.md): Checks that the data is filled in.
+
+{% endcut %}
 
 ## Component properties {#properties}
 

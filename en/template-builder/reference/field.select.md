@@ -6,7 +6,15 @@ For short lists (2–4 items), it's better to use [field.radio-group](field.radi
 
 To allow selecting multiple options, use the [field.checkbox-group](field.checkbox-group.md) component.
 
-[![View example](../_images/buttons/view-example.svg)](https://ya.cc/t/aWKINQxh4NnvMe)
+[![View example](../_images/buttons/view-example.svg)](https://ya.cc/t/fJj2Yvw74P32Dv)
+
+{% cut "Components used in the example" %}
+
+- [data.output](../operations/work-with-data.md): The output data. This is what you get when a Toloker clicks the **Submit** button.
+- [condition.required](condition.required.md): Checks that the data is filled in.
+
+{% endcut %}
+
 
 ## Component properties {#properties}
 
