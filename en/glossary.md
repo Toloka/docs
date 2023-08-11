@@ -220,7 +220,7 @@ See [Dynamic overlap](#dynamic-overlap).
 
 #### Item (final answer, aggregated results, final label) {#item}
 
-Corresponds to the final labeled data unit or a unique data unit to be labelled in Toloka. It is calculated as the aggregated result of all responses received for a task.
+Corresponds to the final labeled data unit or a unique data unit to be labeled in Toloka. It is calculated as the aggregated result of all responses received for a task.
 
 ### J
 

@@ -1,0 +1,29 @@
+items:
+  - name: Introduction
+    href: ../toloka-llm/index.md
+  - name: Registering and signing in
+    href: ../toloka-llm/register.md
+  - name: Creating project
+    items:
+      - name: Starting project
+        href: ../toloka-llm/project.md
+      - name: Uploading dataset
+        href: ../toloka-llm/dataset.md
+      - name: Describing task
+        href: ../toloka-llm/task-description.md
+      - name: Using classes
+        href: ../toloka-llm/classes.md
+      - name: Generating and editing prompt
+        href: ../toloka-llm/prompt.md
+      - name: Getting variants
+        href: ../toloka-llm/variants.md
+  - name: Labeling data
+    items:
+      - name: Deploying project
+        href: ../toloka-llm/deploy.md
+      - name: Adding OpenAI API key or bank card
+        href: ../toloka-llm/funds.md
+      - name: Getting results
+        href: ../toloka-llm/results.md
+  - name: Terminology
+    href: ../toloka-llm/terminology.md

@@ -410,6 +410,11 @@ items:
                 href: guide/concepts/documents.md
           - name: Shared access to the account
             href: guide/concepts/multiple-access.md
+  - name: "{{ llm-name }}"
+    items:
+      - include:
+          path: _includes/toloka-llm-toc.yaml
+          mode: link
   - name: Useful recommendations
     items:
       - name: Data storage

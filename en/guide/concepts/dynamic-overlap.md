@@ -186,7 +186,7 @@ The confidence in the aggregated `OK` response is 96.2. The task is considered c
 
     - When the value is `< 70%`, the average accuracy of the aggregated response isn't sufficient to trust the Tolokers' responses.
 
-    - When the value is `> 90%`, the average accuracy of the aggregated response doesn't increase, and the labelling costs increase.
+    - When the value is `> 90%`, the average accuracy of the aggregated response doesn't increase, and the labeling costs increase.
 
     Optimal confidence is at 80% for the best “price/quality” ratio.
 
