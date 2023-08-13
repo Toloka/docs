@@ -6,6 +6,17 @@ For example, you can use this component to automatically process input data.
 
 This component is available in property values with the `string` type, for example in the `content` property in the [view.text](view.text.md) component.
 
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/XWH9Iupl4Nv7Be)
+
+{% cut "Components used in the example" %}
+
+- [view.list](view.list.md): Displays data in a list.
+- [field.text](field.text.md): Adds a field for entering a short text.
+- [view.text](view.text.md): Displays a text.
+
+{% endcut %}
+
+
 ## Component properties {#properties}
 
 #|
