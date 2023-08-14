@@ -35,7 +35,7 @@ If you need to add different task types to the pool, upload multiple files, one 
 
   - `HINT:text` — hints for [training tasks](../../glossary.md#training-task). The Toloker will see the hint text at the top of the task (on a red background) if their response to the control task is different from the correct one.
 
-  - `TASK:overlap` — an optional parameter, it is used to set up the task [overlap](overlap-faq.md). Parameter value must be positive integer. 
+  - `TASK:overlap` — the optional parameter that is used to configure the task [overlap](overlap-faq.md). It has a higher priority than the overlap value set in the [pool settings](pool-main.md#pool-params). The parameter value must be a positive integer.
 
   - Point coordinates for [field tasks](../tutorials/walk.md):
 
@@ -173,7 +173,7 @@ If you need to add different task types to the pool, upload multiple files, one 
 
     To create a [general task](../../glossary.md#general-task), fill in the columns with the `INPUT` header.
 
-    {% cut "Example with a simple object ([string](incoming.md#string), [link](incoming.md#url), and so on)" %}
+    {% cut "Example with a simple object (string, link, and so on)" %}
 
     ![](../_images/location-job/pool_csv/main_tsv.png)
 
