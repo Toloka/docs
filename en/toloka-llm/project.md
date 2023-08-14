@@ -1,4 +1,4 @@
-# Starting project
+# {{ llm-name }} workflow
 
 When you register in {{ llm-name }}, the platform creates the first project automatically. You will see the project interface when you sign in.
 
@@ -7,9 +7,9 @@ To start working with it,
 - [upload a dataset](dataset.md),
 - [describe your task](task-description.md),
 - [add classes](classes.md) and their descriptions,
-- [label several items](classes.md#label-classes) for the model to better understand the task,
-- [generate a prompt](prompt.md),
-- run tests and [get variants](variants.md).
+- [label several items](classes.md#label-classes) and check if the model is correctly set up and works as expected,
+- [check the generated prompt](prompt.md) and enhance it if needed or experiment with other prompts,
+- run tests to [produce better variants](variants.md).
 
 {% note info %}
 
@@ -23,7 +23,7 @@ After that you can [deploy the resulting model](deploy.md) to try it on a real d
 
 To manage your projects:
 
-1. Click ![Edit](_images/edit.svg) in the upper-left side next to the project name.
+1. Click ![Edit](_images/edit.svg) in the upper-left header area next to the project name.
 
 1. In the list of **My projects** find the project name you want to edit.
 

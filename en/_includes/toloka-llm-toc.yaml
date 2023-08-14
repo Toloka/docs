@@ -5,7 +5,7 @@ items:
     href: ../toloka-llm/register.md
   - name: Creating project
     items:
-      - name: Starting project
+      - name: "{{ llm-name }} workflow"
         href: ../toloka-llm/project.md
       - name: Uploading dataset
         href: ../toloka-llm/dataset.md

@@ -1,6 +1,6 @@
 # Uploading dataset
 
-Before you can effectively use the model, you need a prepared dataset. In it, you will have text samples that you want to label. Optionally, you can have the labels for the text in the dataset file, or you can label your dataset in the platform interface.
+An effective model produces good resulting quality. You need a dataset with the texts you want to label. It's great if you can provide a labeled dataset, but it's also okay if you label your dataset in {{ llm-name }}.
 
 This dataset will serve as a reference to measure the quality of the labels a combination of a model and a prompt provides. You will use it to iterate through the variants to produce a variant of higher quality than you already have at hand. The platform provides you with a good default, but you can find the variant that will be even better.
 

@@ -12,7 +12,7 @@ If you don't have the classes in your dataset file, add them:
 
 1. The **Describe classes for your task** popup will open. Enter the following data:
 
-    - **Name** is the class name that will be used for [prompt generation](prompt.md) and for [labeling](deploy.md). Names should be unique and it also helps if they are short.
+    - **Name** is the class name that will be used for [prompt generation](prompt.md) and for [labeling](deploy.md). Names should be unique and it also helps if they are short (ideally — one token).
 
     - **Description** is the class description that will be used for prompt generation. The description is an optional field, but it greatly helps the model better understand the context and the task and leads to better labeling results. We recommend that you to provide it for each class.
 
