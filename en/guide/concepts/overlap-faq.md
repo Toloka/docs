@@ -43,6 +43,12 @@ You can change overlap after the pool is started. To do this, open the pool edit
 - [Selective majority vote verification](selective-mvote.md) allows you to set up [majority vote check](mvote.md) for only a portion of tasks.
 
     This type of overlap helps you save money and speed up pool completion.
+    
+## Setting up the overlap for an individual task {#individual-overlap}
+
+You can set the overlap for each task using the `TASK:overlap` column values in the file with tasks.
+
+To learn more, see the [Tasks file structure](pool_csv.md#structure) section.
 
 ## For developers {#for-developers}
 
