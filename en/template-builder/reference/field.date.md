@@ -4,6 +4,15 @@ A component for entering the date and time in the desired format and range.
 
 You can set a list of dates that a Toloker can't select.
 
+[![View example](../_images/buttons/view-example.svg)](https://ya.cc/t/d3FpdzG94PTKfZ)
+
+{% cut "Components used in the example" %}
+
+- [data.output](../operations/work-with-data.md): The output data. This is what you get when a Toloker clicks the **Submit** button.
+- [condition.required](condition.required.md): Checks that the data is filled in.
+
+{% endcut %}
+
 ## Component properties {#properties}
 
 #|
