@@ -1,6 +1,6 @@
 # How does Toloka work?
 
-Toloka offers a data labeling platform where you can collect any amount of human-labeled data for AI and ML development.
+Toloka offers a data labeling platform where you can collect any amount of human-labeled data for AI and ML development. You can use Toloka to collect, classify and annotate text, images, audio and video, conduct surveys, or collect and verify offline data for market intelligence at brick-and-mortar stores, geo services, outdoor advertising, public services, and any applications that need on-site data.
 
 Data labeling in Toloka relies on crowdsourcing and technologies for crowd management. In this section, we explain how it works.
 
@@ -14,7 +14,7 @@ Crowdsourcing is the practice of obtaining information or services from a large 
 
 Usually, there are three parties involved in crowdsourcing: requesters, crowd contributors or annotators, and a platform that brings them together.
 
-Requesters are individuals or companies that use the crowdsourcing platform to collect or label data.  For example, they might post tasks to moderate comments, transcribe audio recordings, find road signs on images, or collect photos of local businesses.
+Requesters are individuals or companies that use the crowdsourcing platform to collect or label data. For example, they might post tasks to moderate comments, transcribe audio recordings, find road signs on images, or collect photos of local businesses.
 
 Annotators (in Toloka, we call them Tolokers) are people from around the world who get paid for completing these tasks. These people are usually referred to as “the crowd”, which is where the word crowdsourcing comes from.
 
