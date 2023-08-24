@@ -4,7 +4,7 @@ To select Tolokers based on profile data, define a `assignments_issuing_config.f
 
 ## Sample filter in JSON {#request-example}
 
-This example selects Tolokers who set their country as US and the city as Washington, D.C. in the profile.
+This example selects Tolokers who set their country as US in their profile and agreed to complete tasks which contain adult content.
 
 ```json
 {
@@ -24,9 +24,9 @@ This example selects Tolokers who set their country as US and the city as Washin
         "or": [
           {
             "category": "profile",
-            "key": "city",
-            "value": 87,
-            "operator": "IN"
+            "key": "adult_allowed",
+            "value": true,
+            "operator": "EQ"
           }
         ]
       }
@@ -66,18 +66,6 @@ Value of `operator`:
 
 - `EQ` — Equal to.
 - `NE` — Not equal to. ||
-|| `education` | _string_
-
-The Toloker's level of education:
-
-- `BASIC` — Secondary education (high school).
-- `MIDDLE` — Specialized secondary education (vocational school).
-- `HIGH` — Post-secondary education (university).
-
-Value of `operator`:
-
-- `EQ` — Equal to.
-- `NE` — Not equal to. ||
 || `adult_allowed` | _boolean_
 
 The Toloker agrees to perform tasks that contain adult content.
@@ -98,14 +86,6 @@ Value of `operator`:
 - `LT` — Less than.
 - `GTE` — Greater than or equal to.
 - `LTE` — Less than or equal to. ||
-|| `city` | _integer_
-
-The Toloker's city ([the region ID in the search database](regions.md)).
-
-Value of `operator`:
-
-- `IN` — Contained in the list of regions or languages in the profile.
-- `NOT_IN` — Not contained in the list of regions or languages in the profile. ||
 || `languages` | _string_
 
 The languages the Toloker entered in the profile (uppercase two-letter ISO code conforming to [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)).

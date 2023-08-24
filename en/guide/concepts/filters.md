@@ -24,17 +24,17 @@ The number of Tolokers selected with your filters is shown in the **The task is 
 
 ## Calculated data {#filter-calc-data}
 
-Use this group of filters to select Tolokers by device type, browser, or software version.
+Use this group of filters to select Tolokers by device type, browser, or software version. The data in this group of filters might differ from the one Tolokers specify in their profiles and shows the values detected by the platform.
 
 {% cut "Region by phone number" %}
 
-To more effectively choose Tolokers by location, add the **Region by phone** filter.
+To more effectively choose Tolokers by location, add the **Region by phone number** filter and choose the name of the country in the drop-down list.
 
 {% endcut %}
 
 {% cut "Region by IP" %}
 
-To make a task available to users with IP addresses in a particular region, add the **Region by IP** filter and enter the region name. This is useful for field tasks.
+To make a task available to users with IP addresses in a particular region, add the **Region by IP** filter and enter the area or city name. This is useful for field tasks.
 
 {% endcut %}
 
@@ -48,13 +48,17 @@ If your project has field tasks, you need to select Mobile Toloka users among th
 
 {% cut "Device type" %}
 
-If the type of the Toloker's device matters, use the `=` and `≠` operators to set the requirements.
+If the type of the Toloker's device matters, use the `=` and `≠` operators to set the requirements. Choose the device type from the drop-down list.
+
+Use `≠` and `Other` to filter out the Tolokers with devices that don't fall into any of the categories. Use `≠` and `Unknown` to filter out Tolokers with devices that the platform can't recognize.
+
+Refer to [this page](http://uadetector.sourceforge.net/modules/uadetector-core/apidocs/net/sf/uadetector/ReadableDeviceCategory.Category.html) for the list of device types that the platform uses to detect Tolokers' devices.
 
 {% endcut %}
 
 {% cut "Operating system" %}
 
-Add this filter to select users of certain operating systems.
+Add this filter to select users of certain operating systems (desktop or mobile operating systems).
 
 {% note tip %}
 
@@ -66,19 +70,25 @@ If you're looking to select MacOS, Windows, and Linux, the most popular operatin
 
 {% cut "Type of client application" %}
 
-Select this filter if the browser type determines whether Tolokers match your project tasks.
+Select this filter if the client application type determines whether Tolokers match your project tasks. You can choose from various browser types or specific client applications, like mail client, media player, bot and others.
+
+Use `≠` and `Other` to filter out the Tolokers with client applications that don't fall into any of the categories. Use `≠` and `Unknown` to filter out Tolokers with client applications that the platform can't recognize.
+
+Refer to [this page](https://uadetector.sourceforge.net/modules/uadetector-core/apidocs/net/sf/uadetector/UserAgentType.html) for the list of client application types that the platform uses to detect client applications.
 
 {% endcut %}
 
 {% cut "Browser" %}
 
-Use this filter if your tasks are intended for users with certain web browsers.
+Use this filter if your tasks are intended for users with certain web browsers or browser families.
+
+Refer to [this page](http://uadetector.sourceforge.net/modules/uadetector-core/apidocs/net/sf/uadetector/UserAgentFamily.html) for the list of browser types that the platform uses to detect browsers and their families.
 
 {% endcut %}
 
 {% cut "Client application versions" %}
 
-Use this filter if you want to make sure Tolokers have the right browser for your project.
+Use this filter if you want to make sure Tolokers have the right browser for your project. For example, if you want to choose only Tolokers that use the latest mobile application for Android version, choose **Toloka for mobile** in the `Client` filter and set `Client application version` together with the `=` or `≥` and the **2.45.0** application version as a value (use the exact version number from the mobile application). If you prefer Tolokers with a certain browser version, choose the browser type in the `Browser` filter together with `=` or `≥` and the browser version as a value.
 
 {% endcut %}
 
@@ -92,35 +102,17 @@ To learn more, see [Using A/B experiments](ab-experiment.md).
 
 ## Toloker profile {#filter-user-profile}
 
-Use filters from this group to select Tolokers by the main profile data.
-
-{% cut "Date of birth" %}
-
-Using a set of operators, you can select an age-based audience among available Tolokers.
-
-{% endcut %}
-
-{% cut "City" %}
-
-You can choose Tolokers who live in certain cities. Use this filter for field tasks or to search for data online.
-
-{% endcut %}
-
-{% cut "Adult content" %}
-
-If there is adult content in the pool tasks, they will only be shown to Tolokers who have agreed to see them. To select such Tolokers, add the **Adult content** filter and activate this option.
-
-{% endcut %}
-
-{% cut "Gender" %}
-
-You can choose Tolokers of a certain gender if this matters for your project.
-
-{% endcut %}
+Use filters from this group to select Tolokers by the main profile data. Please note, that the data Tolokers set in their profiles might be different from the [calculated data](#filter-calc-data) if the Tolokers specify incorrect or false information.
 
 {% cut "Country" %}
 
-Add this filter to restrict the audience by region.
+Add this filter to restrict the audience by their residence region.
+
+{% endcut %}
+
+{% cut "Location" %}
+
+Use this filter when the Toloker's citizenship may affect the quality of responses, like if your project asks Tolokers to complete a survey, transcribe audio, or search for information online. You can also use this filter to restrict Tolokers' access to tasks.
 
 {% endcut %}
 
@@ -134,21 +126,27 @@ If you want to be sure Tolokers can read and understand the basics of your langu
 
 {% endcut %}
 
-{% cut "Education" %}
-
-Add this filter if the Toloker's education may affect the quality of responses. Use the `=` or `≠` operator and select **Secondary**, **Vocational secondary**, or **Higher** education from the drop-down list.
-
-{% endcut %}
-
-{% cut "Citizenship" %}
-
-Use this filter when the Toloker's citizenship may affect the quality of responses, like if your project asks Tolokers to complete a survey, transcribe audio, or search for information online. You can also use this filter to restrict Tolokers' access to tasks.
-
-{% endcut %}
-
 {% cut "Verified" %}
 
 Use this filter if you need additional guarantees when selecting Tolokers. Your tasks will only be available to Tolokers whose personal details are verified in Toloka.
+
+{% endcut %}
+
+{% cut "Adult content" %}
+
+If there is adult content in the pool tasks, they will only be shown to Tolokers who have agreed to see them. To select such Tolokers, add the **Adult content** filter and activate this option.
+
+{% endcut %}
+
+{% cut "Date of birth" %}
+
+Using a set of operators, you can select an age-based audience among available Tolokers.
+
+{% endcut %}
+
+{% cut "Gender" %}
+
+You can choose Tolokers of a certain gender if this matters for your project.
 
 {% endcut %}
 
