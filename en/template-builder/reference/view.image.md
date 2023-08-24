@@ -2,7 +2,7 @@
 
 Displays an image.
 
-[![View example](../_images/buttons/view-example.svg)](https://ya.cc/t/cEZQkn5r4Nq6UJ)
+[![View example](../_images/buttons/view-example.svg)](https://ya.cc/t/qj7bZZaM4Qc9aX)
 
 [Learn more about inserting images](../operations/insert-images.md).
 

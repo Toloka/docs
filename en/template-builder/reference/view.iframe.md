@@ -4,6 +4,12 @@ Displays the web page at the URL in an iframe window.
 
 [![View example](../_images/buttons/view-example.svg)](https://ya.cc/t/MQwwYlAL4Nq7n7)
 
+{% cut "Components used in the example" %}
+
+- [data.input](../operations/work-with-data.md):  Input data.
+
+{% endcut %}
+
 ## Component properties {#properties}
 
 #|
