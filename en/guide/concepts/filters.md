@@ -12,7 +12,7 @@ Copy filters from another pool to add them faster. Click **Copy audience filters
 
 {% endnote %}
 
-All filters added to the pool are applied simultaneously. The criteria within a single filter are combined with the logical OR operator.
+All filters added to the pool are applied simultaneously. The criteria within a single filter are combined with the logical `OR` operator.
 
 {% note info %}
 

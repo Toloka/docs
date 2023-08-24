@@ -38,7 +38,7 @@ new_pool = toloka.pool.Pool(
 )
 ```
 
-#### Filters used for pool
+{% cut "Filters used for the pool" %}
 
 For this recipe, we use the following filters:
 
@@ -56,6 +56,8 @@ For this recipe, we use the following filters:
 See the [Filters](../reference/toloka.client.filter.AdultAllowed.md) section of the Toloka-Kit reference for the complete list of the available filters and their possible values.
 
 {% endnote %}
+
+{% endcut %}
 
 {% cut "Selected filters in the Toloka interface" %}
 
