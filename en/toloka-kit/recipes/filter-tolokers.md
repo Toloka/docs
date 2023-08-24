@@ -30,7 +30,6 @@ new_pool = toloka.pool.Pool(
         (toloka.filter.[Citizenship](*Citizenship)=='US') &
         (toloka.filter.[ClientType](*ClientType)=='TOLOKA_APP') &
         (toloka.filter.[DeviceCategory](*DeviceCategory)=='SMARTPHONE') &
-        (toloka.filter.[Education](*Education)=='MIDDLE') &
         (toloka.filter.[Gender](*Gender)=='MALE') &
         (toloka.filter.[Languages](*Languages).in_(['EN','DE','FR'])) &
         (toloka.filter.[OSFamily](*OSFamily)=='IOS') &
@@ -47,7 +46,6 @@ For this recipe, we use the following filters:
 - **Citizenship** ([Citizenship](../reference/toloka.client.filter.Citizenship.md) filter class): The tasks will be shown only to the Tolokers from the countries specified in the filter.
 - **Client** ([ClientType](../reference/toloka.client.filter.ClientType.md) filter class): The pool tasks will be available in the selected Toloka client, in our case, in the mobile app.
 - **Device type** ([DeviceCategory](../reference/toloka.client.filter.DeviceCategory.md) filter class): The pool tasks will be available to the Tolokers with the specified devices.
-- **Education** ([Education](../reference/toloka.client.filter.Education.md) filter class): The pool tasks will be available to the Tolokers with the specified education level.
 - **Gender** ([Gender](../reference/toloka.client.filter.Gender.md) filter class): The pool tasks will be available to the Tolokers with the specified gender.
 - **Languages** ([Languages](../reference/toloka.client.filter.Languages.md) filter class): The pool tasks will be available to the Tolokers with the specified languages. Read the [Filter Tolokers with confirmed language knowledge](filter-tolokers-languages.md) recipe to learn how to filter Tolokers with various languages for which they passed the language test.
 - **Operating system** ([OSFamily](../reference/toloka.client.filter.OSFamily.md) filter class): The pool tasks will be available to the Tolokers who use devices with the specified operating systems.
@@ -107,7 +105,6 @@ new_pool = toloka.pool.Pool(
         (toloka.filter.Citizenship=='US') &
         (toloka.filter.ClientType=='TOLOKA_APP') &
         (toloka.filter.DeviceCategory=='SMARTPHONE') &
-        (toloka.filter.Education=='MIDDLE') &
         (toloka.filter.Gender=='MALE') &
         (toloka.filter.Languages.in_(['EN','DE','FR'])) &
         (toloka.filter.OSFamily=='IOS') &
@@ -126,7 +123,6 @@ print(new_pool.id)
 - _[Citizenship](../reference/toloka.client.filter.Citizenship.md) class_
 - _[ClientType](../reference/toloka.client.filter.ClientType.md) class_
 - _[DeviceCategory](../reference/toloka.client.filter.DeviceCategory.md) class_
-- _[Education](../reference/toloka.client.filter.Education.md) class_
 - _[Gender](../reference/toloka.client.filter.Gender.md) class_
 - _[Languages](../reference/toloka.client.filter.Languages.md) class_
 - _[OSFamily](../reference/toloka.client.filter.OSFamily.md) class_
@@ -151,7 +147,6 @@ print(new_pool.id)
 [*Citizenship]: [Citizenship](../reference/toloka.client.filter.Citizenship.md) class
 [*ClientType]: [ClientType](../reference/toloka.client.filter.ClientType.md) class
 [*DeviceCategory]: [DeviceCategory](../reference/toloka.client.filter.DeviceCategory.md) class
-[*Education]: [Education](../reference/toloka.client.filter.Education.md) class
 [*Gender]: [Gender](../reference/toloka.client.filter.Gender.md) class
 [*Languages]: [Languages](../reference/toloka.client.filter.Languages.md) class
 [*OSFamily]: [OSFamily](../reference/toloka.client.filter.OSFamily.md) class
