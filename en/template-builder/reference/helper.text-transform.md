@@ -13,6 +13,7 @@ This component is available in property values with the `string` type, for examp
 - [view.list](view.list.md): Displays data in a list.
 - [field.text](field.text.md): Adds a field for entering a short text.
 - [view.text](view.text.md): Displays a text.
+- [data.local](../operations/work-with-data.md): Local data.
 
 {% endcut %}
 
