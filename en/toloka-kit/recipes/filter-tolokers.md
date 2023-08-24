@@ -43,7 +43,7 @@ new_pool = toloka.pool.Pool(
 For this recipe, we use the following filters:
 
 - **Adult content** ([AdultAllowed](../reference/toloka.client.filter.AdultAllowed.md) filter class): The pool tasks with the adult content will only be shown to Tolokers who have agreed to see them.
-- **Citizenship** ([Citizenship](../reference/toloka.client.filter.Citizenship.md) filter class): The tasks will be shown only to the Tolokers from the countries specified in the filter.
+- **Location** ([Citizenship](../reference/toloka.client.filter.Citizenship.md) filter class): The tasks will be shown only to the Tolokers from the countries specified in the filter.
 - **Client** ([ClientType](../reference/toloka.client.filter.ClientType.md) filter class): The pool tasks will be available in the selected Toloka client, in our case, in the mobile app.
 - **Device type** ([DeviceCategory](../reference/toloka.client.filter.DeviceCategory.md) filter class): The pool tasks will be available to the Tolokers with the specified devices.
 - **Gender** ([Gender](../reference/toloka.client.filter.Gender.md) filter class): The pool tasks will be available to the Tolokers with the specified gender.
