@@ -4,6 +4,8 @@ Block for displaying text.
 
 If you need formatted text, use [view.markdown](view.markdown.md).
 
+[![View example](../_images/buttons/view-example.svg)](https://ya.cc/t/P8-jUlYe4Nq7KC)
+
 ## Component properties {#properties}
 
 #|

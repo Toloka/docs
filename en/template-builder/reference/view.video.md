@@ -6,6 +6,8 @@ The player is a rectangular block with a frame and buttons to control the video.
 
 The video resolution does not affect the size of the block — the video will fit into the block and will not be cropped.
 
+[![View example](../_images/buttons/view-example.svg)](https://ya.cc/t/rD2U7auQ4Nq7Yb)
+
 ## Component properties {#properties}
 
 #|
