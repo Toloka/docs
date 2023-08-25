@@ -8,6 +8,8 @@ The event can be triggered immediately when the task is loaded (`"fireImmediatel
 
 You can also set conditions in the `conditions` property that must be met in order for the trigger to fire.
 
+In the following example trigger adds assignment id to the link. This happens immediately after the task is loaded. 
+
 [![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/lxI6fdnn4PTHN4)
 
 {% cut "Components used in the example" %}
