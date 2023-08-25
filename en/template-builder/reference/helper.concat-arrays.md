@@ -16,6 +16,13 @@ Their elements can be combined into a single array to show simultaneously:
 
 [![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/5gzayPK_3tz4vn)
 
+{% cut "Components used in the example" %}
+
+- [view.list](view.list.md): Displays data in a list.
+- [view.text](view.text.md): Displays a text.
+
+{% endcut %}
+
 ## Component properties {#properties}
 
 #|
