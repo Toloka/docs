@@ -1,7 +1,7 @@
 items:
   - name: Overview
     href: ../toloka-kit/index.md
-  - name: Getting OAuth token
+  - name: Getting API key
     href: ../toloka-kit/registration.md
   - name: Quick start
     href: ../toloka-kit/quick-start.md
