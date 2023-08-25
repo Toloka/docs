@@ -1,5 +1,5 @@
 # GroupViewV1
-`toloka.client.project.template_builder.view.GroupViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/view.py#L183)
+`toloka.client.project.template_builder.view.GroupViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/project/template_builder/view.py#L183)
 
 ```python
 GroupViewV1(
@@ -21,7 +21,8 @@ For more information, see [view.group](https://toloka.ai/docs/template-builder/r
     Attributes:
         content: A content.
         label: A header.
-        hint: A hint. To insert a line break in the hint, use `\n`.
+        hint: A hint. To insert a line break in the hint, use `
+`.
 
 ## Parameters Description
 

@@ -1,5 +1,5 @@
 # find_projects
-`toloka.client.TolokaClient.find_projects` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L1199)
+`toloka.client.TolokaClient.find_projects` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L1228)
 
 Finds projects that match certain criteria.
 
@@ -22,7 +22,7 @@ To iterate over all matching projects you may use the [get_projects](toloka.clie
 `created_gt`|**Optional\[datetime\]**|<p>Projects created after the specified date.</p>
 `created_gte`|**Optional\[datetime\]**|<p>Projects created after or on the specified date.</p>
 `sort`|**Union\[List\[str\], [ProjectSortItems](toloka.client.search_requests.ProjectSortItems.md), None\]**|<p>Sorting options. Default: `None`.</p>
-`limit`|**Optional\[int\]**|<p>Returned projects limit. The default limit is 20. The maximum allowed limit is 300.</p>
+`limit`|**Optional\[int\]**|<p>Returned projects limit. The maximum allowed value: 300. The default value: 20.</p>
 
 * **Returns:**
 
@@ -37,7 +37,8 @@ To iterate over all matching projects you may use the [get_projects](toloka.clie
 The example shows how to find projects created before a specific date.
 
 ```python
-projects = toloka_client.find_projects(created_lt='2021-06-01T00:00:00')
+find_result = toloka_client.find_projects(created_lt='2021-06-01T00:00:00')
+projects = find_result.items
 ```
 
-If there are projects exceeding the `limit`, then `projects.has_more` is set to `True`.
+If there are projects exceeding the `limit`, then `find_result.has_more` is set to `True`.

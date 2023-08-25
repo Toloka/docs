@@ -1,5 +1,5 @@
 # Assignment
-`toloka.client.assignment.Assignment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/assignment.py#L20)
+`toloka.client.assignment.Assignment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/assignment.py#L20)
 
 ```python
 Assignment(
@@ -54,3 +54,13 @@ Information about an assigned task suite.
 `mixed`|**Optional\[bool\]**|<p>Type of operation for creating a task suite:</p> <ul> <li>`True` — Smart mixing was used.</li> <li>`False` — The tasks were grouped manually, smart mixing was not used.</li> </ul>
 `owner`|**Optional\[[Owner](toloka.client.owner.Owner.md)\]**|<p>Properties of Requester.</p>
 `public_comment`|**Optional\[str\]**|<p>A public comment that is set when accepting or rejecting the assignment.</p>
+
+**Examples:**
+
+
+```python
+for assignment in toloka_client.get_assignments(pool_id='1240045', status='SUBMITTED'):
+    print(assignment.id)
+    for solution in assignment.solutions:
+        print(solution)
+```

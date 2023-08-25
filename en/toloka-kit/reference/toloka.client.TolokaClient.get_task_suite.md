@@ -1,17 +1,17 @@
 # get_task_suite
-`toloka.client.TolokaClient.get_task_suite` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L2730)
+`toloka.client.TolokaClient.get_task_suite` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L2812)
 
 ```python
 get_task_suite(self, task_suite_id: str)
 ```
 
-Reads one task suite.
+Gets task suite data from Toloka.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`task_suite_id`|**str**|<p>ID of the task suite.</p>
+`task_suite_id`|**str**|<p>The ID of the task suite.</p>
 
 * **Returns:**
 
@@ -25,5 +25,6 @@ Reads one task suite.
 
 
 ```python
-toloka_client.get_task_suite(task_suite_id='1')
+task_suite = toloka_client.get_task_suite(task_suite_id='00001092da--61ef030400c684132d0da0dc')
+print(len(task_suite.tasks))
 ```

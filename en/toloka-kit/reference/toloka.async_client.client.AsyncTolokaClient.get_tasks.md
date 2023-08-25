@@ -1,5 +1,5 @@
 # get_tasks
-`toloka.async_client.client.AsyncTolokaClient.get_tasks` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.get_tasks` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L0)
 
 Finds all tasks that match certain criteria.
 
@@ -26,7 +26,7 @@ If you need to sort tasks use the [find_tasks](toloka.client.TolokaClient.find_t
 `overlap_lte`|**Optional\[int\]**|<p>Tasks with an overlap less than or equal to the specified value.</p>
 `overlap_gt`|**Optional\[int\]**|<p>Tasks with an overlap greater than the specified value.</p>
 `overlap_gte`|**Optional\[int\]**|<p>Tasks with an overlap greater than or equal to the specified value.</p>
-`batch_size`|**Optional\[int\]**|<p>Returned tasks limit for each request. The default batch_size is 50. The maximum allowed batch_size is 100,000.</p>
+`batch_size`|**Optional\[int\]**|<p>A limit of items returned by each request to Toloka. The maximum allowed value: 100,000. The default value: 50.</p>
 
 * **Yields:**
 
@@ -41,5 +41,5 @@ If you need to sort tasks use the [find_tasks](toloka.client.TolokaClient.find_t
 Getting all tasks from a single pool.
 
 ```python
-results_list = list(toloka_client.get_tasks(pool_id='1'))
+tasks = list(toloka_client.get_tasks(pool_id='1086170'))
 ```

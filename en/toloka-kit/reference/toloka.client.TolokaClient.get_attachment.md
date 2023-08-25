@@ -1,24 +1,24 @@
 # get_attachment
-`toloka.client.TolokaClient.get_attachment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L891)
+`toloka.client.TolokaClient.get_attachment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L911)
 
 ```python
 get_attachment(self, attachment_id: str)
 ```
 
-Gets attachment metadata without downloading it
+Gets attachment metadata without downloading it.
 
 
-To download attachments as a file use "TolokaClient.download_attachment" method.
+To download an attachment use the [download_attachment](toloka.client.TolokaClient.download_attachment.md) method.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`attachment_id`|**str**|<p>ID of attachment.</p>
+`attachment_id`|**str**|<p>The ID of the attachment.</p>
 
 * **Returns:**
 
-  The attachment metadata read as a result.
+  The attachment metadata.
 
 * **Return type:**
 
@@ -26,8 +26,7 @@ To download attachments as a file use "TolokaClient.download_attachment" method.
 
 **Examples:**
 
-Specify an `attachment_id` to get the information about any attachment object.
 
 ```python
-toloka_client.get_attachment(attachment_id='1')
+attachment = toloka_client.get_attachment(attachment_id='0983459b-e26f-42f3-a5fd-6e3feee913e7')
 ```

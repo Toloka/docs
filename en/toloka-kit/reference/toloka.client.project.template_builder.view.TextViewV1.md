@@ -1,5 +1,5 @@
 # TextViewV1
-`toloka.client.project.template_builder.view.TextViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/view.py#L405)
+`toloka.client.project.template_builder.view.TextViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/project/template_builder/view.py#L407)
 
 ```python
 TextViewV1(
@@ -19,10 +19,12 @@ A view for displaying a text.
 For more information, see [view.text](https://toloka.ai/docs/template-builder/reference/view.text).
 
     Attributes:
-        content: The text. To insert a new line, use `\n`.
+        content: The text. To insert a new line, use `
+`.
 
     Example:
 ```python
+import toloka.client.project.template_builder as tb
 text_view = tb.view.TextViewV1(tb.data.InputData('input_field_name'), label='My label:')
 ```
 

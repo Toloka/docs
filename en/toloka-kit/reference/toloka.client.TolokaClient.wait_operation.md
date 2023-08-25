@@ -1,5 +1,5 @@
 # wait_operation
-`toloka.client.TolokaClient.wait_operation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L2842)
+`toloka.client.TolokaClient.wait_operation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L2931)
 
 ```python
 wait_operation(
@@ -10,19 +10,22 @@ wait_operation(
 )
 ```
 
-Waits for the operation to complete, and return it
+Waits for a Toloka operation to complete.
+
+
+To get information about the operation, call the [get_operation](toloka.client.TolokaClient.get_operation.md) method.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`op`|**[Operation](toloka.client.operations.Operation.md)**|<p>ID of the operation.</p>
-`timeout`|**timedelta**|<p>How long to wait. Defaults to 10 minutes.</p>
-`disable_progress`|**bool**|<p>Whether disable progress bar or enable. Defaults to `False` (meaning progress bar is shown).</p>
+`op`|**[Operation](toloka.client.operations.Operation.md)**|<p>The ID of the operation.</p>
+`timeout`|**timedelta**|<p>The wait timeout. </p><p>Default value: 10 minutes.</p>
+`disable_progress`|**bool**|<ul> <li>`False` — A progress bar is shown.</li> <li>`True` — A progress bar is hidden.</li> </ul> <p></p><p>Default value: `False`.</p>
 
 * **Returns:**
 
-  Completed operation.
+  The completed operation.
 
 * **Return type:**
 
@@ -30,21 +33,15 @@ Waits for the operation to complete, and return it
 
 **Examples:**
 
-Waiting for the pool to close can be running in the background.
+The example starts aggregation and waits for it.
 
 ```python
-pool = toloka_client.get_pool(pool_id)
-while not pool.is_closed():
-    op = toloka_client.get_analytics(
-        [toloka.analytics_request.CompletionPercentagePoolAnalytics(subject_id=pool.id)]
+aggregation_operation = toloka_client.aggregate_solutions_by_pool(
+        type=toloka.client.aggregation.AggregatedSolutionType.WEIGHTED_DYNAMIC_OVERLAP,
+        pool_id='1086170',
+        answer_weight_skill_id='11294',
+        fields=[toloka.client.aggregation.PoolAggregatedSolutionRequest.Field(name='result')]
     )
-    op = toloka_client.wait_operation(op)
-    percentage = op.details['value'][0]['result']['value']
-    print(
-        f'{datetime.datetime.now().strftime("%H:%M:%S")}'
-        f'Pool {pool.id} - {percentage}%'
-    )
-    time.sleep(60 * minutes_to_wait)
-    pool = toloka_client.get_pool(pool.id)
-print('Pool was closed.')
+aggregation_operation = toloka_client.wait_operation(aggregation_operation)
+aggregation_results = list(toloka_client.get_aggregated_solutions(aggregation_operation.id))
 ```

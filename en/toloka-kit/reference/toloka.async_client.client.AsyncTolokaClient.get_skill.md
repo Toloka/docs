@@ -1,17 +1,17 @@
 # get_skill
-`toloka.async_client.client.AsyncTolokaClient.get_skill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.get_skill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/async_client/client.py#L0)
 
 ```python
 async get_skill(self, skill_id: str)
 ```
 
-Reads one specific skill
+Gets skill information from Toloka.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`skill_id`|**str**|<p>ID of the skill.</p>
+`skill_id`|**str**|<p>The ID of the skill.</p>
 
 * **Returns:**
 
@@ -25,5 +25,5 @@ Reads one specific skill
 
 
 ```python
-toloka_client.get_skill(skill_id='1')
+skill = toloka_client.get_skill(skill_id='14486')
 ```

@@ -1,5 +1,5 @@
 # NewUserBonuses
-`toloka.metrics.metrics.NewUserBonuses` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/metrics/metrics.py#L190)
+`toloka.metrics.metrics.NewUserBonuses` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/metrics/metrics.py#L190)
 
 ```python
 NewUserBonuses(

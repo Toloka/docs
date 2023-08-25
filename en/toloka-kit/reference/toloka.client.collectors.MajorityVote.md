@@ -1,5 +1,5 @@
 # MajorityVote
-`toloka.client.collectors.MajorityVote` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/collectors.py#L401)
+`toloka.client.collectors.MajorityVote` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/collectors.py#L401)
 
 ```python
 MajorityVote(
@@ -42,13 +42,13 @@ The collector can be used with actions:
 The example shows how to reject all Toloker's responses if they significantly differ from the majority. The rule is applied after collecting at least 10 responses.
 
 ```python
-new_pool = toloka.pool.Pool(....)
+new_pool = toloka.client.pool.Pool()
 new_pool.quality_control.add_action(
-    collector=toloka.collectors.MajorityVote(answer_threshold=2),
+    collector=toloka.client.collectors.MajorityVote(answer_threshold=2),
     conditions=[
-        toloka.conditions.TotalAnswersCount > 9,
-        toloka.conditions.CorrectAnswersRate < 60,
+        toloka.client.conditions.TotalAnswersCount > 9,
+        toloka.client.conditions.CorrectAnswersRate < 60,
     ],
-    action=toloka.actions.RejectAllAssignments(public_comment='Too low quality')
+    action=toloka.client.actions.RejectAllAssignments(public_comment='Too low quality')
 )
 ```

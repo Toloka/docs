@@ -1,5 +1,5 @@
 # AggregatedSolutionType
-`toloka.client.aggregation.AggregatedSolutionType` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/aggregation.py#L25)
+`toloka.client.aggregation.AggregatedSolutionType` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/aggregation.py#L25)
 
 An enumeration.
 

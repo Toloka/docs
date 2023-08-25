@@ -1,5 +1,5 @@
 # AssessmentEvent
-`toloka.client.conditions.AssessmentEvent` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/conditions.py#L105)
+`toloka.client.conditions.AssessmentEvent` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/conditions.py#L126)
 
 ```python
 AssessmentEvent(
@@ -28,10 +28,10 @@ Possible values:
 The example shows how to automatically increase the overlap of a task suite when an assignment was rejected.
 
 ```python
-new_pool = toloka.pool.Pool(....)
+new_pool = toloka.client.pool.Pool()
 new_pool.quality_control.add_action(
-    collector=toloka.collectors.AssignmentsAssessment(),
-    conditions=[toloka.conditions.AssessmentEvent == toloka.conditions.AssessmentEvent.REJECT],
-    action=toloka.actions.ChangeOverlap(delta=1, open_pool=True),
+    collector=toloka.client.collectors.AssignmentsAssessment(),
+    conditions=[toloka.client.conditions.AssessmentEvent == toloka.client.conditions.AssessmentEvent.REJECT],
+    action=toloka.client.actions.ChangeOverlap(delta=1, open_pool=True),
 )
 ```

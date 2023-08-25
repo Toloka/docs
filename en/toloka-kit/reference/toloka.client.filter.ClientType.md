@@ -1,5 +1,5 @@
 # ClientType
-`toloka.client.filter.ClientType` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/filter.py#L534)
+`toloka.client.filter.ClientType` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/filter.py#L546)
 
 ```python
 ClientType(

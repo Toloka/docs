@@ -1,3 +1,3 @@
 # CompareFields
-`toloka.client.search_requests.MessageThreadSearchRequest.CompareFields` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/search_requests.py#L813)
+`toloka.client.search_requests.MessageThreadSearchRequest.CompareFields` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/search_requests.py#L813)
 

@@ -1,5 +1,5 @@
 # S3Storage
-`toloka.streaming.storage.S3Storage` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/streaming/storage.py#L158)
+`toloka.streaming.storage.S3Storage` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/streaming/storage.py#L158)
 
 ```python
 S3Storage(
@@ -39,6 +39,7 @@ Create new instance.
 import boto3
 import os
 session = boto3.Session(
+    aws_access_key_id=os.getenv('AWS_ACCESS_KEY_ID'),
     aws_secret_access_key=os.getenv('AWS_SECRET_ACCESS_KEY')
 )
 resource = session.resource('s3', region_name=os.getenv('AWS_DEFAULT_REGION', 'us-east-2'))

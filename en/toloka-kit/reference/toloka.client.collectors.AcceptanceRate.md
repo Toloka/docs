@@ -1,5 +1,5 @@
 # AcceptanceRate
-`toloka.client.collectors.AcceptanceRate` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/collectors.py#L74)
+`toloka.client.collectors.AcceptanceRate` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/collectors.py#L74)
 
 ```python
 AcceptanceRate(
@@ -43,15 +43,15 @@ If more than 35% of responses are rejected, then the Toloker is restricted to ac
 The rule is applied after collecting 3 or more responses.
 
 ```python
-new_pool = toloka.pool.Pool(....)
+new_pool = toloka.client.pool.Pool()
 new_pool.quality_control.add_action(
-    collector=toloka.collectors.AcceptanceRate(),
+    collector=toloka.client.collectors.AcceptanceRate(),
     conditions=[
-        toloka.conditions.TotalAssignmentsCount > 2,
-        toloka.conditions.RejectedAssignmentsRate > 35,
+        toloka.client.conditions.TotalAssignmentsCount > 2,
+        toloka.client.conditions.RejectedAssignmentsRate > 35,
     ],
-    action=toloka.actions.RestrictionV2(
-        scope=toloka.user_restriction.UserRestriction.PROJECT,
+    action=toloka.client.actions.RestrictionV2(
+        scope=toloka.client.user_restriction.UserRestriction.PROJECT,
         duration=15,
         duration_unit='DAYS',
         private_comment='The Toloker often makes mistakes',

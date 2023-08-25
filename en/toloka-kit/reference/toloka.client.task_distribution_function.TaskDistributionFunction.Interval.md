@@ -1,5 +1,5 @@
 # Interval
-`toloka.client.task_distribution_function.TaskDistributionFunction.Interval` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/task_distribution_function.py#L36)
+`toloka.client.task_distribution_function.TaskDistributionFunction.Interval` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/task_distribution_function.py#L37)
 
 ```python
 Interval(
@@ -11,12 +11,18 @@ Interval(
 )
 ```
 
-Interval borders and number of tasks in an interval
+A count interval with associated frequency value.
+
+
+If the number of tasks is in the interval then the task distribution uses the interval frequency.
+
+The value of the `frequency` parameter encodes a period in a task sequence.
+For example, if `frequency` is 3, then the 1st, 4th, 7th tasks are selected. And so on.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`from_`|**Optional\[int\]**|<p>Start of the interval (number of task completed by the Toloker in the project or in the pool).</p>
-`to`|**Optional\[int\]**|<p>End of the interval (number of task completed by the Toloker in the project or in the pool).</p>
-`frequency`|**Optional\[int\]**|<p>Frequency of tasks in an interval. The first task in an interval is a distributed task. For example, if you set frequency: 3 tasks number 1, 4, 7 and so on will be distributed tasks.</p>
+`from_`|**Optional\[int\]**|<p>The lower bound of the interval. Allowed values: up to 1,000,000.</p>
+`to`|**Optional\[int\]**|<p>The upper bound of the interval. Allowed values: up to 1,000,000.</p>
+`frequency`|**Optional\[int\]**|<p>The frequency of tasks within an interval. Allowed values: from 1 to 10,000,000.</p>

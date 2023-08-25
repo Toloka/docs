@@ -1,5 +1,5 @@
 # download_attachment
-`toloka.async_client.client.AsyncTolokaClient.download_attachment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.download_attachment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/async_client/client.py#L0)
 
 ```python
 async download_attachment(
@@ -9,14 +9,14 @@ async download_attachment(
 )
 ```
 
-Downloads specific attachment
+Downloads an attachment.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`attachment_id`|**str**|<p>ID of attachment.</p>
-`out`|**BinaryIO**|<p>File object where to put downloaded file.</p>
+`attachment_id`|**str**|<p>The ID of the attachment.</p>
+`out`|**BinaryIO**|<p>A file object used to save the downloaded file.</p>
 
 **Examples:**
 
@@ -24,5 +24,5 @@ How to download an attachment.
 
 ```python
 with open('my_new_file.txt', 'wb') as out_f:
-    toloka_client.download_attachment(attachment_id='1', out=out_f)
+    toloka_client.download_attachment(attachment_id='0983459b-e26f-42f3-a5fd-6e3feee913e7', out=out_f)
 ```

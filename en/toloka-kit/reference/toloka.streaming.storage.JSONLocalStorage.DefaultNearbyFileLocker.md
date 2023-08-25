@@ -1,3 +1,3 @@
 # DefaultNearbyFileLocker
-`toloka.streaming.storage.JSONLocalStorage.DefaultNearbyFileLocker` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/streaming/storage.py#L80)
+`toloka.streaming.storage.JSONLocalStorage.DefaultNearbyFileLocker` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/streaming/storage.py#L80)
 

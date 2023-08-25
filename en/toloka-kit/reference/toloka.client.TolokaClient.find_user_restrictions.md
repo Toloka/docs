@@ -1,5 +1,5 @@
 # find_user_restrictions
-`toloka.client.TolokaClient.find_user_restrictions` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L3225)
+`toloka.client.TolokaClient.find_user_restrictions` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L3301)
 
 Finds Toloker restrictions that match certain criteria.
 
@@ -25,7 +25,7 @@ To iterate over all matching Toloker restrictions you may use the [get_user_rest
 `created_gt`|**Optional\[datetime\]**|<p>Restrictions created after the specified date.</p>
 `created_gte`|**Optional\[datetime\]**|<p>Restrictions created after or on the specified date.</p>
 `sort`|**Union\[List\[str\], [UserRestrictionSortItems](toloka.client.search_requests.UserRestrictionSortItems.md), None\]**|<p>Sorting options. Default: `None`.</p>
-`limit`|**Optional\[int\]**|<p>Returned Toloker restrictions limit. The maximum allowed limit is 500.</p>
+`limit`|**Optional\[int\]**|<p>Returned Toloker restrictions limit. The maximum allowed value: 500.</p>
 
 * **Returns:**
 
@@ -39,7 +39,8 @@ To iterate over all matching Toloker restrictions you may use the [get_user_rest
 
 
 ```python
-restrictions = toloka_client.find_user_restrictions(sort=['-created', '-id'], limit=10)
+find_result = toloka_client.find_user_restrictions(sort=['-created', '-id'], limit=10)
+restrictions = find_result.items
 ```
 
-If there are restrictions exceeding the `limit`, then `restrictions.has_more` is set to `True`.
+If there are restrictions exceeding the `limit`, then `find_result.has_more` is set to `True`.

@@ -1,5 +1,5 @@
 # Assets
-`toloka.client.project.view_spec.ClassicViewSpec.Assets` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/view_spec.py#L84)
+`toloka.client.project.view_spec.ClassicViewSpec.Assets` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/project/view_spec.py#L84)
 
 ```python
 Assets(

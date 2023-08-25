@@ -1,5 +1,5 @@
 # autocast_to_enum
-`toloka.client.primitives.base.autocast_to_enum` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/primitives/base.py#L373)
+`toloka.client.primitives.base.autocast_to_enum` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/primitives/base.py#L373)
 
 ```python
 autocast_to_enum(func: Callable)

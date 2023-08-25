@@ -1,11 +1,11 @@
 # get_user_skill
-`toloka.async_client.client.AsyncTolokaClient.get_user_skill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.get_user_skill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/async_client/client.py#L0)
 
 ```python
 async get_user_skill(self, user_skill_id: str)
 ```
 
-Gets the value of a Toloker's skill
+Gets the value of a Toloker's skill.
 
 
 `UserSkill` describes the skill value for a specific Toloker.
@@ -28,5 +28,6 @@ Gets the value of a Toloker's skill
 
 
 ```python
-toloka_client.get_user_skill(user_skill_id='1')
+user_skill = toloka_client.get_user_skill(user_skill_id='54118009')
+print(user_skill.value)
 ```

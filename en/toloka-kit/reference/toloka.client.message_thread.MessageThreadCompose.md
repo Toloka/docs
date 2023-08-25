@@ -1,5 +1,5 @@
 # MessageThreadCompose
-`toloka.client.message_thread.MessageThreadCompose` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/message_thread.py#L173)
+`toloka.client.message_thread.MessageThreadCompose` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/message_thread.py#L173)
 
 ```python
 MessageThreadCompose(

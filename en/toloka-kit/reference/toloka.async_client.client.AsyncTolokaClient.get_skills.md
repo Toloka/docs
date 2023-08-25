@@ -1,5 +1,5 @@
 # get_skills
-`toloka.async_client.client.AsyncTolokaClient.get_skills` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.get_skills` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L0)
 
 Finds all skills that match certain criteria.
 
@@ -21,7 +21,7 @@ If you need to sort skills use the [find_skills](toloka.client.TolokaClient.find
 `created_lte`|**Optional\[datetime\]**|<p>Skills created before or on the specified date.</p>
 `created_gt`|**Optional\[datetime\]**|<p>Skills created after the specified date.</p>
 `created_gte`|**Optional\[datetime\]**|<p>Skills created on or after the specified date.</p>
-`batch_size`|**Optional\[int\]**|<p>Returned skills limit for each request. The maximum allowed batch_size is 100.</p>
+`batch_size`|**Optional\[int\]**|<p>A limit of items returned by each request to Toloka. The maximum allowed value: 100.</p>
 
 * **Yields:**
 

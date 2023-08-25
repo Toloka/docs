@@ -1,5 +1,5 @@
 # RequiredConditionV1
-`toloka.client.project.template_builder.conditions.RequiredConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/conditions.py#L189)
+`toloka.client.project.template_builder.conditions.RequiredConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/project/template_builder/conditions.py#L191)
 
 ```python
 RequiredConditionV1(
@@ -28,6 +28,7 @@ For more information, see [condition.required](https://toloka.ai/docs/template-b
 How to check that image is uploaded.
 
 ```python
+import toloka.client.project.template_builder as tb
 image = tb.fields.MediaFileFieldV1(
     tb.data.OutputData('image'),
     tb.fields.MediaFileFieldV1.Accept(photo=True, gallery=True),

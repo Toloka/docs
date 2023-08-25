@@ -1,5 +1,5 @@
 # find_operations
-`toloka.async_client.client.AsyncTolokaClient.find_operations` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.find_operations` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L0)
 
 Finds operations that match certain criteria.
 
@@ -27,11 +27,11 @@ To iterate over all matching operations you may use the [get_operations](toloka.
 `finished_gt`|**Optional\[datetime\]**|<p>Operations finished after the specified date.</p>
 `finished_gte`|**Optional\[datetime\]**|<p>Operations finished after or on the specified date.</p>
 `sort`|**Union\[List\[str\], [OperationSortItems](toloka.client.search_requests.OperationSortItems.md), None\]**|<p>Sorting options. Default: `None`.</p>
-`limit`|**Optional\[int\]**|<p>Returned operations limit. The default limit is 50. The maximum allowed limit is 500.</p>
+`limit`|**Optional\[int\]**|<p>Returned operations limit. The maximum allowed value: 500. The default value: 50.</p>
 
 * **Returns:**
 
-  Found operations and a flag showing whether there are more matching task suites exceeding the limit.
+  Found operations and a flag showing whether there are more matching operations exceeding the limit.
 
 * **Return type:**
 
@@ -41,5 +41,8 @@ To iterate over all matching operations you may use the [get_operations](toloka.
 
 
 ```python
-toloka_client.find_operations(type='POOL_OPEN', status='SUCCESS', sort=['-finished'], limit=3)
+find_result = toloka_client.find_operations(
+    type='POOL.OPEN', status='SUCCESS', sort=['-finished'], limit=3
+)
+operations = find_result.items
 ```

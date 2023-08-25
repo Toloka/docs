@@ -1,5 +1,5 @@
 # SetSkill
-`toloka.client.actions.SetSkill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/actions.py#L159)
+`toloka.client.actions.SetSkill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/actions.py#L171)
 
 ```python
 SetSkill(
@@ -24,10 +24,10 @@ Sets Toloker's skill value.
 When an answer is accepted, the Toloker gets a skill. Later you can filter Tolokers by that skill.
 
 ```python
-new_pool = toloka.pool.Pool(....)
+new_pool = toloka.client.pool.Pool()
 new_pool.quality_control.add_action(
-    collector=toloka.collectors.AnswerCount(),
-    conditions=[toloka.conditions.AssignmentsAcceptedCount > 0],
-    action=toloka.actions.SetSkill(skill_id=some_skill_id, skill_value=1),
+    collector=toloka.client.collectors.AnswerCount(),
+    conditions=[toloka.client.conditions.AssignmentsAcceptedCount > 0],
+    action=toloka.client.actions.SetSkill(skill_id='11294', skill_value=1),
 )
 ```

@@ -1,5 +1,5 @@
 # find_app_batches
-`toloka.async_client.client.AsyncTolokaClient.find_app_batches` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.find_app_batches` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L0)
 
 Finds batches that match certain criteria in an App project.
 
@@ -28,7 +28,7 @@ To iterate over all matching batches you may use the [get_app_batches](toloka.cl
 `created_lt`|**Optional\[datetime\]**|<p>Batches created before the specified date.</p>
 `created_lte`|**Optional\[datetime\]**|<p>Batches created before or on the specified date.</p>
 `sort`|**Union\[List\[str\], [AppBatchSortItems](toloka.client.search_requests.AppBatchSortItems.md), None\]**|<p>Sorting options. Default: `None`.</p>
-`limit`|**Optional\[int\]**|<p>Returned batches limit. The maximum allowed limit is 1000.</p>
+`limit`|**Optional\[int\]**|<p>Returned batches limit. The maximum allowed value: 1000.</p>
 
 * **Returns:**
 
@@ -37,3 +37,15 @@ To iterate over all matching batches you may use the [get_app_batches](toloka.cl
 * **Return type:**
 
   [AppBatchSearchResult](toloka.client.search_results.AppBatchSearchResult.md)
+
+**Examples:**
+
+
+```python
+result = toloka_client.find_app_batches(
+    app_project_id='Q2d15QBjpwWuDz8Z321g', status='NEW', sort='id'
+)
+batches = result.content
+if result.has_more:
+    print('There are more NEW batches...')
+```

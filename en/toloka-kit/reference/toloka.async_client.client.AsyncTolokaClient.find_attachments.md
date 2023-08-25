@@ -1,5 +1,5 @@
 # find_attachments
-`toloka.async_client.client.AsyncTolokaClient.find_attachments` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.find_attachments` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L0)
 
 Finds attachments that match certain criteria and returns their metadata.
 
@@ -26,7 +26,7 @@ To iterate over all matching attachments you may use the [get_attachments](tolok
 `created_gt`|**Optional\[datetime\]**|<p>Attachments uploaded by Tolokers after the specified date.</p>
 `created_gte`|**Optional\[datetime\]**|<p>Attachments uploaded by Tolokers after or on the specified date.</p>
 `sort`|**Union\[List\[str\], [AttachmentSortItems](toloka.client.search_requests.AttachmentSortItems.md), None\]**|<p>Sorting options. Default: `None`.</p>
-`limit`|**Optional\[int\]**|<p>Returned attachments limit. The maximum allowed limit is 100.</p>
+`limit`|**Optional\[int\]**|<p>Returned attachments limit. The maximum allowed value: 100.</p>
 
 * **Returns:**
 
@@ -41,7 +41,7 @@ To iterate over all matching attachments you may use the [get_attachments](tolok
 Let's find attachments in the pool and sort them by the ID and the date of creation in descending order.
 
 ```python
-attachments = toloka_client.find_attachments(pool_id='1', sort=['-created', '-id'], limit=10)
+attachments = toloka_client.find_attachments(pool_id='1080020', sort=['-created', '-id'], limit=10)
 ```
 
 If there are attachments exceeding the `limit`, then `attachments.has_more` is set to `True`.

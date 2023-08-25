@@ -1,5 +1,5 @@
 # AllConditionV1
-`toloka.client.project.template_builder.conditions.AllConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/conditions.py#L43)
+`toloka.client.project.template_builder.conditions.AllConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/project/template_builder/conditions.py#L43)
 
 ```python
 AllConditionV1(
@@ -27,6 +27,7 @@ For more information, see [condition.all](https://toloka.ai/docs/template-builde
 
 
 ```python
+import toloka.client.project.template_builder as tb
 coordinates_validation = tb.conditions.AllConditionV1(
     [
         tb.conditions.RequiredConditionV1(

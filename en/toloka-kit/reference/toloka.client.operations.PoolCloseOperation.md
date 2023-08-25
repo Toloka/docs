@@ -1,5 +1,5 @@
 # PoolCloseOperation
-`toloka.client.operations.PoolCloseOperation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/operations.py#L172)
+`toloka.client.operations.PoolCloseOperation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/operations.py#L180)
 
 ```python
 PoolCloseOperation(
@@ -16,18 +16,20 @@ PoolCloseOperation(
 )
 ```
 
-Operation returned by an asynchronous closing pool via TolokaClient.close_pool_async()
+Pool closing operation.
+
+
+The operation is returned by the [close_pool_async](toloka.client.TolokaClient.close_pool_async.md) method.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`id`|**Optional\[str\]**|<p>Operation ID.</p>
+`id`|**Optional\[str\]**|<p>The ID of the operation.</p>
 `status`|**Optional\[[Operation.Status](toloka.client.operations.Operation.Status.md)\]**|<p>The status of the operation.</p>
-`submitted`|**Optional\[datetime\]**|<p>The UTC date and time the request was sent.</p>
-`started`|**Optional\[datetime\]**|<p>The UTC date and time the operation started.</p>
-`finished`|**Optional\[datetime\]**|<p>The UTC date and time the operation finished.</p>
-`progress`|**Optional\[int\]**|<p>The percentage of the operation completed.</p>
+`submitted`|**Optional\[datetime\]**|<p>The UTC date and time when the operation was requested.</p>
+`started`|**Optional\[datetime\]**|<p>The UTC date and time when the operation started.</p>
+`finished`|**Optional\[datetime\]**|<p>The UTC date and time when the operation finished.</p>
+`progress`|**Optional\[int\]**|<p>The operation progress as a percentage.</p>
 `details`|**Optional\[Any\]**|<p>Details of the operation completion.</p>
-`parameters`|**Optional\[[PoolOperation.Parameters](toloka.client.operations.PoolOperation.Parameters.md)\]**|<p>Operation parameters (depending on the operation type).</p>
-`pool_id`|**-**|<p>On which pool operation is performed.</p>
+`parameters`|**Optional\[[PoolOperation.Parameters](toloka.client.operations.PoolOperation.Parameters.md)\]**|<p>Parameters containing the ID of the pool.</p>

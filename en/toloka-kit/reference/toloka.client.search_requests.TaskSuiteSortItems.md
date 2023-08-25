@@ -15,9 +15,9 @@ Keys for sorting task suites in search results.
 
 **Examples:**
 
-The example shows how to find task suites sorted by the creation date in descending order. Task suites with equal creation dates are sorted by IDs in ascending order.
+The example shows how to find task suites sorted by the creation date in descending order. Task suites with equal creation dates are sorted by IDs in descending order.
 
 ```python
-sort = toloka.client.search_requests.TaskSuiteSortItems(['-created', 'id'])
-result = toloka_client.find_task_suites(pool_id=my_pool_id, sort=sort, limit=10)
+sort = toloka.client.search_requests.TaskSuiteSortItems(['-created', '-id'])
+result = toloka_client.find_task_suites(pool_id='1086170', sort=sort, limit=10)
 ```

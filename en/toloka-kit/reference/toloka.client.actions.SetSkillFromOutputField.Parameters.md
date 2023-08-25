@@ -1,5 +1,5 @@
 # Parameters
-`toloka.client.actions.SetSkillFromOutputField.Parameters` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/actions.py#L126)
+`toloka.client.actions.SetSkillFromOutputField.Parameters` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/actions.py#L138)
 
 ```python
 Parameters(

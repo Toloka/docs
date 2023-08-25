@@ -1,5 +1,5 @@
 # create_training
-`toloka.async_client.client.AsyncTolokaClient.create_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.create_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/async_client/client.py#L0)
 
 ```python
 async create_training(self, training: Training)
@@ -27,7 +27,7 @@ Creating a new training.
 
 ```python
 new_training = toloka.client.Training(
-    project_id='1',
+    project_id='118252',
     private_name='Some training in my project',
     may_contain_adult_content=True,
     assignment_max_duration_seconds=60*5,

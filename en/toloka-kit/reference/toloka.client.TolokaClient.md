@@ -1,5 +1,5 @@
 # TolokaClient
-`toloka.client.TolokaClient` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L171)
+`toloka.client.TolokaClient` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L171)
 
 ```python
 TolokaClient(
@@ -16,7 +16,7 @@ TolokaClient(
 )
 ```
 
-Class that implements interaction with [Toloka API](https://toloka.ai/docs/api/api-reference/).
+A class that implements interaction with [Toloka API](https://toloka.ai/docs/api/api-reference/).
 
 
 Objects of other classes are created and modified only in memory of your computer.
@@ -34,21 +34,22 @@ Call `TolokaClient.update_project` and pass the `Project` to apply your changes.
 | :----------| :----| :-----------|
 `token`|**str**|<p>Your OAuth token for Toloka. You can learn more about how to get it [here](https://toloka.ai/docs/api/api-reference/#overview--accessing-the-api)</p>
 `environment`|**Union\[[Environment](toloka.client.TolokaClient.Environment.md), str, None\]**|<p>There are two environments in Toloka:</p> <ul> <li>`SANDBOX` – [Testing environment](https://sandbox.toloka.dev) for Toloka requesters. You can test complex projects before assigning tasks to Tolokers. Nobody will see your tasks, and it&#x27;s free.</li> <li>`PRODUCTION` – [Production environment](https://toloka.dev) for Toloka requesters. You spend money there and get the results.</li> </ul> <p>You need to register in each environment separately. OAuth tokens are generated in each environment separately too. </p><p>Default value: `None`.</p>
-`retries`|**Union\[int, Retry\]**|<p>Retry policy for failed API requests. Possible values:</p> <ul> <li>`int` – The number of retries for all requests. In this case, the retry policy is created automatically.</li> <li>`Retry` object – Deprecated type. Use `retryer_factory` parameter instead.</li> </ul> <p>Default value: `3`.</p>
-`timeout`|**Union\[float, Tuple\[float, float\]\]**|<p>Number of seconds that [Requests library](https://docs.python-requests.org/en/master) will wait for your client to establish connection to a remote machine. Possible values:</p> <ul> <li>`float` – Single value for both connect and read timeouts.</li> <li>`Tuple[float, float]` – Tuple sets the values for connect and read timeouts separately.</li> <li>`None` – Set the timeout to `None` only if you are willing to wait the [Response](https://docs.python-requests.org/en/master/api/#requests.Response) for unlimited number of seconds.</li> </ul> <p>Default value: `10.0`.</p>
+`retries`|**Union\[int, Retry\]**|<p>Retry policy for failed API requests. Possible values:</p> <ul> <li>`int` – The number of retries for all requests. In this case, the retry policy is created automatically.</li> <li>`Retry` object – Deprecated type. Use `retryer_factory` parameter instead.</li> </ul> <p></p><p>Default value: `3`.</p>
+`timeout`|**Union\[float, Tuple\[float, float\]\]**|<p>Number of seconds that [Requests library](https://docs.python-requests.org/en/master) will wait for your client to establish connection to a remote machine. Possible values:</p> <ul> <li>`float` – Single value for both connect and read timeouts.</li> <li>`Tuple[float, float]` – Tuple sets the values for connect and read timeouts separately.</li> <li>`None` – Set the timeout to `None` only if you are willing to wait the [Response](https://docs.python-requests.org/en/master/api/#requests.Response) for unlimited number of seconds.</li> </ul> <p></p><p>Default value: `10.0`.</p>
 `url`|**Optional\[str\]**|<p>Set a specific URL instead of Toloka environment. May be useful for testing purposes. You can only set one parameter – either `url` or `environment`, not both of them. </p><p>Default value: `None`.</p>
-`retry_quotas`|**Union\[List\[str\], str, None\]**|<p>List of quotas that must be retried. Set `None` or pass an empty list for not retrying any quotas. If you specified the `retries` as `Retry` instance, you must set this parameter to `None`. Possible values:</p> <ul> <li>`MIN` - Retry minutes quotas.</li> <li>`HOUR` - Retry hourly quotas. This means that the program just sleeps for an hour.</li> <li>`DAY` - Retry daily quotas. We do not recommend retrying these quotas.</li> </ul> <p>Default value: `MIN`.</p>
+`retry_quotas`|**Union\[List\[str\], str, None\]**|<p>List of quotas that must be retried. Set `None` or pass an empty list for not retrying any quotas. If you specified the `retries` as `Retry` instance, you must set this parameter to `None`. Possible values:</p> <ul> <li>`MIN` - Retry minutes quotas.</li> <li>`HOUR` - Retry hourly quotas. This means that the program just sleeps for an hour.</li> <li>`DAY` - Retry daily quotas. We do not recommend retrying these quotas.</li> </ul> <p></p><p>Default value: `MIN`.</p>
 `retryer_factory`|**Optional\[Callable\[\[\], Retry\]\]**|<p>Factory that creates `Retry` object. Fully specified retry policy that will apply to all requests. </p><p>Default value: `None`.</p>
 `act_under_account_id`|**Optional\[str\]**|<p>ID of the requester that has been shared access with the current token owner account. All requests will be made using a specified account. See [Shared access to the requester&#x27;s account](https://toloka.ai/docs/guide/multiple-access) documentation page. ID of the requester can be retrieved using the [get_requester](toloka.client.TolokaClient.get_requester.md) method (this method should be called by the account owner using account&#x27;s token).</p>
-`verify`|**Union\[str, bool, SSLContext\]**|<p>SSL certificates (a.k.a CA bundle) used to verify the identity of requested hosts. Either `True` (default CA bundle), a path to an SSL certificate file, an `ssl.SSLContext`, or `False` (which will disable verification)</p>
+`verify`|**Union\[str, bool, SSLContext\]**|<p>SSL certificates (a.k.a CA bundle) used to verify the identity of requested hosts. Either `True` (default CA bundle), a path to an SSL certificate file, an `ssl.SSLContext`, or `False` (which will disable verification).</p>
 
 **Examples:**
 
 How to create `TolokaClient` instance and make your first request to Toloka.
 
 ```python
+import toloka
 your_oauth_token = input('Enter your token:')
-toloka_client = toloka.TolokaClient(your_oauth_token, 'PRODUCTION')  # Or switch to 'SANDBOX' environment
+toloka_client = toloka.client.TolokaClient(your_oauth_token, 'PRODUCTION')  # Or switch to 'SANDBOX' environment
 ```
 
 {% note info %}
@@ -89,7 +90,7 @@ toloka_client = toloka.TolokaClient(your_oauth_token, 'PRODUCTION')  # Or switch
 [create_app_project](toloka.client.TolokaClient.create_app_project.md)| Creates an App project in Toloka.
 [create_pool](toloka.client.TolokaClient.create_pool.md)| Creates a new pool in Toloka.
 [create_project](toloka.client.TolokaClient.create_project.md)| Creates a new project in Toloka.
-[create_skill](toloka.client.TolokaClient.create_skill.md)| Creates a new Skill
+[create_skill](toloka.client.TolokaClient.create_skill.md)| Creates a new skill.
 [create_task](toloka.client.TolokaClient.create_task.md)| Creates a new task in Toloka.
 [create_task_suite](toloka.client.TolokaClient.create_task_suite.md)| Creates a task suite in Toloka.
 [create_task_suites](toloka.client.TolokaClient.create_task_suites.md)| Creates several task suites in Toloka.
@@ -97,13 +98,13 @@ toloka_client = toloka.TolokaClient(your_oauth_token, 'PRODUCTION')  # Or switch
 [create_tasks](toloka.client.TolokaClient.create_tasks.md)| Creates several tasks in Toloka.
 [create_tasks_async](toloka.client.TolokaClient.create_tasks_async.md)| Creates tasks in Toloka asynchronously.
 [create_training](toloka.client.TolokaClient.create_training.md)| Creates a new training in Toloka.
-[create_user_bonus](toloka.client.TolokaClient.create_user_bonus.md)| Issues payments directly to a Toloker.
-[create_user_bonuses](toloka.client.TolokaClient.create_user_bonuses.md)| Creates bonuses for Tolokers.
-[create_user_bonuses_async](toloka.client.TolokaClient.create_user_bonuses_async.md)| Issues payments directly to Tolokers, asynchronously creates many `UserBonus` instances.
-[delete_user_restriction](toloka.client.TolokaClient.delete_user_restriction.md)| Unlocks existing restriction
-[delete_user_skill](toloka.client.TolokaClient.delete_user_skill.md)| Drop specific UserSkill
-[delete_webhook_subscription](toloka.client.TolokaClient.delete_webhook_subscription.md)| Drop specific webhook-subscription
-[download_attachment](toloka.client.TolokaClient.download_attachment.md)| Downloads specific attachment
+[create_user_bonus](toloka.client.TolokaClient.create_user_bonus.md)| Issues a bonus payment to a Toloker.
+[create_user_bonuses](toloka.client.TolokaClient.create_user_bonuses.md)| Issues several bonus payments to Tolokers.
+[create_user_bonuses_async](toloka.client.TolokaClient.create_user_bonuses_async.md)| Issues bonus payments to Tolokers asynchronously.
+[delete_user_restriction](toloka.client.TolokaClient.delete_user_restriction.md)| Removes existing restriction.
+[delete_user_skill](toloka.client.TolokaClient.delete_user_skill.md)| Removes a skill from a Toloker.
+[delete_webhook_subscription](toloka.client.TolokaClient.delete_webhook_subscription.md)| Deletes a subscription.
+[download_attachment](toloka.client.TolokaClient.download_attachment.md)| Downloads an attachment.
 [find_aggregated_solutions](toloka.client.TolokaClient.find_aggregated_solutions.md)| Finds aggregated responses that match certain criteria.
 [find_app_batches](toloka.client.TolokaClient.find_app_batches.md)| Finds batches that match certain criteria in an App project.
 [find_app_items](toloka.client.TolokaClient.find_app_items.md)| Finds task items that match certain criteria in an App project.
@@ -136,33 +137,33 @@ toloka_client = toloka.TolokaClient(your_oauth_token, 'PRODUCTION')  # Or switch
 [get_assignment](toloka.client.TolokaClient.get_assignment.md)| Gets an assignment from Toloka.
 [get_assignments](toloka.client.TolokaClient.get_assignments.md)| Finds all assignments that match certain criteria.
 [get_assignments_df](toloka.client.TolokaClient.get_assignments_df.md)| Downloads assignments as pandas.DataFrame.
-[get_attachment](toloka.client.TolokaClient.get_attachment.md)| Gets attachment metadata without downloading it
+[get_attachment](toloka.client.TolokaClient.get_attachment.md)| Gets attachment metadata without downloading it.
 [get_attachments](toloka.client.TolokaClient.get_attachments.md)| Finds all attachments that match certain criteria and returns their metadata.
 [get_message_threads](toloka.client.TolokaClient.get_message_threads.md)| Finds all message threads that match certain criteria.
-[get_operation](toloka.client.TolokaClient.get_operation.md)| Reads information about operation
-[get_operation_log](toloka.client.TolokaClient.get_operation_log.md)| Reads information about validation errors and which task (or task suites) were created
-[get_operations](toloka.client.TolokaClient.get_operations.md)| Finds all operations that match certain rules and returns them in an iterable object
+[get_operation](toloka.client.TolokaClient.get_operation.md)| Gets information about an operation from Toloka.
+[get_operation_log](toloka.client.TolokaClient.get_operation_log.md)| Gets an operation log.
+[get_operations](toloka.client.TolokaClient.get_operations.md)| Finds all operations that match certain criteria.
 [get_pool](toloka.client.TolokaClient.get_pool.md)| Gets pool data from Toloka.
 [get_pools](toloka.client.TolokaClient.get_pools.md)| Finds all pools that match certain criteria.
 [get_project](toloka.client.TolokaClient.get_project.md)| Gets project data from Toloka.
 [get_projects](toloka.client.TolokaClient.get_projects.md)| Finds all projects that match certain criteria.
-[get_requester](toloka.client.TolokaClient.get_requester.md)| Reads information about the customer and the account balance
-[get_skill](toloka.client.TolokaClient.get_skill.md)| Reads one specific skill
+[get_requester](toloka.client.TolokaClient.get_requester.md)| Gets information about the requester and the account balance.
+[get_skill](toloka.client.TolokaClient.get_skill.md)| Gets skill information from Toloka.
 [get_skills](toloka.client.TolokaClient.get_skills.md)| Finds all skills that match certain criteria.
 [get_task](toloka.client.TolokaClient.get_task.md)| Gets a task with specified ID from Toloka.
-[get_task_suite](toloka.client.TolokaClient.get_task_suite.md)| Reads one task suite.
+[get_task_suite](toloka.client.TolokaClient.get_task_suite.md)| Gets task suite data from Toloka.
 [get_task_suites](toloka.client.TolokaClient.get_task_suites.md)| Finds all task suites that match certain criteria.
 [get_tasks](toloka.client.TolokaClient.get_tasks.md)| Finds all tasks that match certain criteria.
 [get_training](toloka.client.TolokaClient.get_training.md)| Gets information about a training from Toloka.
 [get_trainings](toloka.client.TolokaClient.get_trainings.md)| Finds all trainings that match certain criteria.
-[get_user](toloka.client.TolokaClient.get_user.md)| Gets Toloker metadata by `user_id`.
+[get_user](toloka.client.TolokaClient.get_user.md)| Gets information about a Toloker.
 [get_user_bonus](toloka.client.TolokaClient.get_user_bonus.md)| Gets information about a Toloker's bonus.
 [get_user_bonuses](toloka.client.TolokaClient.get_user_bonuses.md)| Finds all Tolokers' bonuses that match certain rules and returns them in an iterable object
 [get_user_restriction](toloka.client.TolokaClient.get_user_restriction.md)| Gets information about a Toloker restriction.
 [get_user_restrictions](toloka.client.TolokaClient.get_user_restrictions.md)| Finds all Toloker restrictions that match certain criteria.
-[get_user_skill](toloka.client.TolokaClient.get_user_skill.md)| Gets the value of a Toloker's skill
+[get_user_skill](toloka.client.TolokaClient.get_user_skill.md)| Gets the value of a Toloker's skill.
 [get_user_skills](toloka.client.TolokaClient.get_user_skills.md)| Finds all Toloker's skills that match certain criteria.
-[get_webhook_subscription](toloka.client.TolokaClient.get_webhook_subscription.md)| Get one specific webhook-subscription
+[get_webhook_subscription](toloka.client.TolokaClient.get_webhook_subscription.md)| Gets the properties of a subscription from Toloka.
 [get_webhook_subscriptions](toloka.client.TolokaClient.get_webhook_subscriptions.md)| Finds all webhook subscriptions that match certain criteria.
 [open_pool](toloka.client.TolokaClient.open_pool.md)| Opens a pool.
 [open_pool_async](toloka.client.TolokaClient.open_pool_async.md)| Opens a pool. Sends an asynchronous request to Toloka.
@@ -174,7 +175,7 @@ toloka_client = toloka.TolokaClient(your_oauth_token, 'PRODUCTION')  # Or switch
 [patch_task](toloka.client.TolokaClient.patch_task.md)| Changes a task overlap value.
 [patch_task_overlap_or_min](toloka.client.TolokaClient.patch_task_overlap_or_min.md)| Stops assigning a task to Tolokers.
 [patch_task_suite](toloka.client.TolokaClient.patch_task_suite.md)| Changes task suite parameter values in Toloka.
-[patch_task_suite_overlap_or_min](toloka.client.TolokaClient.patch_task_suite_overlap_or_min.md)| Stops issuing the task suites
+[patch_task_suite_overlap_or_min](toloka.client.TolokaClient.patch_task_suite_overlap_or_min.md)| Stops assigning a task suite to Tolokers.
 [reject_assignment](toloka.client.TolokaClient.reject_assignment.md)| Rejects an assignment.
 [remove_message_thread_from_folders](toloka.client.TolokaClient.remove_message_thread_from_folders.md)| Removes a message thread from folders.
 [reply_message_thread](toloka.client.TolokaClient.reply_message_thread.md)| Sends a reply message in a thread.
@@ -186,7 +187,7 @@ toloka_client = toloka.TolokaClient(your_oauth_token, 'PRODUCTION')  # Or switch
 [unarchive_app_project](toloka.client.TolokaClient.unarchive_app_project.md)| Unarchives an App project.
 [update_pool](toloka.client.TolokaClient.update_pool.md)| Updates all pool parameters in Toloka.
 [update_project](toloka.client.TolokaClient.update_project.md)| Updates all project parameters in Toloka.
-[update_skill](toloka.client.TolokaClient.update_skill.md)| Makes changes to the skill
+[update_skill](toloka.client.TolokaClient.update_skill.md)| Updates all skill parameters in Toloka.
 [update_training](toloka.client.TolokaClient.update_training.md)| Updates parameters of a training in Toloka.
-[upsert_webhook_subscriptions](toloka.client.TolokaClient.upsert_webhook_subscriptions.md)| Creates (upsert) webhook subscriptions.
-[wait_operation](toloka.client.TolokaClient.wait_operation.md)| Waits for the operation to complete, and return it
+[upsert_webhook_subscriptions](toloka.client.TolokaClient.upsert_webhook_subscriptions.md)| Creates subscriptions.
+[wait_operation](toloka.client.TolokaClient.wait_operation.md)| Waits for a Toloka operation to complete.

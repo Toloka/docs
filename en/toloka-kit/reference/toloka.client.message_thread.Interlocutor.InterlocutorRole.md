@@ -1,5 +1,5 @@
 # InterlocutorRole
-`toloka.client.message_thread.Interlocutor.InterlocutorRole` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/message_thread.py#L56)
+`toloka.client.message_thread.Interlocutor.InterlocutorRole` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/message_thread.py#L56)
 
 A role in Toloka.
 

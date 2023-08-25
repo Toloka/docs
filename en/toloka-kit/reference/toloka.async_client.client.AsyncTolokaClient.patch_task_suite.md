@@ -1,5 +1,5 @@
 # patch_task_suite
-`toloka.async_client.client.AsyncTolokaClient.patch_task_suite` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.patch_task_suite` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L0)
 
 Changes task suite parameter values in Toloka.
 
@@ -21,8 +21,11 @@ Changes task suite parameter values in Toloka.
 
 **Examples:**
 
-Change the task suite's priority.
+Changing the task suite's priority.
 
 ```python
-toloka_client.patch_task_suite(task_suite_id='1', issuing_order_override=100)
+toloka_client.patch_task_suite(
+    task_suite_id='00001092da--61ef030400c684132d0da0dc',
+    issuing_order_override=100
+)
 ```

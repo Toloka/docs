@@ -1,26 +1,28 @@
 # get_operation_log
-`toloka.client.TolokaClient.get_operation_log` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L2962)
+`toloka.client.TolokaClient.get_operation_log` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L3056)
 
 ```python
 get_operation_log(self, operation_id: str)
 ```
 
-Reads information about validation errors and which task (or task suites) were created
+Gets an operation log.
 
 
-You don't need to call this method if you use "create_tasks" for creating tasks ("create_task_suites" for task suites).
-By asynchronous creating multiple tasks (or task sets) you can get the operation log.
-Logs are only available for the last month.
+You can get the log for operations: creating one or multiple tasks or task suites, or issuing bonuses to Tolokers.
+
+If the operation was successful, the log contains the IDs of the created objects, otherwise it contains the details of validation errors.
+
+Logs are available only for the last month.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`operation_id`|**str**|<p>ID of the operation.</p>
+`operation_id`|**str**|<p>The ID of the operation.</p>
 
 * **Returns:**
 
-  Logs for the operation.
+  A list with log items.
 
 * **Return type:**
 
@@ -30,5 +32,5 @@ Logs are only available for the last month.
 
 
 ```python
-op = toloka_client.get_operation_log(operation_id='1')
+operation_log = toloka_client.get_operation_log(operation_id='6d84114f-fcfc-473d-8249-1a4f3ea550eb')
 ```

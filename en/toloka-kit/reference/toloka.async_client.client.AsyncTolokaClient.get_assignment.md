@@ -1,5 +1,5 @@
 # get_assignment
-`toloka.async_client.client.AsyncTolokaClient.get_assignment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.get_assignment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/async_client/client.py#L0)
 
 ```python
 async get_assignment(self, assignment_id: str)
@@ -25,5 +25,7 @@ Gets an assignment from Toloka.
 
 
 ```python
-toloka_client.get_assignment(assignment_id='1')
+assignment = toloka_client.get_assignment(
+    assignment_id='00001092da--61ef030400c684132d0da0de'
+)
 ```

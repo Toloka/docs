@@ -1,5 +1,5 @@
 # OperationLogItem
-`toloka.client.operation_log.OperationLogItem` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/operation_log.py#L9)
+`toloka.client.operation_log.OperationLogItem` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/operation_log.py#L9)
 
 ```python
 OperationLogItem(
@@ -12,16 +12,16 @@ OperationLogItem(
 )
 ```
 
-Objects of which the operation log consists
+An operation log item.
 
 
-Contains information about the validation errors and what sets of objects were created.
+If the operation was successful, the log contains the IDs of created objects, otherwise it contains validation errors details.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`type`|**Optional\[str\]**|<p>Type of action in the operation step.</p>
-`success`|**Optional\[bool\]**|<p>Result of the step (true or false).</p>
-`input`|**Optional\[Dict\[str, Any\]\]**|<p>Input data at the operation step.</p>
-`output`|**Optional\[Dict\[str, Any\]\]**|<p>Operation step output. Depends on the type.</p>
+`type`|**Optional\[str\]**|<p>The type of the operation.</p> <ul> <li>`USER_BONUS_PERSIST` — Successfully issuing a bonus.</li> <li>`TASK_CREATE` — Successfully creating a task.</li> <li>`TASK_SUITE_CREATE` — Successfully creating a task suite.</li> <li>`USER_BONUS_VALIDATE` — Issuing a bonus that failed.</li> <li>`TASK_VALIDATE` — Creating a task that failed.</li> <li>`TASK_SUITE_VALIDATE` — Creating a task suite that failed.</li> </ul>
+`success`|**Optional\[bool\]**|<p>The operation result: success or failure.</p>
+`input`|**Optional\[Dict\[str, Any\]\]**|<p>Input operation data.</p>
+`output`|**Optional\[Dict\[str, Any\]\]**|<p>Operation output data. The content depends on the log item `type`.</p>

@@ -1,5 +1,5 @@
 # RestrictionV2
-`toloka.client.actions.RestrictionV2` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/actions.py#L58)
+`toloka.client.actions.RestrictionV2` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/actions.py#L70)
 
 ```python
 RestrictionV2(
@@ -28,11 +28,11 @@ Restricts Toloker's access to projects or pools.
 The following quality control rule blocks access to the project for 10 days, if a Toloker answers too fast.
 
 ```python
-new_pool = toloka.pool.Pool(....)
+new_pool = toloka.client.pool.Pool()
 new_pool.quality_control.add_action(
-    collector=toloka.collectors.AssignmentSubmitTime(history_size=5, fast_submit_threshold_seconds=20),
-    conditions=[toloka.conditions.FastSubmittedCount > 1],
-    action=toloka.actions.RestrictionV2(
+    collector=toloka.client.collectors.AssignmentSubmitTime(history_size=5, fast_submit_threshold_seconds=20),
+    conditions=[toloka.client.conditions.FastSubmittedCount > 1],
+    action=toloka.client.actions.RestrictionV2(
         scope='PROJECT',
         duration=10,
         duration_unit='DAYS',

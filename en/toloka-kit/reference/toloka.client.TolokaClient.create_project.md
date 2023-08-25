@@ -1,5 +1,5 @@
 # create_project
-`toloka.client.TolokaClient.create_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L1164)
+`toloka.client.TolokaClient.create_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L1193)
 
 ```python
 create_project(self, project: Project)
@@ -31,8 +31,8 @@ Creating a new project.
 ```python
 new_project = toloka.client.project.Project(
     assignments_issuing_type=toloka.client.project.Project.AssignmentsIssuingType.AUTOMATED,
-    public_name='My best project',
-    public_description='Describe the picture',
+    public_name='Describe the image',
+    public_description='Describe the image',
     public_instructions='Describe in a few words what is happening in the image.',
     task_spec=toloka.client.project.task_spec.TaskSpec(
         input_spec={'image': toloka.client.project.field_spec.UrlSpec()},

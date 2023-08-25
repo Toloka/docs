@@ -1,5 +1,5 @@
 # get_app_batches
-`toloka.async_client.client.AsyncTolokaClient.get_app_batches` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.get_app_batches` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L0)
 
 Finds all batches that match certain criteria in an App project.
 
@@ -27,7 +27,7 @@ If you need to sort batches use the [find_app_batches](toloka.client.TolokaClien
 `created_gte`|**Optional\[datetime\]**|<p>Batches created after or on the specified date.</p>
 `created_lt`|**Optional\[datetime\]**|<p>Batches created before the specified date.</p>
 `created_lte`|**Optional\[datetime\]**|<p>Batches created before or on the specified date.</p>
-`batch_size`|**Optional\[int\]**|<p>Returned app batches limit for each request. The maximum allowed batch_size is 1000.</p>
+`batch_size`|**Optional\[int\]**|<p>A limit of items returned by each request to Toloka. The maximum allowed value: 1000.</p>
 
 * **Yields:**
 
@@ -41,7 +41,9 @@ If you need to sort batches use the [find_app_batches](toloka.client.TolokaClien
 
 
 ```python
-batches = toloka_client.get_app_batches(app_project_id = 'Q2d15QBjpwWuDz8Z321g', status = 'NEW')
+batches = toloka_client.get_app_batches(
+    app_project_id='Q2d15QBjpwWuDz8Z321g', status='NEW'
+)
 for batch in batches:
     print(batch.id, batch.status, batch.items_count)
 ```

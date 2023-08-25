@@ -1,5 +1,5 @@
 # get_assignments
-`toloka.client.TolokaClient.get_assignments` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L789)
+`toloka.client.TolokaClient.get_assignments` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L801)
 
 Finds all assignments that match certain criteria.
 
@@ -45,7 +45,7 @@ If you need to sort assignments use the [find_assignments](toloka.client.TolokaC
 `expired_lte`|**Optional\[datetime\]**|<p>Assigned task suites expired before or on the specified date.</p>
 `expired_gt`|**Optional\[datetime\]**|<p>Assigned task suites expired after the specified date.</p>
 `expired_gte`|**Optional\[datetime\]**|<p>Assigned task suites expired after or on the specified date.</p>
-`batch_size`|**Optional\[int\]**|<p>Returned assignments limit for each request. The default batch_size  is 50. The maximum allowed batch_size  is 100,000.</p>
+`batch_size`|**Optional\[int\]**|<p>A limit of items returned by each request to Toloka. The maximum allowed value: 100,000. The default value: 50.</p>
 
 * **Yields:**
 
@@ -57,10 +57,10 @@ If you need to sort assignments use the [find_assignments](toloka.client.TolokaC
 
 **Examples:**
 
-The following example creates the list with IDs of `SUBMITTED` assignments in the specified pool.
+The following example creates a list with IDs of `SUBMITTED` assignments in the specified pool.
 
 ```python
 from toloka.client import Assignment
-assignments = toloka_client.get_assignments(pool_id='1', status=Assignment.SUBMITTED)
-result_list = [assignment.id for assignment in assignments]
+assignments = toloka_client.get_assignments(pool_id='1080020', status=Assignment.SUBMITTED)
+assignment_ids = [assignment.id for assignment in assignments]
 ```

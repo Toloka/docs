@@ -1,5 +1,5 @@
 # get_trainings
-`toloka.client.TolokaClient.get_trainings` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L2043)
+`toloka.client.TolokaClient.get_trainings` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L2089)
 
 Finds all trainings that match certain criteria.
 
@@ -26,7 +26,7 @@ If you need to sort trainings use the [find_trainings](toloka.client.TolokaClien
 `last_started_lte`|**Optional\[datetime\]**|<p>Training pools that were opened last time before or on the specified date.</p>
 `last_started_gt`|**Optional\[datetime\]**|<p>Training pools that were opened last time after the specified date.</p>
 `last_started_gte`|**Optional\[datetime\]**|<p>Training pools that were opened last time after or on the specified date.</p>
-`batch_size`|**Optional\[int\]**|<p>Returned trainings limit for each request. The maximum allowed batch_size is 300.</p>
+`batch_size`|**Optional\[int\]**|<p>A limit of items returned by each request to Toloka. The maximum allowed value: 300.</p>
 
 * **Yields:**
 
@@ -41,5 +41,5 @@ If you need to sort trainings use the [find_trainings](toloka.client.TolokaClien
 Getting all trainings in a project.
 
 ```python
-trainings = toloka_client.get_trainings(project_id='1')
+trainings = toloka_client.get_trainings(project_id='92694')
 ```

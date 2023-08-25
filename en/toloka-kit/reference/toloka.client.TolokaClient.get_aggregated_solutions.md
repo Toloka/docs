@@ -1,5 +1,5 @@
 # get_aggregated_solutions
-`toloka.client.TolokaClient.get_aggregated_solutions` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L676)
+`toloka.client.TolokaClient.get_aggregated_solutions` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L679)
 
 Finds all aggregated responses that match certain criteria.
 
@@ -25,7 +25,7 @@ Try [crowd-kit library](https://toloka.ai/docs/crowd-kit). It has many aggregati
 `task_id_lte`|**Optional\[str\]**|<p>Responses for tasks with IDs less than or equal to the specified value.</p>
 `task_id_gt`|**Optional\[str\]**|<p>Responses for tasks with IDs greater than the specified value.</p>
 `task_id_gte`|**Optional\[str\]**|<p>Responses for tasks with IDs greater than or equal to the specified value.</p>
-`batch_size`|**Optional\[int\]**|<p>Returned aggregated responses limit for each request. The default batch_size is 50. The maximum allowed limit is 100,000.</p>
+`batch_size`|**Optional\[int\]**|<p>A limit of items returned by each request to Toloka. The maximum allowed value: 100,000. The default value: 50.</p>
 
 * **Yields:**
 
@@ -41,10 +41,10 @@ The example shows how to aggregate responses in a pool.
 
 ```python
 aggregation_operation = toloka_client.aggregate_solutions_by_pool(
-    type=toloka.aggregation.AggregatedSolutionType.WEIGHTED_DYNAMIC_OVERLAP,
+    type=toloka.client.aggregation.AggregatedSolutionType.WEIGHTED_DYNAMIC_OVERLAP,
     pool_id=some_existing_pool_id,
     answer_weight_skill_id=some_skill_id,
-    fields=[toloka.aggregation.PoolAggregatedSolutionRequest.Field(name='result')]
+    fields=[toloka.client.aggregation.PoolAggregatedSolutionRequest.Field(name='result')]
 )
 aggregation_operation = toloka_client.wait_operation(aggregation_operation)
 aggregation_results = list(toloka_client.get_aggregated_solutions(aggregation_operation.id))

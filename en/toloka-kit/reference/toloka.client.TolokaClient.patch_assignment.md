@@ -1,5 +1,5 @@
 # patch_assignment
-`toloka.client.TolokaClient.patch_assignment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L820)
+`toloka.client.TolokaClient.patch_assignment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L833)
 
 Changes an assignment status and associated public comment.
 
@@ -26,5 +26,8 @@ See also [reject_assignment](toloka.client.TolokaClient.reject_assignment.md) an
 
 
 ```python
-toloka_client.patch_assignment(assignment_id='1', public_comment='Accepted. Good job.', status='ACCEPTED')
+toloka_client.patch_assignment(assignment_id='00001092da--61ef030400c684132d0da0de',
+    public_comment='Accepted. Good job.',
+    status='ACCEPTED'
+)
 ```

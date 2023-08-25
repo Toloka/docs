@@ -1,5 +1,5 @@
 # AssignmentSubmitTime
-`toloka.client.collectors.AssignmentSubmitTime` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/collectors.py#L203)
+`toloka.client.collectors.AssignmentSubmitTime` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/collectors.py#L203)
 
 ```python
 AssignmentSubmitTime(
@@ -41,10 +41,10 @@ The collector can be used with actions:
 The example shows how to reject all assignments if a Toloker sent at least 4 responses during 20 seconds after getting every task suite.
 
 ```python
-new_pool = toloka.pool.Pool(....)
+new_pool = toloka.client.pool.Pool()
 new_pool.quality_control.add_action(
-    collector=toloka.collectors.AssignmentSubmitTime(history_size=5, fast_submit_threshold_seconds=20),
-    conditions=[toloka.conditions.FastSubmittedCount > 3],
-    action=toloka.actions.RejectAllAssignments(public_comment='Too fast responses.')
+    collector=toloka.client.collectors.AssignmentSubmitTime(history_size=5, fast_submit_threshold_seconds=20),
+    conditions=[toloka.client.conditions.FastSubmittedCount > 3],
+    action=toloka.client.actions.RejectAllAssignments(public_comment='Too fast responses.')
 )
 ```

@@ -1,5 +1,5 @@
 # WebhookSubscription
-`toloka.client.webhook_subscription.WebhookSubscription` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/webhook_subscription.py#L11)
+`toloka.client.webhook_subscription.WebhookSubscription` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/webhook_subscription.py#L11)
 
 ```python
 WebhookSubscription(
@@ -14,14 +14,18 @@ WebhookSubscription(
 )
 ```
 
-Webhook subscription to make a callback to the given address when some event happen.
+A subscription to an event in Toloka.
+
+
+For examples, you can receive notifications when a pool is closed or a task's status changes.
+Learn more about [notifications](https://toloka.ai/docs/api/using-webhook-subscriptions/).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`webhook_url`|**Optional\[str\]**|<p>The URL to which notifications will be sent.</p>
-`event_type`|**Optional\[[EventType](toloka.client.webhook_subscription.WebhookSubscription.EventType.md)\]**|<p>Event type.</p>
-`pool_id`|**Optional\[str\]**|<p>ID of the pool for which the subscription was created.</p>
-`id`|**Optional\[str\]**|<p>Pool ID. Read-only field.</p>
-`created`|**Optional\[datetime\]**|<p>When this pool was created. Read-only field.</p>
+`id`|**Optional\[str\]**|<p>The ID of the subscription. Read-only field.</p>
+`webhook_url`|**Optional\[str\]**|<p>The URL to which notifications are sent.</p>
+`event_type`|**Optional\[[EventType](toloka.client.webhook_subscription.WebhookSubscription.EventType.md)\]**|<p>The event type.</p>
+`pool_id`|**Optional\[str\]**|<p>The ID of the pool that the subscription was created for.</p>
+`created`|**Optional\[datetime\]**|<p>The UTC date and time when the subscription was created. Read-only field.</p>

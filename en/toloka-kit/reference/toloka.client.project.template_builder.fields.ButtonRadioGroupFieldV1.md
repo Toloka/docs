@@ -1,5 +1,5 @@
 # ButtonRadioGroupFieldV1
-`toloka.client.project.template_builder.fields.ButtonRadioGroupFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/fields.py#L118)
+`toloka.client.project.template_builder.fields.ButtonRadioGroupFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/project/template_builder/fields.py#L118)
 
 ```python
 ButtonRadioGroupFieldV1(
@@ -33,6 +33,7 @@ For more information, see [field.button-radio-group](https://toloka.ai/docs/temp
 
 
 ```python
+import toloka.client.project.template_builder as tb
 classification_buttons = tb.fields.ButtonRadioGroupFieldV1(
     data=tb.data.OutputData(path='class'),
     options=[

@@ -1,5 +1,5 @@
 # set_user_skill
-`toloka.client.TolokaClient.set_user_skill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L3454)
+`toloka.client.TolokaClient.set_user_skill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L3541)
 
 Assigns a skill to a Toloker.
 
@@ -7,9 +7,9 @@ Assigns a skill to a Toloker.
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`skill_id`|**Optional\[str\]**|<p>Skill ID. What skill to set.</p>
-`user_id`|**Optional\[str\]**|<p>Toloker&#x27;s ID.</p>
-`value`|**Optional\[Decimal\]**|<p>Fractional value of the skill. Minimum - 0, maximum - 100.</p>
+`user_id`|**Optional\[str\]**|<p>The Toloker&#x27;s ID.</p>
+`skill_id`|**Optional\[str\]**|<p>The ID of the skill to set.</p>
+`value`|**Optional\[Decimal\]**|<p>The value of the skill. Allowed values: from 0 to 100.</p>
 
 * **Returns:**
 
@@ -24,5 +24,7 @@ Assigns a skill to a Toloker.
 
 ```python
 from decimal import Decimal
-toloka_client.set_user_skill(skill_id='1', user_id='1', value=Decimal(100))
+toloka_client.set_user_skill(
+    skill_id='11294', user_id='fac97860c7929add8048ed2ef63b66fd', value=Decimal(100)
+)
 ```

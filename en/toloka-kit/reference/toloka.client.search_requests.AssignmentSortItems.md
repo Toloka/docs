@@ -15,9 +15,9 @@ Keys for sorting assignments in search results.
 
 **Examples:**
 
-The example shows how to find assignments sorted by the completion date in descending order. Assignments with equal completion dates are sorted by IDs in ascending order.
+The example shows how to find assignments sorted by the completion date in descending order. Assignments with equal completion dates are sorted by IDs in descending order.
 
 ```python
-sort = toloka.client.search_requests.AssignmentSortItems(['-submitted', 'id'])
-result = toloka_client.find_assignments(status='SUBMITTED', sort=sort, limit=10)
+sort = toloka.client.search_requests.AssignmentSortItems(['-submitted', '-id'])
+result = toloka_client.find_assignments(pool_id='1080020', status='SUBMITTED', sort=sort, limit=10)
 ```
