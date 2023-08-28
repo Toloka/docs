@@ -24,7 +24,7 @@ For more information, see [field.audio](https://toloka.ai/docs/template-builder/
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `data`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>A data path.</p>
-`multiple`|**Optional\[Any\]**|<ul> <li>`True` — Multiple audio files can be recorded or uploaded.</li> <li>`False` — A single file can be recorded or uploaded.</li> </ul> <p></p><p>Default value: `False`.</p>
+`multiple`|**Optional\[Any\]**|<ul> <li>`True` — Multiple audio files can be recorded or uploaded.</li> <li>`False` — A single file can be recorded or uploaded.</li> </ul> <p>Default value: `False`.</p>
 `hint`|**Optional\[Any\]**|<p>A hint.</p>
 `label`|**Optional\[Any\]**|<p>A label above the component.</p>
 `validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation rules.</p>

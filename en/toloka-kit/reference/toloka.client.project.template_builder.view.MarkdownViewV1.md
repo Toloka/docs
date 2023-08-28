@@ -16,8 +16,7 @@ MarkdownViewV1(
 A component for formatting Markdown.
 
 
-The Markdown content must not contain line breaks. To insert them, place `
-` in the text.
+The Markdown content must not contain line breaks. To insert them, place `\n` in the text.
     Straight quotation marks must be escaped: `"`.
 
     For more information, see [view.markdown](https://toloka.ai/docs/template-builder/reference/view.markdown).
@@ -30,9 +29,7 @@ The Markdown content must not contain line breaks. To insert them, place `
 
 ```python
 import toloka.client.project.template_builder as tb
-header = tb.view.MarkdownViewV1('# Some Header:
-```
-Some detailed description')
+header = tb.view.MarkdownViewV1('# Some Header:\n---\nSome detailed description')
         ...
 
 ## Parameters Description

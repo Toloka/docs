@@ -19,8 +19,7 @@ A view for displaying a text.
 For more information, see [view.text](https://toloka.ai/docs/template-builder/reference/view.text).
 
     Attributes:
-        content: The text. To insert a new line, use `
-`.
+        content: The text. To insert a new line, use `\n`.
 
     Example:
 ```python

@@ -9,7 +9,7 @@ Stops assigning a task to Tolokers.
 | :----------| :----| :-----------|
 `task_id`|**str**|<p>The ID of the task.</p>
 `overlap`|**Optional\[int\]**|<p>The new overlap value.</p>
-`infinite_overlap`|**Optional\[bool\]**|<ul> <li>`True` — The task is assigned to all Tolokers. It is usually set for training and control tasks.</li> <li>`False` — An overlap value specified for the task or for the pool is used.</li> </ul> <p></p><p>Default value: `False`.</p>
+`infinite_overlap`|**Optional\[bool\]**|<ul> <li>`True` — The task is assigned to all Tolokers. It is usually set for training and control tasks.</li> <li>`False` — An overlap value specified for the task or for the pool is used.</li> </ul> <p>Default value: `False`.</p>
 
 * **Returns:**
 

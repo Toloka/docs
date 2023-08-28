@@ -20,5 +20,5 @@ A labeled list item.
 | :----------| :----| :-----------|
 `content`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>The content of the item.</p>
 `label`|**Optional\[Any\]**|<p>An item label.</p>
-`center_label`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>Label vertical alignment.</p> <ul> <li>`True` — The label is centered.</li> <li>`False` — The label is aligned to the top of the item content.</li> </ul> <p></p><p>Default value: `False`.</p>
+`center_label`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>Label vertical alignment.</p> <ul> <li>`True` — The label is centered.</li> <li>`False` — The label is aligned to the top of the item content.</li> </ul> <p>Default value: `False`.</p>
 `hint`|**Optional\[Any\]**|<p>A hint.</p>

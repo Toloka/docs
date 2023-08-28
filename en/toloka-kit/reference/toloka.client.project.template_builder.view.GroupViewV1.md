@@ -21,8 +21,7 @@ For more information, see [view.group](https://toloka.ai/docs/template-builder/r
     Attributes:
         content: A content.
         label: A header.
-        hint: A hint. To insert a line break in the hint, use `
-`.
+        hint: A hint. To insert a line break in the hint, use `\n`.
 
 ## Parameters Description
 
