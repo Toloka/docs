@@ -8,7 +8,7 @@ The event can be triggered immediately when the task is loaded (`"fireImmediatel
 
 You can also set conditions in the `conditions` property that must be met in order for the trigger to fire.
 
-In the following example, the `plugin.trigger` component is used to modify the original search query: the word "bobtail" is added to the word "cats". This happens immediately after the task is loaded.
+In the following example, the `plugin.trigger` component is used to modify the original search query: the word "cats" is added to the word "bobtail". This happens immediately after the task is loaded.
 
 [![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/lxI6fdnn4PTHN4)
 
