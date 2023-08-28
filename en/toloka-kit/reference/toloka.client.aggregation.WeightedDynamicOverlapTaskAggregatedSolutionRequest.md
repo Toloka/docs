@@ -20,7 +20,7 @@ Parameters to run weighted aggregation for a single task with a dynamic overlap.
 | :----------| :----| :-----------|
 `task_id`|**Optional\[str\]**|<p>The ID of the task.</p>
 `pool_id`|**Optional\[str\]**|<p>The ID of the pool containing the task.</p>
-`answer_weight_skill_id`|**Optional\[str\]**|<p>The ID of the skill that determines the weight of the Toloker&#x27;s responses.</p>
+`answer_weight_skill_id`|**Optional\[str\]**|<p>The ID of the skill that determines the weight of the Toloker's responses.</p>
 `fields`|**Optional\[List\[[Field](toloka.client.aggregation.WeightedDynamicOverlapTaskAggregatedSolutionRequest.Field.md)\]\]**|<p>Output data fields to aggregate. For the best results, each of these fields should have limited number of response options. If the `DAWID_SKENE` aggregation type is selected, you can only specify one value.</p>
 
 **Examples:**

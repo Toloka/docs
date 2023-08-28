@@ -16,4 +16,4 @@ type of the function-like object (e.g. yields plain function result) do NOT use 
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`has_parameters`|****|<p>does wrapped decorator use parameters</p>
+`has_parameters`|**-**|<p>does wrapped decorator use parameters</p>

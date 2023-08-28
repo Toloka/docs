@@ -11,4 +11,4 @@ A reply in a message thread.
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`text`|**Optional\[Dict\[str, str\]\]**|<p>A dictionary with the message text. Two letter language code is a key in the dictionary. The message in a preferred Toloker&#x27;s language is sent, if available.</p>
+`text`|**Optional\[Dict\[str, str\]\]**|<p>A dictionary with the message text. Two letter language code is a key in the dictionary. The message in a preferred Toloker's language is sent, if available.</p>

@@ -11,7 +11,7 @@ Redraws all charts on each iteration
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`n_intervals`|**int**|<p>inner parameter that don&#x27;t used right now</p>
+`n_intervals`|**int**|<p>inner parameter that don't used right now</p>
 
 * **Returns:**
 

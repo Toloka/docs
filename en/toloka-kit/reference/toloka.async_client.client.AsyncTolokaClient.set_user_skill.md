@@ -7,7 +7,7 @@ Assigns a skill to a Toloker.
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`user_id`|**Optional\[str\]**|<p>The Toloker&#x27;s ID.</p>
+`user_id`|**Optional\[str\]**|<p>The Toloker's ID.</p>
 `skill_id`|**Optional\[str\]**|<p>The ID of the skill to set.</p>
 `value`|**Optional\[Decimal\]**|<p>The value of the skill. Allowed values: from 0 to 100.</p>
 

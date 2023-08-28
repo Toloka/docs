@@ -11,4 +11,4 @@ Keys for sorting App solutions in search results.
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`items`|**Optional\[List\[[SortItem](toloka.client.search_requests.AppSortItems.SortItem.md)\]\]**|<p>A list of sorting keys. Supported values:</p> <ul> <li>`&#x27;id&#x27;` — An App solution ID.</li> </ul>
+`items`|**Optional\[List\[[SortItem](toloka.client.search_requests.AppSortItems.SortItem.md)\]\]**|<p>A list of sorting keys. Supported values:</p> <ul> <li>`'id'` — An App solution ID.</li> </ul>

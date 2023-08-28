@@ -15,7 +15,7 @@ Calculate default scores for Autoquality.
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`toloka_client`|**[TolokaClient](toloka.client.TolokaClient.md)**|<p>`TolokaClient` instance to interact with requester&#x27;s account</p>
+`toloka_client`|**[TolokaClient](toloka.client.TolokaClient.md)**|<p>`TolokaClient` instance to interact with requester's account</p>
 `pool_id`|**str**|<p>Pool ID to calculate scores for</p>
 `label_field`|**str**|<p>Target output field</p>
 

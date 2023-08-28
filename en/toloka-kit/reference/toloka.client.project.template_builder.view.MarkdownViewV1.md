@@ -30,7 +30,7 @@ The Markdown content must not contain line breaks. To insert them, place `\n` in
 ```python
 import toloka.client.project.template_builder as tb
 header = tb.view.MarkdownViewV1('# Some Header:\n---\nSome detailed description')
-        ...
+```
 
 ## Parameters Description
 

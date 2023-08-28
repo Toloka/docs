@@ -25,7 +25,7 @@ For more information, see [view.map](https://toloka.ai/docs/template-builder/ref
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`center`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>The coordinates of the map center. You can use:</p> <ul> <li>A string. For example, `29.748713,-95.404287`</li> <li>The [LocationData](toloka.client.project.template_builder.data.LocationData.md) to set Toloker&#x27;s current position.</li> </ul>
+`center`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>The coordinates of the map center. You can use:</p> <ul> <li>A string. For example, `29.748713,-95.404287`</li> <li>The [LocationData](toloka.client.project.template_builder.data.LocationData.md) to set Toloker's current position.</li> </ul>
 `markers`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), List\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), [Marker](toloka.client.project.template_builder.view.MapViewV1.Marker.md)\]\]\]\]**|<p>A list of map markers.</p>
 `polygons`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), List\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), [Polygon](toloka.client.project.template_builder.view.MapViewV1.Polygon.md)\]\]\]\]**|<p>A list of areas highlighted on the map.</p>
 `zoom`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), int\]\]**|<p>An initial map scale. Use values from 0 to 19. Higher values zoom in the map.</p>

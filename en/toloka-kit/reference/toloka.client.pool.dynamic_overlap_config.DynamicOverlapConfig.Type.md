@@ -6,5 +6,5 @@ The algorithm for dynamic overlap.
 ## Attributes Description
 
 | Name | Value | Description |
-| :------| :-----------| :----------| 
-`BASIC`|'BASIC'|<p>The algorithm based on a Toloker&#x27;s skill value.</p>
+| :------| :-----------| :----------|
+`BASIC`|'BASIC'|<p>The algorithm based on a Toloker's skill value.</p>

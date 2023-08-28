@@ -29,7 +29,7 @@ and the [delete_user_restriction](toloka.client.TolokaClient.delete_user_restric
 `id`|**Optional\[str\]**|<p>The ID of the restriction.</p>
 `user_id`|**Optional\[str\]**|<p>The ID of the Toloker.</p>
 `private_comment`|**Optional\[str\]**|<p>A comment visible to the requester only.</p>
-`will_expire`|**Optional\[datetime\]**|<p>The UTC date and time when the access will be restored by Toloka. If the parameter isn&#x27;t set, then the restriction is active until you remove it calling the `delete_user_restriction` method.</p>
+`will_expire`|**Optional\[datetime\]**|<p>The UTC date and time when the access will be restored by Toloka. If the parameter isn't set, then the restriction is active until you remove it calling the `delete_user_restriction` method.</p>
 `created`|**Optional\[datetime\]**|<p>The UTC date and time when the restriction was applied. Read-only field.</p>
 
 **Examples:**

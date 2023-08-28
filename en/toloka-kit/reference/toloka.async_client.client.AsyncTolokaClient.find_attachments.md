@@ -38,7 +38,7 @@ To iterate over all matching attachments you may use the [get_attachments](tolok
 
 **Examples:**
 
-Let's find attachments in the pool and sort them by the ID and the date of creation in descending order.
+Let's find attachments in the pool and sort them by the ID and the date of creation in the descending order.
 
 ```python
 attachments = toloka_client.find_attachments(pool_id='1080020', sort=['-created', '-id'], limit=10)

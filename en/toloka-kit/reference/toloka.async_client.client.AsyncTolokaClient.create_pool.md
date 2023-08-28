@@ -19,7 +19,7 @@ You can send a maximum of 20 requests of this kind per minute and 100 requests p
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `pool`|**[Pool](toloka.client.pool.Pool.md)**|<p>The pool to be created.</p>
-`tier`|**str**|<p>Identificator of the pool data storage tier. By default, only &#x27;default&#x27; tier is available. If no tier is specified, the pool is created in the &#x27;default&#x27; tier.</p>
+`tier`|**str**|<p>Identifier of the pool data storage tier. By default, only 'default' tier is available. If no tier is specified, the pool is created in the 'default' tier.</p>
 
 * **Returns:**
 

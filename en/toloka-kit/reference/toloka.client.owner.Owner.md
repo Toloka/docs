@@ -19,4 +19,4 @@ Information about a requester who owns some object.
 | :----------| :----| :-----------|
 `id`|**Optional\[str\]**|<p>The ID of the requester.</p>
 `myself`|**Optional\[bool\]**|<p>A match of the owner OAuth token with the token that is used in the request:</p> <ul> <li>`True` — The tokens are the same.</li> <li>`False` — The tokens are different.</li> </ul>
-`company_id`|**Optional\[str\]**|<p>The ID of the requester&#x27;s company.</p>
+`company_id`|**Optional\[str\]**|<p>The ID of the requester's company.</p>

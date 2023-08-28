@@ -13,9 +13,10 @@ An assignment status change event.
 
 
 Possible values:
-    * `ACCEPT` — An assignment was accepted.
-    * `ACCEPT_AFTER_REJECT` — An assignment with the previously set `REJECTED` status was accepted.
-    * `REJECT` — An assignment was rejected.
+
+* `ACCEPT` — An assignment was accepted.
+* `ACCEPT_AFTER_REJECT` — An assignment with the previously set `REJECTED` status was accepted.
+* `REJECT` — An assignment was rejected.
 
 `AssessmentEvent` condition can be used with the `==` operator only.
 

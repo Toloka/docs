@@ -13,7 +13,7 @@ You can send a maximum of 10,000 requests of this kind per day.
 `user_bonuses`|**List\[[UserBonus](toloka.client.user_bonus.UserBonus.md)\]**|<p>A list of bonuses.</p>
 `operation_id`|**Optional\[UUID\]**|<p>The UUID of the operation that conforms to the [RFC4122 standard](https://tools.ietf.org/html/rfc4122). The UUID is used if `async_mode` is `True`.</p> <p>Specify UUID to avoid accidental errors like Toloka operation duplication caused by network problems. If you send several requests with the same `operation_id`, Toloka performs the operation only once.</p>
 `async_mode`|**Optional\[bool\]**|<p>Request processing mode:</p> <ul> <li>`True` — Asynchronous operation is started internally.</li> <li>`False` — The request is processed synchronously.</li> </ul> <p>Default value: `True`.</p>
-`skip_invalid_items`|**Optional\[bool\]**|<p>Bonus validation option:</p> <ul> <li>`True` — All valid bonuses are issued. If a bonus doesn&#x27;t pass validation, then it isn&#x27;t issued to a Toloker. All such bonuses are listed in the response.</li> <li>`False` — If any bonus doesn&#x27;t pass validation, then the operation is cancelled and no bonuses are issued to Tolokers.</li> </ul> <p>Default value: `False`.</p>
+`skip_invalid_items`|**Optional\[bool\]**|<p>Bonus validation option:</p> <ul> <li>`True` — All valid bonuses are issued. If a bonus doesn't pass validation, then it isn't issued to a Toloker. All such bonuses are listed in the response.</li> <li>`False` — If any bonus doesn't pass validation, then the operation is cancelled and no bonuses are issued to Tolokers.</li> </ul> <p>Default value: `False`.</p>
 
 * **Returns:**
 

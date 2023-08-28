@@ -34,7 +34,7 @@ The collector can be used with actions:
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `uuid`|**Optional\[UUID\]**|<p>The ID of a collector. Note that when you clone a pool, both pools start using the same collector, because it is not cloned. Usually, it is not an intended behavior. For example, in this case one collector gathers history size from both pools.</p>
-`history_size`|**Optional\[int\]**|<p>The maximum number of recent assignments used to calculate the statistics. If `history_size` is omitted, all Toloker&#x27;s assignments are counted.</p>
+`history_size`|**Optional\[int\]**|<p>The maximum number of recent assignments used to calculate the statistics. If `history_size` is omitted, all Toloker's assignments are counted.</p>
 
 **Examples:**
 

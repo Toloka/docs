@@ -34,9 +34,9 @@ Metrics starts gathering if they name are set. If the metric name is set to None
 | :----------| :----| :-----------|
 `pool_id`|**str**|<p>From which pool track metrics.</p>
 `created_name`|**Optional\[str\]**|<p>Metric name for a count of created events. Default None.</p>
-`submitted_name`|**Optional\[str\]**|<p>Metric name for a count of submitted events. Default &#x27;submitted_events_in_pool&#x27;.</p>
-`accepted_name `|**-**|<p>Metric name for a count of accepted events. Default &#x27;accepted_events_in_pool&#x27;.</p>
-`rejected_name `|**-**|<p>Metric name for a count of rejected events. Default &#x27;rejected_events_in_pool&#x27;.</p>
+`submitted_name`|**Optional\[str\]**|<p>Metric name for a count of submitted events. Default 'submitted_events_in_pool'.</p>
+`accepted_name `|**-**|<p>Metric name for a count of accepted events. Default 'accepted_events_in_pool'.</p>
+`rejected_name `|**-**|<p>Metric name for a count of rejected events. Default 'rejected_events_in_pool'.</p>
 `skipped_name`|**Optional\[str\]**|<p>Metric name for a count of skipped events. Default None.</p>
 `expired_name`|**Optional\[str\]**|<p>Metric name for a count of expired events. Default None.</p>
 `join_events`|**bool**|<p>Count all events in one point.  Default `False`.</p>

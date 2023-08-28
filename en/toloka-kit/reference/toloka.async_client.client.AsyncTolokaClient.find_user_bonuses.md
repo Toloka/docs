@@ -24,7 +24,7 @@ To iterate over all matching Tolokers' bonuses you may use the [get_user_bonuses
 `created_gt`|**Optional\[datetime\]**|<p>Bonuses given after the specified date.</p>
 `created_gte`|**Optional\[datetime\]**|<p>Bonuses given after or on the specified date.</p>
 `sort`|**Union\[List\[str\], [UserBonusSortItems](toloka.client.search_requests.UserBonusSortItems.md), None\]**|<p>Sorting options. Default: `None`.</p>
-`limit`|**Optional\[int\]**|<p>Returned Tolokers&#x27; bonuses limit. The maximum allowed value: 300.</p>
+`limit`|**Optional\[int\]**|<p>Returned Tolokers' bonuses limit. The maximum allowed value: 300.</p>
 
 * **Returns:**
 

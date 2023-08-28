@@ -18,7 +18,7 @@ Restricts Toloker's access to projects or pools.
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`scope`|**Union\[[UserRestriction.Scope](toloka.client.user_restriction.UserRestriction.Scope.md), str, None\]**|<ul> <li>`POOL` — A Toloker can&#x27;t access the pool if the action is applied.</li> <li>`PROJECT` — A Toloker can&#x27;t access the entire project containing the pool.</li> <li>`ALL_PROJECTS` — A Toloker can&#x27;t access any requester&#x27;s project.</li> </ul>
+`scope`|**Union\[[UserRestriction.Scope](toloka.client.user_restriction.UserRestriction.Scope.md), str, None\]**|<ul> <li>`POOL` — A Toloker can't access the pool if the action is applied.</li> <li>`PROJECT` — A Toloker can't access the entire project containing the pool.</li> <li>`ALL_PROJECTS` — A Toloker can't access any requester's project.</li> </ul>
 `duration`|**Optional\[int\]**|<p>The duration of the blocking period measured in `duration_unit`.</p>
 `duration_unit`|**Union\[[DurationUnit](toloka.client.user_restriction.DurationUnit.md), str, None\]**|<ul> <li>`MINUTES`;</li> <li>`HOURS`;</li> <li>`DAYS`;</li> <li>`PERMANENT` — blocking is permanent. In this case the `duration` is ignored and may be omitted.</li> </ul>
 `private_comment`|**Optional\[str\]**|<p>A private comment. It is visible only to the requester.</p>

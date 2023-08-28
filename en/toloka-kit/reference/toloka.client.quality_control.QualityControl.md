@@ -24,7 +24,7 @@ Quality control lets you get more accurate responses, restrict access to tasks f
 `configs`|**Optional\[List\[[QualityControlConfig](toloka.client.quality_control.QualityControl.QualityControlConfig.md)\]\]**|<p>A list of quality control rules configurations.</p>
 `checkpoints_config`|**Optional\[[CheckpointsConfig](toloka.client.quality_control.QualityControl.CheckpointsConfig.md)\]**|<p>A selective majority vote check configuration.</p>
 `training_requirement`|**Optional\[[TrainingRequirement](toloka.client.quality_control.QualityControl.TrainingRequirement.md)\]**|<p>Parameters for linking a training pool to a general task pool.</p>
-`captcha_frequency`|**Optional\[[CaptchaFrequency](toloka.client.quality_control.QualityControl.CaptchaFrequency.md)\]**|<p>**Deprecated.** A frequency of showing captchas.</p> <ul> <li>`LOW` — Show one for every 20 tasks.</li> <li>`MEDIUM`, `HIGH` — Show one for every 10 tasks.</li> </ul> <p>By default, captchas aren&#x27;t displayed.</p>
+`captcha_frequency`|**Optional\[[CaptchaFrequency](toloka.client.quality_control.QualityControl.CaptchaFrequency.md)\]**|<p>**Deprecated.** A frequency of showing captchas.</p> <ul> <li>`LOW` — Show one for every 20 tasks.</li> <li>`MEDIUM`, `HIGH` — Show one for every 10 tasks.</li> </ul> <p>By default, captchas aren't displayed.</p>
 
 **Examples:**
 

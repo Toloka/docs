@@ -14,7 +14,7 @@ Tolokers' skill values are described by the [UserSkill](toloka.client.user_skill
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`user_skill_id`|**str**|<p>The ID of the Toloker&#x27;s skill value.</p>
+`user_skill_id`|**str**|<p>The ID of the Toloker's skill value.</p>
 
 **Examples:**
 

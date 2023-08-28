@@ -21,7 +21,7 @@ Returns only one metric: don't spend and don't reserved money on your acount.
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`balance_name`|**Optional\[str\]**|<p>Metric name. Default &#x27;toloka_requester_balance&#x27;.</p>
+`balance_name`|**Optional\[str\]**|<p>Metric name. Default 'toloka_requester_balance'.</p>
 
 **Examples:**
 
