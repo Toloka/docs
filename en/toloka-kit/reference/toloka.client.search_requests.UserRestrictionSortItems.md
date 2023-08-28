@@ -19,5 +19,5 @@ The example shows how to find Toloker restrictions sorted by creation date in de
 
 ```python
 sort = toloka.client.search_requests.UserRestrictionSortItems(['-created', 'id'])
-result = toloka_client.find_user_restrictions(pool_id=my_pretty_pool_id, sort=sort, limit=10)
+result = toloka_client.find_user_restrictions(pool_id='1086170', sort=sort, limit=10)
 ```

@@ -1,5 +1,5 @@
 # Captcha
-`toloka.client.collectors.Captcha` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/collectors.py#L249)
+`toloka.client.collectors.Captcha` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/collectors.py#L249)
 
 ```python
 Captcha(
@@ -38,16 +38,16 @@ The example shows how to block Toloker's access to the project for 15 days if th
 The rule is applied after entering at least 3 captchas.
 
 ```python
-new_pool = toloka.pool.Pool(....)
+new_pool = toloka.client.pool.Pool()
 new_pool.set_captcha_frequency('MEDIUM')
 new_pool.quality_control.add_action(
-    collector=toloka.collectors.Captcha(history_size=5),
+    collector=toloka.client.collectors.Captcha(history_size=5),
     conditions=[
-        toloka.conditions.SuccessRate < 60,
-        toloka.conditions.StoredResultsCount >= 3,
+        toloka.client.conditions.SuccessRate < 60,
+        toloka.client.conditions.StoredResultsCount >= 3,
     ],
-    action=toloka.actions.RestrictionV2(
-        scope=toloka.user_restriction.UserRestriction.PROJECT,
+    action=toloka.client.actions.RestrictionV2(
+        scope=toloka.client.user_restriction.UserRestriction.PROJECT,
         duration=15,
         duration_unit='DAYS',
         private_comment='Toloker often makes mistakes in captcha',

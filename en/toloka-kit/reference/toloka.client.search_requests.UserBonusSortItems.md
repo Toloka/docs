@@ -19,5 +19,5 @@ The example shows how to find bonuses sorted by granting date in descending orde
 
 ```python
 sort = toloka.client.search_requests.UserBonusSortItems(['-created', 'id'])
-result = toloka_client.find_user_bonuses(user_id=best_toloker_id, sort=sort, limit=10)
+result = toloka_client.find_user_bonuses(user_id='fac97860c7929add8048ed2ef63b66fd', sort=sort, limit=10)
 ```

@@ -1,7 +1,7 @@
 # get_operations
-`toloka.client.TolokaClient.get_operations` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L2935)
+`toloka.client.TolokaClient.get_operations` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L3028)
 
-Finds all operations that match certain rules and returns them in an iterable object
+Finds all operations that match certain criteria.
 
 
 `get_operations` returns a generator. You can iterate over all found operations using the generator. Several requests to the Toloka server are possible while iterating.
@@ -26,11 +26,11 @@ If you need to sort operations use the [find_operations](toloka.client.TolokaCli
 `finished_lte`|**Optional\[datetime\]**|<p>Operations finished before or on the specified date.</p>
 `finished_gt`|**Optional\[datetime\]**|<p>Operations finished after the specified date.</p>
 `finished_gte`|**Optional\[datetime\]**|<p>Operations finished after or on the specified date.</p>
-`batch_size`|**Optional\[int\]**|<p>Returned operations limit for each request. The default batch_size is 50. The maximum allowed batch_size is 500.</p>
+`batch_size`|**Optional\[int\]**|<p>A limit of items returned by each request to Toloka. The maximum allowed value: 500. The default value: 50.</p>
 
 * **Yields:**
 
-  The next matching operations.
+  The next matching operation.
 
 * **Yield type:**
 
@@ -40,5 +40,5 @@ If you need to sort operations use the [find_operations](toloka.client.TolokaCli
 
 
 ```python
-bonuses = list(toloka_client.get_operations(submitted_lt='2021-06-01T00:00:00'))
+some_operations = list(toloka_client.get_operations(submitted_lt='2023-06-01T00:00:00'))
 ```

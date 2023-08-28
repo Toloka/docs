@@ -1,5 +1,5 @@
 # ChangeOverlap
-`toloka.client.actions.ChangeOverlap` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/actions.py#L131)
+`toloka.client.actions.ChangeOverlap` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/actions.py#L143)
 
 ```python
 ChangeOverlap(
@@ -27,10 +27,10 @@ You can use this rule only with [UsersAssessment](toloka.client.collectors.Users
 The example shows how to increase task overlap when you reject assignments.
 
 ```python
-new_pool = toloka.pool.Pool(....)
+new_pool = toloka.client.pool.Pool()
 new_pool.quality_control.add_action(
-    collector=toloka.collectors.AssignmentsAssessment(),
-    conditions=[toloka.conditions.AssessmentEvent == toloka.conditions.AssessmentEvent.REJECT],
-    action=toloka.actions.ChangeOverlap(delta=1, open_pool=True),
+    collector=toloka.client.collectors.AssignmentsAssessment(),
+    conditions=[toloka.client.conditions.AssessmentEvent == toloka.client.conditions.AssessmentEvent.REJECT],
+    action=toloka.client.actions.ChangeOverlap(delta=1, open_pool=True),
 )
 ```

@@ -1,13 +1,13 @@
 # patch_task_suite_overlap_or_min
-`toloka.client.TolokaClient.patch_task_suite_overlap_or_min` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L2799)
+`toloka.client.TolokaClient.patch_task_suite_overlap_or_min` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L2884)
 
-Stops issuing the task suites
+Stops assigning a task suite to Tolokers.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`task_suite_id`|**str**|<p>ID of the task suite.</p>
+`task_suite_id`|**str**|<p>The ID of the task suite.</p>
 `overlap`|**Optional\[int\]**|<p>The new overlap value.</p>
 
 * **Returns:**
@@ -22,5 +22,8 @@ Stops issuing the task suites
 
 
 ```python
-toloka_client.patch_task_suite_overlap_or_min(task_suite_id='1', overlap=100)
+toloka_client.patch_task_suite_overlap_or_min(
+    task_suite_id='00001092da--61ef030400c684132d0da0dc',
+    overlap=0
+)
 ```

@@ -1,5 +1,5 @@
 # find_tasks
-`toloka.async_client.client.AsyncTolokaClient.find_tasks` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.find_tasks` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L0)
 
 Finds tasks that match certain criteria.
 
@@ -27,7 +27,7 @@ To iterate over all matching tasks you may use the [get_tasks](toloka.client.Tol
 `overlap_gt`|**Optional\[int\]**|<p>Tasks with an overlap greater than the specified value.</p>
 `overlap_gte`|**Optional\[int\]**|<p>Tasks with an overlap greater than or equal to the specified value.</p>
 `sort`|**Union\[List\[str\], [TaskSortItems](toloka.client.search_requests.TaskSortItems.md), None\]**|<p>Sorting options. Default: `None`.</p>
-`limit`|**Optional\[int\]**|<p>Returned tasks limit. The default limit is 50. The maximum allowed limit is 100,000.</p>
+`limit`|**Optional\[int\]**|<p>Returned tasks limit. The maximum allowed value: 100,000. The default value: 50.</p>
 
 * **Returns:**
 
@@ -42,5 +42,6 @@ To iterate over all matching tasks you may use the [get_tasks](toloka.client.Tol
 To find three most recently created tasks in a pool, call the method with the following parameters:
 
 ```python
-toloka_client.find_tasks(pool_id='1', sort=['-created', '-id'], limit=3)
+find_result = toloka_client.find_tasks(pool_id='1086170', sort=['-created', '-id'], limit=3)
+tasks = find_result.items
 ```

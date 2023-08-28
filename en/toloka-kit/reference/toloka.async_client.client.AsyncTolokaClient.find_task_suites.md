@@ -1,5 +1,5 @@
 # find_task_suites
-`toloka.async_client.client.AsyncTolokaClient.find_task_suites` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.find_task_suites` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L0)
 
 Finds task suites that match certain criteria.
 
@@ -28,7 +28,7 @@ To iterate over all matching task suites you may use the [get_task_suites](tolok
 `overlap_gt`|**Optional\[int\]**|<p>Task suites with an overlap greater than the specified value.</p>
 `overlap_gte`|**Optional\[int\]**|<p>Task suites with an overlap greater than or equal to the specified value.</p>
 `sort`|**Union\[List\[str\], [TaskSuiteSortItems](toloka.client.search_requests.TaskSuiteSortItems.md), None\]**|<p>Sorting options. Default: `None`.</p>
-`limit`|**Optional\[int\]**|<p>Returned task suites limit. The default limit is 50. The maximum allowed limit is 100,000.</p>
+`limit`|**Optional\[int\]**|<p>Returned task suites limit. The maximum allowed value: 100,000. The default value: 50.</p>
 
 * **Returns:**
 
@@ -43,5 +43,6 @@ To iterate over all matching task suites you may use the [get_task_suites](tolok
 Find three most recently created task suites in a specified pool.
 
 ```python
-toloka_client.find_task_suites(pool_id='1', sort=['-created', '-id'], limit=3)
+find_result = toloka_client.find_task_suites(pool_id='1086170', sort=['-created', '-id'], limit=3)
+task_suites = find_result.items
 ```

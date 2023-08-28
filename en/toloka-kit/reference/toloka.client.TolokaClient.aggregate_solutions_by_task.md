@@ -1,5 +1,5 @@
 # aggregate_solutions_by_task
-`toloka.client.TolokaClient.aggregate_solutions_by_task` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L602)
+`toloka.client.TolokaClient.aggregate_solutions_by_task` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L603)
 
 Aggregates responses to a single task on the Toloka server.
 
@@ -33,9 +33,9 @@ The example shows how to aggregate responses to a single task.
 
 ```python
 aggregated_response = toloka_client.aggregate_solutions_by_task(
-    pool_id=some_existing_pool_id,
-    task_id=some_existing_task_id,
-    answer_weight_skill_id=some_skill_id,
+    pool_id='36502086',
+    task_id='000012bb84--62d80429f20bf20e50f36a27',
+    answer_weight_skill_id='11294',
     fields=[toloka.client.aggregation.PoolAggregatedSolutionRequest.Field(name='result')]
 )
 print(aggregated_response.output_values['result'])

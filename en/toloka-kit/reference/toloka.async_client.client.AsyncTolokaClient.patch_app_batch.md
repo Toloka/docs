@@ -1,5 +1,5 @@
 # patch_app_batch
-`toloka.async_client.client.AsyncTolokaClient.patch_app_batch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.patch_app_batch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L0)
 
 Updates an App batch.
 
@@ -25,6 +25,8 @@ Changing the batch name.
 
 ```python
 batch = toloka_client.patch_app_batch(
-    app_project_id = 'Q2d15QBjpwWuDz8Z321g', batch_id = '4Va2BBWKL88S4QyAgVje',
-    name = 'Preliminary batch')
+    app_project_id='Q2d15QBjpwWuDz8Z321g',
+    batch_id='4Va2BBWKL88S4QyAgVje',
+    name = 'Preliminary batch'
+)
 ```

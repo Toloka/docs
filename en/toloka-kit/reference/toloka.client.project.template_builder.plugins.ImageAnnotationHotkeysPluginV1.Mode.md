@@ -1,5 +1,5 @@
 # Mode
-`toloka.client.project.template_builder.plugins.ImageAnnotationHotkeysPluginV1.Mode` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/plugins.py#L37)
+`toloka.client.project.template_builder.plugins.ImageAnnotationHotkeysPluginV1.Mode` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/project/template_builder/plugins.py#L37)
 
 ```python
 Mode(

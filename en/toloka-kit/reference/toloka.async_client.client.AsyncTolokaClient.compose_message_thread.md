@@ -1,5 +1,5 @@
 # compose_message_thread
-`toloka.async_client.client.AsyncTolokaClient.compose_message_thread` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.compose_message_thread` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L0)
 
 Creates a message thread and sends the first thread message to Tolokers.
 

@@ -1,5 +1,5 @@
 # open_pool
-`toloka.client.TolokaClient.open_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L1705)
+`toloka.client.TolokaClient.open_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L1747)
 
 ```python
 open_pool(self, pool_id: str)
@@ -29,5 +29,5 @@ After opening the pool, tasks can be assigned to Tolokers.
 Opening a pool.
 
 ```python
-toloka_client.open_pool(pool_id='1')
+toloka_client.open_pool(pool_id='1080020')
 ```

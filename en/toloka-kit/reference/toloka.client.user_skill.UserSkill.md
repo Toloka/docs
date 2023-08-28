@@ -1,5 +1,5 @@
 # UserSkill
-`toloka.client.user_skill.UserSkill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/user_skill.py#L29)
+`toloka.client.user_skill.UserSkill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/user_skill.py#L28)
 
 ```python
 UserSkill(
@@ -15,16 +15,16 @@ UserSkill(
 )
 ```
 
-Describes the value of a specific skill for a specific Toloker.
+A Toloker's skill value.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`id`|**Optional\[str\]**|<p>Internal identifier of the Toloker&#x27;s skill value.</p>
-`skill_id`|**Optional\[str\]**|<p>Skill identifier, which skill is installed.</p>
-`user_id`|**Optional\[str\]**|<p>Toloker identifier, to which Toloker the skill is installed.</p>
-`value`|**Optional\[int\]**|<p>Skill value (from 0 to 100). Rough presentation.</p>
-`exact_value`|**Optional\[Decimal\]**|<p>Skill value (from 0 to 100). Exact representation.</p>
-`created`|**Optional\[datetime\]**|<p>Date and time when this skill was created for the Toloker.</p>
-`modified`|**Optional\[datetime\]**|<p>Date and time of the last skill change for the Toloker.</p>
+`id`|**Optional\[str\]**|<p>The ID of the Toloker&#x27;s skill value.</p>
+`user_id`|**Optional\[str\]**|<p>The ID of the Toloker.</p>
+`skill_id`|**Optional\[str\]**|<p>The ID of the skill.</p>
+`exact_value`|**Optional\[Decimal\]**|<p>The fractional value of the skill. Allowed values: from 0 to 100.</p>
+`value`|**Optional\[int\]**|<p>The value of the skill rounded to the nearest integer.</p>
+`created`|**Optional\[datetime\]**|<p>The date and time when the skill was assigned the first time.</p>
+`modified`|**Optional\[datetime\]**|<p>The date and time when the skill value was updated.</p>

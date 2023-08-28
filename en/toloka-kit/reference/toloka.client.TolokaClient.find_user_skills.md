@@ -1,5 +1,5 @@
 # find_user_skills
-`toloka.client.TolokaClient.find_user_skills` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L3365)
+`toloka.client.TolokaClient.find_user_skills` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L3435)
 
 Finds Toloker's skills that match certain criteria.
 
@@ -27,7 +27,7 @@ To iterate over all matching skills you may use the [get_user_skills](toloka.cli
 `modified_gt`|**Optional\[datetime\]**|<p>Skills changed after the specified date.</p>
 `modified_gte`|**Optional\[datetime\]**|<p>Skills created on or after the specified date.</p>
 `sort`|**Union\[List\[str\], [UserSkillSortItems](toloka.client.search_requests.UserSkillSortItems.md), None\]**|<p>Sorting options. Default: `None`.</p>
-`limit`|**Optional\[int\]**|<p>Returned skills limit. The maximum allowed limit is 1000.</p>
+`limit`|**Optional\[int\]**|<p>Returned skills limit. The maximum allowed value: 1000.</p>
 
 * **Returns:**
 
@@ -39,9 +39,18 @@ To iterate over all matching skills you may use the [get_user_skills](toloka.cli
 
 **Examples:**
 
+Getting a list of skills that a Toloker has.
 
 ```python
-skills = toloka_client.find_user_skills(limit=10)
+find_result = toloka_client.find_user_skills(user_id='fac97860c7929add8048ed2ef63b66fd')
+skills = find_result.items
 ```
 
-If there are skills exceeding the `limit`, then `skills.has_more` is set to `True`.
+Getting a list of Tolokers who have a certain skill.
+
+```python
+find_result = toloka_client.find_user_skills(skill_id='11294')
+skills = find_result.items
+```
+
+If there are skills exceeding the `limit`, then `find_result.has_more` is set to `True`.

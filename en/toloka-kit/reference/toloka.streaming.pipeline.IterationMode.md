@@ -1,5 +1,5 @@
 # IterationMode
-`toloka.streaming.pipeline.IterationMode` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/streaming/pipeline.py#L70)
+`toloka.streaming.pipeline.IterationMode` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/streaming/pipeline.py#L70)
 
 Possible values:
 

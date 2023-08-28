@@ -1,5 +1,5 @@
 # Link
-`toloka.client.project.template_builder.view.LinkGroupViewV1.Link` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/view.py#L342)
+`toloka.client.project.template_builder.view.LinkGroupViewV1.Link` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/project/template_builder/view.py#L343)
 
 ```python
 Link(

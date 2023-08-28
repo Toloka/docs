@@ -1,5 +1,5 @@
 # get_apps
-`toloka.client.TolokaClient.get_apps` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L3883)
+`toloka.client.TolokaClient.get_apps` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L3998)
 
 Finds all App solutions that match certain criteria.
 
@@ -22,7 +22,7 @@ If you need to sort solutions use the [find_apps](toloka.client.TolokaClient.fin
 `name_gte`|**-**|<p>Solutions with names lexicographically greater than or equal to the specified value.</p>
 `name_lt`|**-**|<p>Solutions with names lexicographically less than the specified value.</p>
 `name_lte`|**-**|<p>Solutions with names lexicographically less than or equal to the specified value.</p>
-`batch_size`|**Optional\[int\]**|<p>Returned solutions limit for each request. The maximum allowed batch_size is 1000.</p>
+`batch_size`|**Optional\[int\]**|<p>A limit of items returned by each request to Toloka. The maximum allowed value: 1000.</p>
 
 * **Yields:**
 

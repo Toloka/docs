@@ -1,5 +1,5 @@
 # get_task
-`toloka.client.TolokaClient.get_task` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L2470)
+`toloka.client.TolokaClient.get_task` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L2546)
 
 ```python
 get_task(self, task_id: str)
@@ -25,5 +25,6 @@ Gets a task with specified ID from Toloka.
 
 
 ```python
-toloka_client.get_task(task_id='1')
+task = toloka_client.get_task(task_id='00001092da--61ef01d5825234636bb088eb')
+print(task.input_values)
 ```

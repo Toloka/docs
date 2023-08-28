@@ -1,5 +1,5 @@
 # reject_assignment
-`toloka.client.TolokaClient.reject_assignment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L841)
+`toloka.client.TolokaClient.reject_assignment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L857)
 
 ```python
 reject_assignment(
@@ -30,5 +30,8 @@ Rejects an assignment.
 
 
 ```python
-toloka_client.reject_assignment(assignment_id='1', 'Some questions skipped')
+toloka_client.reject_assignment(
+    assignment_id='00001092da--61ef030400c684132d0da0de',
+    public_comment='Some questions skipped'
+)
 ```

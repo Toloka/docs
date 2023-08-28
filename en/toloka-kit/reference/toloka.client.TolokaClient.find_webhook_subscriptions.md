@@ -1,5 +1,5 @@
 # find_webhook_subscriptions
-`toloka.client.TolokaClient.find_webhook_subscriptions` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L3538)
+`toloka.client.TolokaClient.find_webhook_subscriptions` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L3634)
 
 Finds webhook subscriptions that match certain criteria.
 
@@ -23,7 +23,7 @@ To iterate over all matching webhook subscriptions you may use the [get_webhook_
 `created_gt`|**Optional\[datetime\]**|<p>Subscriptions created after the specified date.</p>
 `created_gte`|**Optional\[datetime\]**|<p>Subscriptions created after or on the specified date.</p>
 `sort`|**Union\[List\[str\], [WebhookSubscriptionSortItems](toloka.client.search_requests.WebhookSubscriptionSortItems.md), None\]**|<p>Sorting options. Default: `None`.</p>
-`limit`|**Optional\[int\]**|<p>Returned webhook subscriptions limit. The maximum allowed limit is 300.</p>
+`limit`|**Optional\[int\]**|<p>Returned webhook subscriptions limit. The maximum allowed value: 300.</p>
 
 * **Returns:**
 
@@ -32,3 +32,11 @@ To iterate over all matching webhook subscriptions you may use the [get_webhook_
 * **Return type:**
 
   [WebhookSubscriptionSearchResult](toloka.client.search_results.WebhookSubscriptionSearchResult.md)
+
+**Examples:**
+
+
+```python
+find_result = toloka_client.find_webhook_subscriptions(pool_id='1080020')
+subscriptions = find_result.items
+```

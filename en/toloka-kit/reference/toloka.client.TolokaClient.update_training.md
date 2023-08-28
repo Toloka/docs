@@ -1,5 +1,5 @@
 # update_training
-`toloka.client.TolokaClient.update_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L2122)
+`toloka.client.TolokaClient.update_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L2169)
 
 ```python
 update_training(
@@ -31,7 +31,7 @@ Updates parameters of a training in Toloka.
 The example shows how to set new time limit in a training.
 
 ```python
-updated_training = toloka_client.get_training(training_id='1')
+updated_training = toloka_client.get_training(training_id='1239110')
 updated_training.assignment_max_duration_seconds = 600
 toloka_client.update_training(training_id=updated_training.id, training=updated_training)
 ```

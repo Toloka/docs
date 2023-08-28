@@ -1,5 +1,5 @@
 # Balance
-`toloka.metrics.metrics.Balance` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/metrics/metrics.py#L145)
+`toloka.metrics.metrics.Balance` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/metrics/metrics.py#L145)
 
 ```python
 Balance(

@@ -1,5 +1,5 @@
 # SetUserSkillRequest
-`toloka.client.user_skill.SetUserSkillRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/user_skill.py#L12)
+`toloka.client.user_skill.SetUserSkillRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/user_skill.py#L12)
 
 ```python
 SetUserSkillRequest(
@@ -11,16 +11,15 @@ SetUserSkillRequest(
 )
 ```
 
-Parameters for setting the skill value of a specific Toloker.
+Parameters for setting a skill value for a Toloker.
 
 
-Used for grouping the fields required for setting the Toloker's skill.
-Usually, when calling TolokaClient.set_user_skill, you can use the expand version, passing all the class attributes to the call.
+These parameters are used by the [set_user_skill](toloka.client.TolokaClient.set_user_skill.md) method.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`skill_id`|**Optional\[str\]**|<p>Skill ID. What skill to set.</p>
-`user_id`|**Optional\[str\]**|<p>Toloker&#x27;s ID.</p>
-`value`|**Optional\[Decimal\]**|<p>Fractional value of the skill. Minimum - 0, maximum - 100.</p>
+`user_id`|**Optional\[str\]**|<p>The Toloker&#x27;s ID.</p>
+`skill_id`|**Optional\[str\]**|<p>The ID of the skill to set.</p>
+`value`|**Optional\[Decimal\]**|<p>The value of the skill. Allowed values: from 0 to 100.</p>

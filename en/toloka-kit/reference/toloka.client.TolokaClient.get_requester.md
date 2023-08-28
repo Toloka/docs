@@ -1,16 +1,16 @@
 # get_requester
-`toloka.client.TolokaClient.get_requester` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L3338)
+`toloka.client.TolokaClient.get_requester` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L3418)
 
 ```python
 get_requester(self)
 ```
 
-Reads information about the customer and the account balance
+Gets information about the requester and the account balance.
 
 
 * **Returns:**
 
-  Object that contains all information about customer.
+  Information about the requester's account.
 
 * **Return type:**
 
@@ -18,18 +18,8 @@ Reads information about the customer and the account balance
 
 **Examples:**
 
-Make sure that you've entered a valid OAuth token.
-
-```python
-toloka_client.get_requester()
-```
-
-You can also estimate approximate pipeline costs and check if there is enough money on your account.
 
 ```python
 requester = toloka_client.get_requester()
-if requester.balance >= approx_pipeline_price:
-    print('You have enough money on your account!')
-else:
-    print("You haven't got enough money on your account!")
+print(requester.public_name, requester.balance)
 ```

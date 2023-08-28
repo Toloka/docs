@@ -1,5 +1,5 @@
 # update_project
-`toloka.client.TolokaClient.update_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L1280)
+`toloka.client.TolokaClient.update_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L1312)
 
 ```python
 update_project(
@@ -30,7 +30,7 @@ Updates all project parameters in Toloka.
 
 
 ```python
-updated_project = toloka_client.get_project(project_id='1')
+updated_project = toloka_client.get_project(project_id='92694')
 updated_project.private_comment = 'example project'
 updated_project = toloka_client.update_project(project_id=updated_project.id, project=updated_project)
 ```

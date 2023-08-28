@@ -1,5 +1,5 @@
 # QualityControlConfig
-`toloka.client.quality_control.QualityControl.QualityControlConfig` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/quality_control.py#L108)
+`toloka.client.quality_control.QualityControl.QualityControlConfig` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/quality_control.py#L110)
 
 ```python
 QualityControlConfig(
@@ -10,18 +10,21 @@ QualityControlConfig(
 )
 ```
 
-Quality control block
+A quality control rules configuration.
 
 
-Quality control blocks help regulate access to a project or pool: you can filter out Tolokers who give incorrect answers
-in control tasks, skip many tasks in a row, and so on.
+A rule consists of conditions, and an action to perform when the conditions are met. The rule conditions use statistics provided by a connected collector.
 
-The block consists of two parts: condition and the action to be performed when the condition is met.
-There may be several conditions, then they are combined using logical And.
+An example of the configuration.
+Toloka collects statistics of skipped tasks. If 10 task suites are skipped in a row, then a Toloker can no longer access a project.
+
+To learn more, see:
+* [Quality control rules](https://toloka.ai/docs/api/quality_control/) in the API.
+* [Quality control rules](https://toloka.ai/docs/guide/control/) in the guide.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`rules`|**Optional\[List\[[RuleConfig](toloka.client.quality_control.QualityControl.QualityControlConfig.RuleConfig.md)\]\]**|<p>Conditions and action if conditions are met.</p>
-`collector_config`|**Optional\[[CollectorConfig](toloka.client.collectors.CollectorConfig.md)\]**|<p>Parameters for collecting statistics (for example, the number of task skips in the pool).</p>
+`rules`|**Optional\[List\[[RuleConfig](toloka.client.quality_control.QualityControl.QualityControlConfig.RuleConfig.md)\]\]**|<p>The conditions and the action.</p>
+`collector_config`|**Optional\[[CollectorConfig](toloka.client.collectors.CollectorConfig.md)\]**|<p>The configuration of the collector.</p>

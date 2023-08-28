@@ -1,5 +1,5 @@
 # clone_project
-`toloka.async_client.client.AsyncTolokaClient.clone_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.clone_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/async_client/client.py#L0)
 
 ```python
 async clone_project(
@@ -26,7 +26,7 @@ Important notes:
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `project_id`|**str**|<p>The ID of the project to be cloned.</p>
-`reuse_controllers`|**bool**|<ul> <li>`True` — Use same quality controllers in cloned and created projects.</li> <li>`False` — Use separate quality controllers.</li> </ul> <p>Default value: `True`.</p>
+`reuse_controllers`|**bool**|<ul> <li>`True` — Use same quality controllers in cloned and created projects.</li> <li>`False` — Use separate quality controllers.</li> </ul> <p></p><p>Default value: `True`.</p>
 
 * **Returns:**
 
@@ -40,6 +40,9 @@ Important notes:
 
 
 ```python
-project, pools, trainings = toloka_client.clone_project('123')
+project, pools, trainings = toloka_client.clone_project(
+    project_id='92694',
+    reuse_controllers=False
+)
 # add tasks in pools and trainings
 ```

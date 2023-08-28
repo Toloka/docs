@@ -1,5 +1,5 @@
 # find_skills
-`toloka.client.TolokaClient.find_skills` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L2180)
+`toloka.client.TolokaClient.find_skills` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L2225)
 
 Finds skills that match certain criteria.
 
@@ -22,7 +22,7 @@ To iterate over all matching skills you may use the [get_skills](toloka.client.T
 `created_gt`|**Optional\[datetime\]**|<p>Skills created after the specified date.</p>
 `created_gte`|**Optional\[datetime\]**|<p>Skills created on or after the specified date.</p>
 `sort`|**Union\[List\[str\], [SkillSortItems](toloka.client.search_requests.SkillSortItems.md), None\]**|<p>Sorting options. Default: `None`.</p>
-`limit`|**Optional\[int\]**|<p>Returned skills limit. The maximum allowed limit is 100.</p>
+`limit`|**Optional\[int\]**|<p>Returned skills limit. The maximum allowed value: 100.</p>
 
 * **Returns:**
 
@@ -37,5 +37,6 @@ To iterate over all matching skills you may use the [get_skills](toloka.client.T
 The example shows how to find ten most recently created skills.
 
 ```python
-toloka_client.find_skills(sort=['-created', '-id'], limit=10)
+find_result = toloka_client.find_skills(sort=['-created', '-id'], limit=10)
+skills = find_result.items
 ```

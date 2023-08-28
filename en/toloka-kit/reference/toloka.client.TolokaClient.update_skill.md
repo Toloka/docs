@@ -1,5 +1,5 @@
 # update_skill
-`toloka.client.TolokaClient.update_skill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L2259)
+`toloka.client.TolokaClient.update_skill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L2307)
 
 ```python
 update_skill(
@@ -9,18 +9,18 @@ update_skill(
 )
 ```
 
-Makes changes to the skill
+Updates all skill parameters in Toloka.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`skill_id`|**str**|<p>ID of the training that will be changed.</p>
-`skill`|**[Skill](toloka.client.skill.Skill.md)**|<p>A skill object with all the fields: those that will be updated and those that will not.</p>
+`skill_id`|**str**|<p>The ID of the skill to be updated.</p>
+`skill`|**[Skill](toloka.client.skill.Skill.md)**|<p>The skill with new parameters.</p>
 
 * **Returns:**
 
-  Modified skill object with all fields.
+  The skill with updated parameters.
 
 * **Return type:**
 
@@ -30,5 +30,7 @@ Makes changes to the skill
 
 
 ```python
-toloka_client.update_skill(skill_id=old_skill_id, skill=new_skill_object)
+updated_skill = toloka_client.get_skill(skill_id='14486')
+updated_skill.hidden = False
+toloka_client.update_skill(skill_id=updated_skill.id, skill=updated_skill)
 ```

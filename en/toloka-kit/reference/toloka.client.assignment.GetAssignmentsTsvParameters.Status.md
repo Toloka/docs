@@ -1,5 +1,5 @@
 # Status
-`toloka.client.assignment.GetAssignmentsTsvParameters.Status` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/assignment.py#L138)
+`toloka.client.assignment.GetAssignmentsTsvParameters.Status` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/assignment.py#L145)
 
 An enumeration.
 

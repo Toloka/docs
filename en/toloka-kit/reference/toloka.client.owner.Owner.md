@@ -1,5 +1,5 @@
 # Owner
-`toloka.client.owner.Owner` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/owner.py#L4)
+`toloka.client.owner.Owner` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/owner.py#L4)
 
 ```python
 Owner(
@@ -11,12 +11,12 @@ Owner(
 )
 ```
 
-Parameters of the customer who created an object.
+Information about a requester who owns some object.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`id`|**Optional\[str\]**|<p>Customer ID.</p>
-`myself`|**Optional\[bool\]**|<p>An object accessory marker. Possible values:</p> <ul> <li>`True` — An object is created by the customer whose OAuth token is used in the request.</li> <li>`False` — An object does not belong to the customer whose OAuth token is used in the request.</li> </ul>
-`company_id`|**Optional\[str\]**|<p>ID of the customer&#x27;s company.</p>
+`id`|**Optional\[str\]**|<p>The ID of the requester.</p>
+`myself`|**Optional\[bool\]**|<p>A match of the owner OAuth token with the token that is used in the request:</p> <ul> <li>`True` — The tokens are the same.</li> <li>`False` — The tokens are different.</li> </ul>
+`company_id`|**Optional\[str\]**|<p>The ID of the requester&#x27;s company.</p>

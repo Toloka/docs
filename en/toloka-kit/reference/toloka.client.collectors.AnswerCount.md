@@ -1,5 +1,5 @@
 # AnswerCount
-`toloka.client.collectors.AnswerCount` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/collectors.py#L130)
+`toloka.client.collectors.AnswerCount` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/collectors.py#L130)
 
 ```python
 AnswerCount(self, *, uuid: Optional[UUID] = None)
@@ -33,10 +33,10 @@ The collector can be used with actions:
 The example shows how to mark Tolokers completing any task in the pool so that you can filter them later in the checking project.
 
 ```python
-new_pool = toloka.pool.Pool(....)
+new_pool = toloka.client.pool.Pool()
 new_pool.quality_control.add_action(
-    collector=toloka.collectors.AnswerCount(),
-    conditions=[toloka.conditions.AssignmentsAcceptedCount > 0],
-    action=toloka.actions.SetSkill(skill_id=some_skill_id, skill_value=1),
+    collector=toloka.client.collectors.AnswerCount(),
+    conditions=[toloka.client.conditions.AssignmentsAcceptedCount > 0],
+    action=toloka.client.actions.SetSkill(skill_id='11294', skill_value=1),
 )
 ```

@@ -1,5 +1,5 @@
 # AppItem
-`toloka.client.app.AppItem` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/app/__init__.py#L125)
+`toloka.client.app.AppItem` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/app/__init__.py#L174)
 
 ```python
 AppItem(
@@ -21,7 +21,8 @@ AppItem(
 A task item.
 
 
-Items are uploaded to Toloka and are grouped in batches. After uploading the status of items is set to `NEW`. Items with that status can be edited. Then entire batches are sent for labeling.
+Items are uploaded to Toloka and are grouped in batches. After uploading the status of items is set to `NEW`.
+Items with that status can be edited. Then entire batches are sent for labeling.
 
 ## Parameters Description
 
@@ -37,3 +38,12 @@ Items are uploaded to Toloka and are grouped in batches. After uploading the sta
 `created_at`|**Optional\[datetime\]**|<p>The date and time when the item was created.</p>
 `started_at`|**Optional\[datetime\]**|<p>The date and time when the item processing started.</p>
 `finished_at`|**Optional\[datetime\]**|<p>The date and time when the item processing was completed.</p>
+
+**Examples:**
+
+
+```python
+item = toloka_client.get_app_item(app_project_id='Q2d15QBjpwWuDz8Z321g', app_item_id='V40aPPA2j64TORQyY54Z')
+print(item.input_data)
+print(item.output_data)
+```

@@ -1,5 +1,5 @@
 # ArrayIntegerSpec
-`toloka.client.project.field_spec.ArrayIntegerSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/field_spec.py#L167)
+`toloka.client.project.field_spec.ArrayIntegerSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/project/field_spec.py#L167)
 
 ```python
 ArrayIntegerSpec(

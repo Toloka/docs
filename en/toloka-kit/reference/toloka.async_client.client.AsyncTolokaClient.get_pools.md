@@ -1,5 +1,5 @@
 # get_pools
-`toloka.async_client.client.AsyncTolokaClient.get_pools` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.get_pools` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L0)
 
 Finds all pools that match certain criteria.
 
@@ -26,7 +26,7 @@ If you need to sort pools use the [find_pools](toloka.client.TolokaClient.find_p
 `last_started_lte`|**Optional\[datetime\]**|<p>Pools that were opened last time before or on the specified date.</p>
 `last_started_gt`|**Optional\[datetime\]**|<p>Pools that were opened last time after the specified date.</p>
 `last_started_gte`|**Optional\[datetime\]**|<p>Pools that were opened last time after or on the specified date.</p>
-`batch_size`|**Optional\[int\]**|<p>Returned pools limit for each request. The default batch_size is 20. The maximum allowed batch_size is 300.</p>
+`batch_size`|**Optional\[int\]**|<p>A limit of items returned by each request to Toloka. The maximum allowed value: 300. The default value: 20.</p>
 
 * **Yields:**
 
@@ -38,14 +38,8 @@ If you need to sort pools use the [find_pools](toloka.client.TolokaClient.find_p
 
 **Examples:**
 
-How to get all open pools from a project.
+Getting all open pools from a project.
 
 ```python
-open_pools = toloka_client.get_pools(project_id='1', status='OPEN')
-```
-
-How to get all pools from a project.
-
-```python
-all_pools = toloka_client.get_pools(project_id='1')
+open_pools = toloka_client.get_pools(project_id='92694', status='OPEN')
 ```

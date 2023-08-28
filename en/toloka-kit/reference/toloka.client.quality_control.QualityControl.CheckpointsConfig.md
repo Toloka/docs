@@ -1,5 +1,5 @@
 # CheckpointsConfig
-`toloka.client.quality_control.QualityControl.CheckpointsConfig` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/quality_control.py#L75)
+`toloka.client.quality_control.QualityControl.CheckpointsConfig` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/quality_control.py#L78)
 
 ```python
 CheckpointsConfig(
@@ -11,22 +11,21 @@ CheckpointsConfig(
 )
 ```
 
-Random check majority opinion.
+A selective majority vote check configuration.
 
 
-Only some tasks are issued with a high overlap (for example, "5") and are being tested.
-Other tasks are issued with the overlap set in the pool settings (for example, "1") and remain without verification.
-Spot check saves money and speeds up pool execution.
+This quality control method checks some of Toloker's responses against the majority of Tolokers. To do this, it changes the overlap of those tasks.
 
-You can reduce the frequency of checks over time.
+An example of the configuration:
+    * For the first 100 tasks completed by a Toloker in the pool, every 5th task is checked. The overlap of these tasks is increased to 5.
+    * After completing 100 tasks, every 25th task is checked.
 
-Example settings: in the first 25 tasks completed by the Toloker in the pool, issue every fifth task with an overlap "5"
-to check the answers. In subsequent tasks issue each 25 task with an overlap "5".
+Learn more about the [Selective majority vote check](https://toloka.ai/docs/guide/selective-mvote/).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`real_settings`|**Optional\[[Settings](toloka.client.quality_control.QualityControl.CheckpointsConfig.Settings.md)\]**|<p>Checkpoints settings for main tasks.</p>
-`golden_settings`|**Optional\[[Settings](toloka.client.quality_control.QualityControl.CheckpointsConfig.Settings.md)\]**|<p>Checkpoints settings for golden tasks.</p>
-`training_settings`|**Optional\[[Settings](toloka.client.quality_control.QualityControl.CheckpointsConfig.Settings.md)\]**|<p>Checkpoints settings for train tasks.</p>
+`real_settings`|**Optional\[[Settings](toloka.client.quality_control.QualityControl.CheckpointsConfig.Settings.md)\]**|<p>Selective majority vote settings for general tasks.</p>
+`golden_settings`|**Optional\[[Settings](toloka.client.quality_control.QualityControl.CheckpointsConfig.Settings.md)\]**|<p>Selective majority vote settings for control tasks.</p>
+`training_settings`|**Optional\[[Settings](toloka.client.quality_control.QualityControl.CheckpointsConfig.Settings.md)\]**|<p>Selective majority vote settings for training tasks.</p>

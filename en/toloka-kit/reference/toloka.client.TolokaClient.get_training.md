@@ -1,5 +1,5 @@
 # get_training
-`toloka.client.TolokaClient.get_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L2026)
+`toloka.client.TolokaClient.get_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L2072)
 
 ```python
 get_training(self, training_id: str)
@@ -25,5 +25,5 @@ Gets information about a training from Toloka.
 
 
 ```python
-t = toloka_client.get_training(training_id='1')
+training = toloka_client.get_training(training_id='1239110')
 ```

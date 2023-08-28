@@ -1,5 +1,5 @@
 # TaskDistributionFunction
-`toloka.client.task_distribution_function.TaskDistributionFunction` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/task_distribution_function.py#L9)
+`toloka.client.task_distribution_function.TaskDistributionFunction` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/task_distribution_function.py#L9)
 
 ```python
 TaskDistributionFunction(
@@ -12,19 +12,18 @@ TaskDistributionFunction(
 )
 ```
 
-Issue of tasks with uneven frequency
+A configuration of selecting tasks.
 
 
-Can be used for:
-- Distribution of tasks with majority opinion verification.
-- Issuing control tasks with uneven frequency. Allows you to change the frequency of verification as the Toloker completes tasks.
-- Issuing training tasks with uneven frequency. Allows you to change the frequency of training tasks as the Toloker completes tasks.
+It is used:
+- To control the selection of tasks for the selective majority vote checks.
+- To change the frequency of assigning control or training tasks.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`scope`|**Optional\[[Scope](toloka.client.task_distribution_function.TaskDistributionFunction.Scope.md)\]**|<p>How to count tasks completed by the Toloker:</p> <ul> <li>POOL - Count completed pool tasks.</li> <li>PROJECT - Count completed project tasks.</li> </ul>
-`distribution`|**Optional\[[Distribution](toloka.client.task_distribution_function.TaskDistributionFunction.Distribution.md)\]**|<p>Distribution of tasks within an interval. Parameter has only one possible: value - UNIFORM.</p>
-`window_days`|**Optional\[int\]**|<p>Period in which completed tasks are counted (number of days).</p>
-`intervals`|**Optional\[List\[[Interval](toloka.client.task_distribution_function.TaskDistributionFunction.Interval.md)\]\]**|<p>Interval borders and number of tasks in an interval.</p>
+`scope`|**Optional\[[Scope](toloka.client.task_distribution_function.TaskDistributionFunction.Scope.md)\]**|<p>A way of counting tasks completed by a Toloker:</p> <ul> <li>`POOL` — Completed pool tasks are counted.</li> <li>`PROJECT` — All completed project tasks are counted.</li> </ul>
+`distribution`|**Optional\[[Distribution](toloka.client.task_distribution_function.TaskDistributionFunction.Distribution.md)\]**|<p>The distribution of selected tasks within an interval. Allowed values: `UNIFORM`.</p>
+`window_days`|**Optional\[int\]**|<p>The number of days in which completed tasks are counted. Allowed values: from 1 to 365.</p>
+`intervals`|**Optional\[List\[[Interval](toloka.client.task_distribution_function.TaskDistributionFunction.Interval.md)\]\]**|<p>A list of count intervals with frequency values. The maximum number of list items is 10,000.</p>

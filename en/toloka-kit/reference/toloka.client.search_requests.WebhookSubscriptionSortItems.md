@@ -19,5 +19,5 @@ The example shows how to find event subscriptions sorted by creation date in des
 
 ```python
 sort = toloka.client.search_requests.WebhookSubscriptionSortItems(['-created', 'id'])
-result = toloka_client.find_webhook_subscriptions(event_type=some_event_type, pool_id=my_pretty_pool_id, sort=sort, limit=10)
+result = toloka_client.find_webhook_subscriptions(event_type='ASSIGNMENT_CREATED', pool_id='1086170', sort=sort, limit=10)
 ```

@@ -1,5 +1,5 @@
 # DoesNotExistApiError
-`toloka.client.exceptions.DoesNotExistApiError` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/exceptions.py#L130)
+`toloka.client.exceptions.DoesNotExistApiError` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/exceptions.py#L130)
 
 ## Parameters Description
 

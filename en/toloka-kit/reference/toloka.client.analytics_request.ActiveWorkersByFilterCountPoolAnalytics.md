@@ -1,5 +1,5 @@
 # ActiveWorkersByFilterCountPoolAnalytics
-`toloka.client.analytics_request.ActiveWorkersByFilterCountPoolAnalytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/analytics_request.py#L146)
+`toloka.client.analytics_request.ActiveWorkersByFilterCountPoolAnalytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/analytics_request.py#L236)
 
 ```python
 ActiveWorkersByFilterCountPoolAnalytics(
@@ -21,3 +21,15 @@ Active Tolokers are Tolokers who viewed and completed tasks recently.
 | :----------| :----| :-----------|
 `subject_id`|**str**|<p>The ID of a pool to get analytics about.</p>
 `interval_hours`|**int**|<p>The interval in hours to take into account.</p>
+
+**Examples:**
+
+
+```python
+operation = toloka_client.get_analytics(
+    [toloka.client.analytics_request.ActiveWorkersByFilterCountPoolAnalytics(subject_id='1084779', interval_hours=3)]
+)
+operation = toloka_client.wait_operation(operation)
+count = operation.details['value'][0]['result']
+print(count)
+```

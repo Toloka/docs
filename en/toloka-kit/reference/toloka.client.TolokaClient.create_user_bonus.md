@@ -1,7 +1,7 @@
 # create_user_bonus
-`toloka.client.TolokaClient.create_user_bonus` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L2985)
+`toloka.client.TolokaClient.create_user_bonus` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L3081)
 
-Issues payments directly to a Toloker.
+Issues a bonus payment to a Toloker.
 
 
 You can send a maximum of 10,000 requests of this kind per day.
@@ -10,9 +10,9 @@ You can send a maximum of 10,000 requests of this kind per day.
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`user_bonus`|**[UserBonus](toloka.client.user_bonus.UserBonus.md)**|<p>To whom, how much to pay and for what.</p>
-`operation_id`|**Optional\[UUID\]**|<p>The ID of the operation conforming to the [RFC4122 standard](https://tools.ietf.org/html/rfc4122). We recommended sending the operation ID in the `POST` requests to avoid accidental errors: when you send several requests with the same `operation_id`, the operation will be performed only once.</p>
-`async_mode`|**Optional\[bool\]**|<p>Request processing mode:</p> <ul> <li>`True` — Asynchronous operation is started internally.</li> <li>`False` — The request is processed synchronously.</li> </ul> <p>Default value: `True`.</p>
+`user_bonus`|**[UserBonus](toloka.client.user_bonus.UserBonus.md)**|<p>The bonus.</p>
+`operation_id`|**Optional\[UUID\]**|<p>The UUID of the operation that conforms to the [RFC4122 standard](https://tools.ietf.org/html/rfc4122). The UUID is used if `async_mode` is `True`.</p> <p>Specify UUID to avoid accidental errors like Toloka operation duplication caused by network problems. If you send several requests with the same `operation_id`, Toloka performs the operation only once.</p>
+`async_mode`|**Optional\[bool\]**|<p>Request processing mode:</p> <ul> <li>`True` — Asynchronous operation is started internally.</li> <li>`False` — The request is processed synchronously.</li> </ul> <p></p><p>Default value: `True`.</p>
 
 * **Returns:**
 
@@ -24,14 +24,14 @@ You can send a maximum of 10,000 requests of this kind per day.
 
 **Examples:**
 
-Create bonus for specific assignment.
+Issuing a bonus to a Toloker with a message in 2 languages.
 
 ```python
-import decimal
+from decimal import Decimal
 new_bonus = toloka_client.create_user_bonus(
-    UserBonus(
-        user_id='1',
-        amount=decimal.Decimal('0.50'),
+    toloka.client.UserBonus(
+        user_id='fac97860c7929add8048ed2ef63b66fd',
+        amount=Decimal('0.50'),
         public_title={
             'EN': 'Perfect job!',
             'RU': 'Прекрасная работа!',
@@ -40,7 +40,7 @@ new_bonus = toloka_client.create_user_bonus(
             'EN': 'You are the best!',
             'RU': 'Молодец!',
         },
-        assignment_id='012345'
+        assignment_id='00001092da--61ef030400c684132d0da0de'
     )
 )
 ```

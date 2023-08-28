@@ -1,5 +1,5 @@
 # Income
-`toloka.client.collectors.Income` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/collectors.py#L363)
+`toloka.client.collectors.Income` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/collectors.py#L363)
 
 ```python
 Income(self, *, uuid: Optional[UUID] = None)
@@ -31,12 +31,12 @@ The collector can be used with actions:
 The example shows how to block Toloker's access to the project for 1 day if their earnings reach 1 dollar.
 
 ```python
-new_pool = toloka.pool.Pool(....)
+new_pool = toloka.client.pool.Pool()
 new_pool.quality_control.add_action(
-    collector=toloka.collectors.Income(),
-    conditions=[toloka.conditions.IncomeSumForLast24Hours > 1],
-    action=toloka.actions.RestrictionV2(
-        scope=toloka.user_restriction.UserRestriction.PROJECT,
+    collector=toloka.client.collectors.Income(),
+    conditions=[toloka.client.conditions.IncomeSumForLast24Hours > 1],
+    action=toloka.client.actions.RestrictionV2(
+        scope=toloka.client.user_restriction.UserRestriction.PROJECT,
         duration=1,
         duration_unit='DAYS',
         private_comment='Earnings limit is reached',

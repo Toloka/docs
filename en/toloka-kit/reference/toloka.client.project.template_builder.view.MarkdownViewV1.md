@@ -1,5 +1,5 @@
 # MarkdownViewV1
-`toloka.client.project.template_builder.view.MarkdownViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/view.py#L383)
+`toloka.client.project.template_builder.view.MarkdownViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/project/template_builder/view.py#L384)
 
 ```python
 MarkdownViewV1(
@@ -29,8 +29,11 @@ The Markdown content must not contain line breaks. To insert them, place `
         Adding a title and description using Markdown.
 
 ```python
-header = tb.view.MarkdownViewV1('# Some Header:\n---\nSome detailed description')
+import toloka.client.project.template_builder as tb
+header = tb.view.MarkdownViewV1('# Some Header:
 ```
+Some detailed description')
+        ...
 
 ## Parameters Description
 

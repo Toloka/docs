@@ -1,5 +1,5 @@
 # archive_training
-`toloka.client.TolokaClient.archive_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L1802)
+`toloka.client.TolokaClient.archive_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L1844)
 
 ```python
 archive_training(self, training_id: str)

@@ -1,5 +1,5 @@
 # create_app_batch
-`toloka.async_client.client.AsyncTolokaClient.create_app_batch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.create_app_batch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L0)
 
 Creates a batch with task items in an App project in Toloka.
 
@@ -29,5 +29,8 @@ new_items = [
     {'id':'30', 'query':'toloka kit', 'website_url':'https://toloka.ai/docs/toloka-kit'},
     {'id':'31', 'query':'crowd kit', 'website_url':'https://toloka.ai/docs/crowd-kit'}
 ]
-toloka_client.create_app_batch(app_project_id = 'Q2d15QBjpwWuDz8Z321g', items = new_items)
+toloka_client.create_app_batch(
+    app_project_id='Q2d15QBjpwWuDz8Z321g',
+    items=new_items
+)
 ```

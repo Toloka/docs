@@ -1,5 +1,5 @@
 # patch_pool
-`toloka.client.TolokaClient.patch_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L1755)
+`toloka.client.TolokaClient.patch_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L1797)
 
 Changes pool parameters in Toloka.
 
@@ -26,5 +26,5 @@ If a parameter is not specified in the `patch_pool` method, then it is left unch
 Changing priority of a pool.
 
 ```python
-toloka_client.patch_pool(pool_id='1', priority=100)
+pool = toloka_client.patch_pool(pool_id='1080020', priority=100)
 ```

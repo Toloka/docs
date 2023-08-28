@@ -1,5 +1,5 @@
 # SetActionV1
-`toloka.client.project.template_builder.actions.SetActionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/actions.py#L146)
+`toloka.client.project.template_builder.actions.SetActionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/project/template_builder/actions.py#L146)
 
 ```python
 SetActionV1(
@@ -31,7 +31,6 @@ The [RefComponent](toloka.client.project.template_builder.base.RefComponent.md) 
 
 ```python
 from toloka.client.project.template_builder import *
-from toloka.client.project.template_builder.base import RefComponent
 
 tb_config = TemplateBuilder(
     vars={'0': OutputData('result')},

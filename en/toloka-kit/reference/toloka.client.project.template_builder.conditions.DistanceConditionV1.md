@@ -1,5 +1,5 @@
 # DistanceConditionV1
-`toloka.client.project.template_builder.conditions.DistanceConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/conditions.py#L86)
+`toloka.client.project.template_builder.conditions.DistanceConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/project/template_builder/conditions.py#L87)
 
 ```python
 DistanceConditionV1(
@@ -33,10 +33,11 @@ The following condition gets Toloker's [location](toloka.client.project.template
 and checks that it is near the task location.
 
 ```python
+import toloka.client.project.template_builder as tb
 distance_condition = tb.conditions.DistanceConditionV1(
     tb.data.LocationData(),
     tb.data.InputData('coordinates'),
     500,
     hint='You are too far from the destination coordinates.',
-),
+)
 ```

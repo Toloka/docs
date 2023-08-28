@@ -1,5 +1,5 @@
 # get_app_item
-`toloka.client.TolokaClient.get_app_item` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L4078)
+`toloka.client.TolokaClient.get_app_item` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L4203)
 
 ```python
 get_app_item(
@@ -30,7 +30,10 @@ Gets information from Toloka about an App task item.
 
 
 ```python
-item = toloka_client.get_app_item(app_project_id = 'Q2d15QBjpwWuDz8Z321g', app_item_id = 'V40aPPA2j64TORQyY54Z')
+item = toloka_client.get_app_item(
+    app_project_id='Q2d15QBjpwWuDz8Z321g',
+    app_item_id='V40aPPA2j64TORQyY54Z'
+)
 print(item.input_data)
 print(item.output_data)
 ```

@@ -1,5 +1,5 @@
 # IfHelperV1
-`toloka.client.project.template_builder.helpers.IfHelperV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/helpers.py#L62)
+`toloka.client.project.template_builder.helpers.IfHelperV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/project/template_builder/helpers.py#L62)
 
 ```python
 IfHelperV1(
@@ -30,6 +30,7 @@ For more information, see [helper.if](https://toloka.ai/docs/template-builder/re
 How to conditionally show a part of the interface.
 
 ```python
+import toloka.client.project.template_builder as tb
 hidden_ui = tb.helpers.IfHelperV1(
     condition=tb.conditions.EqualsConditionV1(tb.data.OutputData('show_me'), 'show'),
     then=tb.view.ListViewV1([header, buttons, images]),

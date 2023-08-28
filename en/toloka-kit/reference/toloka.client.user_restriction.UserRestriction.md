@@ -1,5 +1,5 @@
 # UserRestriction
-`toloka.client.user_restriction.UserRestriction` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/user_restriction.py#L25)
+`toloka.client.user_restriction.UserRestriction` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/user_restriction.py#L25)
 
 ```python
 UserRestriction(
@@ -13,38 +13,36 @@ UserRestriction(
 )
 ```
 
-Controls access to projects and pools.
+A base class for access restrictions.
 
 
-You can restrict access to any project for a Toloker. Then he can't do tasks in the project. You may set the duration of restriction or apply permanent restriction.
-To unlock access pass the restriction ID to the `delete_user_restriction`.
+Toloker's access to projects or pools can be restricted.
+You can set the duration of the ban or apply an unlimited restriction.
+
+Use the [set_user_restriction](toloka.client.TolokaClient.set_user_restriction.md) method to apply a restriction
+and the [delete_user_restriction](toloka.client.TolokaClient.delete_user_restriction.md) method to remove it.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
+`id`|**Optional\[str\]**|<p>The ID of the restriction.</p>
 `user_id`|**Optional\[str\]**|<p>The ID of the Toloker.</p>
-`private_comment`|**Optional\[str\]**|<p>A comment for you why access to this Toloker was restricted.</p>
-`will_expire`|**Optional\[datetime\]**|<p>When access is restored. If you do not set the parameter, then the access restriction is permanent.</p>
-`id`|**Optional\[str\]**|<p>The identifier of a specific fact of access restriction. Read-only field.</p>
-`created`|**Optional\[datetime\]**|<p>Date and time when the fact of access restriction was created. Read-only field.</p>
+`private_comment`|**Optional\[str\]**|<p>A comment visible to the requester only.</p>
+`will_expire`|**Optional\[datetime\]**|<p>The UTC date and time when the access will be restored by Toloka. If the parameter isn&#x27;t set, then the restriction is active until you remove it calling the `delete_user_restriction` method.</p>
+`created`|**Optional\[datetime\]**|<p>The UTC date and time when the restriction was applied. Read-only field.</p>
 
 **Examples:**
 
-How you can lock access for one Toloker on one project.
+Restricting access to a project and removing the restriction.
 
 ```python
-new_restrict = toloka_client.set_user_restriction(
-    ProjectUserRestriction(
-        user_id='1',
-        private_comment='I dont like you',
+new_restriction = toloka_client.set_user_restriction(
+    toloka.client.user_restriction.ProjectUserRestriction(
+        user_id='1ad097faba0eff85a04fe30bc04d53db',
+        private_comment='Low response quality',
         project_id='5'
     )
 )
-```
-
-And how you can unlock it.
-
-```python
-toloka_client.delete_user_restriction(new_restrict.id)
+toloka_client.delete_user_restriction(new_restriction.id)
 ```

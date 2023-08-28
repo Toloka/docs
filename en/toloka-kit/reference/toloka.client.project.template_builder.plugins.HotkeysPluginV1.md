@@ -1,5 +1,5 @@
 # HotkeysPluginV1
-`toloka.client.project.template_builder.plugins.HotkeysPluginV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/plugins.py#L75)
+`toloka.client.project.template_builder.plugins.HotkeysPluginV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/project/template_builder/plugins.py#L75)
 
 ```python
 HotkeysPluginV1(
@@ -63,6 +63,7 @@ Choose a hotkey using a named parameter of the `HotkeysPluginV1` and assign an a
 Creating hotkeys for classification buttons.
 
 ```python
+import toloka.client.project.template_builder as tb
 hot_keys_plugin = tb.HotkeysPluginV1(
     key_1=tb.SetActionV1(tb.OutputData('result'), 'cat'),
     key_2=tb.SetActionV1(tb.OutputData('result'), 'dog'),

@@ -1,5 +1,5 @@
 # find_message_threads
-`toloka.client.TolokaClient.find_message_threads` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L1012)
+`toloka.client.TolokaClient.find_message_threads` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L1034)
 
 Finds message threads that match certain criteria.
 
@@ -23,7 +23,7 @@ To iterate over all matching threads you may use the [get_message_threads](tolok
 `created_gt`|**Optional\[datetime\]**|<p>Threads created after the specified date.</p>
 `created_gte`|**Optional\[datetime\]**|<p>Threads created after or on the specified date.</p>
 `sort`|**Union\[List\[str\], [MessageThreadSortItems](toloka.client.search_requests.MessageThreadSortItems.md), None\]**|<p>Sorting options. Default: `None`.</p>
-`limit`|**Optional\[int\]**|<p>Returned message threads limit. The default limit is 50. The maximum allowed limit is 300.</p>
+`limit`|**Optional\[int\]**|<p>Returned message threads limit. The maximum allowed value: 300. The default value: 50.</p>
 
 * **Returns:**
 
@@ -38,5 +38,7 @@ To iterate over all matching threads you may use the [get_message_threads](tolok
 Finding all message threads in the `INBOX` folder.
 
 ```python
-toloka_client.find_message_threads(folder='INBOX')
+result = toloka_client.find_message_threads(folder='INBOX')
+message_threads = result.items
+print(len(message_threads), '+' if result.has_more else '')
 ```

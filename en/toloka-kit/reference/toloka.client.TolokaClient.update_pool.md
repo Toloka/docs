@@ -1,5 +1,5 @@
 # update_pool
-`toloka.client.TolokaClient.update_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L1778)
+`toloka.client.TolokaClient.update_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L1820)
 
 ```python
 update_pool(
@@ -30,7 +30,7 @@ Updates all pool parameters in Toloka.
 
 
 ```python
-updated_pool = toloka_client.get_pool(pool_id='1')
+updated_pool = toloka_client.get_pool(pool_id='1544394')
 updated_pool.will_expire = datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(days=30)
 toloka_client.update_pool(pool_id=updated_pool.id, pool=updated_pool)
 ```

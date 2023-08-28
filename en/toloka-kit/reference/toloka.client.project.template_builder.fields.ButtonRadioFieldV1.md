@@ -1,5 +1,5 @@
 # ButtonRadioFieldV1
-`toloka.client.project.template_builder.fields.ButtonRadioFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/fields.py#L91)
+`toloka.client.project.template_builder.fields.ButtonRadioFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/project/template_builder/fields.py#L91)
 
 ```python
 ButtonRadioFieldV1(

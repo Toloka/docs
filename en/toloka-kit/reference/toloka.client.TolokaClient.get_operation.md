@@ -1,21 +1,21 @@
 # get_operation
-`toloka.client.TolokaClient.get_operation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L2822)
+`toloka.client.TolokaClient.get_operation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L2910)
 
 ```python
 get_operation(self, operation_id: str)
 ```
 
-Reads information about operation
+Gets information about an operation from Toloka.
 
 
-All asynchronous actions in Toloka works via operations. If you have some "Operation" usually you need to use
-"wait_operation" method.
+Some API requests, for example uploading tasks or opening a pool, are processed as asynchronous operations that run in the background.
+You can track their progress or wait for them to complete by calling the [wait_operation](toloka.client.TolokaClient.wait_operation.md) method.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`operation_id`|**str**|<p>ID of the operation.</p>
+`operation_id`|**str**|<p>The ID of the operation.</p>
 
 * **Returns:**
 
@@ -29,5 +29,6 @@ All asynchronous actions in Toloka works via operations. If you have some "Opera
 
 
 ```python
-op = toloka_client.get_operation(operation_id='1')
+operation = toloka_client.get_operation(operation_id='6d84114f-fcfc-473d-8249-1a4f3ea550eb')
+print(operation.status, operation.finished)
 ```
