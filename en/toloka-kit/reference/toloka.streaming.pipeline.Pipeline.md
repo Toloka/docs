@@ -23,7 +23,7 @@ while at least one of them may resume.
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `period`|**timedelta**|<p>Period of observers calls. By default, 60 seconds.</p>
-`storage`|**Optional\[[BaseStorage](toloka.streaming.storage.BaseStorage.md)\]**|<p>Optional storage object to save pipeline&#x27;s state. Allow to recover from previous state in case of failure.</p>
+`storage`|**Optional\[[BaseStorage](toloka.streaming.storage.BaseStorage.md)\]**|<p>Optional storage object to save pipeline's state. Allow to recover from previous state in case of failure.</p>
 `iteration_mode`|**[IterationMode](toloka.streaming.pipeline.IterationMode.md)**|<p>When to start new iteration. Default is `FIRST_COMPLETED`</p>
 
 **Examples:**

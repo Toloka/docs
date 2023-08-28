@@ -27,6 +27,6 @@ Two letter language code is a key in the dictionaries. If available, the text in
 `recipients_select_type`|**Optional\[[RecipientsSelectType](toloka.client.message_thread.RecipientsSelectType.md)\]**|<p>The way of specifying message recipients.</p>
 `topic`|**Optional\[Dict\[str, str\]\]**|<p>The message thread title.</p>
 `text`|**Optional\[Dict\[str, str\]\]**|<p>The message text.</p>
-`answerable`|**Optional\[bool\]**|<ul> <li>`True` — Tolokers can respond to your messages.</li> <li>`False` — Tolokers can&#x27;t respond to your messages.</li> </ul>
+`answerable`|**Optional\[bool\]**|<ul> <li>`True` — Tolokers can respond to your messages.</li> <li>`False` — Tolokers can't respond to your messages.</li> </ul>
 `recipients_ids`|**Optional\[List\[str\]\]**|<p>A list of Toloker IDs. It is filled if `recipients_select_type` is `DIRECT`.</p>
 `recipients_filter`|**Optional\[[FilterCondition](toloka.client.filter.FilterCondition.md)\]**|<p>A filter for selecting Tolokers. It is set if `recipients_select_type` is `FILTER`.</p>

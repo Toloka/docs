@@ -17,4 +17,4 @@ A URL field specification.
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `required`|**Optional\[bool\]**|<p>Whether a field is required. </p><p>Default value: `True`.</p>
-`hidden`|**Optional\[bool\]**|<p>Whether to hide an input field from Tolokers. Output fields can&#x27;t be hidden. </p><p>Default value: `False`.</p>
+`hidden`|**Optional\[bool\]**|<p>Whether to hide an input field from Tolokers. Output fields can't be hidden. </p><p>Default value: `False`.</p>

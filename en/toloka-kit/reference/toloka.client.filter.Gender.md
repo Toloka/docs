@@ -16,4 +16,4 @@ Filtering Tolokers by gender.
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `operator`|**[IdentityOperator](toloka.client.primitives.operators.IdentityOperator.md)**|<p>An operator used in a condition. Allowed set of operators depends on the filter.</p>
-`value`|**[Gender](toloka.client.filter.Gender.Gender.md)**|<p>Toloker&#x27;s gender specified in the profile.</p>
+`value`|**[Gender](toloka.client.filter.Gender.Gender.md)**|<p>Toloker's gender specified in the profile.</p>

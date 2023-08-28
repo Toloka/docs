@@ -35,7 +35,7 @@ For more information, see [field.list](https://toloka.ai/docs/template-builder/r
 `render`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>A template for the list item.</p>
 `button_label`|**Optional\[Any\]**|<p>A text on a button that adds the list item.</p>
 `direction`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), [ListDirection](toloka.client.project.template_builder.base.ListDirection.md)\]\]**|<p>The direction of the list:</p> <ul> <li>`horizontal`</li> <li>`vertical`</li> </ul>
-`editable`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<ul> <li>`True` — A Toloker can add or remove list items.</li> <li>`False` — The list can&#x27;t be changed.</li> </ul> <p>Default value: `True`.</p>
+`editable`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<ul> <li>`True` — A Toloker can add or remove list items.</li> <li>`False` — The list can't be changed.</li> </ul> <p>Default value: `True`.</p>
 `max_length`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), float\]\]**|<p>The maximum number of list items.</p>
 `size`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), [ListSize](toloka.client.project.template_builder.base.ListSize.md)\]\]**|<p>The distance between list items:</p> <ul> <li>`s` — Small.</li> <li>`m` — Medium.</li> </ul> <p>Default value: `m`.</p>
 `hint`|**Optional\[Any\]**|<p>A hint.</p>

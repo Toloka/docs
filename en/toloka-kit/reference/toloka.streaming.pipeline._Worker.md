@@ -21,4 +21,4 @@ Keep track of the observer's should_resume state.
 | :----------| :----| :-----------|
 `name`|**str**|<p>Unique key to be identified by.</p>
 `observer`|**[BaseObserver](toloka.streaming.observer.BaseObserver.md)**|<p>BaseObserver object to run.</p>
-`should_resume`|**bool**|<p>Current observer&#x27;s should_resume state.</p>
+`should_resume`|**bool**|<p>Current observer's should_resume state.</p>

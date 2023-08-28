@@ -19,8 +19,9 @@ A layout with a main content block and a panel with controls.
 
 
 The component supports modes:
-    * Widescreen — The control panel is placed to the right of the main block.
-    * Compact — The controls are placed under the main block and stretch to the entire width.
+
+* Widescreen — The control panel is placed to the right of the main block.
+* Compact — The controls are placed under the main block and stretch to the entire width.
 
 For more information, see [layout.sidebar](https://toloka.ai/docs/template-builder/reference/layout.sidebar).
 

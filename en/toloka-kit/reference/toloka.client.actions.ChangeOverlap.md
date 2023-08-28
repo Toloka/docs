@@ -20,7 +20,7 @@ You can use this rule only with [UsersAssessment](toloka.client.collectors.Users
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `delta`|**Optional\[int\]**|<p>An overlap increment.</p>
-`open_pool`|**Optional\[bool\]**|<ul> <li>`True` — Open the pool after changing the overlap value.</li> <li>`False` — Don&#x27;t reopen the pool if it is closed.</li> </ul>
+`open_pool`|**Optional\[bool\]**|<ul> <li>`True` — Open the pool after changing the overlap value.</li> <li>`False` — Don't reopen the pool if it is closed.</li> </ul>
 
 **Examples:**
 

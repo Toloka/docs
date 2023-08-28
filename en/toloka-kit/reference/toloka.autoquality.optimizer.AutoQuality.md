@@ -28,7 +28,7 @@ To use `toloka.autoquality` install toloka-kit via `pip install toloka-kit[autoq
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`toloka_client`|**[TolokaClient](toloka.client.TolokaClient.md)**|<p>TolokaClient instance to interact with requester&#x27;s account</p>
+`toloka_client`|**[TolokaClient](toloka.client.TolokaClient.md)**|<p>TolokaClient instance to interact with requester's account</p>
 `project_id`|**str**|<p>Toloka project ID</p>
 `base_pool_id`|**str**|<p>Template Pool for autoquality pools</p>
 `training_pool_id`|**str**|<p>Training Pool ID</p>

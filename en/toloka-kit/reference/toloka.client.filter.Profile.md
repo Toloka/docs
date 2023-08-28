@@ -17,4 +17,4 @@ A base class for a category of filters that use Toloker's profile.
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `operator`|**Any**|<p>An operator used in a condition. Allowed set of operators depends on the filter.</p>
-`value`|**Any**|<p>A value to compare with. For example, the minimum value of some skill, or a language specified in a Toloker&#x27;s profile.</p>
+`value`|**Any**|<p>A value to compare with. For example, the minimum value of some skill, or a language specified in a Toloker's profile.</p>

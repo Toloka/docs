@@ -17,11 +17,12 @@ Observer for pool status change.
 For usage with Pipeline.
 
 Allow to register callbacks using the following methods:
-    * on_open
-    * on_closed
-    * on_archieved
-    * on_locked
-    * on_status_change
+
+* on_open
+* on_closed
+* on_archieved
+* on_locked
+* on_status_change
 
 The Pool object will be passed to the triggered callbacks.
 

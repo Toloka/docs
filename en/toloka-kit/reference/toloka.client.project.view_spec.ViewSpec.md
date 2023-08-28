@@ -9,8 +9,9 @@ The description of a task interface.
 
 
 You can choose the type of description:
-    * HTML, CSS, and JS — use [ClassicViewSpec](toloka.client.project.view_spec.ClassicViewSpec.md)
-    * Template Builder components — use [TemplateBuilderViewSpec](toloka.client.project.view_spec.TemplateBuilderViewSpec.md)
+
+* HTML, CSS, and JS — use [ClassicViewSpec](toloka.client.project.view_spec.ClassicViewSpec.md)
+* Template Builder components — use [TemplateBuilderViewSpec](toloka.client.project.view_spec.TemplateBuilderViewSpec.md)
 
 ## Parameters Description
 

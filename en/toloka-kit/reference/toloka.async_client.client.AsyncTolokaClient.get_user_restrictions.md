@@ -13,7 +13,7 @@ If you need to sort Toloker restrictions use the [find_user_restrictions](toloka
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `scope`|**Optional\[[UserRestriction.Scope](toloka.client.user_restriction.UserRestriction.Scope.md)\]**|<p>The scope of a restriction. Refer to the [UserRestriction.Scope](toloka.client.user_restriction.UserRestriction.Scope.md) page for more information on the available `scope` values.</p>
-`user_id`|**Optional\[str\]**|<p>The Toloker&#x27;s ID.</p>
+`user_id`|**Optional\[str\]**|<p>The Toloker's ID.</p>
 `project_id`|**Optional\[str\]**|<p>The ID of a project with restricted access.</p>
 `pool_id`|**Optional\[str\]**|<p>The ID of a pool with restricted access.</p>
 `id_lt`|**Optional\[str\]**|<p>Restrictions with IDs less than the specified value.</p>

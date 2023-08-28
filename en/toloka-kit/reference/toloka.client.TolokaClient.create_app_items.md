@@ -30,7 +30,8 @@ new_items = [
     {'id':'21', 'query':'crowd kit', 'website_url':'https://toloka.ai/docs/crowd-kit'}
 ]
 toloka_client.create_app_items(
-    app_project_id='Q2d15QBjpwWuDz8Z321g', batch_id='4Va2BBWKL88S4QyAgVje',
+    app_project_id='Q2d15QBjpwWuDz8Z321g',
+    batch_id='4Va2BBWKL88S4QyAgVje',
     items=new_items
 )
 ```

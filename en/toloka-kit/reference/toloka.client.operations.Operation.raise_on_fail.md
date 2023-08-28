@@ -5,5 +5,4 @@
 raise_on_fail(self)
 ```
 
-Raises `FailedOperation` exception if the operation status is `FAIL`. Otherwise does nothing.
-
+Raises the `FailedOperation` exception if the operation status is `FAIL`. Otherwise does nothing.

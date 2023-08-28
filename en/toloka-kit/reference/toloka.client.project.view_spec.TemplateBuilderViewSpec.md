@@ -27,7 +27,7 @@ See also [Template Builder](https://toloka.ai/docs/template-builder/) in the gui
 `plugins`|**-**|<p>An array of plugins.</p>
 `vars`|**-**|<p>Reusable data. It is referenced with the [RefComponent](toloka.client.project.template_builder.base.RefComponent.md).</p>
 `core_version`|**Optional\[str\]**|<p>The default template components version. Most likely, you do not need to change this parameter.</p>
-`infer_data_spec`|**Optional\[bool\]**|<ul> <li>`True` – The specifications of input and output data are generated automatically depending on the task interface settings.</li> <li>`False` – You configure the specifications manually, if: <ul> <li>You don&#x27;t want the specification to be affected by changes in instructions or other project parameters.</li> <li>You have to change automatically generated specifications to suite your needs.</li> </ul> </li> </ul>
+`infer_data_spec`|**Optional\[bool\]**|<ul> <li>`True` – The specifications of input and output data are generated automatically depending on the task interface settings.</li> <li>`False` – You configure the specifications manually, if: <ul> <li>You don't want the specification to be affected by changes in instructions or other project parameters.</li> <li>You have to change automatically generated specifications to suite your needs.</li> </ul> </li> </ul>
 
 **Examples:**
 
