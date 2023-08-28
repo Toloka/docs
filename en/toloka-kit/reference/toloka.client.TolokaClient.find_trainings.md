@@ -1,5 +1,5 @@
 # find_trainings
-`toloka.client.TolokaClient.find_trainings` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L1985)
+`toloka.client.TolokaClient.find_trainings` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L2027)
 
 Finds trainings that match certain criteria.
 
@@ -27,7 +27,7 @@ To iterate over all matching trainings you may use the [get_trainings](toloka.cl
 `last_started_gt`|**Optional\[datetime\]**|<p>Training pools that were opened last time after the specified date.</p>
 `last_started_gte`|**Optional\[datetime\]**|<p>Training pools that were opened last time after or on the specified date.</p>
 `sort`|**Union\[List\[str\], [TrainingSortItems](toloka.client.search_requests.TrainingSortItems.md), None\]**|<p>Sorting options. Default: `None`.</p>
-`limit`|**Optional\[int\]**|<p>Returned trainings limit. The maximum allowed limit is 300.</p>
+`limit`|**Optional\[int\]**|<p>Returned trainings limit. The maximum allowed value: 300.</p>
 
 * **Returns:**
 
@@ -42,19 +42,22 @@ To iterate over all matching trainings you may use the [get_trainings](toloka.cl
 Finding all trainings in all projects.
 
 ```python
-trainings = toloka_client.find_trainings()
+find_result = toloka_client.find_trainings()
+trainings = find_result.items
 ```
 
 Finding all opened trainings in all projects.
 
 ```python
-trainings = toloka_client.find_trainings(status='OPEN')
+find_result = toloka_client.find_trainings(status='OPEN')
+trainings = find_result.items
 ```
 
 Finding all opened trainings in a specific project.
 
 ```python
-trainings = toloka_client.find_trainings(status='OPEN', project_id='1')
+find_result = toloka_client.find_trainings(status='OPEN', project_id='92694')
+trainings = find_result.items
 ```
 
-If there are trainings exceeding the `limit`, then `trainings.has_more` is set to `True`.
+If there are trainings exceeding the `limit`, then `find_result.has_more` is set to `True`.

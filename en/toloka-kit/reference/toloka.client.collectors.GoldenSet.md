@@ -1,5 +1,5 @@
 # GoldenSet
-`toloka.client.collectors.GoldenSet` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/collectors.py#L303)
+`toloka.client.collectors.GoldenSet` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/collectors.py#L303)
 
 ```python
 GoldenSet(
@@ -49,13 +49,13 @@ The collector can be used with actions:
 The example shows how to accept all assignments if more than 80% of responses to control tasks are correct.
 
 ```python
-new_pool = toloka.pool.Pool(....)
+new_pool = toloka.client.pool.Pool()
 new_pool.quality_control.add_action(
-    collector=toloka.collectors.GoldenSet(history_size=5),
+    collector=toloka.client.collectors.GoldenSet(history_size=5),
     conditions=[
-        toloka.conditions.GoldenSetCorrectAnswersRate > 80,
-        toloka.conditions.GoldenSetAnswersCount >= 5,
+        toloka.client.conditions.GoldenSetCorrectAnswersRate > 80,
+        toloka.client.conditions.GoldenSetAnswersCount >= 5,
     ],
-    action=toloka.actions.ApproveAllAssignments()
+    action=toloka.client.actions.ApproveAllAssignments()
 )
 ```

@@ -1,5 +1,5 @@
 # ImageViewV1
-`toloka.client.project.template_builder.view.ImageViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/view.py#L221)
+`toloka.client.project.template_builder.view.ImageViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/project/template_builder/view.py#L221)
 
 ```python
 ImageViewV1(

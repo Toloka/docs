@@ -1,5 +1,5 @@
 # AppBatch
-`toloka.client.app.AppBatch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/app/__init__.py#L201)
+`toloka.client.app.AppBatch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/app/__init__.py#L257)
 
 ```python
 AppBatch(
@@ -37,7 +37,7 @@ A batch contains task items that are sent for labeling together.
 `id`|**Optional\[str\]**|<p>The ID of the batch.</p>
 `app_project_id`|**Optional\[str\]**|<p>The ID of the project containing the batch.</p>
 `name`|**Optional\[str\]**|<p>The batch name.</p>
-`status`|**Optional\[[Status](toloka.client.app.AppBatch.Status.md)\]**|<p>The batch status:</p> <ul> <li>`NEW` — The processing of the batch items is not started.</li> <li>`PROCESSING` — Batch items are being processed by Tolokers.</li> <li>`COMPLETED` — Annotation of all batch items is completed.</li> <li>`ERROR` — An error occurred during processing.</li> <li>`CANCELLED` — Batch processing cancelled.</li> <li>`ARCHIVE` — The batch is archived.</li> <li>`NO_MONEY` — There are not enough money for processing.</li> </ul>
+`status`|**Optional\[[Status](toloka.client.app.AppBatch.Status.md)\]**|<p>The batch [status](toloka.client.app.AppBatch.Status.md).</p>
 `items_count`|**Optional\[int\]**|<p>The number of items in the batch.</p>
 `item_price`|**Optional\[Decimal\]**|<p>The cost of processing a single item in the batch.</p>
 `cost`|**Optional\[Decimal\]**|<p>The cost of processing the batch.</p>
@@ -45,9 +45,18 @@ A batch contains task items that are sent for labeling together.
 `created_at`|**Optional\[datetime\]**|<p>The date and time when the batch was created.</p>
 `started_at`|**Optional\[datetime\]**|<p>The date and time when batch processing started.</p>
 `finished_at`|**Optional\[datetime\]**|<p>The date and time when batch processing was completed.</p>
-`read_only`|**Optional\[bool\]**|
-`last_items_import`|**Optional\[[AppItemImport](toloka.client.app.AppItemImport.md)\]**|<p>Meta-information on asynchronous loading operation (possible via UI).</p>
+`read_only`|**Optional\[bool\]**|<p>Whether the batch can be updated or not.</p>
+`last_items_import`|**Optional\[[AppItemImport](toloka.client.app.AppItemImport.md)\]**|<p>Information about the last operation that added items.</p>
 `confidence_avg`|**Optional\[float\]**|<p>Average labeling quality.</p>
 `items_processed_count`|**Optional\[int\]**|<p>The number of labeled items.</p>
 `eta`|**Optional\[datetime\]**|<p>Expected date and time when batch processing will be completed.</p>
 `items_per_state`|**Optional\[Dict\]**|<p>Statistics on the number of items in each state.</p>
+
+**Examples:**
+
+
+```python
+batches = toloka_client.get_app_batches(app_project_id='Q2d15QBjpwWuDz8Z321g', status='NEW')
+for batch in batches:
+    print(batch.id, batch.status, batch.items_count)
+```

@@ -1,5 +1,5 @@
 # UserBonusCreateBatchOperation
-`toloka.client.operations.UserBonusCreateBatchOperation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/operations.py#L345)
+`toloka.client.operations.UserBonusCreateBatchOperation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/operations.py#L385)
 
 ```python
 UserBonusCreateBatchOperation(
@@ -16,26 +16,20 @@ UserBonusCreateBatchOperation(
 )
 ```
 
-Operation returned by the `TolokaClient.create_user_bonuses_async()` method.
+Issuing payments operation.
 
 
-All parameters are for reference only and describe the initial parameters of the request that this operation monitors.
+The operation is returned by the [create_user_bonuses_async](toloka.client.TolokaClient.create_user_bonuses_async.md) method.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`id`|**Optional\[str\]**|<p>Operation ID.</p>
+`id`|**Optional\[str\]**|<p>The ID of the operation.</p>
 `status`|**Optional\[[Operation.Status](toloka.client.operations.Operation.Status.md)\]**|<p>The status of the operation.</p>
-`submitted`|**Optional\[datetime\]**|<p>The UTC date and time the request was sent.</p>
-`started`|**Optional\[datetime\]**|<p>The UTC date and time the operation started.</p>
-`finished`|**Optional\[datetime\]**|<p>The UTC date and time the operation finished.</p>
-`progress`|**Optional\[int\]**|<p>The percentage of the operation completed.</p>
-`parameters`|**Optional\[[Parameters](toloka.client.operations.UserBonusCreateBatchOperation.Parameters.md)\]**|<p>Operation parameters (depending on the operation type).</p>
-`details`|**Optional\[[Details](toloka.client.operations.UserBonusCreateBatchOperation.Details.md)\]**|<p>Details of the operation completion.</p>
-`skip_invalid_items`|**-**|<p>Validation parameters for JSON objects:</p> <ul> <li>`True` — Create bonuses using `UserBonus` instances that passed validation. Skip the rest of the `UserBonus` instances.</li> <li>`False` — If at least one of the `UserBonus` instances didn&#x27;t pass validation, stop the operation and   don&#x27;t create any bonuses.</li> </ul>
-`total_count`|**-**|<p>The number of bonuses in the request.</p>
-`valid_count`|**-**|<p>The number of JSON objects with bonus information that have passed validation.</p>
-`not_valid_count`|**-**|<p>The number of JSON objects with bonus information that failed validation.</p>
-`success_count`|**-**|<p>Number of bonuses issued.</p>
-`failed_count`|**-**|<p>The number of bonuses that were not issued.</p>
+`submitted`|**Optional\[datetime\]**|<p>The UTC date and time when the operation was requested.</p>
+`started`|**Optional\[datetime\]**|<p>The UTC date and time when the operation started.</p>
+`finished`|**Optional\[datetime\]**|<p>The UTC date and time when the operation finished.</p>
+`progress`|**Optional\[int\]**|<p>The operation progress as a percentage.</p>
+`parameters`|**Optional\[[Parameters](toloka.client.operations.UserBonusCreateBatchOperation.Parameters.md)\]**|<p>Parameters of the `create_user_bonuses_async` request that started the operation.</p>
+`details`|**Optional\[[Details](toloka.client.operations.UserBonusCreateBatchOperation.Details.md)\]**|<p>The details of the operation.</p>

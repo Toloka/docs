@@ -1,5 +1,5 @@
 # UserBonusesCreateRequestParameters
-`toloka.client.user_bonus.UserBonusesCreateRequestParameters` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/user_bonus.py#L98)
+`toloka.client.user_bonus.UserBonusesCreateRequestParameters` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/user_bonus.py#L82)
 
 ```python
 UserBonusesCreateRequestParameters(
@@ -11,16 +11,15 @@ UserBonusesCreateRequestParameters(
 )
 ```
 
-Parameters for creating bonuses for Tolokers.
+Parameters for issuing bonus payments to Tolokers.
 
 
-Used in methods 'create_user_bonuses' и 'create_user_bonuses_async' of the class TolokaClient,
-to clarify the behavior when creating bonuses.
+The [create_user_bonuses](toloka.client.TolokaClient.create_user_bonuses.md) and [create_user_bonuses_async](toloka.client.TolokaClient.create_user_bonuses_async.md) methods use these parameters.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`operation_id`|**Optional\[UUID\]**|<p>The ID of the operation conforming to the [RFC4122 standard](https://tools.ietf.org/html/rfc4122). We recommended sending the operation ID in the `POST` requests to avoid accidental errors: when you send several requests with the same `operation_id`, the operation will be performed only once.</p>
+`operation_id`|**Optional\[UUID\]**|<p>The UUID of the operation that conforms to the [RFC4122 standard](https://tools.ietf.org/html/rfc4122). The UUID is used if `async_mode` is `True`.</p> <p>Specify UUID to avoid accidental errors like Toloka operation duplication caused by network problems. If you send several requests with the same `operation_id`, Toloka performs the operation only once.</p>
 `async_mode`|**Optional\[bool\]**|<p>Request processing mode:</p> <ul> <li>`True` — Asynchronous operation is started internally.</li> <li>`False` — The request is processed synchronously.</li> </ul> <p>Default value: `True`.</p>
-`skip_invalid_items`|**Optional\[bool\]**|<p>Validation parameters of objects:</p> <ul> <li>`True` — Award a bonus if the object with bonus information passed validation. Otherwise, skip the bonus.</li> <li>`False` — Default behavior. Stop the operation and don&#x27;t award bonuses if at least one object didn&#x27;t pass validation.</li> </ul>
+`skip_invalid_items`|**Optional\[bool\]**|<p>Bonus validation option:</p> <ul> <li>`True` — All valid bonuses are issued. If a bonus doesn&#x27;t pass validation, then it isn&#x27;t issued to a Toloker. All such bonuses are listed in the response.</li> <li>`False` — If any bonus doesn&#x27;t pass validation, then the operation is cancelled and no bonuses are issued to Tolokers.</li> </ul> <p>Default value: `False`.</p>

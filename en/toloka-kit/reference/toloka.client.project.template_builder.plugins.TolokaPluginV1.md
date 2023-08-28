@@ -1,5 +1,5 @@
 # TolokaPluginV1
-`toloka.client.project.template_builder.plugins.TolokaPluginV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/plugins.py#L166)
+`toloka.client.project.template_builder.plugins.TolokaPluginV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/project/template_builder/plugins.py#L168)
 
 ```python
 TolokaPluginV1(
@@ -29,6 +29,7 @@ For more information, see [plugin.toloka](https://toloka.ai/docs/template-builde
 Setting the width of the task block on a page.
 
 ```python
+import toloka.client.project.template_builder as tb
 task_width_plugin = tb.plugins.TolokaPluginV1(
     kind='scroll',
     task_width=400,

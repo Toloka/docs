@@ -1,5 +1,5 @@
 # SkippedInRowAssignments
-`toloka.client.collectors.SkippedInRowAssignments` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/collectors.py#L452)
+`toloka.client.collectors.SkippedInRowAssignments` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/collectors.py#L452)
 
 ```python
 SkippedInRowAssignments(self, *, uuid: Optional[UUID] = None)
@@ -30,12 +30,12 @@ The collector can be used with actions:
 The example shows how to block Toloker's access to the project for 15 days if he skipped more than 3 task suites in a row.
 
 ```python
-new_pool = toloka.pool.Pool(....)
+new_pool = toloka.client.pool.Pool()
 new_pool.quality_control.add_action(
-    collector=toloka.collectors.SkippedInRowAssignments(),
-    conditions=[toloka.conditions.SkippedInRowCount > 3],
-    action=toloka.actions.RestrictionV2(
-        scope=toloka.user_restriction.UserRestriction.PROJECT,
+    collector=toloka.client.collectors.SkippedInRowAssignments(),
+    conditions=[toloka.client.conditions.SkippedInRowCount > 3],
+    action=toloka.client.actions.RestrictionV2(
+        scope=toloka.client.user_restriction.UserRestriction.PROJECT,
         duration=15,
         duration_unit='DAYS',
         private_comment='Skips too many task suites in a row',

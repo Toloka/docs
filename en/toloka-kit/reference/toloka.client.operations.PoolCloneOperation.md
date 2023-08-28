@@ -1,5 +1,5 @@
 # PoolCloneOperation
-`toloka.client.operations.PoolCloneOperation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/operations.py#L154)
+`toloka.client.operations.PoolCloneOperation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/operations.py#L157)
 
 ```python
 PoolCloneOperation(
@@ -16,24 +16,23 @@ PoolCloneOperation(
 )
 ```
 
-Operation returned by an asynchronous cloning pool via TolokaClient.clone_pool_async()
+Pool cloning operation.
 
 
-As parameters.pool_id contains id of the pool that needs to be cloned.
-New pool id stored in details.pool_id.
-Don't be mistaken.
+The operation is returned by the [clone_pool_async](toloka.client.TolokaClient.clone_pool_async.md) method.
+
+Note, that `parameters.pool_id` contains the ID of the pool that is cloned.
+While `details.pool_id` contains the ID of the new pool created after cloning.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`id`|**Optional\[str\]**|<p>Operation ID.</p>
+`id`|**Optional\[str\]**|<p>The ID of the operation.</p>
 `status`|**Optional\[[Operation.Status](toloka.client.operations.Operation.Status.md)\]**|<p>The status of the operation.</p>
-`submitted`|**Optional\[datetime\]**|<p>The UTC date and time the request was sent.</p>
-`started`|**Optional\[datetime\]**|<p>The UTC date and time the operation started.</p>
-`finished`|**Optional\[datetime\]**|<p>The UTC date and time the operation finished.</p>
-`progress`|**Optional\[int\]**|<p>The percentage of the operation completed.</p>
-`parameters`|**Optional\[[PoolOperation.Parameters](toloka.client.operations.PoolOperation.Parameters.md)\]**|<p>Operation parameters (depending on the operation type).</p>
-`details`|**Optional\[[Details](toloka.client.operations.PoolCloneOperation.Details.md)\]**|<p>Details of the operation completion.</p>
-`pool_id`|**-**|<p>On which pool operation is performed.</p>
-`pool_id`|**-**|<p>New pool id created after cloning.</p>
+`submitted`|**Optional\[datetime\]**|<p>The UTC date and time when the operation was requested.</p>
+`started`|**Optional\[datetime\]**|<p>The UTC date and time when the operation started.</p>
+`finished`|**Optional\[datetime\]**|<p>The UTC date and time when the operation finished.</p>
+`progress`|**Optional\[int\]**|<p>The operation progress as a percentage.</p>
+`parameters`|**Optional\[[PoolOperation.Parameters](toloka.client.operations.PoolOperation.Parameters.md)\]**|<p>Parameters containing the ID of the pool.</p>
+`details`|**Optional\[[Details](toloka.client.operations.PoolCloneOperation.Details.md)\]**|<p>The details of the operation.</p>

@@ -1,5 +1,5 @@
 # TriggerPluginV1
-`toloka.client.project.template_builder.plugins.TriggerPluginV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/plugins.py#L136)
+`toloka.client.project.template_builder.plugins.TriggerPluginV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/project/template_builder/plugins.py#L137)
 
 ```python
 TriggerPluginV1(
@@ -32,6 +32,7 @@ For more information, see [plugin.trigger](https://toloka.ai/docs/template-build
 How to save Toloker's coordinates.
 
 ```python
+import toloka.client.project.template_builder as tb
 coordinates_save_plugin = tb.plugins.TriggerPluginV1(
     fire_immediately=True,
     action=tb.actions.SetActionV1(

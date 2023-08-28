@@ -1,5 +1,5 @@
 # patch_task
-`toloka.async_client.client.AsyncTolokaClient.patch_task` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.patch_task` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L0)
 
 Changes a task overlap value.
 
@@ -21,3 +21,10 @@ Changes a task overlap value.
 * **Return type:**
 
   [Task](toloka.client.task.Task.md)
+
+**Examples:**
+
+
+```python
+toloka_client.patch_task(task_id='000012bb84--62d80429f20bf20e50f36a27', overlap=5)
+```

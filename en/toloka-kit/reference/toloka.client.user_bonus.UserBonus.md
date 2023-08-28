@@ -1,5 +1,5 @@
 # UserBonus
-`toloka.client.user_bonus.UserBonus` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/user_bonus.py#L17)
+`toloka.client.user_bonus.UserBonus` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/user_bonus.py#L17)
 
 ```python
 UserBonus(
@@ -17,60 +17,44 @@ UserBonus(
 )
 ```
 
-Issuing a bonus to a specific Toloker.
+A bonus payment to a Toloker.
 
 
-It's addition to payment for completed tasks.
+Learn more about [Bonuses](https://toloka.ai/docs/guide/bonus/).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`user_id`|**Optional\[str\]**|<p>Toloker&#x27;s ID to whom the bonus will be issued.</p>
-`amount`|**Optional\[Decimal\]**|<p>The bonus amount in dollars. Can be from 0.01 to 100 dollars per Toloker per time.</p>
-`private_comment`|**Optional\[str\]**|<p>Comments that are only visible to the requester.</p>
-`public_title`|**Optional\[Dict\[str, str\]\]**|<p>Message header for the Toloker. You can provide a title in several languages (the message will come in the Toloker&#x27;s language). Format {&#x27;language&#x27;: &#x27;title&#x27;, ... }. The language can be RU/EN/TR/ID/FR.</p>
-`public_message`|**Optional\[Dict\[str, str\]\]**|<p>Message text for the Toloker. You can provide text in several languages (the message will come in the Toloker&#x27;s language). Format {&#x27;language&#x27;: &#x27;message&#x27;, ... }. The language can be RU/EN/TR/ID/FR.</p>
-`without_message`|**Optional\[bool\]**|<p>Do not send a bonus message to the Toloker. To award a bonus without a message, specify null for `public_title` and `public_message` and `True` for `without_message`.</p>
-`assignment_id`|**Optional\[str\]**|<p>ID of the Toloker&#x27;s response to the task a bonus is issued for.</p>
-`id`|**Optional\[str\]**|<p>Internal ID of the issued bonus. Read-only field.</p>
-`created`|**Optional\[datetime\]**|<p>Date the bonus was awarded, in UTC. Read-only field.</p>
+`id`|**Optional\[str\]**|<p>The ID of the bonus.</p>
+`user_id`|**Optional\[str\]**|<p>The ID of the Toloker.</p>
+`amount`|**Optional\[Decimal\]**|<p>The amount of the bonus in US dollars.</p>
+`assignment_id`|**Optional\[str\]**|<p>The ID of the assignment the bonus is issued for.</p>
+`private_comment`|**Optional\[str\]**|<p>A comment visible to the requester only.</p>
+`without_message`|**Optional\[bool\]**|<ul> <li>`False` — A message is sent to the Toloker when the bonus is issued.</li> <li>`True` — There is no message sent to the Toloker.</li> </ul> <p>Default value: `False`.</p>
+`public_title`|**Optional\[Dict\[str, str\]\]**|<p>A message title. The title can be provided in several languages.</p>
+`public_message`|**Optional\[Dict\[str, str\]\]**|<p>A message text. It can be provided in several languages.</p>
+`created`|**Optional\[datetime\]**|<p>The UTC date and time when the bonus was issued. Read-only field.</p>
 
 **Examples:**
 
-How to create bonus with message for specific assignment.
+An example of issuing a bonus. A message to a Toloker is prepared in two languages.
 
 ```python
+from decimal import Decimal
 new_bonus = toloka_client.create_user_bonus(
-    UserBonus(
-        user_id='1',
-        amount='0.50',
-        public_title={
-            'EN': 'Perfect job!',
-        },
-        public_message={
-            'EN': 'You are the best Toloker',
-        },
-        assignment_id='012345'
-    )
-)
-```
-
-How to create bonus with message in several languages.
-
-```python
-new_bonus = toloka_client.create_user_bonus(
-    UserBonus(
-        user_id='1',
-        amount='0.10',
+    toloka.client.UserBonus(
+        user_id='a1b0b42923c429daa2c764d7ccfc364d',
+        amount=Decimal('0.50'),
         public_title={
             'EN': 'Good Job!',
             'RU': 'Молодец!',
         },
         public_message={
-            'EN': 'Ten tasks completed',
+            'EN': 'Ten tasks were completed',
             'RU': 'Выполнено 10 заданий',
-        }
+        },
+        assignment_id='000015fccc--63bfc4c358d7a46c32a7b233'
     )
 )
 ```

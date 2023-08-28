@@ -19,5 +19,5 @@ The example shows how to find Tolokers' skills sorted by creation date in descen
 
 ```python
 sort = toloka.client.search_requests.UserSkillSortItems(['-created', 'id'])
-result = toloka_client.find_user_skills(skill_id=my_useful_skill_id, sort=sort, limit=10)
+result = toloka_client.find_user_skills(skill_id='11294', sort=sort, limit=10)
 ```

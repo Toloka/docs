@@ -1,5 +1,5 @@
 # LinkGroupViewV1
-`toloka.client.project.template_builder.view.LinkGroupViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/view.py#L317)
+`toloka.client.project.template_builder.view.LinkGroupViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/project/template_builder/view.py#L317)
 
 ```python
 LinkGroupViewV1(
@@ -31,6 +31,7 @@ For more information, see [view.link-group](https://toloka.ai/docs/template-buil
 
 
 ```python
+import toloka.client.project.template_builder as tb
 links = tb.view.LinkGroupViewV1(
     [
         tb.view.LinkGroupViewV1.Link(

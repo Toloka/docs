@@ -1,5 +1,5 @@
 # find_app_projects
-`toloka.async_client.client.AsyncTolokaClient.find_app_projects` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.find_app_projects` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L0)
 
 Finds App projects that match certain criteria.
 
@@ -31,7 +31,7 @@ To iterate over all matching projects you may use the [get_app_projects](toloka.
 `created_lt`|**Optional\[datetime\]**|<p>Projects created before the specified date.</p>
 `created_lte`|**Optional\[datetime\]**|<p>Projects created before or on the specified date.</p>
 `sort`|**Union\[List\[str\], [AppProjectSortItems](toloka.client.search_requests.AppProjectSortItems.md), None\]**|<p>The order and direction of sorting the results.</p>
-`limit`|**Optional\[int\]**|<p>Returned projects limit. The maximum limit is 5000.</p>
+`limit`|**Optional\[int\]**|<p>Returned projects limit. The maximum allowed value: 5000.</p>
 
 * **Returns:**
 
@@ -47,7 +47,7 @@ Searching active projects based on the App solution with the specified ID.
 
 ```python
 search = toloka_client.find_app_projects(
-    app_id = '9lZaMl363jahzra1rrYq', status = 'READY')
+    app_id='9lZaMl363jahzra1rrYq', status='READY')
 for app_project in search.content:
     print(app_project.id, app_project.name)
 

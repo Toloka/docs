@@ -1,5 +1,5 @@
 # ConflictStateApiError
-`toloka.client.exceptions.ConflictStateApiError` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/exceptions.py#L135)
+`toloka.client.exceptions.ConflictStateApiError` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/exceptions.py#L135)
 
 ## Parameters Description
 

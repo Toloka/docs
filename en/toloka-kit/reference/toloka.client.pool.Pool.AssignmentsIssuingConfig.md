@@ -1,5 +1,5 @@
 # AssignmentsIssuingConfig
-`toloka.client.pool.Pool.AssignmentsIssuingConfig` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/pool/__init__.py#L115)
+`toloka.client.pool.Pool.AssignmentsIssuingConfig` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/pool/__init__.py#L115)
 
 ```python
 AssignmentsIssuingConfig(self, issue_task_suites_in_creation_order: Optional[bool] = None)

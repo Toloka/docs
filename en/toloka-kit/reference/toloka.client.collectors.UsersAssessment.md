@@ -1,5 +1,5 @@
 # UsersAssessment
-`toloka.client.collectors.UsersAssessment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/collectors.py#L501)
+`toloka.client.collectors.UsersAssessment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/collectors.py#L501)
 
 ```python
 UsersAssessment(self, *, uuid: Optional[UUID] = None)
@@ -26,10 +26,10 @@ The collector can be used with actions:
 The example shows how to reassign rejected assignments to other Tolokers.
 
 ```python
-new_pool = toloka.pool.Pool(....)
+new_pool = toloka.client.pool.Pool()
 new_pool.quality_control.add_action(
-    collector=toloka.collectors.UsersAssessment(),
-    conditions=[toloka.conditions.PoolAccessRevokedReason == toloka.conditions.PoolAccessRevokedReason.RESTRICTION],
-    action=toloka.actions.ChangeOverlap(delta=1, open_pool=True),
+    collector=toloka.client.collectors.UsersAssessment(),
+    conditions=[toloka.client.conditions.PoolAccessRevokedReason == toloka.client.conditions.PoolAccessRevokedReason.RESTRICTION],
+    action=toloka.client.actions.ChangeOverlap(delta=1, open_pool=True),
 )
 ```

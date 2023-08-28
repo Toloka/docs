@@ -1,5 +1,5 @@
 # ProjectStatus
-`toloka.client.project.Project.ProjectStatus` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/__init__.py#L128)
+`toloka.client.project.Project.ProjectStatus` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/project/__init__.py#L128)
 
 A project status.
 

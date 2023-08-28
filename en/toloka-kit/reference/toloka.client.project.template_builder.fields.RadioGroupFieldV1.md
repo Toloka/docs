@@ -1,5 +1,5 @@
 # RadioGroupFieldV1
-`toloka.client.project.template_builder.fields.RadioGroupFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/fields.py#L408)
+`toloka.client.project.template_builder.fields.RadioGroupFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/project/template_builder/fields.py#L411)
 
 ```python
 RadioGroupFieldV1(
@@ -35,6 +35,7 @@ For more information, see [field.radio-group](https://toloka.ai/docs/template-bu
 
 
 ```python
+import toloka.client.project.template_builder as tb
 radio_group_field = tb.fields.RadioGroupFieldV1(
     data=tb.data.OutputData(path='result'),
     options=[

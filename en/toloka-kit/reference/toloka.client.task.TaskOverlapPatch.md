@@ -1,5 +1,5 @@
 # TaskOverlapPatch
-`toloka.client.task.TaskOverlapPatch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/task.py#L145)
+`toloka.client.task.TaskOverlapPatch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/task.py#L135)
 
 ```python
 TaskOverlapPatch(

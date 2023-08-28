@@ -1,5 +1,5 @@
 # App
-`toloka.client.app.App` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/app/__init__.py#L93)
+`toloka.client.app.App` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/app/__init__.py#L134)
 
 ```python
 App(
@@ -39,3 +39,13 @@ Each App solution targets specific type of tasks which can be solved using Tolok
 `output_spec`|**Optional\[Dict\[str, [FieldSpec](toloka.client.project.field_spec.FieldSpec.md)\]\]**|<p>The schema of solution output data.</p>
 `examples`|**Optional\[Any\]**|<p>Example description of tasks which can be solved with this solution.</p>
 `input_format_info`|**Optional\[Dict\]**|<p>Information about the input data format.</p>
+
+**Examples:**
+
+Showing all available App solutions.
+
+```python
+apps = toloka_client.get_apps()
+for app in apps:
+    print(app.id, app.name)
+```

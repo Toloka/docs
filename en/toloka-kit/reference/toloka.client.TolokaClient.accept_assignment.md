@@ -1,5 +1,5 @@
 # accept_assignment
-`toloka.client.TolokaClient.accept_assignment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L724)
+`toloka.client.TolokaClient.accept_assignment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L728)
 
 ```python
 accept_assignment(
@@ -28,8 +28,10 @@ Accepts an assignment.
 
 **Examples:**
 
-Accepting an assignment.
 
 ```python
-toloka_client.accept_assignment(assignment_id, 'Well done!')
+toloka_client.accept_assignment(
+    assignment_id='00001092da--61ef030400c684132d0da0de',
+    public_comment='Well done!'
+)
 ```

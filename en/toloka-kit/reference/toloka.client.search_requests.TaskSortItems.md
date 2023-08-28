@@ -15,9 +15,9 @@ Keys for sorting tasks in search results.
 
 **Examples:**
 
-The example shows how to find tasks sorted by creation dates in descending order. Tasks with equal creation dates are sorted by IDs in ascending order.
+The example shows how to find tasks sorted by creation dates in descending order. Tasks with equal creation dates are sorted by IDs in descending order.
 
 ```python
-sort = toloka.client.search_requests.TaskSortItems(['-created', 'id'])
-result = toloka_client.find_tasks(pool_id=my_pool_id, sort=sort, limit=10)
+sort = toloka.client.search_requests.TaskSortItems(['-created', '-id'])
+result = toloka_client.find_tasks(pool_id='1086170', sort=sort, limit=10)
 ```

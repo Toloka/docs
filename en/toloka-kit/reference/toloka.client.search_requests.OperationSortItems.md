@@ -18,6 +18,6 @@ Keys for sorting operations in search results.
 The example shows how to find operations sorted by finish date in descending order. Operations with equal finish dates are sorted by IDs in ascending order.
 
 ```python
-sort = toloka.client.search_requests.OperationsSearchRequest(['-finished', 'id'])
-result = toloka_client.find_operations(type='POOL_OPEN', status='SUCCESS', sort=sort, limit=10)
+sort = toloka.client.search_requests.OperationSortItems(['-finished', 'id'])
+result = toloka_client.find_operations(type='POOL.OPEN', status='SUCCESS', sort=sort, limit=10)
 ```

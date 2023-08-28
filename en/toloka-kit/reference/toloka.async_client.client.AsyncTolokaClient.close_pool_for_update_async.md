@@ -1,5 +1,5 @@
 # close_pool_for_update_async
-`toloka.async_client.client.AsyncTolokaClient.close_pool_for_update_async` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.close_pool_for_update_async` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/async_client/client.py#L0)
 
 ```python
 async close_pool_for_update_async(self, pool_id: str)
@@ -29,6 +29,6 @@ If you don't open the pool after updating, it opens automatically in 15 minutes.
 
 
 ```python
-close_op = toloka_client.close_pool_for_update_async(pool_id='1')
+close_op = toloka_client.close_pool_for_update_async(pool_id='1080020')
 toloka_client.wait_operation(close_op)
 ```

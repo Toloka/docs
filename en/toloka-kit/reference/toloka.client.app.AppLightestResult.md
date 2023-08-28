@@ -1,5 +1,5 @@
 # AppLightestResult
-`toloka.client.app.AppLightestResult` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/app/__init__.py#L34)
+`toloka.client.app.AppLightestResult` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/app/__init__.py#L34)
 
 ```python
 AppLightestResult(

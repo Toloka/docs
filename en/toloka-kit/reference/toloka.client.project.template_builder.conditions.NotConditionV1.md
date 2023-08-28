@@ -1,5 +1,5 @@
 # NotConditionV1
-`toloka.client.project.template_builder.conditions.NotConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/conditions.py#L156)
+`toloka.client.project.template_builder.conditions.NotConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/project/template_builder/conditions.py#L158)
 
 ```python
 NotConditionV1(

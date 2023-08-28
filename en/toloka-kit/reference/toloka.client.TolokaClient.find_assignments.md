@@ -1,5 +1,5 @@
 # find_assignments
-`toloka.client.TolokaClient.find_assignments` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L743)
+`toloka.client.TolokaClient.find_assignments` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L748)
 
 Finds assignments that match certain criteria.
 
@@ -46,7 +46,7 @@ To iterate over all matching assignments you may use the [get_assignments](tolok
 `expired_gt`|**Optional\[datetime\]**|<p>Assigned task suites expired after the specified date.</p>
 `expired_gte`|**Optional\[datetime\]**|<p>Assigned task suites expired after or on the specified date.</p>
 `sort`|**Union\[List\[str\], [AssignmentSortItems](toloka.client.search_requests.AssignmentSortItems.md), None\]**|<p>Sorting options. Default: `None`.</p>
-`limit`|**Optional\[int\]**|<p>Returned assignments limit. The default limit is 50. The maximum allowed limit is 100,000.</p>
+`limit`|**Optional\[int\]**|<p>Returned assignments limit. The maximum allowed value: 100,000. The default value: 50.</p>
 
 * **Returns:**
 
@@ -61,5 +61,9 @@ To iterate over all matching assignments you may use the [get_assignments](tolok
 Search for `SKIPPED` or `EXPIRED` assignments in the specified pool.
 
 ```python
-toloka_client.find_assignments(pool_id='1', status = ['SKIPPED', 'EXPIRED'])
+find_result = toloka_client.find_assignments(
+    pool_id='1080020',
+    status=['SKIPPED', 'EXPIRED']
+)
+assignments = find_result.items
 ```

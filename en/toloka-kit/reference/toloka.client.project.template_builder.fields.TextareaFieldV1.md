@@ -1,5 +1,5 @@
 # TextareaFieldV1
-`toloka.client.project.template_builder.fields.TextareaFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/fields.py#L515)
+`toloka.client.project.template_builder.fields.TextareaFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/project/template_builder/fields.py#L519)
 
 ```python
 TextareaFieldV1(

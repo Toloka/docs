@@ -1,5 +1,5 @@
 # get_pool
-`toloka.async_client.client.AsyncTolokaClient.get_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.get_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/async_client/client.py#L0)
 
 ```python
 async get_pool(self, pool_id: str)
@@ -25,5 +25,6 @@ Gets pool data from Toloka.
 
 
 ```python
-toloka_client.get_pool(pool_id='1')
+pool = toloka_client.get_pool(pool_id='1080020')
+print(pool.private_name, pool.status)
 ```

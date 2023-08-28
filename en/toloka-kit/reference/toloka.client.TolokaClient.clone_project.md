@@ -1,5 +1,5 @@
 # clone_project
-`toloka.client.TolokaClient.clone_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L1300)
+`toloka.client.TolokaClient.clone_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L1332)
 
 ```python
 clone_project(
@@ -40,6 +40,9 @@ Important notes:
 
 
 ```python
-project, pools, trainings = toloka_client.clone_project('123')
+project, pools, trainings = toloka_client.clone_project(
+    project_id='92694',
+    reuse_controllers=False
+)
 # add tasks in pools and trainings
 ```

@@ -1,5 +1,5 @@
 # get_user_skills
-`toloka.async_client.client.AsyncTolokaClient.get_user_skills` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.get_user_skills` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L0)
 
 Finds all Toloker's skills that match certain criteria.
 
@@ -26,7 +26,7 @@ If you need to sort Toloker's skills use the [find_user_skills](toloka.client.To
 `modified_lte`|**Optional\[datetime\]**|<p>Skills that changed before the specified date.</p>
 `modified_gt`|**Optional\[datetime\]**|<p>Skills changed after the specified date.</p>
 `modified_gte`|**Optional\[datetime\]**|<p>Skills created on or after the specified date.</p>
-`batch_size`|**Optional\[int\]**|<p>Returned skills limit for each request. The maximum allowed batch_size is 1000.</p>
+`batch_size`|**Optional\[int\]**|<p>A limit of items returned by each request to Toloka. The maximum allowed value: 1000.</p>
 
 * **Yields:**
 
@@ -40,5 +40,5 @@ If you need to sort Toloker's skills use the [find_user_skills](toloka.client.To
 
 
 ```python
-results_list = list(toloka_client.get_user_skills())
+user_skills = list(toloka_client.get_user_skills(skill_id='11294'))
 ```

@@ -1,5 +1,5 @@
 # Task
-`toloka.client.task.Task` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/task.py#L54)
+`toloka.client.task.Task` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/task.py#L54)
 
 ```python
 Task(
@@ -55,7 +55,7 @@ Creating a simple task with one input field.
 ```python
 task = toloka.client.Task(
     input_values={'image': 'https://some.url/img0.png'},
-    pool_id='1'
+    pool_id='1086170'
 )
 ```
 

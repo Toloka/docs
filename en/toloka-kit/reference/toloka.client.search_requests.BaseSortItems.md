@@ -1,5 +1,5 @@
 # BaseSortItems
-`toloka.client.search_requests.BaseSortItems` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/search_requests.py#L117)
+`toloka.client.search_requests.BaseSortItems` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/search_requests.py#L117)
 
 ```python
 BaseSortItems(self)

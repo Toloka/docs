@@ -1,5 +1,5 @@
 # SetSkillFromOutputField
-`toloka.client.actions.SetSkillFromOutputField` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/actions.py#L98)
+`toloka.client.actions.SetSkillFromOutputField` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/actions.py#L110)
 
 ```python
 SetSkillFromOutputField(
@@ -27,13 +27,13 @@ You can use this action with [MajorityVote](toloka.client.collectors.MajorityVot
 In the following example, a `MajorityVote` collector is used to update a skill value.
 
 ```python
-new_pool = toloka.pool.Pool(....)
+new_pool = toloka.client.pool.Pool()
 new_pool.quality_control.add_action(
-    collector=toloka.collectors.MajorityVote(answer_threshold=2, history_size=10),
+    collector=toloka.client.collectors.MajorityVote(answer_threshold=2, history_size=10),
     conditions=[
-        toloka.conditions.TotalAnswersCount > 2,
+        toloka.client.conditions.TotalAnswersCount > 2,
     ],
-    action=toloka.actions.SetSkillFromOutputField(
+    action=toloka.client.actions.SetSkillFromOutputField(
         skill_id=some_skill_id,
         from_field='correct_answers_rate',
     ),

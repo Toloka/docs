@@ -1,5 +1,5 @@
 # AuthenticationApiError
-`toloka.client.exceptions.AuthenticationApiError` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/exceptions.py#L115)
+`toloka.client.exceptions.AuthenticationApiError` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/exceptions.py#L115)
 
 ## Parameters Description
 

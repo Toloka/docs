@@ -1,5 +1,5 @@
 # find_aggregated_solutions
-`toloka.async_client.client.AsyncTolokaClient.find_aggregated_solutions` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.find_aggregated_solutions` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L0)
 
 Finds aggregated responses that match certain criteria.
 
@@ -20,7 +20,7 @@ To iterate over all matching aggregated responses you may use the [get_aggregate
 `task_id_gt`|**Optional\[str\]**|<p>Responses for tasks with IDs greater than the specified value.</p>
 `task_id_gte`|**Optional\[str\]**|<p>Responses for tasks with IDs greater than or equal to the specified value.</p>
 `sort`|**Union\[List\[str\], [AggregatedSolutionSortItems](toloka.client.search_requests.AggregatedSolutionSortItems.md), None\]**|<p>Sorting options. Default: `None`.</p>
-`limit`|**Optional\[int\]**|<p>Returned aggregated responses limit. The default limit is 50. The maximum allowed limit is 100,000.</p>
+`limit`|**Optional\[int\]**|<p>Returned aggregated responses limit. The maximum allowed value: 100,000. The default value: 50.</p>
 
 * **Returns:**
 
@@ -33,12 +33,13 @@ To iterate over all matching aggregated responses you may use the [get_aggregate
 **Examples:**
 
 The example shows how to get all aggregated responses using the `find_aggregated_solutions` method.
+First, run the [aggregate_solutions_by_pool](toloka.client.TolokaClient.aggregate_solutions_by_pool.md) method and wait for the operation to complete.
+The ID of the operation is used to get aggregated results.
 
 ```python
-# run toloka_client.aggregate_solutions_by_pool and wait for the operation to complete.
 current_result = toloka_client.find_aggregated_solutions(aggregation_operation.id)
 aggregation_results = current_result.items
-# If we have more results, let's get them
+
 while current_result.has_more:
     current_result = toloka_client.find_aggregated_solutions(
         aggregation_operation.id,

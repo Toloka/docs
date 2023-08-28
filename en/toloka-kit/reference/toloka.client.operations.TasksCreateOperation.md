@@ -1,5 +1,5 @@
 # TasksCreateOperation
-`toloka.client.operations.TasksCreateOperation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/operations.py#L267)
+`toloka.client.operations.TasksCreateOperation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/operations.py#L300)
 
 ```python
 TasksCreateOperation(
@@ -16,23 +16,20 @@ TasksCreateOperation(
 )
 ```
 
-Operation returned by an asynchronous creating tasks via TolokaClient.create_tasks_async()
+Task creating operation.
 
 
-All parameters are for reference only and describe the initial parameters of the request that this operation monitors.
+The operation is returned by the [create_tasks_async](toloka.client.TolokaClient.create_tasks_async.md) method.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`id`|**Optional\[str\]**|<p>Operation ID.</p>
+`id`|**Optional\[str\]**|<p>The ID of the operation.</p>
 `status`|**Optional\[[Operation.Status](toloka.client.operations.Operation.Status.md)\]**|<p>The status of the operation.</p>
-`submitted`|**Optional\[datetime\]**|<p>The UTC date and time the request was sent.</p>
-`started`|**Optional\[datetime\]**|<p>The UTC date and time the operation started.</p>
-`progress`|**Optional\[int\]**|<p>The percentage of the operation completed.</p>
-`parameters`|**Optional\[[Parameters](toloka.client.operations.TasksCreateOperation.Parameters.md)\]**|<p>Operation parameters (depending on the operation type).</p>
-`finished`|**Optional\[datetime\]**|<p>The UTC date and time the operation finished.</p>
+`submitted`|**Optional\[datetime\]**|<p>The UTC date and time when the operation was requested.</p>
+`started`|**Optional\[datetime\]**|<p>The UTC date and time when the operation started.</p>
+`progress`|**Optional\[int\]**|<p>The operation progress as a percentage.</p>
+`parameters`|**Optional\[[Parameters](toloka.client.operations.TasksCreateOperation.Parameters.md)\]**|<p>Parameters passed to the `create_tasks_async` method.</p>
+`finished`|**Optional\[datetime\]**|<p>The UTC date and time when the operation was completed.</p>
 `details`|**Optional\[Any\]**|<p>Details of the operation completion.</p>
-`skip_invalid_items`|**-**|<p>Validation parameters for JSON objects:</p> <ul> <li>`True` — Create the tasks that passed validation. Skip the rest of the tasks.</li> <li>`False` — If at least one of the tasks didn&#x27;t pass validation, stop the operation and   don&#x27;t create any tasks.</li> </ul>
-`allow_defaults`|**-**|<p>Overlap settings:</p> <ul> <li>`True` — Use the overlap that is set in the pool parameters   (in the defaults.default_overlap_for_new_tasks key).</li> <li>`False` — Use the overlap that is set in the task parameters (in the overlap field).</li> </ul>
-`open_pool`|**-**|<p>Open the pool immediately after creating the tasks, if the pool is closed.</p>

@@ -1,5 +1,5 @@
 # get_user_bonuses
-`toloka.client.TolokaClient.get_user_bonuses` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L3196)
+`toloka.client.TolokaClient.get_user_bonuses` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L3271)
 
 Finds all Tolokers' bonuses that match certain rules and returns them in an iterable object
 
@@ -23,7 +23,7 @@ If you need to sort bonuses use the [find_user_bonuses](toloka.client.TolokaClie
 `created_lte`|**Optional\[datetime\]**|<p>Bonuses given before or on the specified date.</p>
 `created_gt`|**Optional\[datetime\]**|<p>Bonuses given after the specified date.</p>
 `created_gte`|**Optional\[datetime\]**|<p>Bonuses given after or on the specified date.</p>
-`batch_size`|**Optional\[int\]**|<p>Returned Tolokers&#x27; bonuses limit for each request. The maximum allowed `batch_size` is 300.</p>
+`batch_size`|**Optional\[int\]**|<p>A limit of items returned by each request to Toloka. The maximum allowed value: 300.</p>
 
 * **Yields:**
 
@@ -37,5 +37,5 @@ If you need to sort bonuses use the [find_user_bonuses](toloka.client.TolokaClie
 
 
 ```python
-bonuses = list(toloka_client.get_user_bonuses(created_lt='2021-06-01T00:00:00'))
+bonuses = list(toloka_client.get_user_bonuses(created_lt='2023-06-01T00:00:00'))
 ```

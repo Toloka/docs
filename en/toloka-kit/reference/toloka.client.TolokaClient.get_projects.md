@@ -1,5 +1,5 @@
 # get_projects
-`toloka.client.TolokaClient.get_projects` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L1247)
+`toloka.client.TolokaClient.get_projects` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L1278)
 
 Finds all projects that match certain criteria.
 
@@ -21,7 +21,7 @@ If you need to sort projects use the [find_projects](toloka.client.TolokaClient.
 `created_lte`|**Optional\[datetime\]**|<p>Projects created before or on the specified date.</p>
 `created_gt`|**Optional\[datetime\]**|<p>Projects created after the specified date.</p>
 `created_gte`|**Optional\[datetime\]**|<p>Projects created after or on the specified date.</p>
-`batch_size`|**Optional\[int\]**|<p>Returned projects limit for each request. The default batch_size is 20. The maximum allowed batch_size is 300.</p>
+`batch_size`|**Optional\[int\]**|<p>A limit of items returned by each request to Toloka. The maximum allowed value: 300. The default value: 20.</p>
 
 * **Yields:**
 

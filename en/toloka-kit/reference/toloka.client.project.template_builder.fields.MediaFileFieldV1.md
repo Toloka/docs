@@ -1,5 +1,5 @@
 # MediaFileFieldV1
-`toloka.client.project.template_builder.fields.MediaFileFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/fields.py#L332)
+`toloka.client.project.template_builder.fields.MediaFileFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/project/template_builder/fields.py#L334)
 
 ```python
 MediaFileFieldV1(
@@ -36,6 +36,7 @@ For more information, see [field.media-file](https://toloka.ai/docs/template-bui
 A component for uploading an image or taking a photo.
 
 ```python
+import toloka.client.project.template_builder as tb
 image_loader = tb.fields.MediaFileFieldV1(
     label='Upload a photo',
     data=tb.data.OutputData(path='image'),

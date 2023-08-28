@@ -1,5 +1,5 @@
 # find_app_items
-`toloka.async_client.client.AsyncTolokaClient.find_app_items` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.find_app_items` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L0)
 
 Finds task items that match certain criteria in an App project.
 
@@ -29,7 +29,7 @@ To iterate over all matching items you may use the [get_app_items](toloka.client
 `finished_lt`|**Optional\[datetime\]**|<p>Items labeled before the specified date.</p>
 `finished_lte`|**Optional\[datetime\]**|<p>Items labeled before or on the specified date.</p>
 `sort`|**Union\[List\[str\], [AppItemSortItems](toloka.client.search_requests.AppItemSortItems.md), None\]**|<p>Sorting options. Default: `None`.</p>
-`limit`|**Optional\[int\]**|<p>Returned items limit. The maximum allowed limit is 1000.</p>
+`limit`|**Optional\[int\]**|<p>Returned items limit. The maximum allowed value: 1000.</p>
 
 * **Returns:**
 
@@ -44,9 +44,9 @@ To iterate over all matching items you may use the [get_app_items](toloka.client
 Finding items in an App project that were created starting some date.
 ```python
 search = toloka_client.find_app_items(
-    app_project_id = 'Q2d15QBjpwWuDz8Z321g',
-    created_gte = '2022-06-16',
-    sort = 'created')
+    app_project_id='Q2d15QBjpwWuDz8Z321g',
+    created_gte='2022-06-16',
+    sort='created')
 for app_item in search.content:
     print(app_item.id, app_item.created_at)
 

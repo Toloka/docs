@@ -1,5 +1,5 @@
 # Subject
-`toloka.client.analytics_request.PoolAnalyticsRequest.Subject` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/analytics_request.py#L52)
+`toloka.client.analytics_request.PoolAnalyticsRequest.Subject` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/analytics_request.py#L52)
 
 An enumeration.
 

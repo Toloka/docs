@@ -1,5 +1,5 @@
 # Parameters
-`toloka.client.operations.TasksCreateOperation.Parameters` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/operations.py#L285)
+`toloka.client.operations.TasksCreateOperation.Parameters` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/operations.py#L313)
 
 ```python
 Parameters(
@@ -11,3 +11,12 @@ Parameters(
 )
 ```
 
+Parameters passed to the [create_tasks_async](toloka.client.TolokaClient.create_tasks_async.md) method.
+
+## Parameters Description
+
+| Parameters | Type | Description |
+| :----------| :----| :-----------|
+`skip_invalid_items`|**Optional\[bool\]**|<p>Task validation parameter.</p>
+`allow_defaults`|**Optional\[bool\]**|<p>Active overlap parameter.</p>
+`open_pool`|**Optional\[bool\]**|<p>Opening the pool immediately.</p>

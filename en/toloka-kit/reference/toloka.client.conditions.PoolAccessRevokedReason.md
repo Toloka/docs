@@ -1,5 +1,5 @@
 # PoolAccessRevokedReason
-`toloka.client.conditions.PoolAccessRevokedReason` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/conditions.py#L252)
+`toloka.client.conditions.PoolAccessRevokedReason` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/conditions.py#L389)
 
 ```python
 PoolAccessRevokedReason(
@@ -19,3 +19,16 @@ Possible values:
 `PoolAccessRevokedReason` is used with collectors:
 - [UsersAssessment](toloka.client.collectors.UsersAssessment.md)
 
+
+**Examples:**
+
+
+```python
+pool = toloka.client.pool.Pool()
+pool.quality_control.add_action(
+    collector=toloka.client.collectors.UsersAssessment(),
+    conditions=[toloka.client.conditions.PoolAccessRevokedReason ==
+        toloka.client.conditions.PoolAccessRevokedReason.RESTRICTION],
+    action=toloka.client.actions.ChangeOverlap(delta=1, open_pool=True),
+)
+```

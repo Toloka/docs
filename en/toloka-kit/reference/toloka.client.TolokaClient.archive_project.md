@@ -1,5 +1,5 @@
 # archive_project
-`toloka.client.TolokaClient.archive_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L1120)
+`toloka.client.TolokaClient.archive_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L1149)
 
 ```python
 archive_project(self, project_id: str)
@@ -30,5 +30,5 @@ The archived project is not deleted. You can access it if you need.
 
 
 ```python
-toloka_client.archive_project(project_id='1')
+archived_project = toloka_client.archive_project('117493')
 ```

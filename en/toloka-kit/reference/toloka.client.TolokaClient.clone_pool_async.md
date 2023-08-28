@@ -1,5 +1,5 @@
 # clone_pool_async
-`toloka.client.TolokaClient.clone_pool_async` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L1550)
+`toloka.client.TolokaClient.clone_pool_async` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L1585)
 
 ```python
 clone_pool_async(self, pool_id: str)
@@ -29,6 +29,6 @@ The new pool is attached to the same project.
 
 
 ```python
-clone_op = toloka_client.clone_pool_async(pool_id='1')
+clone_op = toloka_client.clone_pool_async(pool_id='1080020')
 toloka_client.wait_operation(clone_op)
 ```

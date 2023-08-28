@@ -1,5 +1,5 @@
 # set_user_restriction
-`toloka.async_client.client.AsyncTolokaClient.set_user_restriction` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.set_user_restriction` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/async_client/client.py#L0)
 
 ```python
 async set_user_restriction(self, user_restriction: UserRestriction)
@@ -23,14 +23,14 @@ Restricts access to projects or pools for a Toloker.
 
 **Examples:**
 
-If a Toloker often makes mistakes, we will restrict access to all our projects.
+Restricting access to a project.
 
 ```python
 new_restriction = toloka_client.set_user_restriction(
-    toloka.user_restriction.ProjectUserRestriction(
-        user_id='1',
+    toloka.client.user_restriction.ProjectUserRestriction(
+        user_id='fac97860c7929add8048ed2ef63b66fd',
         private_comment='The Toloker often makes mistakes',
-        project_id='5'
+        project_id='92694'
     )
 )
 ```

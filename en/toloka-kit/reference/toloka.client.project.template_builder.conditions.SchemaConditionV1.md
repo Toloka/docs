@@ -1,5 +1,5 @@
 # SchemaConditionV1
-`toloka.client.project.template_builder.conditions.SchemaConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/conditions.py#L227)
+`toloka.client.project.template_builder.conditions.SchemaConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/project/template_builder/conditions.py#L230)
 
 ```python
 SchemaConditionV1(

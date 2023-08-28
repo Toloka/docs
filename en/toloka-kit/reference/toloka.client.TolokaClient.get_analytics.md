@@ -1,5 +1,5 @@
 # get_analytics
-`toloka.client.TolokaClient.get_analytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L2279)
+`toloka.client.TolokaClient.get_analytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L2329)
 
 ```python
 get_analytics(self, stats: List[AnalyticsRequest])
@@ -32,8 +32,25 @@ The example shows how get the percentage of completed tasks in the pool.
 
 ```python
 from toloka.client.analytics_request import CompletionPercentagePoolAnalytics
+
 operation = toloka_client.get_analytics([CompletionPercentagePoolAnalytics(subject_id='1080020')])
 operation = toloka_client.wait_operation(operation)
 print(operation.details['value'][0])
 completed_task_percentage = operation.details['value'][0]['result']['value']
+```
+
+The example monitors the percentage of completed tasks in the pool every minute until the pool is closed.
+
+```python
+from toloka.client.analytics_request import CompletionPercentagePoolAnalytics
+
+pool = toloka_client.get_pool('1080020')
+while not pool.is_closed():
+    op = toloka_client.get_analytics( [CompletionPercentagePoolAnalytics(subject_id=pool.id)] )
+    op = toloka_client.wait_operation(op)
+    percentage = op.details['value'][0]['result']['value']
+    print(f'{percentage}%')
+    time.sleep(60)
+    pool = toloka_client.get_pool(pool.id)
+print('The pool is closed.')
 ```

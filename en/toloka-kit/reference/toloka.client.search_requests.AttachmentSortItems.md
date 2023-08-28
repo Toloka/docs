@@ -15,9 +15,9 @@ Keys for sorting attachments in search results.
 
 **Examples:**
 
-The example shows how to find attachments sorted by uploading date in descending order. Attachments with equal uploading dates are sorted by IDs in ascending order.
+The example shows how to find attachments sorted by uploading date in descending order. Attachments with equal uploading dates are sorted by IDs in descending order.
 
 ```python
-sort = toloka.client.search_requests.AttachmentSortItems(['-created', 'id'])
-result = toloka_client.find_attachments(pool_id=my_pool_id, sort=sort, limit=10)
+sort = toloka.client.search_requests.AttachmentSortItems(['-created', '-id'])
+result = toloka_client.find_attachments(pool_id='1086170', sort=sort, limit=10)
 ```

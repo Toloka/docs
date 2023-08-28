@@ -1,5 +1,5 @@
 # FileFieldV1
-`toloka.client.project.template_builder.fields.FileFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/fields.py#L223)
+`toloka.client.project.template_builder.fields.FileFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/project/template_builder/fields.py#L225)
 
 ```python
 FileFieldV1(
