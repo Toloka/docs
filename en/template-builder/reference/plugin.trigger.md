@@ -8,13 +8,14 @@ The event can be triggered immediately when the task is loaded (`"fireImmediatel
 
 You can also set conditions in the `conditions` property that must be met in order for the trigger to fire.
 
-In the following example trigger adds assignment id to the link. This happens immediately after the task is loaded. 
+In the following example, the plugin.trigger component is used to modify the original search query: the word "bobtail" is added to the word "cats". This happens immediately after the task is loaded.
 
 [![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/lxI6fdnn4PTHN4)
 
 {% cut "Components used in the example" %}
 
 - [view.link](view.link.md): Displays a link.
+- [helper.search-query](helper.search-query.md): Creates a string with a search query reference.
 - [data.output](../operations/work-with-data.md): The output data. This is what you get when a Toloker clicks the **Submit** button.
 - [action.set](action.set.md): Sets the value from `payload` in the data in the `data` property.
 - [helper.join](../reference/helper.join.md): Joins multiple strings into one string, separating them with spaces or commas.
