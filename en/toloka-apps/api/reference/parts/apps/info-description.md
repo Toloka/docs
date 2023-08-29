@@ -13,7 +13,7 @@ In Toloka, bespoke solutions have the apps API technology under the hood. That's
 
 Working with the apps API requires an access key. [Register](https://toloka.ai/docs/guide/access) in Toloka and get an API key in the requester interface:
 
-- In the sandbox for debugging tasks: [Profile → Integrations → Generate token](https://sandbox.toloka.yandex.com/requester/profile/integration).
+- In the sandbox for debugging tasks: [Profile → Integrations → Generate token](https://platform.sandbox.toloka.ai/requester/profile/integration).
 
 - In the production version of Toloka: [Profile → Integrations → Generate token](https://platform.toloka.ai/requester/profile/integration).
 

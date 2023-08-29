@@ -2,7 +2,7 @@
 
 To test your task, you can:
 
-1. Add yourself as a trusted Toloker in the Sandbox. To do this, click **Add trusted Tolokers** on the [Tolokers]({{ users }}) page. Enter the username for the Toloker's account (case-sensitive).
+1. Add yourself as a trusted Toloker in the sandbox. To do this, click **Add trusted Tolokers** on the [Tolokers]({{ users }}) page. Enter the username for the Toloker's account (case-sensitive).
 
 2. Use the **Preview** button on the pool page.
 

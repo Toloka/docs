@@ -29,6 +29,9 @@ items:
         href: guide/concepts/save-money.md
       - name: Sandbox
         href: guide/concepts/sandbox.md
+      - name: Migrating to new social authorization in Toloka sandbox
+        href: guide/concepts/migrate-new-auth-sandbox.md
+        hidden: true
       - name: Generating API keys
         href: guide/concepts/api-token.md
   - name: Tutorials

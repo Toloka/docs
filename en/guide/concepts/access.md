@@ -4,16 +4,9 @@ Toloka clients register and access Toloka using social authorization. If you reg
 
 To register in Toloka as a client and post tasks for Tolokers, you need to have one of the following supported social accounts:
 
-- Google
-- Facebook
-- GitHub
-- Microsoft
+{% include [register-social-list](../_includes/register/social-list.md) %}
 
-{% note info %}
-
-Depending on your current location the list of the available social accounts might differ and include or exclude some of the social services.
-
-{% endnote %}
+{% include [register-social-list-note](../_includes/register/social-list-note.md) %}
 
 Some of the clients can also authorize in Toloka using SSO authentication. Read the [Toloka SSO authentication](../sso/authentication.md) section which contains the detailed description of this method and its restrictions.
 
@@ -37,27 +30,7 @@ Toloka uses social authorization both for the **registration** and **signing in*
 
 To authorize in Toloka production version using one of the social accounts, go to the [sign-in page]({{ yandex-toloka }}).
 
-{% list tabs %}
-
-- Registering
-
-  1. Click the button with the social service name.
-
-  1. You will be redirected to the selected service authorization page. Follow the service steps to sign in using your social account.
-
-  1. Once you sign in to the selected service, you will be redirected back to Toloka. The system will invite you to enter some additional information (email address used for notifications, company name, country of origin, and some other optional information).
-
-  1. When done, accept the Toloka Terms of Use and click **Get started**.
-
-- Signing in
-
-  1. Click the button with the social service name.
-
-  1. You will be redirected to the selected service authorization page. Follow the service steps to sign in using your social account.
-
-  1. Once you sign in to the selected service, you will be redirected to your Toloka dashboard.
-
-{% endlist %}
+{% include [register-social-auth](../_includes/register/social-auth.md) %}
 
 ## Recommendations {#concept_pkf_nks_vlb}
 

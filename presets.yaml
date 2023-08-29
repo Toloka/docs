@@ -7,7 +7,7 @@ default:
   amazon-s3-tags: https://docs.aws.amazon.com/AmazonS3/latest/userguide/CostAllocTagging.html
   amazon-s3-ttl: https://aws.amazon.com/ru/blogs/aws/amazon-s3-object-expiration/
   android-app: https://play.google.com/store/apps/details?id=com.yandex.toloka.androidapp
-  appeal: https://toloka.ai/tolokers/docs/web/priemka.html?lang=en#priemka__appeal
+  appeal: https://join.toloka.ai/en/docs/web/priemka/#appeal
   audio-classification-preset: https://platform.toloka.ai/requester/templates?choosedCard=1JV9zP0e3eKSxlWVMePn
   audio-transcription-preset: https://platform.toloka.ai/requester/templates?choosedCard=EMeqje9erBrCPq7REDBB
   audit-preset: https://platform.toloka.ai/requester/templates?choosedCard=1DwQlJ0L6p4urdwxEM4k
@@ -58,7 +58,7 @@ default:
   libre-office: https://wiki.documentfoundation.org/Faq/Calc/012
   link-for-download: https://cloud.yandex.com/docs/storage/operations/objects/link-for-download
   messages: https://platform.toloka.ai/requester/messages
-  mobile-agreement: https://toloka.ai/tolokers/legal/toloka_mobile_agreement
+  mobile-agreement: https://join.toloka.ai/legal/toloka_mobile_agreement/
   mobile-mozilla: https://developer.mozilla.org/en-US/docs/Tools/Responsive_Design_Mode
   monitoring-in-org-preset: https://platform.toloka.ai/requester/templates?choosedCard=1DwQlJ0L6p4urdwxEM4k
   monitoring-preset: https://platform.toloka.ai/requester/templates?choosedCard=R9kqLzpBzDKfJEg8r95O
@@ -83,10 +83,10 @@ default:
   register: https://passport.toloka.ai/registration?mode=register&retpath=https://platform.toloka.ai
   restore: https://passport.toloka.ai/passport?mode=restore
   safari-mobile: https://support.apple.com/guide/safari-developer/simulate-responsive-web-content-apple-devices-dev84bd42758/mac
-  sandbox: https://sandbox.toloka.yandex.com/for-requesters
-  sandbox-for-performers: https://sandbox.toloka.yandex.com/tasks
-  sandbox-profile: https://sandbox.toloka.yandex.com/requester/profile
-  sandbox-profile-integration: https://sandbox.toloka.yandex.com/requester/profile/integration
+  sandbox: https://platform.sandbox.toloka.ai/auth?role=REQUESTER
+  sandbox-for-performers: https://we.sandbox.toloka.ai/tasks
+  sandbox-profile: https://platform.sandbox.toloka.ai/requester/profile
+  sandbox-profile-integration: https://platform.sandbox.toloka.ai/requester/profile/integration
   selection-of-images-groups: https://codepen.io/Toloka_projects/pen/KJELbO
   skills: https://platform.toloka.ai/requester/quality
   statistical-significance: https://en.wikipedia.org/wiki/Statistical_significance
@@ -113,11 +113,11 @@ default:
   toloka-linkedin: https://www.linkedin.com/company/toloka/
   toloka-slack: https://join.slack.com/t/tolokacommunity/shared_invite/zt-1il4olbgh-2pK2zhDGix46uks0vfUqpQ
   toloka-stackoverflow: https://stackoverflow.com/questions/tagged/toloka
-  toloka-support: https://toloka.ai/tolokers/docs/web/troubleshooting/troubleshooting.html?lang=ru
+  toloka-support: https://toloka.ai/docs/guide/troubleshooting/support/
   toloka-twitter: https://twitter.com/TolokaAI
   toloka-youtube: https://www.youtube.com/channel/UCGvsgFPVyOwuN8aJJbMem9A/videos
-  user-documentation: https://toloka.ai/tolokers/docs/web/register.html?lang=en#register
-  useragreement: https://toloka.ai/tolokers/legal/user-agreement
+  user-documentation: https://join.toloka.ai/en/docs/web/register/
+  useragreement: https://join.toloka.ai/legal/user-agreement/
   users: https://platform.toloka.ai/requester/workers
   video-moderation-preset: https://platform.toloka.ai/requester/templates?choosedCard=KpP25Ep6DQMSwpLMZr55
   videocourse-about-decomposition: https://www.youtube.com/playlist?list=PLn5HE0j5a7ml6W0w6GAeAk_8CeyvthJq8&utm_source=support&utm_medium=online&utm_compaign=help&utm_content=requesters

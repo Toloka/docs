@@ -28,7 +28,7 @@ Decompose tasks:
 
   [Learn more](solution-architecture.md) about decomposition.
 
-  {% endcut %}   
+  {% endcut %}
 
 Improve instructions:
 
@@ -62,7 +62,7 @@ You can create a task interface in the [Template Builder](../../template-builder
 
 Check the tasks before launching your project:
 
-- Create tasks in the [Sandbox](../../glossary.md#sandbox) and try to do them yourself.
+- Create tasks in the [sandbox](sandbox.md) and try to do them yourself.
 
 - Launch the project for a limited audience of Tolokers and analyze their feedback.
 
@@ -154,7 +154,7 @@ Set the quality control rules:
 
     Let's say a pool has an overlap of 3, and the **Majority vote** quality control rule says that 5 responses to a task should be considered the majority. With an overlap of 3, the number of responses required to estimate the majority vote will never be achieved.
 
-- Check whether the rule works as you intended. To do this, run a small pool with sample data or practice in the [Sandbox](../../glossary.md#sandbox).
+- Check whether the rule works as you intended. To do this, run a small pool with sample data or practice in the [sandbox](../../glossary.md#sandbox).
 
 - See examples of settings on the pages from the [list](control.md) of quality control rules.
 
@@ -200,7 +200,7 @@ Reasons:
 
 - Rewrite the instructions to make them clear and easy to understand.
 
-- Try to complete your task in the pool preview, or even better, in the Sandbox. Make sure everything is working correctly.
+- Try to complete your task in the pool preview, or even better, in the sandbox. Make sure everything is working correctly.
 
 {% endcut %}
 

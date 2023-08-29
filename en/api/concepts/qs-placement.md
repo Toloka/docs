@@ -12,7 +12,7 @@ Choose a platform to get an API key:
 
     1. [Register](https://toloka.ai/docs/api/api-reference/#overview--accessing-the-api) on the selected platform if you haven't done this before.
 
-    1. Get an API key in the [requester interface](https://sandbox.toloka.yandex.com/requester/profile/integration).
+    1. Get an API key in the [requester interface](https://platform.sandbox.toloka.ai/requester/profile/integration).
 
     1. All examples use the sandbox URL: `https://sandbox.toloka.dev/api/v1/{resource_path}`. If you decide to switch to the production version, replace the resource URL with `https://toloka.dev/api/v1/{resource_path}`.
 

@@ -1,4 +1,4 @@
-{% cut "How do I work with the Sandbox?" %}
+{% cut "How do I work with the sandbox?" %}
 
 1. [Register]({{ sandbox }}) as a requester in the sandbox.
 

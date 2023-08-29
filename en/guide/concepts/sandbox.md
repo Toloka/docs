@@ -1,10 +1,14 @@
 # Sandbox
 
-The [Sandbox]({{ sandbox }}) is a testing environment for Toloka. This is where you can test your [project](../../glossary.md#project) settings as a Toloker before moving them to the [Toloka production version]({{ production-version }}) and running the project for real Tolokers. This helps you avoid making mistakes and spending money on a task that isn't working right.
+The [sandbox]({{ sandbox }}) is a testing environment for Toloka. This is where you can test your [project](../../glossary.md#project) settings as a Toloker before moving them to the [Toloka production version]({{ production-version }}) and running the project for real Tolokers. This helps you avoid making mistakes and spending money on a task that isn't working right.
 
-## Getting access to the sandbox {#sandbox-access}
+Toloka clients register and access Toloka sandbox using social authorization.
 
-Please [contact our support team](../troubleshooting/support.md?form-topic1=sandbox) describing the projects you plan to use the sandbox for, types of tasks you plan to upload, the approximate number of trusted Tolokers who are going to complete tasks for you there, and other details.
+{% note info %}
+
+If you registered in the sandbox using an email address, you can continue accessing the sandbox using the [old domain address](https://sandbox.toloka.yandex.com/for-requesters). We will help you migrate to the new sandbox address in the nearest future.
+
+{% endnote %}
 
 Make sure the projects you plan to use in the sandbox meet the [usage rules](#usage-rules).
 
@@ -18,9 +22,21 @@ If you need a private data labeling environment for your own team, [request](../
 
 ## How to run a project in the sandbox {#section_zmz_t4z_mlb}
 
-Once you have [access to the sandbox](#sandbox-access) approved, follow the steps below to run a project there.
+To register in the sandbox as a client and post tasks for Tolokers, you need to have one of the following supported social accounts:
 
-1. [Register in the sandbox]({{ sandbox }}) as a requester.
+{% include [register-social-list](../_includes/register/social-list.md) %}
+
+{% include [register-social-list-note](../_includes/register/social-list-note.md) %}
+
+Follow the steps below to run a project there.
+
+1. Register in the sandbox as a requester.
+
+    Toloka uses social authorization both for the **registration** and **signing in** to the sandbox.
+
+    To authorize in Toloka sandbox using one of the social accounts, go to the [sign-in page]({{ sandbox }}).
+
+    {% include [register-social-auth](../_includes/register/social-auth.md) %}
 
     {% note tip %}
 
@@ -38,31 +54,45 @@ Once you have [access to the sandbox](#sandbox-access) approved, follow the step
 
 To complete your tasks in the sandbox:
 
-1. Register as a Toloker (see the instructions in the [user documentation]({{ user-documentation }})).
+1. Register in the sandbox as a Toloker:
 
-    {% note alert %}
+    1. Go to the [Toloker sandbox sign-in page](https://we.sandbox.toloka.ai/auth?role=TOLOKER).
 
-    Authorization via social media isn't allowed, so you need to [register]({{ register }}) a new user in Yandex.
+    1. Click a social service where you have an account.
 
-    {% endnote %}
+    1. You will be redirected to the selected service authorization page. Follow the service steps to sign in using your social account.
 
-1. Log in to the [Sandbox]({{ sandbox }}) using the requester account.
+    1. Once you sign in to the selected service, you will be redirected back to Toloka. The system will invite you to enter your phone number and will send you a confirmation code to make sure that the phone number you entered is correct and belongs to you.
 
-1. Open the [Tolokers]({{ users }}) page and click **Add trusted Tolokers**.
+    1. If all is good, you will get access to the sandbox as a Toloker.
 
-1. Click **Add Toloker** and enter the case-sensitive username of the created Toloker.
+1. Now log in to the [sandbox]({{ sandbox }}) using the requester account.
 
-    Only trusted Tolokers can access your tasks.
+1. Open the [Users](https://platform.sandbox.toloka.ai/requester/workers) page and click **Add trusted Tolokers**.
 
-    The number of trusted Tolokers required for testing depends on the [overlap settings](dynamic-overlap.md).
+1. Click **Add Toloker** and enter the phone number of the created Toloker or the Toloker ID.
 
-    To test your project in the Sandbox, set [overlap](../../glossary.md#overlap) 1. If you increase the overlap, you will need to register more Tolokers and add trusted accounts.
+    {% cut "Where to get the Toloker ID" %}
 
-    When exporting a project to the production version of [Toloka](#export), you can specify the necessary overlap in accordance with your project goals.
+    You can get the Toloker ID together with the phone number on the Toloker **sandbox** [Profile](https://we.sandbox.toloka.ai/profile) page:
 
-1. Log in to the sandbox using the Toloker account and test your tasks. Make sure that the buttons and task response validation are set up correctly, and assess how long it takes to complete the tasks. Make sure that the [Toloker selection](filters.md) and [quality control](control.md) work.
+    ![Getting Toloker ID](../_images/register/add-trusted-toloker.png =370x)
 
-## How to move a task to the production version of Toloka {#export}
+    {% endcut %}
+
+    Only trusted Tolokers can access your tasks. The number of trusted Tolokers required for testing depends on the [overlap settings](dynamic-overlap.md).
+
+    {% cut "Overlap settings" %}
+
+    To test your project in the sandbox with only one Toloker, set [overlap](../../glossary.md#overlap) value to **1**. If you increase the overlap, you will need to register more Tolokers and add trusted accounts: the overlap value will be equal to the number of trusted Tolokers you need to complete your tasks.
+
+    When [exporting a project](#export) to the production version of Toloka, you can specify the necessary overlap in accordance with your project goals.
+
+    {% endcut %}
+
+1. [Log in to the sandbox](https://we.sandbox.toloka.ai/auth?role=TOLOKER) using the Toloker account and test your tasks. Make sure that the buttons and task response validation are set up correctly, and assess how long it takes to complete the tasks. Make sure that the [Toloker selection](filters.md) and [quality control](control.md) work.
+
+## How to move projects to the production version of Toloka {#export}
 
 {% note alert "Restriction" %}
 
@@ -70,13 +100,13 @@ Note that you can move only project and [pool](../../glossary.md#pool) settings.
 
 {% endnote %}
 
-To move tasks from the sandbox to the production version:
+To move projects from the sandbox to the production version:
 
 1. Link the sandbox and production version accounts:
 
-    1. Open the **Integrations** tab in the production version on the [profile]({{ profile }}) page, click **Get OAuth token**, and copy the OAuth token displayed.
+    1. Open the **Integrations** tab in the production version on the [profile](https://platform.toloka.ai/requester/profile/integration) page, click **![Plus sign](../_images/plus-sign.svg) Generate token**, create a new API key, and copy it.
 
-    1. Open the same tab in the sandbox on the [profile]({{ sandbox-profile }}) page, paste the copied token into the **Main Toloka OAuth token** field, and click **Add OAuth token**.
+    1. Open the same tab in the sandbox on the [profile]({{ sandbox-profile }}) page, paste the copied token into the **Main Toloka API token** field, and click **Add token**.
 
 1. Go to the project page in the sandbox and click **![Drop-down button](../_images/drop-down.svg) → ![Export button](../_images/location-job/project/export.svg) Export**.
 
@@ -85,8 +115,6 @@ To move tasks from the sandbox to the production version:
     If the pool has [linked training](train.md), it is exported automatically.
 
 ## Troubleshooting {#troubleshooting}
-
-{% include [faq-work-with-sandbox](../_includes/faq/sandbox/work-with-sandbox.md) %}
 
 {% include [faq-see-pool-as-toloker](../_includes/faq/sandbox/see-pool-as-toloker.md) %}
 
@@ -106,8 +134,6 @@ To move tasks from the sandbox to the production version:
 
 {% include [troubleshooting-cant-add-trusted-user](../_includes/troubleshooting/sandbox/cant-add-trusted-user.md) %}
 
-{% include [faq-overlap](../_includes/faq/pool-setup/overlap.md) %}
-
-{% include [faq-change-overlap](../_includes/faq/pool-setup/change-overlap.md) %}
-
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

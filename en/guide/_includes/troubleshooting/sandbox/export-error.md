@@ -1,4 +1,4 @@
-{% cut "What do I do if an error occurs on the server when I try to export a project from the Sandbox?" %}
+{% cut "What do I do if an error occurs on the server when I try to export a project from the sandbox?" %}
 
 #### Try exporting the project without pools
 

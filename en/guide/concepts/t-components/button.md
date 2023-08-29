@@ -9,7 +9,7 @@ The task interface configuration guide describes the features of the HTML/JS/CSS
 To add a button to a task, use the `not_var{{button}}` component. Example:
 
 ```plaintext
-{{button label="Click me" href="https://yandex.ru" action=true}}
+{{button label="Click me" href="https://toloka.ai" action=true}}
 ```
 
 #### Parameters

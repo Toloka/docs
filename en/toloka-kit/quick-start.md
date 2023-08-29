@@ -14,7 +14,7 @@ To start with Toloka-Kit:
     ```python
     import toloka.client as toloka
 
-    target = 'SANDBOX'      # Send requests to the Sandbox
+    target = 'SANDBOX'      # Send requests to the sandbox
     # target = 'PRODUCTION' # Uncomment to send requests to the production version
 
     toloka_client = toloka.TolokaClient(input("Enter your token:"), target)

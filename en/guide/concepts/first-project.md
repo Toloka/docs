@@ -11,7 +11,7 @@ Learn your way around Toloka with the following steps:
 
 Make sure you're [registered](access.md) as a requester.
 
-Log in to the [Sandbox](sandbox.md) to create and test your project for free. This helps you avoid making mistakes and spending unnecessary money on a task that doesn't work.
+Log in to the [sandbox](sandbox.md) to create and test your project for free. This helps you avoid making mistakes and spending unnecessary money on a task that doesn't work.
 
 ## Step 1. Create a project {#create-project}
 
@@ -114,7 +114,7 @@ A pool is a set of tasks sent out for completion at the same time. Create and co
 
 ## What's next {#what-next}
 
-- When you complete the testing in the Sandbox, [move](sandbox.md#export) your project to the Toloka production version and launch the pool for real Tolokers.
+- When you complete the testing in the sandbox, [move](sandbox.md#export) your project to the Toloka production version and launch the pool for real Tolokers.
 
 - View our [tutorials](../tutorials/usecases.md). Perhaps there is an instruction that fits your task, and you will only need to insert your own data.
 

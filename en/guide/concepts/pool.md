@@ -18,7 +18,7 @@ To add tasks to a pool:
 
     {% note info %}
 
-    If you created a project in the [sandbox](../../glossary.md#sandbox), keep in mind that when you move a project to the [Toloka production version]({{ production-version }}), tasks aren't moved, including those that are already labeled.
+    If you created a project in the [sandbox](sandbox.md), keep in mind that when you move a project to the [Toloka production version]({{ production-version }}), tasks aren't moved, including those that are already labeled.
 
     {% endnote %}
 
