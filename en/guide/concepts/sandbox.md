@@ -4,12 +4,6 @@ The [sandbox]({{ sandbox }}) is a testing environment for Toloka. This is where 
 
 Toloka clients register and access Toloka sandbox using social authorization. If you registered in the sandbox using an email address, [migrate to the new social authorization](migrate-new-auth-sandbox.md) scheme, or you won't be able to use the sandbox.
 
-{% note alert "Attention" %}
-
-Make sure to migrate your account until **August 14, 2023** to continue using the sandbox. The authorization in the sandbox using email address and password will **stop working** after that date.
-
-{% endnote %}
-
 Make sure the projects you plan to use in the sandbox meet the [usage rules](#usage-rules).
 
 ## Usage rules {#usage-rules}
