@@ -2,7 +2,13 @@
 
 The [sandbox]({{ sandbox }}) is a testing environment for Toloka. This is where you can test your [project](../../glossary.md#project) settings as a Toloker before moving them to the [Toloka production version]({{ production-version }}) and running the project for real Tolokers. This helps you avoid making mistakes and spending money on a task that isn't working right.
 
-Toloka clients register and access Toloka sandbox using social authorization. If you registered in the sandbox using an email address, [migrate to the new social authorization](migrate-new-auth-sandbox.md) scheme, or you won't be able to use the sandbox.
+Toloka clients register and access Toloka sandbox using social authorization.
+
+{% note info %}
+
+If you registered in the sandbox using an email address, you can continue accessing the sandbox using the [old domain address](https://sandbox.toloka.yandex.com/for-requesters). We will help you migrate to the new sandbox address in the nearest future.
+
+{% endnote %}
 
 Make sure the projects you plan to use in the sandbox meet the [usage rules](#usage-rules).
 
