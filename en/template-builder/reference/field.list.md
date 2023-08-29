@@ -11,8 +11,8 @@ This way you can allow a Toloker to give multiple answers to a question.
 - [field.text](field.text.md): Adds a field for entering a short text.
 - [data.output](../operations/work-with-data.md): The output data. This is what you get when a Toloker clicks the **Submit** button.
 - [data.relative](../operations/work-with-data.md): A special component for saving data.
-- [condition.not](../reference/condition.not.md): Returns the inverse of the specified condition.
-- [condition.empty](../reference/condition.empty.md): Checks that the data didn't get a value.
+- [condition.not](condition.not.md): Returns the inverse of the specified condition.
+- [condition.empty](condition.empty.md): Checks that the data didn't get a value.
 
 {% endcut %}
 
@@ -22,15 +22,15 @@ The list items can contain any component, including a list of other components. 
 
 {% cut "Components used in the example" %}
 
-- [view.list](../reference/view.list.md): A list of any elements, vertical or horizontal.
-- [field.date](../reference/field.date.md): Adds a field for entering the date of birth.
-- [data.output](../operations/work-with-data.md): The output data. This is what you get when a Toloker clicks the **Submit** button.
-- [layout.columns](layout.columns.md): Places content in columns.
+- [view.list](view.list.md): Displays data in a list.
 - [view.text](view.text.md): Displays a text.
+- [layout.columns](layout.columns.md): Places content in columns.
+- [field.date](field.date.md): Adds a field for entering the date.
 - [field.text](field.text.md): Adds a field for entering a short text.
+- [field.number](field.number.md): Adds a field for entering a number.
+- [data.output](../operations/work-with-data.md): The output data. This is what you get when a Toloker clicks the **Submit** button.
 - [data.relative](../operations/work-with-data.md): A special component for saving data.
 - [condition.required](condition.required.md): Checks that the data is filled in.
-- [field.number](field.number.md): Adds a field for entering a number.
 
 {% endcut %}
 
