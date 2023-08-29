@@ -2,7 +2,7 @@
 
 For this type of project, you can use the **Searching for products in an online store** preset.
 
-You can use this preset if you need to check if some product is avialable in an online store. If Toloker finds the product, he inserts the link into the text input area. If he doesn't find it, he selects **The store doesn't sell the product** option. 
+Use this template if you need to check the availability of a specific product in an online store. If the Tolokers finds the product, they add a link to the product in the text field. If the product is not available in the online store, they selects the **The store doesn't sell the product** option.
 
 Take a look at the example: the labeling interface includes text data, a text input area, a button, by clicking on which an online store page is getting opened, and a checkbox Toloker can select if the product isn't on sale in the online store. Note that validation, keyboard shortcuts and task layout are already configured in this Template Builder sample code.
 
@@ -60,7 +60,7 @@ Take a look at the example: the labeling interface includes text data, a text in
 
 - [field.text](../reference/field.text.md): Adds a field for entering a short text. 
 
-A combination of [helper.if](../reference/helper.if.md) and [condition.equals](../reference/condition.equals.md) displays the response field when the checkbox is not selected.
+  A combination of [helper.if](../reference/helper.if.md) and [condition.equals](../reference/condition.equals.md) displays the response field when the checkbox is not selected.
 
   {% cut "Show code" %}
   ```json
@@ -97,7 +97,7 @@ A combination of [helper.if](../reference/helper.if.md) and [condition.equals](.
 
 - [field.checkbox](../reference/field.checkbox.md): Adds a checkbox.
 
-  In this example, Toloker selects **The store doesn't sell the product** checkbox if he cannot find the product in the online store.
+  The Tolokers select **The store doesn't sell the product** checkbox if they cannot find the product in the online store.
 
   {% cut "Show code" %}
   ```json
