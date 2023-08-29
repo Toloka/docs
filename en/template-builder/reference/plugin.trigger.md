@@ -18,7 +18,7 @@ In the following example, the `plugin.trigger` component is used to modify the o
 - [helper.search-query](helper.search-query.md): Creates a string with a search query reference.
 - [data.output](../operations/work-with-data.md): The output data. This is what you get when a Toloker clicks the **Submit** button.
 - [action.set](action.set.md): Sets the value from `payload` in the data in the `data` property.
-- [helper.join](../reference/helper.join.md): Joins multiple strings into one string, separating them with spaces or commas.
+- [helper.join](helper.join.md): Joins multiple strings into one string, separating them with spaces or commas.
 - [data.input](../operations/work-with-data.md): The input data. For example, links to images that will be shown to Tolokers.
 
 {% endcut %}
