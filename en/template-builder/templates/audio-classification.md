@@ -1,8 +1,8 @@
 # Audio classification
 
-For this type of project, you can use the **Audio classification** preset.
+For this type of project, you can use the **Audio classification** preset. Note that validation, keyboard shortcuts, and task layout are already configured in this example.
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/U4xXtjtv4GQ9TJ)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/cqAV0dK_4RD4T4)
 
 {% cut "Components used in the example" %}
 
@@ -16,7 +16,6 @@ For this type of project, you can use the **Audio classification** preset.
 
   ```json
   {
-    "label": "Listen to the audio recording",
     "type": "view.audio",
     "url": {
       "type": "data.input",
@@ -154,8 +153,8 @@ To add a detailed description to the task, use the `label` property of the [view
 
 ```json
 {
-  "label": "Listen to the audio recording",
   "type": "view.audio",
+  "label": "Listen to the audio recording and answer the question.",
   "url": {
     "type": "data.input",
     "path": "audio"
@@ -169,7 +168,7 @@ To add a detailed description to the task, use the `label` property of the [view
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/U4xXtjtv4GQ9TJ)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/44Uh7Dnv4RD4cX)
 
 ## Add a layout {#add-layout}
 
@@ -185,7 +184,7 @@ In this example, the description is highlighted with a blue border, and the butt
         "theme": "info",
         "content": {
           "type": "view.text",
-          "content": "Listen to the audio recording."
+          "content": "Listen to the audio recording and answer the question."
         }
       },
       {
@@ -226,7 +225,7 @@ In this example, the description is highlighted with a blue border, and the butt
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/zKW7U6to4GQD6m)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/rHcaXdHQ4RD4b5)
 
 ## Add a response field {#add-text-area}
 
@@ -237,7 +236,7 @@ To let Tolokers leave comments about the task or their response, add a text fiel
 ```json
 {
   "type": "field.textarea",
-  "label": "Comments",
+  "label": "Leave a comment:",
   "placeholder": "Enter text",
   "data": {
     "type": "data.output",
@@ -248,13 +247,61 @@ To let Tolokers leave comments about the task or their response, add a text fiel
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/Trb1qnbA4GQDQd)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/xgwllwj04RD4iE)
 
 ## Add conditions {#dependencies}
 
 The [helper.if](../reference/helper.if.md) component displays an interface element after a specific response is selected. For example, it lets a Toloker select correct statements about an audio only if the audio is loaded.
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/NLHu498I4GQE3w)
+{% cut "Show code" %}
+
+```json
+{
+  "type": "helper.if",
+  "condition": {
+    "type": "condition.equals",
+    "data": {
+      "type": "data.output",
+      "path": "first-q"
+    },
+    "to": "yes"
+  },
+  "then": {
+    "type": "field.button-radio-group",
+    "label": "How clear is the speech in this recording?",
+    "data": {
+      "type": "data.output",
+      "path": "result"
+    },
+    "options": [
+      {
+        "label": "Clear",
+        "value": "clear"
+      },
+      {
+        "label": "Not clear",
+        "value": "not_clear"
+      },
+      {
+        "label": "No speech",
+        "value": "no_speech"
+      },
+      {
+        "label": "Audio isn't playing",
+        "value": "error"
+      }
+    ],
+    "validation": {
+      "type": "condition.required",
+      "hint": "Answer the question"
+    }
+  }
+}
+```
+
+{% endcut %}
+
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/_XbZPWwx4RD4mA)
 
 ## Audio and text comparison {#text}
 
