@@ -10,136 +10,137 @@ For this type of project, you can use the **Audio classification** preset. Note 
 
 - [view.image](../reference/view.image.md): Adds an audio player.
 
-  The [condition.played-fully](../reference/condition.played-fully.md) component inside the `validation` property checks for the end of playback.
+    The [condition.played-fully](../reference/condition.played-fully.md) component inside the `validation` property checks for the end of playback.
 
-  {% cut "Show code" %}
+    {% cut "Show code" %}
 
-  ```json
-  {
-    "type": "view.audio",
-    "url": {
-      "type": "data.input",
-      "path": "audio"
-    },
-    "validation": {
-      "type": "condition.played-fully",
-      "hint": "Listen to the audio recording to the end"
+    ```json
+    {
+      "type": "view.audio",
+      "url": {
+        "type": "data.input",
+        "path": "audio"
+      },
+      "validation": {
+        "type": "condition.played-fully",
+        "hint": "Listen to the audio recording to the end"
+      }
     }
-  }
-  ```
-  {% endcut %}
+    ```
+
+    {% endcut %}
 
 - [field.button-radio-group](../reference/field.button-radio-group.md): Adds buttons for selecting an answer option.
 
-  {% cut "Show code" %}
+    {% cut "Show code" %}
 
-  ```json
-  {
-    "type": "field.button-radio-group",
-    "label": "How clear is the speech in this recording?",
-    "data": {
-      "type": "data.output",
-      "path": "result"
-    },
-    "options": [
-      {
-        "label": "Clear",
-        "value": "clear"
+    ```json
+    {
+      "type": "field.button-radio-group",
+      "label": "How clear is the speech in this recording?",
+      "data": {
+        "type": "data.output",
+        "path": "result"
       },
-      {
-        "label": "Not clear",
-        "value": "not_clear"
-      },
-      {
-        "label": "No speech",
-        "value": "no_speech"
-      },
-      {
-        "label": "Audio isn't playing",
-        "value": "error"
+      "options": [
+        {
+          "label": "Clear",
+          "value": "clear"
+        },
+        {
+          "label": "Not clear",
+          "value": "not_clear"
+        },
+        {
+          "label": "No speech",
+          "value": "no_speech"
+        },
+        {
+          "label": "Audio isn't playing",
+          "value": "error"
+        }
+      ],
+      "validation": {
+        "type": "condition.required",
+        "hint": "Answer the question"
       }
-    ],
-    "validation": {
-      "type": "condition.required",
-      "hint": "Answer the question"
     }
-  }
-  ```
+    ```
 
-  {% endcut %}
+    {% endcut %}
 
 - [condition.required](../reference/condition.required.md): Checks if at least one option is selected.
 
-  {% cut "Show code" %}
+    {% cut "Show code" %}
 
-  ```json
-  {
-    "type": "condition.required",
-    "hint": "Answer the question"
-  }
-  ```
-
-  {% endcut %}
-
-- [plugin.toloka](../reference/plugin.toloka.md): Customizes the task layout.
-
-  {% cut "Show code" %}
-
-  ```json
-  {
-    "type": "plugin.toloka",
-    "layout": {
-      "kind": "scroll",
-      "taskWidth": 500
+    ```json
+    {
+      "type": "condition.required",
+      "hint": "Answer the question"
     }
-  }
-  ```
+    ```
 
-  {% endcut %}
+    {% endcut %}
+
+  - [plugin.toloka](../reference/plugin.toloka.md): Customizes the task layout.
+
+    {% cut "Show code" %}
+
+    ```json
+    {
+      "type": "plugin.toloka",
+      "layout": {
+        "kind": "scroll",
+        "taskWidth": 500
+      }
+    }
+    ```
+
+    {% endcut %}
 
 - [plugin.hotkeys](../reference/plugin.hotkeys.md): [Keyboard shortcuts](../best-practices/hotkeys.md).
 
-  {% cut "Show code" %}
+    {% cut "Show code" %}
 
-  ```json
-  {
-    "1": {
-      "type": "action.set",
-      "data": {
-        "type": "data.output",
-        "path": "result"
+    ```json
+    {
+      "1": {
+        "type": "action.set",
+        "data": {
+          "type": "data.output",
+          "path": "result"
+        },
+        "payload": "clear"
       },
-      "payload": "clear"
-    },
-    "2": {
-      "type": "action.set",
-      "data": {
-        "type": "data.output",
-        "path": "result"
+      "2": {
+        "type": "action.set",
+        "data": {
+          "type": "data.output",
+          "path": "result"
+        },
+        "payload": "not_clear"
       },
-      "payload": "not_clear"
-    },
-    "3": {
-      "type": "action.set",
-      "data": {
-        "type": "data.output",
-        "path": "result"
+      "3": {
+        "type": "action.set",
+        "data": {
+          "type": "data.output",
+          "path": "result"
+        },
+        "payload": "no_speech"
       },
-      "payload": "no_speech"
-    },
-    "4": {
-      "type": "action.set",
-      "data": {
-        "type": "data.output",
-        "path": "result"
+      "4": {
+        "type": "action.set",
+        "data": {
+          "type": "data.output",
+          "path": "result"
+        },
+        "payload": "error"
       },
-      "payload": "error"
-    },
-    "type": "plugin.hotkeys"
-  }
-  ```
+      "type": "plugin.hotkeys"
+    }
+    ```
 
-  {% endcut %}
+    {% endcut %}
 
 {% endcut %}
 
@@ -179,48 +180,48 @@ In this example, the description is highlighted with a blue border, and the butt
 {% cut "Show code" %}
 
 ```json
+{
+  "type": "view.alert",
+  "theme": "info",
+  "content": {
+    "type": "view.text",
+    "content": "Listen to the audio recording and answer the question."
+  }
+},
+{
+  "type": "view.alert",
+  "theme": "warning",
+  "content": {
+    "type": "field.button-radio-group",
+    "label": "How clear is the speech in this recording?",
+    "data": {
+      "type": "data.output",
+      "path": "result"
+    },
+    "options": [
       {
-        "type": "view.alert",
-        "theme": "info",
-        "content": {
-          "type": "view.text",
-          "content": "Listen to the audio recording and answer the question."
-        }
+        "label": "Clear",
+        "value": "clear"
       },
       {
-        "type": "view.alert",
-        "theme": "warning",
-        "content": {
-        "type": "field.button-radio-group",
-        "label": "How clear is the speech in this recording?",
-        "data": {
-          "type": "data.output",
-          "path": "result"
-        },
-        "options": [
-          {
-            "label": "Clear",
-            "value": "clear"
-          },
-          {
-            "label": "Not clear",
-            "value": "not_clear"
-          },
-          {
-            "label": "No speech",
-            "value": "no_speech"
-          },
-          {
-            "label": "Audio isn't playing",
-            "value": "error"
-          }
-        ],
-        "validation": {
-          "type": "condition.required",
-          "hint": "Answer the question"
-        }
+        "label": "Not clear",
+        "value": "not_clear"
+      },
+      {
+        "label": "No speech",
+        "value": "no_speech"
+      },
+      {
+        "label": "Audio isn't playing",
+        "value": "error"
       }
-      }
+    ],
+    "validation": {
+      "type": "condition.required",
+      "hint": "Answer the question"
+    }
+  }
+}
   ```
 
 {% endcut %}
@@ -305,8 +306,8 @@ The [helper.if](../reference/helper.if.md) component displays an interface eleme
 
 ## Audio and text comparison {#text}
 
-  You can add text from input data to audio classification tasks. For example, this is useful if an audio recording was recognized automatically, and now you need Tolokers to correct errors in the text. To do this, use the [view.text](../reference/view.text.md) component and refer to the number of the element in the input data array in the `content` property.
+You can add text from input data to audio classification tasks. For example, this is useful if an audio recording was recognized automatically, and now you need Tolokers to correct errors in the text. To do this, use the [view.text](../reference/view.text.md) component and refer to the number of the element in the input data array in the `content` property.
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/OwTrclyz4GQEri)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/OwTrclyz4GQEri)
 
 {% include [contact-support](../_includes/contact-support.md) %}
