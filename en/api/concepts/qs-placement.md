@@ -1,7 +1,5 @@
 # Posting tasks
 
-{% include [announce](../_includes/announce.md) %}
-
 ## Before you start {#start}
 
 Choose a platform to get an API key:

@@ -1,7 +1,5 @@
 # Ways to upload tasks
 
-{% include [announce](../_includes/announce.md) %}
-
 ## Uploading tasks using the API {#download-tasks-api}
 
 Toloka provides two ways of uploading tasks using the API:
