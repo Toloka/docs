@@ -52,6 +52,8 @@ items:
             href: ../template-builder/templates/online-store-products.md  
       - name: Audio
         items:
+          - name: Audio classification
+            href: ../template-builder/templates/audio-classification.md
           - name: Audio transcription
             href: ../template-builder/templates/audio-transcript.md
           - name: Audio comparison (Side-by-side)

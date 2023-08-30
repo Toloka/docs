@@ -44,6 +44,8 @@ From the Toloka platform interface, select the **Projects** tab, click **Create 
 
 ## Audio
 
+- [Audio classification](audio-classification.md)
+
 - [Audio transcription](audio-transcript.md)
 
 - [Audio comparison (Side-by-side)](sbs-audio.md)
