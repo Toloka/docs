@@ -12,7 +12,7 @@
 ```json
 {
   "type": "view.audio",
-  "url": "http://example.com/audio.mp3"
+  "url": "https://example.com/audio.mp3"
 }
 ```
 
@@ -32,7 +32,7 @@
   ```json
   {
     "type": "view.audio",
-    "url": "http://example.com/audio.mp3",
+    "url": "https://example.com/audio.mp3",
     "validation": {
       "type": "condition.played"
     }
@@ -47,7 +47,7 @@
   ```json
   {
     "type": "view.audio",
-    "url": "http://example.com/audio.mp3",
+    "url": "https://example.com/audio.mp3",
     "validation": {
       "type": "condition.played-fully"
     }

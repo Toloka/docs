@@ -168,7 +168,7 @@ Before you begin:
             INPUT:name	INPUT:site
             Restauracja Basniowa	https://basniowa.rybnik.pl/
             Ristorante Pizzeria Zia Caterina	https://www.ristorantepizzeriaziacaterina.it/
-            De Vijf Sinnen	http://www.devijfsinnen.nl/
+            De Vijf Sinnen	https://www.devijfsinnen.nl/
             ```
 
         1. Open the downloaded file, and replace the sample data with your information.

@@ -18,7 +18,7 @@ You can link:
 * CSS libraries
 * JavaScript libraries
 * Toloka assets — libraries that can be linked using the `$TOLOKA_ASSETS` path:
-    * `$TOLOKA_ASSETS/js/toloka-handlebars-templates.js` — [Handlebars template engine](http://handlebarsjs.com/).
+    * `$TOLOKA_ASSETS/js/toloka-handlebars-templates.js` — [Handlebars template engine](https://handlebarsjs.com/).
     * `$TOLOKA_ASSETS/js/image-annotation.js` — Image labeling interface. Note, that this library requires Handlebars and must be linked after it.
 
         For more information, see [Image with area selection](https://toloka.ai/docs/guide/t-components/image-annotation).

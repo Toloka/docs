@@ -11,7 +11,7 @@ To insert an audio file into the task interface, add the [view.audio](../referen
 ```json
 {
   "type": "view.audio",
-  "url": "http://example.com/audio.mp3"
+  "url": "https://example.com/audio.mp3"
 }
 ```
 
@@ -32,7 +32,7 @@ To loop audio playback automatically, put `true` in the `loop` property.
   ```json
   {
     "type": "view.audio",
-    "url": "http://example.com/audio.mp3",
+    "url": "https://example.com/audio.mp3",
     "validation": {
       "type": "condition.played"
     }
@@ -48,7 +48,7 @@ To loop audio playback automatically, put `true` in the `loop` property.
   ```json
   {
     "type": "view.audio",
-    "url": "http://example.com/audio.mp3",
+    "url": "https://example.com/audio.mp3",
     "validation": {
       "type": "condition.played-fully"
     }

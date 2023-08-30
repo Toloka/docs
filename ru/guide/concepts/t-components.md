@@ -10,7 +10,7 @@
 
 Для создания [интерфейса задания](../../glossary.md#task-interface) в [блоке **HTML**](spec.md) на странице [проекта](../../glossary.md#project) можно использовать:
 
-- [Выражения и хелперы Handlebars](t-components/handlebars.md) (см. [описание на сайте шаблонизатора](http://handlebarsjs.com/)).
+- [Выражения и хелперы Handlebars](t-components/handlebars.md) (см. [описание на сайте шаблонизатора](https://handlebarsjs.com/)).
 
 - Дополнительные хелперы:
 

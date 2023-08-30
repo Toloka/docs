@@ -25,9 +25,9 @@
 1. Нумерованный список
 2. Второй пункт списка
 
-[Текст со ссылкой](http://example.com/)
+[Текст со ссылкой](https://example.com/)
 
-![Изображение](http://example.com/image.png)
+![Изображение](https://example.com/image.png)
 ```
 
 Документацию по основному синтаксису Markdown вы можете найти в [статье](https://guides.github.com/features/mastering-markdown/) (на английском языке).

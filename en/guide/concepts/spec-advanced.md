@@ -89,7 +89,7 @@ Example:
 
 ```json
 "input_values": {
-    "image": "http://images.com/1.png"
+    "image": "https://images.com/1.png"
 }
 ```
 ||
