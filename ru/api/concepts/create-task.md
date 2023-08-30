@@ -349,7 +349,7 @@
         "id": "f432cac2-7184-47a3-8220-12ce362cb208",
         "pool_id": "21",
         "input_values": {
-          "image": "http://images.com/1.png"
+          "image": "https://images.com/1.png"
         },
         "overlap": 3,
         "created": "2016-09-29T18:04:00"

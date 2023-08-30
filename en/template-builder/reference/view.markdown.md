@@ -23,9 +23,9 @@ Examples of Markdown syntax:
 1. Numbered list
 2. The second item in the list
 
-[Text with link] (http://example.com/)
+[Text with link] (https://example.com/)
 
-![Image] (http://example.com/image.png)
+![Image] (https://example.com/image.png)
 ```
 
 You can find documentation for the basic Markdown syntax in this [article](https://guides.github.com/features/mastering-markdown/).

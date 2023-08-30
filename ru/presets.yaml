@@ -9,7 +9,7 @@ default:
   crowd-kit: https://toloka.ai/en/docs/crowd-kit/
   datasets: https://toloka.ai/ru/datasets
   dollar-rate: https://news.yandex.ru/quotes/1.html
-  handlebarsjs-com: http://handlebarsjs.com/
+  handlebarsjs-com: https://handlebarsjs.com/
   invoices: https://balance.yandex.com/persons.xml?LANG=en
   iso-lang: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
   iso-search: https://www.iso.org/obp/ui/#search/code/

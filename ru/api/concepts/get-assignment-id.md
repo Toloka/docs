@@ -48,7 +48,7 @@
   "tasks": [{
     "id": "6946cefa-32af-4f62-b530-8d2c71fa2966",
     "input_values": {
-      "image": "http://images.com/1.png"
+      "image": "https://images.com/1.png"
     }
   }],
   "solutions": [{
