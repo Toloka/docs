@@ -14,145 +14,157 @@ Take a look at the example: the labeling interface includes text data, a text in
 
 - [view.link](../reference/view.link.md): Adds a link to the site.
 
-  {% cut "Show code" %}
-  ```json
-  {
-    "type": "view.link",
-    "url": {
-      "type": "data.input",
-      "path": "url"
-    },
-    "content": {
-      "type": "data.input",
-      "path": "name"
+    {% cut "Show code" %}
+
+    ```json
+    {
+      "type": "view.link",
+      "url": {
+        "type": "data.input",
+        "path": "url"
+      },
+      "content": {
+        "type": "data.input",
+        "path": "name"
+      }
     }
-  }
-  ```
-  {% endcut %}
+    ```
+
+    {% endcut %}
 
 - [view.action-button](../reference/view.action-button.md): Adds a button that calls an action.
 
-  In this example, clicking the button calls [action.open-link](../reference/action.open-link.md) component which sends the Toloker to the site where he can search for the product sited in the link.
+    In this example, clicking the button calls the [action.open-link](../reference/action.open-link.md) component which sends the Toloker to the site where they can search for the product sited in the link.
 
-  {% cut "Show code" %}
-  ```json
-  {
-    "type": "view.action-button",
-    "validation": {
-      "type": "condition.link-opened",
-      "url": {
-        "type": "data.input",
-        "path": "shop"
+    {% cut "Show code" %}
+
+    ```json
+    {
+      "type": "view.action-button",
+      "validation": {
+        "type": "condition.link-opened",
+        "url": {
+          "type": "data.input",
+          "path": "shop"
+        },
+        "hint": "Follow the link"
       },
-      "hint": "Follow the link"
-    },
-    "action": {
-      "type": "action.open-link",
-      "payload": {
-        "type": "data.input",
-        "path": "shop"
-      }
-    },
-    "label": "Go to the site"
-  }
-  ```
-  {% endcut %}
-
-- [field.text](../reference/field.text.md): Adds a field for entering a short text. 
-
-  A combination of [helper.if](../reference/helper.if.md) and [condition.equals](../reference/condition.equals.md) displays the response field when the checkbox is not selected.
-
-  {% cut "Show code" %}
-  ```json
-  {
-    "type": "helper.if",
-    "condition": {
-      "type": "condition.equals",
-      "data": {
-        "type": "data.output",
-        "path": "not_available"
-      },
-      "to": false
-    },
-    "then": {
-      "type": "view.list",
-      "items": [
-        {
-          "type": "field.text",
-          "label": "Product page",
-          "data": {
-            "type": "data.output",
-            "path": "link"
-          },
-          "placeholder": "https://",
-          "validation": {
-            "type": "condition.required"
-          }
+      "action": {
+        "type": "action.open-link",
+        "payload": {
+          "type": "data.input",
+          "path": "shop"
         }
-      ]
+      },
+      "label": "Go to the site"
     }
-  }
-  ```
-  {% endcut %}
+    ```
+
+    {% endcut %}
+
+- [field.text](../reference/field.text.md): Adds a field for entering a short text.
+
+    A combination of [helper.if](../reference/helper.if.md) and [condition.equals](../reference/condition.equals.md) displays the response field when the checkbox is not selected.
+
+    {% cut "Show code" %}
+
+    ```json
+    {
+      "type": "helper.if",
+      "condition": {
+        "type": "condition.equals",
+        "data": {
+          "type": "data.output",
+          "path": "not_available"
+        },
+        "to": false
+      },
+      "then": {
+        "type": "view.list",
+        "items": [
+          {
+            "type": "field.text",
+            "label": "Product page",
+            "data": {
+              "type": "data.output",
+              "path": "link"
+            },
+            "placeholder": "https://",
+            "validation": {
+              "type": "condition.required"
+            }
+          }
+        ]
+      }
+    }
+    ```
+
+    {% endcut %}
 
 - [field.checkbox](../reference/field.checkbox.md): Adds a checkbox.
 
-  The Tolokers select **The store doesn't sell the product** checkbox if they cannot find the product in the online store.
+    The Tolokers select **The store doesn't sell the product** checkbox if they cannot find the product in the online store.
 
-  {% cut "Show code" %}
-  ```json
-  {
-    "type": "field.checkbox",
-    "preserveFalse": true,
-    "label": "The store doesn't sell the product",
-    "data": {
-      "type": "data.output",
-      "path": "not_available"
-    }
-  }
-  ```
-  {% endcut %}
+    {% cut "Show code" %}
 
-- [plugin.toloka](../reference/plugin.toloka.md): Customizes the task layout.
-
-  {% cut "Show code" %}
-  ```json
-  {
-    "type": "plugin.toloka",
-    "layout": {
-      "kind": "scroll",
-      "taskWidth": 500
-    }
-  }
-  ```
-  {% endcut %}
-
-- [plugin.hotkeys](../reference/plugin.hotkeys.md): Customizes the [keyboard shortcuts](../best-practices/hotkeys.md).
-
-  {% cut "Show code" %}
-  ```json
-  {
-    "type": "plugin.hotkeys",
-    "w": {
-      "type": "action.open-link",
-      "payload": {
-        "type": "data.input",
-        "path": "shop"
-      }
-    }
-  },
-  {
-    "type": "plugin.hotkeys",
-    "q": {
-      "type": "action.toggle",
+    ```json
+    {
+      "type": "field.checkbox",
+      "preserveFalse": true,
+      "label": "The store doesn't sell the product",
       "data": {
         "type": "data.output",
         "path": "not_available"
       }
     }
-  }
-  ```
-  {% endcut %}
+    ```
+
+    {% endcut %}
+
+- [plugin.toloka](../reference/plugin.toloka.md): Customizes the task layout.
+
+    {% cut "Show code" %}
+
+    ```json
+    {
+      "type": "plugin.toloka",
+      "layout": {
+        "kind": "scroll",
+        "taskWidth": 500
+      }
+    }
+    ```
+
+    {% endcut %}
+
+- [plugin.hotkeys](../reference/plugin.hotkeys.md): Customizes the [keyboard shortcuts](../best-practices/hotkeys.md).
+
+    {% cut "Show code" %}
+
+    ```json
+    {
+      "type": "plugin.hotkeys",
+      "w": {
+        "type": "action.open-link",
+        "payload": {
+          "type": "data.input",
+          "path": "shop"
+        }
+      }
+    },
+    {
+      "type": "plugin.hotkeys",
+      "q": {
+        "type": "action.toggle",
+        "data": {
+          "type": "data.output",
+          "path": "not_available"
+        }
+      }
+    }
+    ```
+
+    {% endcut %}
 
 {% endcut %}
 
@@ -168,6 +180,7 @@ To add a detailed description to the task, use the [view.text](../reference/view
   "content": "Find a product in an online store and enter the link to the page with this product."
 }
 ```
+
 {% endcut %}
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/HOtz4PAW4K5HwT)
@@ -182,10 +195,10 @@ If you need to display formatted text, use the [view.markdown](../reference/view
   "content": "**Find a product in an online store and enter the link to the page with this product.**"
 }
 ```
+
 {% endcut %}
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/3V4Hyqjg4KHqaN)
-
 
 ## Add a layout {#add-layout}
 
@@ -203,6 +216,7 @@ To enhance Toloker's experience, highlight different types of data with colors 
   }
 }
 ```
+
 {% endcut %}
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/36mkWpAN4K5JhT)
@@ -223,6 +237,7 @@ You can add an image that matches the text data to your task using [view.image](
   }
 }
 ```
+
 {% endcut %}
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/4IMgRws84K4uTX)
@@ -245,6 +260,7 @@ To ask Tolokers to leave their comments on the product, add a text field using [
   }
 }
 ```
+
 {% endcut %}
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/LsjI38xe4KovuZ)
