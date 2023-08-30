@@ -1,7 +1,5 @@
 # Receiving responses
 
-{% include [announce](../_includes/announce.md) %}
-
 This example was created in the sandbox. Therefore, you need to complete tasks as a trusted Toloker to process the results:
 
 1. Register as a Toloker in the [Toloka sandbox](https://platform.sandbox.toloka.ai/).
