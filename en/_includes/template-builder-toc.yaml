@@ -48,6 +48,8 @@ items:
             href: ../template-builder/templates/named-entity-recognition.md  
           - name: Product category classification
             href: ../template-builder/templates/product-category-classification.md  
+          - name: Searching for products in an online store
+            href: ../template-builder/templates/online-store-products.md  
       - name: Audio
         items:
           - name: Audio transcription

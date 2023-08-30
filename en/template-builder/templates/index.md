@@ -40,6 +40,8 @@ From the Toloka platform interface, select the **Projects** tab, click **Create 
 
 - [Product category classification](product-category-classification.md)
 
+- [Searching for products in an online store](online-store-products.md)
+
 ## Audio
 
 - [Audio transcription](audio-transcript.md)
