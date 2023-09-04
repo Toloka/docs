@@ -35,6 +35,8 @@ This dataset will serve as a reference to measure the quality of the labels a co
 
 {% endcut %}
 
+## Upload and label {#upload-label}
+
 To upload and label your dataset file:
 
 1. Click **![Upload dataset](_images/upload-dataset.svg) Upload dataset**.
@@ -71,4 +73,5 @@ To run a resulting model without labels, [add a prompt](prompt.md) and click **!
 
 ## Next steps {#next-steps}
 
-- [Describe your task](task-description.md)
+- [Add classes and their descriptions](classes.md)
+- [Label data manually](label.md)

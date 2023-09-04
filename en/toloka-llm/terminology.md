@@ -8,7 +8,7 @@ A set of text to classify with optional labels.
 
 #### Deployment {#deployment}
 
-Making a variant available for use either through API or file-upload UI.
+Making a variant available for use either through API or text-upload UI.
 
 #### Project {#project}
 

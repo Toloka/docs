@@ -16,7 +16,7 @@ Currently, {{ llm-name }} allows you to complete text classification tasks using
 
 - Quality evaluation: With labeled datasets enabling quality measurement you can experiment with LLM in an efficient non-guessing way.
 
-- Easy deploy: You can use API to get labeled results or do bulk-labeling with file upload.
+- Easy deploy: You can use API to get labeled results or try and get results right from the platform interface.
 
 [![Start using {{ llm-name }}](_images/start-button.svg)]({{ llm-url }})
 

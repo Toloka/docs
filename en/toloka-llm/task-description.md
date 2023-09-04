@@ -4,7 +4,7 @@ After you upload a dataset and match the fields, describe the task you want to c
 
 Describing your task is an optional step that helps the model understand the context of the task you have. When you provide this information, it improves the quality of the labels.
 
-We recommend that you think of the task description as if you want to continue the phrase "Here is the business context for classification problem we need to solve:".
+We recommend that you think of the task description as if you want to continue the phrase "Here is the business context for classification problem we need to solve".
 
 {% note tip "Example of a task description" %}
 
@@ -22,8 +22,8 @@ The model now has the context which helps understand what exactly you expect it 
 
 {% endnote %}
 
-Enter your task description into the **Settings → Task** field. The better you describe the task, the more context the model will get and the better the result will be.
+Click ![Edit task description](_images/edit-blue.svg) next to the **Settings → Task** field and enter your task description. The better you describe the task, the more context the model will get and the better the result will be.
 
 ## Next steps {#next-steps}
 
-- [Add classes and their descriptions](classes.md)
+- [Generate and tailor the prompt](prompt.md)

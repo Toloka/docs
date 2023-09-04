@@ -58,7 +58,7 @@ default:
   libre-office: https://wiki.documentfoundation.org/Faq/Calc/012
   link-for-download: https://cloud.yandex.com/docs/storage/operations/objects/link-for-download
   llm-name: Toloka LLM
-  llm-url: https://tool.website.com
+  llm-url: https://toloka.ai/llm
   messages: https://platform.toloka.ai/requester/messages
   mobile-agreement: https://toloka.ai/tolokers/legal/toloka_mobile_agreement
   mobile-mozilla: https://developer.mozilla.org/en-US/docs/Tools/Responsive_Design_Mode

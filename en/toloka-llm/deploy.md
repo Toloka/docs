@@ -1,10 +1,10 @@
-# Deploying project
+# Creating endpoint
 
 You can deploy the project right after you create it and generate variants.
 
 {% note info %}
 
-We provide you with a free $5 credit, so you can try the service and play with it. Once you use it, you either need to provide us with an [OpenAI API key](funds.md#openai-key) or [top up your balance](funds.md#bank-card).
+We provide you with a free $5 credit, so you can try the service and play with it. This will be enough to run tests, but to deploy variants you need to provide your [OpenAI API key](api-key.md).
 
 {% endnote %}
 
@@ -12,24 +12,42 @@ When you have a variant with the accuracy to price ratio that fits your purpose,
 
 For that, click **![Deploy](_images/deploy.svg) Deploy** on the [variant card](variants.md).
 
-- If you have enough funds on your account, you will be redirected to the variant page where you can test the model on [real data](#real-data) and [download the results](results.md).
+- If haven't added OpenAI API key, you will [have to do this](api-key.md). After that, you will be redirected to the **Endpoint** tab where you can test the model on [real data](#real-data).
 
-- If haven't added OpenAI API key or don't have a bank card attached to your account, you will [have to do this](funds.md).
+The currently deployed variant will be available at the **Endpoint** tab.
 
-The currently deployed variant will be available at the **Deployment** page.
+## Using labeling API {#real-data}
 
-## Uploading real data to label {#real-data}
+Now you can upload real data and label it. To do that, use the API code samples (cURL, Python, or JSON) and include them into your application or send cURL requests.
 
-Now you can upload real data and label it.
+Click ![Copy text](_images/copy-blue.svg) to copy **Link for this project** and **Toloka API key**. You will need the data to access your endpoint via API.
 
-1. Click **![Upload dataset](_images/upload-dataset.svg) Upload dataset**.
+Use the link to the project as the request path and the API key as a part of the `Authorization: Bearer` request header. Include the input data into the request body payload.
 
-1. Choose the dataset with the data you want to label.
+**cURL API request sample**
 
-1. When the dataset is uploaded, click **![Start labeling](_images/start-labeling.svg) Start labeling**
+```bash
+curl -X POST 'https://link-to-your-endpoint/' \
+     -d '{"inputs":"The text for the input. Replace it with your own data."}' \
+     -H 'Authorization: Bearer PlaceYourRealApiKey_Here'
+```
 
-The labeling will take some time. When it's finished, you can [view the labeling statistics](results.md#statistics) and [download the results](results.md#get-results).
+You can [view the labeling statistics](#statistics) and costs.
 
-## Next steps {#next-steps}
+Alternatively, you can enter the text example into the **Try out variant** field and click **Run example text**. The input data will be displayed in the **Input text** area and the resulting output will appear in the **Output** area.
 
-- [Get results](results.md)
+## Viewing labeling statistics {#statistics}
+
+The labeling costs of the deployed variant are displayed in the **Approximate total spent** area and the number of labeled items in the **Labeled items** area. The costs calculations are approximate, you can view the exact data in the OpenAI usage dashboard.
+
+## Switching among variants {#switch-variants}
+
+To switch among the deployed variants:
+
+1. Stop the current endpoint using the **![Pause](_images/pause.svg) Pause endpoint** button in the **Endpoint for variant** area.
+
+1. Choose another variant from the drop-down list. If you have only one variant, the drop-down list will be disabled.
+
+1. Click **![Activate](_images/reload.svg) Activate endpoint** to replace the current variant with the chosen one.
+
+The link to the endpoint will be no longer active, you will need to replace it in your API requests. The endpoint history of labeling and statistics will also be lost.
