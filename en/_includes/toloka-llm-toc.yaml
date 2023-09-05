@@ -1,0 +1,31 @@
+items:
+  - name: Introduction
+    href: ../toloka-llm/index.md
+  - name: Registering and signing in
+    href: ../toloka-llm/register.md
+  - name: "{{ llm-name }} workflow overview"
+    href: ../toloka-llm/project.md
+  - name: Working with datasets
+    items:
+      - name: Uploading dataset
+        href: ../toloka-llm/dataset.md
+      - name: Labeling data manually
+        href: ../toloka-llm/label.md
+  - name: Problem definition
+    items:
+      - name: Using classes
+        href: ../toloka-llm/classes.md
+      - name: Describing task
+        href: ../toloka-llm/task-description.md
+  - name: Iterating on quality
+    items:
+      - name: Generating and editing prompt
+        href: ../toloka-llm/prompt.md
+      - name: Comparing variants
+        href: ../toloka-llm/variants.md
+  - name: Creating endpoint
+    href: ../toloka-llm/deploy.md
+  - name: Adding OpenAI API key
+    href: ../toloka-llm/api-key.md
+  - name: Terminology
+    href: ../toloka-llm/terminology.md
