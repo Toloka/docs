@@ -509,7 +509,7 @@ paths:
 
             To learn how to configure sorting, see [Sorting responses](#overview--sorting-responses).
           in: query
-          example: id,-created
+          example: submitted,id
           schema:
             type: string
         - name: limit
@@ -821,7 +821,7 @@ paths:
 
             To learn how to configure sorting, see [Sorting responses](#overview--sorting-responses).
           in: query
-          example: id,-created
+          example: created,id
           schema:
             type: string
         - name: limit
@@ -2447,7 +2447,7 @@ paths:
 
             To learn how to configure sorting, see [Sorting responses](#overview--sorting-responses).
           in: query
-          example: id,-created
+          example: created,id
           schema:
             type: string
         - name: overlap
@@ -2791,7 +2791,7 @@ paths:
 
             To learn how to configure sorting, see [Sorting responses](#overview--sorting-responses).
           in: query
-          example: id,-created
+          example: created,id
           schema:
             type: string
         - name: overlap
@@ -6518,7 +6518,7 @@ components:
           minimum: 0
           type: number
           description: |
-            The payment per task suite in U.S. dollars. For cents, use the dot (`"."`) as the separator. The minimum payment is **$0.01**.
+            The payment per task suite in U.S. dollars. For cents, use the dot (`"."`) as the separator. The minimum payment is **$0.005**.
 
             Only training and control tasks can be uploaded to zero-price pools.
         dynamic_pricing_config:
@@ -6791,7 +6791,7 @@ components:
           minimum: 0
           type: number
           description: |
-            The payment per task suite in U.S. dollars. For cents, use the dot (`"."`) as the separator. The minimum payment is **$0.01**.
+            The payment per task suite in U.S. dollars. For cents, use the dot (`"."`) as the separator. The minimum payment is **$0.005**.
 
             Only training and control tasks can be uploaded to zero-price pools.
         dynamic_pricing_config:
