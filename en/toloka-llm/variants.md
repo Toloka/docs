@@ -20,9 +20,9 @@ The following actions are available for your variants:
 
 - Sort the variants by accuracy or price using the **Sort by** option.
 
-- Add a variant to favorite clicking ![Favorite](_images/favorite.svg). It will turn to ![Favorited](_images/favorite-orange.svg) and add the variant to the comparison in the table below. To remove the variant from the comparison, click the ![Favorited](_images/favorite-orange.svg) once again.
+- Add a variant to favorite clicking ![Favorite](_images/favorite.svg). It will turn to ![Favorited](_images/favorite-orange.svg) and add the variant to the comparison in the table below. To remove the variant from the comparison, click ![Favorited](_images/favorite-orange.svg) once again.
 
-- Delete a variant clicking the ![Menu](_images/kebab.svg) icon and selecting ![Delete variant](_images/delete.svg).
+- Delete a variant clicking ![Delete variant](_images/delete.svg).
 
     {% note info %}
 
