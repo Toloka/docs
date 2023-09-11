@@ -1,8 +1,8 @@
-# Adding OpenAI API key or bank card
+# Adding OpenAI API key
 
 We provide you with a free $5 credit, so you can try the service and play with it. This will be enough to run tests, but to deploy variants you need to provide your OpenAI API key.
 
-## OpenAI API key {#openai-key}
+## Adding API key {#openai-key}
 
 If you already have an OpenAI account, you can enter the OpenAI API key and continue labeling with your OpenAI account.
 
@@ -27,3 +27,13 @@ To do that,
 1. Click **Add my key**.
 
 You will be redirected to the {{ llm-name }} **Endpoint** page where you can [upload the dataset](deploy.md#real-data) with real data and label it.
+
+## Removing API key {#remove-key}
+
+To remove the API key after you add it:
+
+1. Hover the mouse over the profile name in the upper right corner.
+
+1. Click **![OpenAI API key](_images/key.svg) OpenAI API key**.
+
+1. Click ![Delete key](_images/delete.svg) next to the key name.
