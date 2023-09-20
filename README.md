@@ -34,4 +34,4 @@ Before creating a pull request, build the docs locally for checking your changes
 
 ## Licenses
 
-© YANDEX LLC, 2017-2022. Licensed under the Apache License, Version 2.0. See LICENSE file for more details.
+© Toloka AI AG. Licensed under the Apache License, Version 2.0. See LICENSE file for more details.
