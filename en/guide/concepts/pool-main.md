@@ -109,9 +109,9 @@ By default, the option is enabled.| **Prepare and upload data**||
 
 ## How Tolokers see pools {#pool-appear}
 
-Tolokers can't see pools inside the project and select specific tasks (except for field tasks, where they can select points on the map). They also can't see pool settings, the number of tasks, or completion progress.
+Tolokers can't see pools inside the project. They select specific projects (except for field tasks, where they can select points on the map). They also can't see pool settings, the number of tasks, or completion progress.
 
-If at least one pool from the project is available to the Toloker, then this project is displayed on the main page as a card with the name, description, and price for the task. After selecting a project, the Toloker is issued a task from the pool. When they complete it, another one is issued, and so on.
+If at least one pool from the project is available to the Toloker, then this project is displayed on the main page as a card with the name, description, and price for the task set. After selecting a project, the Toloker is issued one or several tasks from the pool. When they complete it, another one is issued, and so on.
 
 A single project card is displayed if the pools in it differ only by name, quality control, or [filters](../../glossary.md#filters). In the latter case, the project card only includes tasks from the pools that the Toloker has access to.
 

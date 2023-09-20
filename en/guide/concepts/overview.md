@@ -78,7 +78,7 @@ To learn about task suites and how to use them, see [Task suite](distribute-task
 
 ## What does it look like for Tolokers? {#appearance}
 
-Tolokers have their own version of the platform with a browser interface and a mobile app. They see a list of tasks they can choose from. Your tasks become available to Tolokers when you launch a pool.
+Tolokers have their own version of the platform with a browser interface and a mobile app. They see a list of projects they can choose from. Your projects become available to Tolokers when you launch a pool.
 
 Note that Tolokers don't know the difference between projects, pools, tasks, or task suites — and they don't need to. They usually refer to all of it as “tasks”.
 
