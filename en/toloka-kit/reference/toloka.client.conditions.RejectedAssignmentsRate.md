@@ -1,5 +1,5 @@
 # RejectedAssignmentsRate
-`toloka.client.conditions.RejectedAssignmentsRate` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/conditions.py#L440)
+`toloka.client.conditions.RejectedAssignmentsRate` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/conditions.py#L440)
 
 ```python
 RejectedAssignmentsRate(

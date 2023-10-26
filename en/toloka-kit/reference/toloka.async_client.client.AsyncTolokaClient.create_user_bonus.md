@@ -1,5 +1,5 @@
 # create_user_bonus
-`toloka.async_client.client.AsyncTolokaClient.create_user_bonus` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.create_user_bonus` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/__init__.py#L0)
 
 Issues a bonus payment to a Toloker.
 
@@ -12,7 +12,7 @@ You can send a maximum of 10,000 requests of this kind per day.
 | :----------| :----| :-----------|
 `user_bonus`|**[UserBonus](toloka.client.user_bonus.UserBonus.md)**|<p>The bonus.</p>
 `operation_id`|**Optional\[UUID\]**|<p>The UUID of the operation that conforms to the [RFC4122 standard](https://tools.ietf.org/html/rfc4122). The UUID is used if `async_mode` is `True`.</p> <p>Specify UUID to avoid accidental errors like Toloka operation duplication caused by network problems. If you send several requests with the same `operation_id`, Toloka performs the operation only once.</p>
-`async_mode`|**Optional\[bool\]**|<p>Request processing mode:</p> <ul> <li>`True` — Asynchronous operation is started internally.</li> <li>`False` — The request is processed synchronously.</li> </ul> <p>Default value: `True`.</p>
+`async_mode`|**Optional\[bool\]**|<p>Request processing mode:</p> <ul> <li>`True` — Asynchronous operation is started internally.</li> <li>`False` — The request is processed synchronously.</li> </ul> <p></p><p>Default value: `True`.</p>
 
 * **Returns:**
 

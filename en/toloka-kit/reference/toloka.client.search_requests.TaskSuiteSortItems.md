@@ -11,11 +11,11 @@ Keys for sorting task suites in search results.
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`items`|**Optional\[List\[[SortItem](toloka.client.search_requests.TaskSuiteSortItems.SortItem.md)\]\]**|<p>A list of sorting keys. Supported values:</p> <ul> <li>`'id'` — The ID of a task suite.</li> <li>`'created'` — The creation date of a task suite.</li> </ul>
+`items`|**Optional\[List\[[SortItem](toloka.client.search_requests.TaskSuiteSortItems.SortItem.md)\]\]**|<p>A list of sorting keys. Supported values:</p> <ul> <li>`&#x27;id&#x27;` — The ID of a task suite.</li> <li>`&#x27;created&#x27;` — The creation date of a task suite.</li> </ul>
 
 **Examples:**
 
-The example shows how to find task suites sorted by the creation date in the descending order. Task suites with equal creation dates are sorted by IDs in the descending order.
+The example shows how to find task suites sorted by the creation date in descending order. Task suites with equal creation dates are sorted by IDs in descending order.
 
 ```python
 sort = toloka.client.search_requests.TaskSuiteSortItems(['-created', '-id'])

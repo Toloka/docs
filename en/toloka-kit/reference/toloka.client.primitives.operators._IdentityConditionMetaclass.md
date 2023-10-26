@@ -1,5 +1,5 @@
 # _IdentityConditionMetaclass
-`toloka.client.primitives.operators._IdentityConditionMetaclass` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/primitives/operators.py#L119)
+`toloka.client.primitives.operators._IdentityConditionMetaclass` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/primitives/operators.py#L119)
 
 ## Methods Summary
 

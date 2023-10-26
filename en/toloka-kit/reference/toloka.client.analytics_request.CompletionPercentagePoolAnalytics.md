@@ -1,5 +1,5 @@
 # CompletionPercentagePoolAnalytics
-`toloka.client.analytics_request.CompletionPercentagePoolAnalytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/analytics_request.py#L156)
+`toloka.client.analytics_request.CompletionPercentagePoolAnalytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/analytics_request.py#L156)
 
 ```python
 CompletionPercentagePoolAnalytics(self, *, subject_id: str)

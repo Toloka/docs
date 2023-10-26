@@ -1,5 +1,5 @@
 # SidebarLayoutV1
-`toloka.client.project.template_builder.layouts.SidebarLayoutV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/project/template_builder/layouts.py#L145)
+`toloka.client.project.template_builder.layouts.SidebarLayoutV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/project/template_builder/layouts.py#L145)
 
 ```python
 SidebarLayoutV1(
@@ -19,9 +19,8 @@ A layout with a main content block and a panel with controls.
 
 
 The component supports modes:
-
-* Widescreen — The control panel is placed to the right of the main block.
-* Compact — The controls are placed under the main block and stretch to the entire width.
+    * Widescreen — The control panel is placed to the right of the main block.
+    * Compact — The controls are placed under the main block and stretch to the entire width.
 
 For more information, see [layout.sidebar](https://toloka.ai/docs/template-builder/reference/layout.sidebar).
 

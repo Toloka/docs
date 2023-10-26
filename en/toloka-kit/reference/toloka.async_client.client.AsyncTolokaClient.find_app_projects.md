@@ -1,5 +1,5 @@
 # find_app_projects
-`toloka.async_client.client.AsyncTolokaClient.find_app_projects` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.find_app_projects` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/__init__.py#L0)
 
 Finds App projects that match certain criteria.
 
@@ -16,7 +16,7 @@ To iterate over all matching projects you may use the [get_app_projects](toloka.
 `parent_app_project_id`|**Optional\[str\]**|<p>Projects cloned from the project with the specified ID. Projects can be cloned in the web version of Toloka.</p>
 `status`|**Optional\[[AppProject.Status](toloka.client.app.AppProject.Status.md)\]**|<p>App project status. Refer to the [AppProject.Status](toloka.client.app.AppProject.Status.md) page for more information on the available `status` values.</p>
 `after_id`|**Optional\[str\]**|<p>The ID of a project used for cursor pagination.</p>
-`scope`|**Optional\[[AppProjectSearchRequest.Scope](toloka.client.search_requests.AppProjectSearchRequest.Scope.md)\]**|<p>Values:</p> <ul> <li>`'MY'` — Projects created by you.</li> <li>`'COMPANY'` — Projects created by requesters from your company.</li> <li>`'REQUESTER_LIST'` — Projects created by requesters in the `requester_ids` list.</li> </ul>
+`scope`|**Optional\[[AppProjectSearchRequest.Scope](toloka.client.search_requests.AppProjectSearchRequest.Scope.md)\]**|<p>Values:</p> <ul> <li>`&#x27;MY&#x27;` — Projects created by you.</li> <li>`&#x27;COMPANY&#x27;` — Projects created by requesters from your company.</li> <li>`&#x27;REQUESTER_LIST&#x27;` — Projects created by requesters in the `requester_ids` list.</li> </ul>
 `requester_ids`|**Union\[str, List\[str\], None\]**|<p>A list with requester IDs separated by a comma. Use the list with parameter `scope = REQUESTER_LIST`.</p>
 `id_gt`|**Optional\[str\]**|<p>Projects with IDs greater than the specified value.</p>
 `id_gte`|**Optional\[str\]**|<p>Projects with IDs greater than or equal to the specified value.</p>

@@ -1,5 +1,5 @@
 # Meta
-`toloka.client.message_thread.MessageThread.Meta` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/message_thread.py#L118)
+`toloka.client.message_thread.MessageThread.Meta` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/message_thread.py#L118)
 
 ```python
 Meta(

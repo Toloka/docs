@@ -1,12 +1,12 @@
 # ComponentType
-`toloka.client.project.template_builder.base.ComponentType` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/project/template_builder/base.py#L24)
+`toloka.client.project.template_builder.base.ComponentType` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/project/template_builder/base.py#L24)
 
 An enumeration.
 
 ## Attributes Description
 
 | Name | Value | Description |
-| :------| :-----------| :----------|
+| :------| :-----------| :----------| 
 `ACTION_BULK`|'action.bulk'|
 `ACTION_NOTIFY`|'action.notify'|
 `ACTION_OPEN_CLOSE`|'action.open-close'|
@@ -27,11 +27,11 @@ An enumeration.
 `CONDITION_SAME_DOMAIN`|'condition.same-domain'|
 `CONDITION_SCHEMA`|'condition.schema'|
 `CONDITION_SUB_ARRAY`|'condition.sub-array'|
-`CONDITION_YANDEX_DISTANCE`|'@toloka/condition.distance'|
+`CONDITION_YANDEX_DISTANCE`|'@yandex-toloka/condition.distance'|
 `DATA_INPUT`|'data.input'|
 `DATA_INTERNAL`|'data.internal'|
 `DATA_LOCAL`|'data.local'|
-`DATA_LOCATION`|'@toloka/data.location'|
+`DATA_LOCATION`|'@yandex-toloka/data.location'|
 `DATA_OUTPUT`|'data.output'|
 `DATA_RELATIVE`|'data.relative'|
 `FIELD_AUDIO`|'field.audio'|
@@ -63,7 +63,7 @@ An enumeration.
 `HELPER_TEXT_TRANSFORM`|'helper.text-transform'|
 `HELPER_TRANSFORM`|'helper.transform'|
 `HELPER_TRANSLATE`|'helper.translate'|
-`HELPER_YANDEX_DISK_PROXY`|'@toloka/helper.proxy'|
+`HELPER_YANDEX_DISK_PROXY`|'@yandex-toloka/helper.proxy'|
 `LAYOUT_BARS`|'layout.bars'|
 `LAYOUT_COLUMNS`|'layout.columns'|
 `LAYOUT_COMPARE`|'layout.compare'|

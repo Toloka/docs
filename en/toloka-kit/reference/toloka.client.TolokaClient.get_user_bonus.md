@@ -1,5 +1,5 @@
 # get_user_bonus
-`toloka.client.TolokaClient.get_user_bonus` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L3253)
+`toloka.client.TolokaClient.get_user_bonus` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/__init__.py#L3286)
 
 ```python
 get_user_bonus(self, user_bonus_id: str)

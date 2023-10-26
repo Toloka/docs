@@ -1,5 +1,5 @@
 # FloatSpec
-`toloka.client.project.field_spec.FloatSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/project/field_spec.py#L98)
+`toloka.client.project.field_spec.FloatSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/project/field_spec.py#L98)
 
 ```python
 FloatSpec(
@@ -19,6 +19,6 @@ A floating-point number field specification.
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `required`|**Optional\[bool\]**|<p>Whether a field is required. </p><p>Default value: `True`.</p>
-`hidden`|**Optional\[bool\]**|<p>Whether to hide an input field from Tolokers. Output fields can't be hidden. </p><p>Default value: `False`.</p>
+`hidden`|**Optional\[bool\]**|<p>Whether to hide an input field from Tolokers. Output fields can&#x27;t be hidden. </p><p>Default value: `False`.</p>
 `min_value`|**Optional\[float\]**|<p>The minimum value.</p>
 `max_value`|**Optional\[float\]**|<p>The maximum value.</p>

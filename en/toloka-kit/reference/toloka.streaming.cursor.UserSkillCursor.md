@@ -1,5 +1,5 @@
 # UserSkillCursor
-`toloka.streaming.cursor.UserSkillCursor` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/streaming/cursor.py#L363)
+`toloka.streaming.cursor.UserSkillCursor` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/streaming/cursor.py#L363)
 
 ```python
 UserSkillCursor(

@@ -1,5 +1,5 @@
 # delete_user_skill
-`toloka.async_client.client.AsyncTolokaClient.delete_user_skill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.delete_user_skill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/async_client/client.py#L0)
 
 ```python
 async delete_user_skill(self, user_skill_id: str)
@@ -14,7 +14,7 @@ Tolokers' skill values are described by the [UserSkill](toloka.client.user_skill
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`user_skill_id`|**str**|<p>The ID of the Toloker's skill value.</p>
+`user_skill_id`|**str**|<p>The ID of the Toloker&#x27;s skill value.</p>
 
 **Examples:**
 

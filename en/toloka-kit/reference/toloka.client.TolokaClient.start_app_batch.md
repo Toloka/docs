@@ -1,5 +1,5 @@
 # start_app_batch
-`toloka.client.TolokaClient.start_app_batch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L4399)
+`toloka.client.TolokaClient.start_app_batch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/__init__.py#L4409)
 
 ```python
 start_app_batch(

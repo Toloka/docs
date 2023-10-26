@@ -1,5 +1,5 @@
 # register_callback
-`toloka.streaming.observer.PoolStatusObserver.register_callback` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/streaming/observer.py#L208)
+`toloka.streaming.observer.PoolStatusObserver.register_callback` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/streaming/observer.py#L208)
 
 ```python
 register_callback(

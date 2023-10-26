@@ -1,5 +1,5 @@
 # Parameters
-`toloka.client.operations.TaskSuiteCreateBatchOperation.Parameters` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/operations.py#L346)
+`toloka.client.operations.TaskSuiteCreateBatchOperation.Parameters` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/operations.py#L346)
 
 ```python
 Parameters(

@@ -1,5 +1,5 @@
 # App
-`toloka.client.app.App` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/app/__init__.py#L134)
+`toloka.client.app.App` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/app/__init__.py#L157)
 
 ```python
 App(
@@ -9,12 +9,12 @@ App(
     name: Optional[str] = None,
     image: Optional[str] = None,
     description: Optional[str] = None,
-    constraints_description: Optional[str] = None,
     default_item_price: Optional[Decimal] = None,
+    examples: Optional[Any] = None,
+    constraints_description: Optional[str] = None,
     param_spec: Optional[Dict] = None,
     input_spec: Optional[Dict[str, FieldSpec]] = None,
     output_spec: Optional[Dict[str, FieldSpec]] = None,
-    examples: Optional[Any] = None,
     input_format_info: Optional[Dict] = None
 )
 ```
@@ -32,12 +32,12 @@ Each App solution targets specific type of tasks which can be solved using Tolok
 `name`|**Optional\[str\]**|<p>The solution name.</p>
 `image`|**Optional\[str\]**|<p>A link to the solution interface preview image.</p>
 `description`|**Optional\[str\]**|<p>The solution description.</p>
-`constraints_description`|**Optional\[str\]**|<p>The description of limitations.</p>
 `default_item_price`|**Optional\[Decimal\]**|<p>The default cost of one annotated item.</p>
+`examples`|**Optional\[Any\]**|<p>Example description of tasks which can be solved with this solution.</p>
+`constraints_description`|**Optional\[str\]**|<p>The description of limitations.</p>
 `param_spec`|**Optional\[Dict\]**|<p>The specification of parameters used to create a project.</p>
 `input_spec`|**Optional\[Dict\[str, [FieldSpec](toloka.client.project.field_spec.FieldSpec.md)\]\]**|<p>The schema of solution input data.</p>
 `output_spec`|**Optional\[Dict\[str, [FieldSpec](toloka.client.project.field_spec.FieldSpec.md)\]\]**|<p>The schema of solution output data.</p>
-`examples`|**Optional\[Any\]**|<p>Example description of tasks which can be solved with this solution.</p>
 `input_format_info`|**Optional\[Dict\]**|<p>Information about the input data format.</p>
 
 **Examples:**

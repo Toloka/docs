@@ -1,5 +1,5 @@
 # ViewSpec
-`toloka.client.project.view_spec.ViewSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/project/view_spec.py#L19)
+`toloka.client.project.view_spec.ViewSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/project/view_spec.py#L19)
 
 ```python
 ViewSpec(self, *, settings: Optional[Settings] = None)
@@ -9,9 +9,8 @@ The description of a task interface.
 
 
 You can choose the type of description:
-
-* HTML, CSS, and JS — use [ClassicViewSpec](toloka.client.project.view_spec.ClassicViewSpec.md)
-* Template Builder components — use [TemplateBuilderViewSpec](toloka.client.project.view_spec.TemplateBuilderViewSpec.md)
+    * HTML, CSS, and JS — use [ClassicViewSpec](toloka.client.project.view_spec.ClassicViewSpec.md)
+    * Template Builder components — use [TemplateBuilderViewSpec](toloka.client.project.view_spec.TemplateBuilderViewSpec.md)
 
 ## Parameters Description
 

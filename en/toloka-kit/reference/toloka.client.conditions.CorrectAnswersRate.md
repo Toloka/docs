@@ -1,5 +1,5 @@
 # CorrectAnswersRate
-`toloka.client.conditions.CorrectAnswersRate` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/conditions.py#L186)
+`toloka.client.conditions.CorrectAnswersRate` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/conditions.py#L186)
 
 ```python
 CorrectAnswersRate(

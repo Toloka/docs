@@ -1,5 +1,5 @@
 # ChangeOverlap
-`toloka.client.actions.ChangeOverlap` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/actions.py#L143)
+`toloka.client.actions.ChangeOverlap` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/actions.py#L143)
 
 ```python
 ChangeOverlap(
@@ -20,7 +20,7 @@ You can use this rule only with [UsersAssessment](toloka.client.collectors.Users
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `delta`|**Optional\[int\]**|<p>An overlap increment.</p>
-`open_pool`|**Optional\[bool\]**|<ul> <li>`True` — Open the pool after changing the overlap value.</li> <li>`False` — Don't reopen the pool if it is closed.</li> </ul>
+`open_pool`|**Optional\[bool\]**|<ul> <li>`True` — Open the pool after changing the overlap value.</li> <li>`False` — Don&#x27;t reopen the pool if it is closed.</li> </ul>
 
 **Examples:**
 

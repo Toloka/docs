@@ -1,5 +1,5 @@
 # Training
-`toloka.client.training.Training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/training.py#L11)
+`toloka.client.training.Training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/training.py#L11)
 
 ```python
 Training(

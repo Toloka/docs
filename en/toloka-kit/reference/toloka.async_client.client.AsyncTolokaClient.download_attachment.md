@@ -1,5 +1,5 @@
 # download_attachment
-`toloka.async_client.client.AsyncTolokaClient.download_attachment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.download_attachment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/async_client/client.py#L0)
 
 ```python
 async download_attachment(

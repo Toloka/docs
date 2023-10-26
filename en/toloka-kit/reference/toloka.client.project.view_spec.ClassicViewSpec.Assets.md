@@ -1,5 +1,5 @@
 # Assets
-`toloka.client.project.view_spec.ClassicViewSpec.Assets` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/project/view_spec.py#L84)
+`toloka.client.project.view_spec.ClassicViewSpec.Assets` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/project/view_spec.py#L84)
 
 ```python
 Assets(
@@ -14,14 +14,12 @@ Links to external files.
 
 
 You can link:
-
-* CSS libraries
-* JavaScript libraries
-* Toloka assets — libraries that can be linked using the `$TOLOKA_ASSETS` path:
-    * `$TOLOKA_ASSETS/js/toloka-handlebars-templates.js` — [Handlebars template engine](https://handlebarsjs.com/).
-    * `$TOLOKA_ASSETS/js/image-annotation.js` — Image labeling interface. Note, that this library requires Handlebars and must be linked after it.
-
-        For more information, see [Image with area selection](https://toloka.ai/docs/guide/t-components/image-annotation).
+    * CSS libraries
+    * JavaScript libraries
+    * Toloka assets — libraries that can be linked using the `$TOLOKA_ASSETS` path:
+        * `$TOLOKA_ASSETS/js/toloka-handlebars-templates.js` — [Handlebars template engine](http://handlebarsjs.com/).
+        * `$TOLOKA_ASSETS/js/image-annotation.js` — Image labeling interface. Note, that this library requires Handlebars and must be linked after it.
+            For more information, see [Image with area selection](https://toloka.ai/docs/guide/t-components/image-annotation).
 
     Add items in the order they should be linked.
 

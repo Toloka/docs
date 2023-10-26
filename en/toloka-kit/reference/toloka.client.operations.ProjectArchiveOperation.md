@@ -1,5 +1,5 @@
 # ProjectArchiveOperation
-`toloka.client.operations.ProjectArchiveOperation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/operations.py#L277)
+`toloka.client.operations.ProjectArchiveOperation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/operations.py#L277)
 
 ```python
 ProjectArchiveOperation(

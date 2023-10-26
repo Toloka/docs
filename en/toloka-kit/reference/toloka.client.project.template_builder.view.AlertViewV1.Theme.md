@@ -1,5 +1,5 @@
 # Theme
-`toloka.client.project.template_builder.view.AlertViewV1.Theme` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/project/template_builder/view.py#L89)
+`toloka.client.project.template_builder.view.AlertViewV1.Theme` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/project/template_builder/view.py#L89)
 
 A view background color.
 

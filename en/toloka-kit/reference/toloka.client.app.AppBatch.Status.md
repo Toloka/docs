@@ -1,5 +1,5 @@
 # Status
-`toloka.client.app.AppBatch.Status` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/app/__init__.py#L288)
+`toloka.client.app.AppBatch.Status` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/app/__init__.py#L331)
 
 The status of an App batch.
 
@@ -8,6 +8,7 @@ The status of an App batch.
 | Name | Value | Description |
 | :------| :-----------| :----------| 
 `NEW`|'NEW'|<p>The processing of the batch items is not started.</p>
+`QUEUED`|'QUEUED'|<p>The batch is ready for labeling but is currently queued because other batches with higher priority are being labeled. Labeling of these batches will automatically start once the labeling of the batches with higher priority finishes.</p>
 `PROCESSING`|'PROCESSING'|<p>Batch items are being processed by Tolokers.</p>
 `COMPLETED`|'COMPLETED'|<p>Annotation of all batch items is completed.</p>
 `ERROR`|'ERROR'|<p>An error occurred during processing.</p>

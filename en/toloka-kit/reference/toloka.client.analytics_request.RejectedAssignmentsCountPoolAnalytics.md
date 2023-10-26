@@ -1,5 +1,5 @@
 # RejectedAssignmentsCountPoolAnalytics
-`toloka.client.analytics_request.RejectedAssignmentsCountPoolAnalytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/analytics_request.py#L120)
+`toloka.client.analytics_request.RejectedAssignmentsCountPoolAnalytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/analytics_request.py#L120)
 
 ```python
 RejectedAssignmentsCountPoolAnalytics(self, *, subject_id: str)

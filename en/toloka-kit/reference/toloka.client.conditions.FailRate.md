@@ -1,5 +1,5 @@
 # FailRate
-`toloka.client.conditions.FailRate` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/conditions.py#L209)
+`toloka.client.conditions.FailRate` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/conditions.py#L209)
 
 ```python
 FailRate(

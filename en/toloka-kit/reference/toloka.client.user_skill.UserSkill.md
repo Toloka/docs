@@ -1,5 +1,5 @@
 # UserSkill
-`toloka.client.user_skill.UserSkill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/user_skill.py#L28)
+`toloka.client.user_skill.UserSkill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/user_skill.py#L28)
 
 ```python
 UserSkill(
@@ -21,7 +21,7 @@ A Toloker's skill value.
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`id`|**Optional\[str\]**|<p>The ID of the Toloker's skill value.</p>
+`id`|**Optional\[str\]**|<p>The ID of the Toloker&#x27;s skill value.</p>
 `user_id`|**Optional\[str\]**|<p>The ID of the Toloker.</p>
 `skill_id`|**Optional\[str\]**|<p>The ID of the skill.</p>
 `exact_value`|**Optional\[Decimal\]**|<p>The fractional value of the skill. Allowed values: from 0 to 100.</p>

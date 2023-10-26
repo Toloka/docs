@@ -1,5 +1,5 @@
 # ColumnsLayoutV1
-`toloka.client.project.template_builder.layouts.ColumnsLayoutV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/project/template_builder/layouts.py#L56)
+`toloka.client.project.template_builder.layouts.ColumnsLayoutV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/project/template_builder/layouts.py#L56)
 
 ```python
 ColumnsLayoutV1(

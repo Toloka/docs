@@ -1,5 +1,5 @@
 # archive_app_project
-`toloka.client.TolokaClient.archive_app_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L3913)
+`toloka.client.TolokaClient.archive_app_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/__init__.py#L3930)
 
 ```python
 archive_app_project(self, app_project_id: str)

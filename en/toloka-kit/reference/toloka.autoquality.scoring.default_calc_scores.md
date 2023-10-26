@@ -1,5 +1,5 @@
 # default_calc_scores
-`toloka.autoquality.scoring.default_calc_scores` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/autoquality/scoring.py#L18)
+`toloka.autoquality.scoring.default_calc_scores` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/autoquality/scoring.py#L18)
 
 ```python
 default_calc_scores(
@@ -15,7 +15,7 @@ Calculate default scores for Autoquality.
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`toloka_client`|**[TolokaClient](toloka.client.TolokaClient.md)**|<p>`TolokaClient` instance to interact with requester's account</p>
+`toloka_client`|**[TolokaClient](toloka.client.TolokaClient.md)**|<p>`TolokaClient` instance to interact with requester&#x27;s account</p>
 `pool_id`|**str**|<p>Pool ID to calculate scores for</p>
 `label_field`|**str**|<p>Target output field</p>
 

@@ -1,5 +1,5 @@
 # PoolStatusObserver
-`toloka.streaming.observer.PoolStatusObserver` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/streaming/observer.py#L154)
+`toloka.streaming.observer.PoolStatusObserver` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/streaming/observer.py#L154)
 
 ```python
 PoolStatusObserver(
@@ -17,12 +17,11 @@ Observer for pool status change.
 For usage with Pipeline.
 
 Allow to register callbacks using the following methods:
-
-* on_open
-* on_closed
-* on_archieved
-* on_locked
-* on_status_change
+    * on_open
+    * on_closed
+    * on_archieved
+    * on_locked
+    * on_status_change
 
 The Pool object will be passed to the triggered callbacks.
 

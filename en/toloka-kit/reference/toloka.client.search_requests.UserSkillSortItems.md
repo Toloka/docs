@@ -11,11 +11,11 @@ Keys for sorting skills in search results.
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`items`|**Optional\[List\[[SortItem](toloka.client.search_requests.UserSkillSortItems.SortItem.md)\]\]**|<p>A list of sorting keys. Supported values:</p> <ul> <li>`'id'` — The ID of a skill.</li> <li>`'created'` — The date when a skill was created.</li> <li>`'modified'` — The date when a skill was modified.</li> </ul>
+`items`|**Optional\[List\[[SortItem](toloka.client.search_requests.UserSkillSortItems.SortItem.md)\]\]**|<p>A list of sorting keys. Supported values:</p> <ul> <li>`&#x27;id&#x27;` — The ID of a skill.</li> <li>`&#x27;created&#x27;` — The date when a skill was created.</li> <li>`&#x27;modified&#x27;` — The date when a skill was modified.</li> </ul>
 
 **Examples:**
 
-The example shows how to find Tolokers' skills sorted by creation date in the descending order. Skills with equal creation dates are sorted by IDs in the ascending order.
+The example shows how to find Tolokers' skills sorted by creation date in descending order. Skills with equal creation dates are sorted by IDs in ascending order.
 
 ```python
 sort = toloka.client.search_requests.UserSkillSortItems(['-created', 'id'])

@@ -1,5 +1,5 @@
 # AggregatedSolutionOperation
-`toloka.client.operations.AggregatedSolutionOperation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/operations.py#L366)
+`toloka.client.operations.AggregatedSolutionOperation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/operations.py#L366)
 
 ```python
 AggregatedSolutionOperation(

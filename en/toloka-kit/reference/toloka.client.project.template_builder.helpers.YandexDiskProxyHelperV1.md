@@ -1,5 +1,5 @@
 # YandexDiskProxyHelperV1
-`toloka.client.project.template_builder.helpers.YandexDiskProxyHelperV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/project/template_builder/helpers.py#L240)
+`toloka.client.project.template_builder.helpers.YandexDiskProxyHelperV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/project/template_builder/helpers.py#L240)
 
 ```python
 YandexDiskProxyHelperV1(

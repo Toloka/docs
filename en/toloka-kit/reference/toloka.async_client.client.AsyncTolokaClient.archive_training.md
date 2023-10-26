@@ -1,5 +1,5 @@
 # archive_training
-`toloka.async_client.client.AsyncTolokaClient.archive_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.archive_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/async_client/client.py#L0)
 
 ```python
 async archive_training(self, training_id: str)

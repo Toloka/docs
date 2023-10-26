@@ -1,5 +1,5 @@
 # set_user_skill
-`toloka.client.TolokaClient.set_user_skill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L3541)
+`toloka.client.TolokaClient.set_user_skill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/__init__.py#L3574)
 
 Assigns a skill to a Toloker.
 
@@ -7,7 +7,7 @@ Assigns a skill to a Toloker.
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`user_id`|**Optional\[str\]**|<p>The Toloker's ID.</p>
+`user_id`|**Optional\[str\]**|<p>The Toloker&#x27;s ID.</p>
 `skill_id`|**Optional\[str\]**|<p>The ID of the skill to set.</p>
 `value`|**Optional\[Decimal\]**|<p>The value of the skill. Allowed values: from 0 to 100.</p>
 

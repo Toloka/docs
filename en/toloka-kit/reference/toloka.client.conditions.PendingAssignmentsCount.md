@@ -1,5 +1,5 @@
 # PendingAssignmentsCount
-`toloka.client.conditions.PendingAssignmentsCount` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/conditions.py#L370)
+`toloka.client.conditions.PendingAssignmentsCount` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/conditions.py#L370)
 
 ```python
 PendingAssignmentsCount(

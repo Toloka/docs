@@ -1,11 +1,12 @@
 # for_fields
-`toloka.client.search_requests.BaseSortItem.for_fields` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/search_requests.py#L99)
+`toloka.client.search_requests.BaseSortItem.for_fields` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/search_requests.py#L99)
 
 ```python
 for_fields(
     cls,
     qualname: str,
-    sort_fields: List[str]
+    sort_fields: List[str],
+    module_name: str = 'toloka.client.search_requests'
 )
 ```
 

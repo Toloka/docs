@@ -1,5 +1,5 @@
 # patch_app_batch
-`toloka.client.TolokaClient.patch_app_batch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L4367)
+`toloka.client.TolokaClient.patch_app_batch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/__init__.py#L4341)
 
 Updates an App batch.
 
@@ -10,6 +10,7 @@ Updates an App batch.
 `app_project_id`|**str**|<p>The ID of the App project containing the batch.</p>
 `batch_id`|**str**|<p>The ID of the batch.</p>
 `name`|**Optional\[str\]**|<p>The new batch name.</p>
+`priority_order`|**Optional\[[AppBatch.PriorityOrder](toloka.client.app.AppBatch.PriorityOrder.md)\]**|<p>The batch priority. See [PriorityOrder](toloka.client.app.AppBatch.PriorityOrder.md) for details.</p>
 
 * **Returns:**
 
