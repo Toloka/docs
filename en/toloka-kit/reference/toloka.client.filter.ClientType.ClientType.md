@@ -1,5 +1,5 @@
 # ClientType
-`toloka.client.filter.ClientType.ClientType` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/filter.py#L554)
+`toloka.client.filter.ClientType.ClientType` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/filter.py#L554)
 
 Client application types.
 

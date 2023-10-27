@@ -1,5 +1,5 @@
 # RotateActionV1
-`toloka.client.project.template_builder.actions.RotateActionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/project/template_builder/actions.py#L127)
+`toloka.client.project.template_builder.actions.RotateActionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/project/template_builder/actions.py#L127)
 
 ```python
 RotateActionV1(

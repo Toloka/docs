@@ -1,5 +1,5 @@
 # PoolCompletedPercentage
-`toloka.metrics.pool_metrics.PoolCompletedPercentage` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/metrics/pool_metrics.py#L163)
+`toloka.metrics.pool_metrics.PoolCompletedPercentage` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/metrics/pool_metrics.py#L163)
 
 ```python
 PoolCompletedPercentage(
@@ -23,7 +23,7 @@ You can't gather this metric from a pool with infinite task suites. For example,
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `pool_id`|**str**|<p>From which pool track metrics.</p>
-`percents_name`|**Optional\[str\]**|<p>Metric name for pool completion percentage. Default 'completion_percentage'.</p>
+`percents_name`|**Optional\[str\]**|<p>Metric name for pool completion percentage. Default &#x27;completion_percentage&#x27;.</p>
 `toloka_client`|**Optional\[[TolokaClient](toloka.client.TolokaClient.md)\]**|<p>Client for connection to Toloka. You can set toloka_client for several metrics via &quot;bind_client&quot; function.</p>
 
 **Examples:**

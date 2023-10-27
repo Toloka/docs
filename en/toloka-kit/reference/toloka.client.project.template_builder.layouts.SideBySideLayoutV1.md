@@ -1,5 +1,5 @@
 # SideBySideLayoutV1
-`toloka.client.project.template_builder.layouts.SideBySideLayoutV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/project/template_builder/layouts.py#L128)
+`toloka.client.project.template_builder.layouts.SideBySideLayoutV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/project/template_builder/layouts.py#L128)
 
 ```python
 SideBySideLayoutV1(

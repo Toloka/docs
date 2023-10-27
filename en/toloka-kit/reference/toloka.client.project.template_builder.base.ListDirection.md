@@ -1,5 +1,5 @@
 # ListDirection
-`toloka.client.project.template_builder.base.ListDirection` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/project/template_builder/base.py#L217)
+`toloka.client.project.template_builder.base.ListDirection` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/project/template_builder/base.py#L217)
 
 An enumeration.
 

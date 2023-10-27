@@ -1,5 +1,5 @@
 # ListViewV1
-`toloka.client.project.template_builder.view.ListViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/project/template_builder/view.py#L361)
+`toloka.client.project.template_builder.view.ListViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/project/template_builder/view.py#L361)
 
 ```python
 ListViewV1(
@@ -25,7 +25,7 @@ For more information, see [view.list](https://toloka.ai/docs/template-builder/re
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `items`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), List\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]\]\]**|<p>List items.</p>
-`direction`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), [ListDirection](toloka.client.project.template_builder.base.ListDirection.md)\]\]**|<p>The direction of the list:</p> <ul> <li>`vertical`</li> <li>`horizontal`</li> </ul> <p>Default value: `vertical`.</p>
+`direction`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), [ListDirection](toloka.client.project.template_builder.base.ListDirection.md)\]\]**|<p>The direction of the list:</p> <ul> <li>`vertical`</li> <li>`horizontal`</li> </ul> <p></p><p>Default value: `vertical`.</p>
 `size`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), [ListSize](toloka.client.project.template_builder.base.ListSize.md)\]\]**|<p>A spacing between list items: `m` — The default spacing. `s` — Narrower spacing.</p>
 `hint`|**Optional\[Any\]**|<p>A hint text.</p>
 `label`|**Optional\[Any\]**|<p>A label above the component.</p>

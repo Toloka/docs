@@ -1,5 +1,5 @@
 # UserBonusCreateBatchOperation
-`toloka.client.operations.UserBonusCreateBatchOperation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/operations.py#L385)
+`toloka.client.operations.UserBonusCreateBatchOperation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/operations.py#L385)
 
 ```python
 UserBonusCreateBatchOperation(

@@ -1,5 +1,5 @@
 # AssignmentsObserver
-`toloka.streaming.observer.AssignmentsObserver` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/streaming/observer.py#L309)
+`toloka.streaming.observer.AssignmentsObserver` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/streaming/observer.py#L309)
 
 ```python
 AssignmentsObserver(
@@ -18,13 +18,12 @@ Observer for the pool's assignment events.
 For usage with Pipeline.
 
 Allow to register callbacks using the following methods:
-
-* on_created
-* on_submitted
-* on_accepted
-* on_rejected
-* on_skipped
-* on_expired
+    * on_created
+    * on_submitted
+    * on_accepted
+    * on_rejected
+    * on_skipped
+    * on_expired
 
 Corresponding assignment events will be passed to the triggered callbacks.
 

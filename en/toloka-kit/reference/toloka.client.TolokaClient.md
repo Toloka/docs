@@ -1,5 +1,5 @@
 # TolokaClient
-`toloka.client.TolokaClient` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L171)
+`toloka.client.TolokaClient` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/__init__.py#L179)
 
 ```python
 TolokaClient(
@@ -33,13 +33,13 @@ Call `TolokaClient.update_project` and pass the `Project` to apply your changes.
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `token`|**str**|<p>Your OAuth token for Toloka. You can learn more about how to get it [here](https://toloka.ai/docs/api/api-reference/#overview--accessing-the-api)</p>
-`environment`|**Union\[[Environment](toloka.client.TolokaClient.Environment.md), str, None\]**|<p>There are two environments in Toloka:</p> <ul> <li>`SANDBOX` – [Testing environment](https://sandbox.toloka.dev) for Toloka requesters. You can test complex projects before assigning tasks to Tolokers. Nobody will see your tasks, and it's free.</li> <li>`PRODUCTION` – [Production environment](https://toloka.dev) for Toloka requesters. You spend money there and get the results.</li> </ul> <p>You need to register in each environment separately. OAuth tokens are generated in each environment separately too. </p><p>Default value: `None`.</p>
-`retries`|**Union\[int, Retry\]**|<p>Retry policy for failed API requests. Possible values:</p> <ul> <li>`int` – The number of retries for all requests. In this case, the retry policy is created automatically.</li> <li>`Retry` object – Deprecated type. Use `retryer_factory` parameter instead.</li> </ul> <p>Default value: `3`.</p>
-`timeout`|**Union\[float, Tuple\[float, float\]\]**|<p>Number of seconds that [Requests library](https://docs.python-requests.org/en/master) will wait for your client to establish connection to a remote machine. Possible values:</p> <ul> <li>`float` – Single value for both connect and read timeouts.</li> <li>`Tuple[float, float]` – Tuple sets the values for connect and read timeouts separately.</li> <li>`None` – Set the timeout to `None` only if you are willing to wait the [Response](https://docs.python-requests.org/en/master/api/#requests.Response) for unlimited number of seconds.</li> </ul> <p>Default value: `10.0`.</p>
+`environment`|**Union\[[Environment](toloka.client.TolokaClient.Environment.md), str, None\]**|<p>There are two environments in Toloka:</p> <ul> <li>`SANDBOX` – [Testing environment](https://sandbox.toloka.dev) for Toloka requesters. You can test complex projects before assigning tasks to Tolokers. Nobody will see your tasks, and it&#x27;s free.</li> <li>`PRODUCTION` – [Production environment](https://toloka.dev) for Toloka requesters. You spend money there and get the results.</li> </ul> <p>You need to register in each environment separately. OAuth tokens are generated in each environment separately too. </p><p>Default value: `None`.</p>
+`retries`|**Union\[int, Retry\]**|<p>Retry policy for failed API requests. Possible values:</p> <ul> <li>`int` – The number of retries for all requests. In this case, the retry policy is created automatically.</li> <li>`Retry` object – Deprecated type. Use `retryer_factory` parameter instead.</li> </ul> <p></p><p>Default value: `3`.</p>
+`timeout`|**Union\[float, Tuple\[float, float\]\]**|<p>Number of seconds that [Requests library](https://docs.python-requests.org/en/master) will wait for your client to establish connection to a remote machine. Possible values:</p> <ul> <li>`float` – Single value for both connect and read timeouts.</li> <li>`Tuple[float, float]` – Tuple sets the values for connect and read timeouts separately.</li> <li>`None` – Set the timeout to `None` only if you are willing to wait the [Response](https://docs.python-requests.org/en/master/api/#requests.Response) for unlimited number of seconds.</li> </ul> <p></p><p>Default value: `10.0`.</p>
 `url`|**Optional\[str\]**|<p>Set a specific URL instead of Toloka environment. May be useful for testing purposes. You can only set one parameter – either `url` or `environment`, not both of them. </p><p>Default value: `None`.</p>
-`retry_quotas`|**Union\[List\[str\], str, None\]**|<p>List of quotas that must be retried. Set `None` or pass an empty list for not retrying any quotas. If you specified the `retries` as `Retry` instance, you must set this parameter to `None`. Possible values:</p> <ul> <li>`MIN` - Retry minutes quotas.</li> <li>`HOUR` - Retry hourly quotas. This means that the program just sleeps for an hour.</li> <li>`DAY` - Retry daily quotas. We do not recommend retrying these quotas.</li> </ul> <p>Default value: `MIN`.</p>
+`retry_quotas`|**Union\[List\[str\], str, None\]**|<p>List of quotas that must be retried. Set `None` or pass an empty list for not retrying any quotas. If you specified the `retries` as `Retry` instance, you must set this parameter to `None`. Possible values:</p> <ul> <li>`MIN` - Retry minutes quotas.</li> <li>`HOUR` - Retry hourly quotas. This means that the program just sleeps for an hour.</li> <li>`DAY` - Retry daily quotas. We do not recommend retrying these quotas.</li> </ul> <p></p><p>Default value: `MIN`.</p>
 `retryer_factory`|**Optional\[Callable\[\[\], Retry\]\]**|<p>Factory that creates `Retry` object. Fully specified retry policy that will apply to all requests. </p><p>Default value: `None`.</p>
-`act_under_account_id`|**Optional\[str\]**|<p>ID of the requester that has been shared access with the current token owner account. All requests will be made using a specified account. See [Shared access to the requester's account](https://toloka.ai/docs/guide/multiple-access) documentation page. ID of the requester can be retrieved using the [get_requester](toloka.client.TolokaClient.get_requester.md) method (this method should be called by the account owner using account's token).</p>
+`act_under_account_id`|**Optional\[str\]**|<p>ID of the requester that has been shared access with the current token owner account. All requests will be made using a specified account. See [Shared access to the requester&#x27;s account](https://toloka.ai/docs/guide/multiple-access) documentation page. ID of the requester can be retrieved using the [get_requester](toloka.client.TolokaClient.get_requester.md) method (this method should be called by the account owner using account&#x27;s token).</p>
 `verify`|**Union\[str, bool, SSLContext\]**|<p>SSL certificates (a.k.a CA bundle) used to verify the identity of requested hosts. Either `True` (default CA bundle), a path to an SSL certificate file, an `ssl.SSLContext`, or `False` (which will disable verification).</p>
 
 **Examples:**
@@ -65,6 +65,7 @@ toloka_client = toloka.client.TolokaClient(your_oauth_token, 'PRODUCTION')  # Or
 [add_message_thread_to_folders](toloka.client.TolokaClient.add_message_thread_to_folders.md)| Adds a message thread to folders.
 [aggregate_solutions_by_pool](toloka.client.TolokaClient.aggregate_solutions_by_pool.md)| Starts aggregation of responses in all completed tasks in a pool.
 [aggregate_solutions_by_task](toloka.client.TolokaClient.aggregate_solutions_by_task.md)| Aggregates responses to a single task on the Toloka server.
+[archive_app_batch](toloka.client.TolokaClient.archive_app_batch.md)| Archives the batch with the ID specified in the request to hide its data.
 [archive_app_project](toloka.client.TolokaClient.archive_app_project.md)| Archives an App project.
 [archive_pool](toloka.client.TolokaClient.archive_pool.md)| Archives a pool.
 [archive_pool_async](toloka.client.TolokaClient.archive_pool_async.md)| Archives a pool. Sends an asynchronous request to Toloka.
@@ -72,6 +73,7 @@ toloka_client = toloka.client.TolokaClient(your_oauth_token, 'PRODUCTION')  # Or
 [archive_project_async](toloka.client.TolokaClient.archive_project_async.md)| Archives a project. Sends an asynchronous request to Toloka.
 [archive_training](toloka.client.TolokaClient.archive_training.md)| Archives a training.
 [archive_training_async](toloka.client.TolokaClient.archive_training_async.md)| Archives a training. Sends an asynchronous request to Toloka.
+[check_update_project_for_major_version_change](toloka.client.TolokaClient.check_update_project_for_major_version_change.md)| Checks if the project update is a breaking change or not.
 [clone_pool](toloka.client.TolokaClient.clone_pool.md)| Clones an existing pool.
 [clone_pool_async](toloka.client.TolokaClient.clone_pool_async.md)| Clones an existing pool. Sends an asynchronous request to Toloka.
 [clone_project](toloka.client.TolokaClient.clone_project.md)| Clones a project and all pools and trainings inside it.
@@ -183,7 +185,9 @@ toloka_client = toloka.client.TolokaClient(your_oauth_token, 'PRODUCTION')  # Or
 [set_user_restriction](toloka.client.TolokaClient.set_user_restriction.md)| Restricts access to projects or pools for a Toloker.
 [set_user_skill](toloka.client.TolokaClient.set_user_skill.md)| Assigns a skill to a Toloker.
 [start_app_batch](toloka.client.TolokaClient.start_app_batch.md)| Launches annotation of a batch of task items in an App project.
+[start_sync_batch_processing](toloka.client.TolokaClient.start_sync_batch_processing.md)| Starts processing the batch with the ID specified in the request.
 [stop_app_batch](toloka.client.TolokaClient.stop_app_batch.md)| Stops annotation of a batch of task items in an App project.
+[unarchive_app_batch](toloka.client.TolokaClient.unarchive_app_batch.md)| Changes the batch status to the last one it had before archiving. After the operation, you can process the
 [unarchive_app_project](toloka.client.TolokaClient.unarchive_app_project.md)| Unarchives an App project.
 [update_pool](toloka.client.TolokaClient.update_pool.md)| Updates all pool parameters in Toloka.
 [update_project](toloka.client.TolokaClient.update_project.md)| Updates all project parameters in Toloka.

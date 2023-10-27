@@ -1,5 +1,5 @@
 # open_pool_async
-`toloka.client.TolokaClient.open_pool_async` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L1772)
+`toloka.client.TolokaClient.open_pool_async` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/__init__.py#L1805)
 
 ```python
 open_pool_async(self, pool_id: str)

@@ -1,5 +1,5 @@
 # RuleCondition
-`toloka.client.conditions.RuleCondition` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/conditions.py#L69)
+`toloka.client.conditions.RuleCondition` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/conditions.py#L69)
 
 ```python
 RuleCondition(

@@ -1,5 +1,5 @@
 # map_urllib3_exception_for_retrying
-`toloka.client.primitives.adapters.map_urllib3_exception_for_retrying` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/primitives/adapters.py#L181)
+`toloka.client.primitives.adapters.map_urllib3_exception_for_retrying` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/primitives/adapters.py#L181)
 
 ```python
 map_urllib3_exception_for_retrying(exception: BaseException)

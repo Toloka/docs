@@ -1,5 +1,5 @@
 # AssignmentsInPool
-`toloka.metrics.pool_metrics.AssignmentsInPool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/metrics/pool_metrics.py#L212)
+`toloka.metrics.pool_metrics.AssignmentsInPool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/metrics/pool_metrics.py#L212)
 
 ```python
 AssignmentsInPool(
@@ -26,9 +26,9 @@ Metrics starts gathering if they name are set. If the metric name is set to None
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `pool_id`|**str**|<p>From which pool track metrics.</p>
-`submitted_name`|**Optional\[str\]**|<p>Metric name for a count of submitted assignments. Default 'submitted_assignments_in_pool'.</p>
-`accepted_name `|**-**|<p>Metric name for a count of accepted assignments. Default 'accepted_assignments_in_pool'.</p>
-`rejected_name `|**-**|<p>Metric name for a count of rejected assignments. Default 'rejected_assignments_in_pool'.</p>
+`submitted_name`|**Optional\[str\]**|<p>Metric name for a count of submitted assignments. Default &#x27;submitted_assignments_in_pool&#x27;.</p>
+`accepted_name `|**-**|<p>Metric name for a count of accepted assignments. Default &#x27;accepted_assignments_in_pool&#x27;.</p>
+`rejected_name `|**-**|<p>Metric name for a count of rejected assignments. Default &#x27;rejected_assignments_in_pool&#x27;.</p>
 `skipped_name`|**Optional\[str\]**|<p>Metric name for a count of skipped assignments. Default None.</p>
 
 **Examples:**

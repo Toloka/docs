@@ -1,5 +1,5 @@
 # get_attachment
-`toloka.client.TolokaClient.get_attachment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L911)
+`toloka.client.TolokaClient.get_attachment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/__init__.py#L919)
 
 ```python
 get_attachment(self, attachment_id: str)

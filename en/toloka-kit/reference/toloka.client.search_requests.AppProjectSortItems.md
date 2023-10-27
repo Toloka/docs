@@ -11,4 +11,4 @@ Keys for sorting App projects in search results.
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`items`|**Optional\[List\[[SortItem](toloka.client.search_requests.AppProjectSortItems.SortItem.md)\]\]**|<p>A list of sorting keys. Supported values:</p> <ul> <li>`'id'` — An App project ID.</li> <li>`'name'` — An App project name.</li> <li>`'created'` — A project creation date.</li> </ul>
+`items`|**Optional\[List\[[SortItem](toloka.client.search_requests.AppProjectSortItems.SortItem.md)\]\]**|<p>A list of sorting keys. Supported values:</p> <ul> <li>`&#x27;id&#x27;` — An App project ID.</li> <li>`&#x27;name&#x27;` — An App project name.</li> <li>`&#x27;created&#x27;` — A project creation date.</li> </ul>

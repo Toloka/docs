@@ -1,5 +1,5 @@
 # AsyncTolokaClient
-`toloka.async_client.client.AsyncTolokaClient` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/async_client/client.py#L29)
+`toloka.async_client.client.AsyncTolokaClient` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/async_client/client.py#L29)
 
 ```python
 AsyncTolokaClient(
@@ -30,6 +30,7 @@ All arguments, same as in TolokaClient.
 [add_message_thread_to_folders](toloka.async_client.client.AsyncTolokaClient.add_message_thread_to_folders.md)| Adds a message thread to folders.
 [aggregate_solutions_by_pool](toloka.async_client.client.AsyncTolokaClient.aggregate_solutions_by_pool.md)| Starts aggregation of responses in all completed tasks in a pool.
 [aggregate_solutions_by_task](toloka.async_client.client.AsyncTolokaClient.aggregate_solutions_by_task.md)| Aggregates responses to a single task on the Toloka server.
+[archive_app_batch](toloka.async_client.client.AsyncTolokaClient.archive_app_batch.md)| Archives the batch with the ID specified in the request to hide its data.
 [archive_app_project](toloka.async_client.client.AsyncTolokaClient.archive_app_project.md)| Archives an App project.
 [archive_pool](toloka.async_client.client.AsyncTolokaClient.archive_pool.md)| Archives a pool.
 [archive_pool_async](toloka.async_client.client.AsyncTolokaClient.archive_pool_async.md)| Archives a pool. Sends an asynchronous request to Toloka.
@@ -37,6 +38,7 @@ All arguments, same as in TolokaClient.
 [archive_project_async](toloka.async_client.client.AsyncTolokaClient.archive_project_async.md)| Archives a project. Sends an asynchronous request to Toloka.
 [archive_training](toloka.async_client.client.AsyncTolokaClient.archive_training.md)| Archives a training.
 [archive_training_async](toloka.async_client.client.AsyncTolokaClient.archive_training_async.md)| Archives a training. Sends an asynchronous request to Toloka.
+[check_update_project_for_major_version_change](toloka.async_client.client.AsyncTolokaClient.check_update_project_for_major_version_change.md)| Checks if the project update is a breaking change or not.
 [clone_pool](toloka.async_client.client.AsyncTolokaClient.clone_pool.md)| Clones an existing pool.
 [clone_pool_async](toloka.async_client.client.AsyncTolokaClient.clone_pool_async.md)| Clones an existing pool. Sends an asynchronous request to Toloka.
 [clone_project](toloka.async_client.client.AsyncTolokaClient.clone_project.md)| Clones a project and all pools and trainings inside it.
@@ -149,7 +151,9 @@ All arguments, same as in TolokaClient.
 [set_user_restriction](toloka.async_client.client.AsyncTolokaClient.set_user_restriction.md)| Restricts access to projects or pools for a Toloker.
 [set_user_skill](toloka.async_client.client.AsyncTolokaClient.set_user_skill.md)| Assigns a skill to a Toloker.
 [start_app_batch](toloka.async_client.client.AsyncTolokaClient.start_app_batch.md)| Launches annotation of a batch of task items in an App project.
+[start_sync_batch_processing](toloka.async_client.client.AsyncTolokaClient.start_sync_batch_processing.md)| Starts processing the batch with the ID specified in the request.
 [stop_app_batch](toloka.async_client.client.AsyncTolokaClient.stop_app_batch.md)| Stops annotation of a batch of task items in an App project.
+[unarchive_app_batch](toloka.async_client.client.AsyncTolokaClient.unarchive_app_batch.md)| Changes the batch status to the last one it had before archiving. After the operation, you can process the
 [unarchive_app_project](toloka.async_client.client.AsyncTolokaClient.unarchive_app_project.md)| Unarchives an App project.
 [update_pool](toloka.async_client.client.AsyncTolokaClient.update_pool.md)| Updates all pool parameters in Toloka.
 [update_project](toloka.async_client.client.AsyncTolokaClient.update_project.md)| Updates all project parameters in Toloka.

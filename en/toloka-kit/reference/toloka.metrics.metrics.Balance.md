@@ -1,5 +1,5 @@
 # Balance
-`toloka.metrics.metrics.Balance` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/metrics/metrics.py#L145)
+`toloka.metrics.metrics.Balance` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/metrics/metrics.py#L145)
 
 ```python
 Balance(
@@ -21,7 +21,7 @@ Returns only one metric: don't spend and don't reserved money on your acount.
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`balance_name`|**Optional\[str\]**|<p>Metric name. Default 'toloka_requester_balance'.</p>
+`balance_name`|**Optional\[str\]**|<p>Metric name. Default &#x27;toloka_requester_balance&#x27;.</p>
 
 **Examples:**
 

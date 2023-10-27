@@ -1,5 +1,5 @@
 # BaseTask
-`toloka.client.task.BaseTask` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/task.py#L18)
+`toloka.client.task.BaseTask` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/task.py#L18)
 
 ```python
 BaseTask(

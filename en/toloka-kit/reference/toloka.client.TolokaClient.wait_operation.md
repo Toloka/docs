@@ -1,5 +1,5 @@
 # wait_operation
-`toloka.client.TolokaClient.wait_operation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L2931)
+`toloka.client.TolokaClient.wait_operation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/__init__.py#L2964)
 
 ```python
 wait_operation(
@@ -21,7 +21,7 @@ To get information about the operation, call the [get_operation](toloka.client.T
 | :----------| :----| :-----------|
 `op`|**[Operation](toloka.client.operations.Operation.md)**|<p>The ID of the operation.</p>
 `timeout`|**timedelta**|<p>The wait timeout. </p><p>Default value: 10 minutes.</p>
-`disable_progress`|**bool**|<ul> <li>`False` — A progress bar is shown.</li> <li>`True` — A progress bar is hidden.</li> </ul> <p>Default value: `False`.</p>
+`disable_progress`|**bool**|<ul> <li>`False` — A progress bar is shown.</li> <li>`True` — A progress bar is hidden.</li> </ul> <p></p><p>Default value: `False`.</p>
 
 * **Returns:**
 

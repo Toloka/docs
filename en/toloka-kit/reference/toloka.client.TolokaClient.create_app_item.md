@@ -1,5 +1,5 @@
 # create_app_item
-`toloka.client.TolokaClient.create_app_item` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L4136)
+`toloka.client.TolokaClient.create_app_item` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/__init__.py#L4125)
 
 Creates an App task item in Toloka.
 
@@ -18,6 +18,7 @@ Creates an App task item in Toloka.
 `created_at`|**-**|<p>The date and time when the item was created.</p>
 `started_at`|**-**|<p>The date and time when the item processing started.</p>
 `finished_at`|**-**|<p>The date and time when the item processing was completed.</p>
+`force_new_original`|**Optional\[bool\]**|<p>Whether to enable or disable the deduplication for the item in the request. When set to true, the item will be re-labeled regardless of whether pre-labeled duplicates exist. Default is `False`.</p>
 
 * **Returns:**
 

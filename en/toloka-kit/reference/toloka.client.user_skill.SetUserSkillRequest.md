@@ -1,5 +1,5 @@
 # SetUserSkillRequest
-`toloka.client.user_skill.SetUserSkillRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/user_skill.py#L12)
+`toloka.client.user_skill.SetUserSkillRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/user_skill.py#L12)
 
 ```python
 SetUserSkillRequest(
@@ -20,6 +20,6 @@ These parameters are used by the [set_user_skill](toloka.client.TolokaClient.set
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`user_id`|**Optional\[str\]**|<p>The Toloker's ID.</p>
+`user_id`|**Optional\[str\]**|<p>The Toloker&#x27;s ID.</p>
 `skill_id`|**Optional\[str\]**|<p>The ID of the skill to set.</p>
 `value`|**Optional\[Decimal\]**|<p>The value of the skill. Allowed values: from 0 to 100.</p>

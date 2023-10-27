@@ -1,5 +1,5 @@
 # Parameters
-`toloka.client.operations.TasksCreateOperation.Parameters` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/operations.py#L313)
+`toloka.client.operations.TasksCreateOperation.Parameters` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/operations.py#L313)
 
 ```python
 Parameters(

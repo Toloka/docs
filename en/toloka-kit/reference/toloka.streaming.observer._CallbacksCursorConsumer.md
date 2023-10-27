@@ -1,5 +1,5 @@
 # _CallbacksCursorConsumer
-`toloka.streaming.observer._CallbacksCursorConsumer` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/streaming/observer.py#L273)
+`toloka.streaming.observer._CallbacksCursorConsumer` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/streaming/observer.py#L273)
 
 ```python
 _CallbacksCursorConsumer(self, cursor: AssignmentCursor)

@@ -1,5 +1,5 @@
 # Operation
-`toloka.client.operations.Operation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/operations.py#L51)
+`toloka.client.operations.Operation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/operations.py#L51)
 
 ```python
 Operation(
@@ -39,4 +39,4 @@ The examples of asynchronous operations are opening a pool, archiving a project,
 | Method | Description |
 | :------| :-----------|
 [is_completed](toloka.client.operations.Operation.is_completed.md)| Checks whether the operation is completed either successfully or not.
-[raise_on_fail](toloka.client.operations.Operation.raise_on_fail.md)| Raises the `FailedOperation` exception if the operation status is `FAIL`. Otherwise does nothing.
+[raise_on_fail](toloka.client.operations.Operation.raise_on_fail.md)| Raises `FailedOperation` exception if the operation status is `FAIL`. Otherwise does nothing.

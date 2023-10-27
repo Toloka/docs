@@ -1,5 +1,5 @@
 # MessageThreadSearchRequest
-`toloka.client.search_requests.MessageThreadSearchRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/search_requests.py#L796)
+`toloka.client.search_requests.MessageThreadSearchRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/search_requests.py#L796)
 
 ```python
 MessageThreadSearchRequest(

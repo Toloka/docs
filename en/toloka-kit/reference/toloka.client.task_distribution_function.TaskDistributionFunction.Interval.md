@@ -1,5 +1,5 @@
 # Interval
-`toloka.client.task_distribution_function.TaskDistributionFunction.Interval` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/task_distribution_function.py#L37)
+`toloka.client.task_distribution_function.TaskDistributionFunction.Interval` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/task_distribution_function.py#L37)
 
 ```python
 Interval(

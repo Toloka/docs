@@ -1,5 +1,5 @@
 # close_pool
-`toloka.client.TolokaClient.close_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L1464)
+`toloka.client.TolokaClient.close_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/__init__.py#L1497)
 
 ```python
 close_pool(self, pool_id: str)

@@ -1,5 +1,5 @@
 # Environment
-`toloka.client.TolokaClient.Environment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L245)
+`toloka.client.TolokaClient.Environment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/__init__.py#L253)
 
 An enumeration.
 

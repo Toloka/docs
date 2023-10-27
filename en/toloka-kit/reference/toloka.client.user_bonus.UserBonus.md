@@ -1,5 +1,5 @@
 # UserBonus
-`toloka.client.user_bonus.UserBonus` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/user_bonus.py#L17)
+`toloka.client.user_bonus.UserBonus` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/user_bonus.py#L17)
 
 ```python
 UserBonus(
@@ -31,7 +31,7 @@ Learn more about [Bonuses](https://toloka.ai/docs/guide/bonus/).
 `amount`|**Optional\[Decimal\]**|<p>The amount of the bonus in US dollars.</p>
 `assignment_id`|**Optional\[str\]**|<p>The ID of the assignment the bonus is issued for.</p>
 `private_comment`|**Optional\[str\]**|<p>A comment visible to the requester only.</p>
-`without_message`|**Optional\[bool\]**|<ul> <li>`False` — A message is sent to the Toloker when the bonus is issued.</li> <li>`True` — There is no message sent to the Toloker.</li> </ul> <p>Default value: `False`.</p>
+`without_message`|**Optional\[bool\]**|<ul> <li>`False` — A message is sent to the Toloker when the bonus is issued.</li> <li>`True` — There is no message sent to the Toloker.</li> </ul> <p></p><p>Default value: `False`.</p>
 `public_title`|**Optional\[Dict\[str, str\]\]**|<p>A message title. The title can be provided in several languages.</p>
 `public_message`|**Optional\[Dict\[str, str\]\]**|<p>A message text. It can be provided in several languages.</p>
 `created`|**Optional\[datetime\]**|<p>The UTC date and time when the bonus was issued. Read-only field.</p>

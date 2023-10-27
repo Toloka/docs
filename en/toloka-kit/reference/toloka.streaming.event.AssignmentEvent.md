@@ -1,5 +1,5 @@
 # AssignmentEvent
-`toloka.streaming.event.AssignmentEvent` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/streaming/event.py#L27)
+`toloka.streaming.event.AssignmentEvent` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/streaming/event.py#L27)
 
 ```python
 AssignmentEvent(

@@ -1,5 +1,5 @@
 # find_user_bonuses
-`toloka.client.TolokaClient.find_user_bonuses` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L3222)
+`toloka.client.TolokaClient.find_user_bonuses` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/__init__.py#L3255)
 
 Finds Tolokers' bonuses that match certain criteria.
 
@@ -24,7 +24,7 @@ To iterate over all matching Tolokers' bonuses you may use the [get_user_bonuses
 `created_gt`|**Optional\[datetime\]**|<p>Bonuses given after the specified date.</p>
 `created_gte`|**Optional\[datetime\]**|<p>Bonuses given after or on the specified date.</p>
 `sort`|**Union\[List\[str\], [UserBonusSortItems](toloka.client.search_requests.UserBonusSortItems.md), None\]**|<p>Sorting options. Default: `None`.</p>
-`limit`|**Optional\[int\]**|<p>Returned Tolokers' bonuses limit. The maximum allowed value: 300.</p>
+`limit`|**Optional\[int\]**|<p>Returned Tolokers&#x27; bonuses limit. The maximum allowed value: 300.</p>
 
 * **Returns:**
 

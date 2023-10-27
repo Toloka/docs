@@ -1,5 +1,5 @@
 # TrainingRequirement
-`toloka.client.quality_control.QualityControl.TrainingRequirement` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/quality_control.py#L58)
+`toloka.client.quality_control.QualityControl.TrainingRequirement` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/quality_control.py#L58)
 
 ```python
 TrainingRequirement(

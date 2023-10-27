@@ -1,5 +1,5 @@
 # find_attachments
-`toloka.client.TolokaClient.find_attachments` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L879)
+`toloka.client.TolokaClient.find_attachments` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/__init__.py#L887)
 
 Finds attachments that match certain criteria and returns their metadata.
 
@@ -38,7 +38,7 @@ To iterate over all matching attachments you may use the [get_attachments](tolok
 
 **Examples:**
 
-Let's find attachments in the pool and sort them by the ID and the date of creation in the descending order.
+Let's find attachments in the pool and sort them by the ID and the date of creation in descending order.
 
 ```python
 attachments = toloka_client.find_attachments(pool_id='1080020', sort=['-created', '-id'], limit=10)

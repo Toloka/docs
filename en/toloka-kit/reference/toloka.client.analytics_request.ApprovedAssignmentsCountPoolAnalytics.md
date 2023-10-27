@@ -1,5 +1,5 @@
 # ApprovedAssignmentsCountPoolAnalytics
-`toloka.client.analytics_request.ApprovedAssignmentsCountPoolAnalytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/analytics_request.py#L136)
+`toloka.client.analytics_request.ApprovedAssignmentsCountPoolAnalytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/analytics_request.py#L136)
 
 ```python
 ApprovedAssignmentsCountPoolAnalytics(self, *, subject_id: str)
@@ -9,9 +9,8 @@ Counts the number of assignments with the `ACCEPTED` status in a pool.
 
 
 Do not confuse these task statuses:
-
-* `SUBMITTED` tasks are completed by Tolokers and sent for a review.
-* `ACCEPTED` tasks have passed the review and have been paid for.
+    * `SUBMITTED` tasks are completed by Tolokers and sent for a review.
+    * `ACCEPTED` tasks have passed the review and have been paid for.
 
 ## Parameters Description
 

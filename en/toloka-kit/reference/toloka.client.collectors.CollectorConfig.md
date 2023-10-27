@@ -1,5 +1,5 @@
 # CollectorConfig
-`toloka.client.collectors.CollectorConfig` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/collectors.py#L41)
+`toloka.client.collectors.CollectorConfig` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/collectors.py#L41)
 
 ```python
 CollectorConfig(self, *, uuid: Optional[UUID] = None)

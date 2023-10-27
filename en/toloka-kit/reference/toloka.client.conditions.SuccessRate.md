@@ -1,5 +1,5 @@
 # SuccessRate
-`toloka.client.conditions.SuccessRate` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/conditions.py#L541)
+`toloka.client.conditions.SuccessRate` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/conditions.py#L541)
 
 ```python
 SuccessRate(

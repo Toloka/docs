@@ -1,5 +1,5 @@
 # TextareaFieldV1
-`toloka.client.project.template_builder.fields.TextareaFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/project/template_builder/fields.py#L519)
+`toloka.client.project.template_builder.fields.TextareaFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/project/template_builder/fields.py#L519)
 
 ```python
 TextareaFieldV1(
@@ -27,9 +27,9 @@ For more information, see [field.textarea](https://toloka.ai/docs/template-build
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `data`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>A data path.</p>
-`disabled`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<ul> <li>`False` — A Toloker can edit the field.</li> <li>`True` — The field is disabled.</li> </ul> <p>Default value: `False`.</p>
+`disabled`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<ul> <li>`False` — A Toloker can edit the field.</li> <li>`True` — The field is disabled.</li> </ul> <p></p><p>Default value: `False`.</p>
 `placeholder`|**Optional\[Any\]**|<p>A text that is shown if the field is empty.</p>
-`resizable`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<ul> <li>`True` — A Toloker can change the height of the field.</li> <li>`False` — The field is not resizable.</li> </ul> <p>Default value: `True`.</p>
+`resizable`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<ul> <li>`True` — A Toloker can change the height of the field.</li> <li>`False` — The field is not resizable.</li> </ul> <p></p><p>Default value: `True`.</p>
 `rows`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), float\]\]**|<p>The height of the field in text lines.</p>
 `hint`|**Optional\[Any\]**|<p>A hint.</p>
 `label`|**Optional\[Any\]**|<p>A label above the component.</p>

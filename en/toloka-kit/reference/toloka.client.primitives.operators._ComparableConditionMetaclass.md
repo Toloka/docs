@@ -1,5 +1,5 @@
 # _ComparableConditionMetaclass
-`toloka.client.primitives.operators._ComparableConditionMetaclass` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/primitives/operators.py#L137)
+`toloka.client.primitives.operators._ComparableConditionMetaclass` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/primitives/operators.py#L137)
 
 ## Methods Summary
 

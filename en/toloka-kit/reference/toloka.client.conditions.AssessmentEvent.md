@@ -1,5 +1,5 @@
 # AssessmentEvent
-`toloka.client.conditions.AssessmentEvent` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/conditions.py#L126)
+`toloka.client.conditions.AssessmentEvent` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/conditions.py#L126)
 
 ```python
 AssessmentEvent(
@@ -13,10 +13,9 @@ An assignment status change event.
 
 
 Possible values:
-
-* `ACCEPT` — An assignment was accepted.
-* `ACCEPT_AFTER_REJECT` — An assignment with the previously set `REJECTED` status was accepted.
-* `REJECT` — An assignment was rejected.
+    * `ACCEPT` — An assignment was accepted.
+    * `ACCEPT_AFTER_REJECT` — An assignment with the previously set `REJECTED` status was accepted.
+    * `REJECT` — An assignment was rejected.
 
 `AssessmentEvent` condition can be used with the `==` operator only.
 

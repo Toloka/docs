@@ -1,5 +1,5 @@
 # find_app_batches
-`toloka.client.TolokaClient.find_app_batches` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L4230)
+`toloka.client.TolokaClient.find_app_batches` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/__init__.py#L4220)
 
 Finds batches that match certain criteria in an App project.
 

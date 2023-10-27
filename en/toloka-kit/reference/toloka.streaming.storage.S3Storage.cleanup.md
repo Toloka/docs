@@ -1,5 +1,5 @@
 # cleanup
-`toloka.streaming.storage.S3Storage.cleanup` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/streaming/storage.py#L244)
+`toloka.streaming.storage.S3Storage.cleanup` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/streaming/storage.py#L244)
 
 ```python
 cleanup(

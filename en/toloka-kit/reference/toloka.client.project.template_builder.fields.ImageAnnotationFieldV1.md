@@ -1,5 +1,5 @@
 # ImageAnnotationFieldV1
-`toloka.client.project.template_builder.fields.ImageAnnotationFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/project/template_builder/fields.py#L247)
+`toloka.client.project.template_builder.fields.ImageAnnotationFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/project/template_builder/fields.py#L247)
 
 ```python
 ImageAnnotationFieldV1(
@@ -31,7 +31,7 @@ For more information, see [field.image-annotation](https://toloka.ai/docs/templa
 | :----------| :----| :-----------|
 `data`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>A data path.</p>
 `image`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>The URL of the image.</p>
-`disabled`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>Disabling the component:</p> <ul> <li>`False` — Annotating is allowed.</li> <li>`True` — Annotating is disabled.</li> </ul> <p>Default value: `False`.</p>
+`disabled`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>Disabling the component:</p> <ul> <li>`False` — Annotating is allowed.</li> <li>`True` — Annotating is disabled.</li> </ul> <p></p><p>Default value: `False`.</p>
 `full_height`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>If `True`, the component takes up all the vertical free space. Note, that the minimum height required by the component is 400 pixels.</p>
 `labels`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), List\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), [Label](toloka.client.project.template_builder.fields.ImageAnnotationFieldV1.Label.md)\]\]\]\]**|<p>Labels used to classify image areas.</p>
 `min_width`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), float\]\]**|<p>The minimum width of the component in pixels.</p>

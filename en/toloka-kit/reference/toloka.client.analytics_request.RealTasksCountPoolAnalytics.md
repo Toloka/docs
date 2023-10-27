@@ -1,5 +1,5 @@
 # RealTasksCountPoolAnalytics
-`toloka.client.analytics_request.RealTasksCountPoolAnalytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/analytics_request.py#L68)
+`toloka.client.analytics_request.RealTasksCountPoolAnalytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/analytics_request.py#L68)
 
 ```python
 RealTasksCountPoolAnalytics(self, *, subject_id: str)

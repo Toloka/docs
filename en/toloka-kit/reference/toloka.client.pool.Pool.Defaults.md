@@ -1,5 +1,5 @@
 # Defaults
-`toloka.client.pool.Pool.Defaults` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/pool/__init__.py#L150)
+`toloka.client.pool.Pool.Defaults` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/pool/__init__.py#L150)
 
 ```python
 Defaults(

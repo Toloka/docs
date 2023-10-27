@@ -1,5 +1,5 @@
 # Field
-`toloka.client.pool.dynamic_overlap_config.DynamicOverlapConfig.Field` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/pool/dynamic_overlap_config.py#L44)
+`toloka.client.pool.dynamic_overlap_config.DynamicOverlapConfig.Field` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/pool/dynamic_overlap_config.py#L44)
 
 ```python
 Field(self, name: Optional[str] = None)

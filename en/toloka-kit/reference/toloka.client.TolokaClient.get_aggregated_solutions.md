@@ -1,5 +1,5 @@
 # get_aggregated_solutions
-`toloka.client.TolokaClient.get_aggregated_solutions` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/__init__.py#L679)
+`toloka.client.TolokaClient.get_aggregated_solutions` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/__init__.py#L687)
 
 Finds all aggregated responses that match certain criteria.
 

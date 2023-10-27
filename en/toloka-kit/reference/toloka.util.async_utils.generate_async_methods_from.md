@@ -1,5 +1,5 @@
 # generate_async_methods_from
-`toloka.util.async_utils.generate_async_methods_from` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/util/async_utils.py#L223)
+`toloka.util.async_utils.generate_async_methods_from` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/util/async_utils.py#L223)
 
 ```python
 generate_async_methods_from(cls)

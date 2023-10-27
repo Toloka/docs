@@ -1,5 +1,5 @@
 # User
-`toloka.client.user.User` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.1/src/client/user.py#L9)
+`toloka.client.user.User` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.2/src/client/user.py#L9)
 
 ```python
 User(
@@ -24,7 +24,7 @@ Country and language are returned as [country codes](https://toloka.ai/docs/api/
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`id`|**Optional\[str\]**|<p>The Toloker's ID.</p>
+`id`|**Optional\[str\]**|<p>The Toloker&#x27;s ID.</p>
 `country`|**Optional\[str\]**|<p>The country set in the profile.</p>
 `languages`|**Optional\[List\[str\]\]**|<p>A list of languages specified in the profile.</p>
 `adult_allowed`|**Optional\[bool\]**|<p>Whether or not the Toloker agreed to complete tasks which contain adult content.</p>
